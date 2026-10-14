@@ -199,6 +199,18 @@ ol.steps .why b { color: var(--ink); }
 .checks { display: grid; gap: 10px; }
 .check { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 10px; background: var(--bg); }
 .check .q { font-weight: 700; }
+.examples { display: grid; gap: 14px; }
+.example { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--bg); min-width: 0; }
+.ex-n { font-size: .9rem; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
+.example .task { background: var(--surface); }
+.opts { display: grid; gap: 8px; }
+.opt { min-height: 44px; text-align: left; border: 2px solid var(--line); background: var(--surface); border-radius: 10px; padding: 8px 12px; font-weight: 600; overflow-wrap: anywhere; }
+.opt:hover:not([disabled]) { border-color: var(--ink-soft); }
+.opt[disabled] { cursor: default; }
+.opt.right { border-color: var(--good); background: var(--good-soft); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.ans-row input { flex: 1 1 10em; min-width: 0; min-height: 44px; border: 2px solid var(--line); border-radius: 10px; padding: 8px 12px; background: var(--surface); color: var(--ink); font-size: 1rem; }
+.ans-row input:focus-visible { border-color: var(--focus); }
 .check .a { padding: 8px 12px; border-radius: 8px; background: var(--surface); border: 1px dashed var(--line); }
 .check .res { font-size: .9rem; font-weight: 700; }
 .check .res.know { color: var(--good); }
@@ -266,7 +278,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-14b";
+const MAP_VERSION = "2026-10-14c";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -284,7 +296,9 @@ DATA.subjects.forEach((s, si) => {
       t.subtopics.forEach(st => {
         st.topic = t; st.section = sec; st.subject = s; SUB[st.id] = st;
         st.ready = st.status === "ready" && !!st.lesson;
-        st.checks = st.ready ? (st.lesson.check || []).map((c, i) => ({ id: `${st.id}-${i + 1}`, q: c.q, a: c.a })) : [];
+        st.checks = st.ready ? (st.lesson.check || []).map((c, i) => ({ id: `${st.id}-${i + 1}`, q: c.q, a: c.a,
+          options: Array.isArray(c.options) ? c.options : null, correct: c.correct, accept: Array.isArray(c.accept) ? c.accept : null })) : [];
+        st.examples = st.ready && Array.isArray(st.lesson.examples) ? st.lesson.examples : [];
         sec.subs.push(st); s.subs.push(st);
       });
     });
@@ -420,8 +434,8 @@ const ui = {
   lesson: null,
   open: new Set(Array.isArray(uiSaved.open) ? uiSaved.open : []),
   openTouched: !!uiSaved.openTouched,
-  steps: {},           // скільки кроків прикладу показано
-  revealed: {},        // які відповіді самоперевірки відкрито
+  steps: {},           // скільки кроків показано: ключ «<підтема>#<номер прикладу>»
+  chk: {},             // самоперевірка в цьому візиті: { phase: "fresh"|"retry"|"done", value, wrong: [], msg }
   copied: null
 };
 function saveUi() { lsSet(LS_UI, { subject: ui.subject, open: [...ui.open], openTouched: ui.openTouched }); }
@@ -528,7 +542,6 @@ function subRowHtml(st) {
 /* ---------- Урок ---------- */
 function lessonHtml(st) {
   const L = st.lesson, s = st.subject, stt = statusOf(st), p = practiceOf(st.id);
-  const shown = ui.steps[st.id] || 0, steps = (L.example && L.example.steps) || [];
   const readyList = s.subs.filter(x => x.ready), i = readyList.indexOf(st);
   const prev = readyList[i - 1], next = readyList[i + 1];
   const ask = `${s.tutorCall || s.tutor}, дай мені задачі на тему "${plain(st.name)}" (${st.id})`;
@@ -544,38 +557,89 @@ function lessonHtml(st) {
     <section class="card"><h3>Що це</h3><p>${rich(L.what)}</p></section>
     ${(L.ideas || []).length ? `<section class="card"><h3>Головне</h3><ul>${L.ideas.map(x => `<li>${rich(x)}</li>`).join("")}</ul></section>` : ""}
     ${(L.rules || []).length ? `<section class="card"><h3>Правила</h3><div class="rules">${L.rules.map(r => `<div class="rule"><div class="f">${rich(r.f)}</div><div class="m">${rich(r.means)}</div></div>`).join("")}</div></section>` : ""}
-    ${L.example ? `<section class="card" id="example"><h3>Розв'язуємо разом</h3>
-      <p class="task">${rich(L.example.task)}</p>
-      <ol class="steps" aria-live="polite">${steps.slice(0, shown).map(x => `<li><span class="do">${rich(x.do)}</span><span class="why"><b>Чому:</b> ${rich(x.why)}</span></li>`).join("")}</ol>
-      ${shown < steps.length
-        ? `<div class="row" style="margin-top:12px"><button class="btn" type="button" data-act="step" data-id="${st.id}" data-k="step">${shown === 0 ? "Показати перший крок" : `Наступний крок (${shown + 1} з ${steps.length})`}</button><button class="btn ghost" type="button" data-act="steps-all" data-id="${st.id}" data-k="steps-all">Показати все</button></div>`
-        : `<p class="answer" aria-live="polite"><b>Відповідь:</b> ${rich(L.example.answer)}</p><div class="row" style="margin-top:10px"><button class="btn ghost" type="button" data-act="steps-reset" data-id="${st.id}" data-k="steps-reset">Сховати кроки й спробувати самому</button></div>`}
-    </section>` : ""}
+    ${st.examples.length ? `<section class="card" id="examples"><h3>Розв'язуємо разом</h3><div class="examples">${st.examples.map((ex, k) => exampleHtml(st, ex, k)).join("")}</div></section>` : ""}
     ${(L.mistakes || []).length ? `<section class="card"><h3>Де часто помиляються</h3><ul class="mistakes">${L.mistakes.map(x => `<li>${rich(x)}</li>`).join("")}</ul></section>` : ""}
-    ${st.checks.length ? `<section class="card"><h3>Перевір себе</h3><p class="note" style="margin-bottom:10px">Спершу дай відповідь подумки, потім відкрий правильну і чесно познач. Пройдено: ${c.know} з ${c.total}.</p><div class="checks">${st.checks.map(checkHtml).join("")}</div></section>` : ""}
+    <div class="row read-row"><button class="btn ghost mark" type="button" aria-pressed="${isRead}" data-act="read" data-id="${st.id}" data-k="read">${isRead ? "Прочитано ✓" : "Позначити прочитаним"}</button></div>
+    ${st.checks.length ? `<section class="card"><h3>Перевір себе</h3><p class="note" style="margin-bottom:10px">Розв'яжи в зошиті й введи відповідь — карта перевірить. Одну помилку можна виправити. Пройдено з першої спроби: ${c.know} з ${c.total}.</p><div class="checks">${st.checks.map(checkHtml).join("")}</div></section>` : ""}
     <section class="card"><h3>Задачі з репетитором</h3><p>${practiceLine(st, p)}</p></section>
     <section class="card ask"><h3>Попроси задачі</h3>
       <p class="note">Скопіюй цей текст і встав у чат з репетитором.</p>
       <textarea id="ask-text" readonly rows="2" aria-label="Текст запиту репетиторові">${esc(ask)}</textarea>
       <div class="row"><button class="btn" type="button" data-act="copy" data-k="copy">${ui.copied === st.id ? "Скопійовано ✓" : "Скопіювати"}</button><span class="note" id="copy-note" role="status"></span></div>
     </section>
-    <div class="row"><button class="btn ghost mark" type="button" aria-pressed="${isRead}" data-act="read" data-id="${st.id}" data-k="read">${isRead ? "Прочитано ✓" : "Позначити прочитаним"}</button></div>
     ${st.programmeRef ? `<p class="ref">З програми: «${rich(st.programmeRef)}»</p>` : ""}
     ${prev || next ? `<nav class="pager" aria-label="Інші уроки">${prev ? `<button class="btn ghost" type="button" data-act="open" data-id="${prev.id}" data-k="prev"><span>← ${rich(prev.name)}</span></button>` : ""}${next ? `<button class="btn ghost nx" type="button" data-act="open" data-id="${next.id}" data-k="next"><span>${rich(next.name)} →</span></button>` : ""}</nav>` : ""}
   </article>`;
 }
-function checkHtml(c, i) {
-  const st = progress.checks[c.id], open = ui.revealed[c.id] || !!st;
-  return `<div class="check"><p class="q">${i + 1}. ${rich(c.q)}</p>
-    ${open
-      ? `<p class="a"><b>Відповідь:</b> ${rich(c.a)}</p>
-         <div class="row" role="group" aria-label="Як у тебе вийшло?">
-           <button class="btn ghost know" type="button" aria-pressed="${st === "know"}" data-act="check" data-v="know" data-id="${c.id}" data-k="k-${c.id}">👍 Знаю</button>
-           <button class="btn ghost not-yet" type="button" aria-pressed="${st === "not-yet"}" data-act="check" data-v="not-yet" data-id="${c.id}" data-k="n-${c.id}">🤔 Ще ні</button>
-         </div>
-         ${st ? `<p class="res ${st}" role="status">${st === "know" ? "Записано: знаєш." : "Записано: ще повториш. Це нормально!"}</p>` : ""}`
-      : `<div class="row"><button class="btn ghost" type="button" data-act="reveal" data-id="${c.id}" data-k="r-${c.id}">Показати відповідь</button></div>`}
+function exampleHtml(st, ex, k) {
+  const key = `${st.id}#${k}`, shown = ui.steps[key] || 0, steps = ex.steps || [], n = st.examples.length;
+  return `<div class="example"><p class="ex-n">Приклад ${k + 1} з ${n}</p>
+    <p class="task">${rich(ex.task)}</p>
+    <ol class="steps" aria-live="polite">${steps.slice(0, shown).map(x => `<li><span class="do">${rich(x.do)}</span><span class="why"><b>Чому:</b> ${rich(x.why)}</span></li>`).join("")}</ol>
+    ${shown < steps.length
+      ? `<div class="row" style="margin-top:12px"><button class="btn" type="button" data-act="step" data-id="${st.id}" data-ex="${k}" data-k="step-${k}">${shown === 0 ? "Показати перший крок" : `Наступний крок (${shown + 1} з ${steps.length})`}</button><button class="btn ghost" type="button" data-act="steps-all" data-id="${st.id}" data-ex="${k}" data-k="steps-all-${k}">Показати все</button></div>`
+      : `<p class="answer" aria-live="polite"><b>Відповідь:</b> ${rich(ex.answer)}</p><div class="row" style="margin-top:10px"><button class="btn ghost" type="button" data-act="steps-reset" data-id="${st.id}" data-ex="${k}" data-k="steps-reset-${k}">Сховати кроки й спробувати самому</button></div>`}
   </div>`;
+}
+
+/* Перевірка введеної відповіді: однаково записані відповіді збігаються, а числа порівнюються як числа
+   («x = 65», «65 грн» і «65» — те саме; «2,5» = «2.5»; «−2» = «-2»). */
+function normAns(x) {
+  let v = String(x == null ? "" : x).trim().toLowerCase().replace(/\s+/g, "")
+    .replace(/[−–—‐‑]/g, "-").replace(/,/g, ".").replace(/[×*]/g, "·");
+  return v.replace(/\.$/, "");
+}
+function numAns(x) {
+  let v = normAns(x).replace(/^\p{L}+=/u, "").replace(/[\p{L}°%]+$/u, "");
+  let m = v.match(/^([+-]?(?:\d+(?:\.\d+)?|\.\d+))$/);
+  if (m) return Number(m[1]);
+  m = v.match(/^([+-]?\d+(?:\.\d+)?)\/(\d+(?:\.\d+)?)$/);
+  if (m && +m[2] !== 0) return Number(m[1]) / Number(m[2]);
+  return null;
+}
+function isAccepted(c, input) {
+  const ni = normAns(input), xi = numAns(input);
+  if (!ni) return false;
+  return c.accept.some(a => normAns(a) === ni || (xi !== null && numAns(a) !== null && Math.abs(numAns(a) - xi) < 1e-9));
+}
+function checkHtml(c, i) {
+  const stored = progress.checks[c.id], u = ui.chk[c.id];
+  const head = `<p class="q">${i + 1}. ${rich(c.q)}</p>`;
+  const explain = `<p class="a"><b>Пояснення:</b> ${rich(c.a)}</p>`;
+  const again = `<div class="row"><button class="btn ghost" type="button" data-act="chk-again" data-id="${c.id}" data-k="again-${c.id}">Спробувати ще раз</button></div>`;
+  // Уже відповідали раніше (або щойно): показати результат і пояснення.
+  if ((!u && stored) || (u && u.phase === "done")) {
+    const res = u ? u.result : stored;
+    const msg = u ? u.msg : (stored === "know" ? "Минулого разу: правильно з першої спроби ✓" : "Минулого разу: ще треба повторити.");
+    const opts = c.options ? `<div class="opts">${c.options.map((o, j) => `<button class="opt${j === c.correct ? " right" : u && u.wrong.includes(j) ? " wrong" : ""}" type="button" disabled>${"АБВГ"[j]}) ${rich(o)}</button>`).join("")}</div>` : "";
+    return `<div class="check" data-check="${c.id}">${head}${opts}
+      <p class="res ${res}" role="status">${esc(msg)}</p>${explain}${again}</div>`;
+  }
+  const st = u || { phase: "fresh", value: "", wrong: [] };
+  const retryMsg = st.phase === "retry" ? `<p class="res not-yet" role="status">Не зовсім. Спробуй ще раз.</p>` : "";
+  const giveUp = st.phase === "retry" ? `<button class="btn ghost" type="button" data-act="chk-show" data-id="${c.id}" data-k="show-${c.id}">Показати відповідь</button>` : "";
+  if (c.options) {
+    return `<div class="check" data-check="${c.id}">${head}
+      <div class="opts" role="group" aria-label="Варіанти відповіді">${c.options.map((o, j) => `<button class="opt${st.wrong.includes(j) ? " wrong" : ""}" type="button" data-act="chk-opt" data-id="${c.id}" data-i="${j}" data-k="opt-${c.id}-${j}"${st.wrong.includes(j) ? " disabled" : ""}>${"АБВГ"[j]}) ${rich(o)}</button>`).join("")}</div>
+      ${retryMsg}${giveUp ? `<div class="row">${giveUp}</div>` : ""}</div>`;
+  }
+  return `<div class="check" data-check="${c.id}">${head}
+    <div class="row ans-row"><label class="sr" for="in-${c.id}">Твоя відповідь</label>
+      <input class="chk-in" id="in-${c.id}" data-id="${c.id}" data-k="in-${c.id}" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="Твоя відповідь" value="${esc(st.value)}">
+      <button class="btn" type="button" data-act="chk-submit" data-id="${c.id}" data-k="submit-${c.id}">Перевірити</button>${giveUp}</div>
+    ${retryMsg}</div>`;
+}
+function findCheck(id) { const st = SUB[id.replace(/-\d+$/, "")]; return st ? st.checks.find(c => c.id === id) : null; }
+function answerCheck(id, right, extra) {
+  const c = findCheck(id); if (!c) return;
+  const u = ui.chk[id] || (ui.chk[id] = { phase: "fresh", value: "", wrong: [] });
+  if (extra && extra.value != null) u.value = extra.value;
+  let result = null, msg = "";
+  if (right && u.phase === "fresh") { result = "know"; msg = "Правильно!"; }
+  else if (right) { result = "not-yet"; msg = "Правильно з другої спроби. Глянь пояснення, щоб наступного разу вийшло одразу."; }
+  else if (u.phase === "fresh") { u.phase = "retry"; if (extra && extra.opt != null) u.wrong.push(extra.opt); }
+  else { result = "not-yet"; msg = "Не зовсім. Ось правильна відповідь і пояснення — нічого страшного, повториш."; if (extra && extra.opt != null) u.wrong.push(extra.opt); }
+  if (result) { u.phase = "done"; u.result = result; u.msg = msg; record({ checks: { [id]: result } }); }
 }
 function practiceLine(st, p) {
   const who = esc(st.subject.tutor || "репетитор");
@@ -644,7 +708,7 @@ function render(opts) {
   else { ui.view = "map"; autoOpen(); html = subjectHtml(SUBJ[ui.subject]); }
   main.innerHTML = html;
   paintStatus();
-  if (opts.focus) { const el = document.querySelector(opts.focus); if (el) { el.focus({ preventScroll: !!opts.noScroll }); if (!opts.noScroll && el.scrollIntoView) el.scrollIntoView({ block: opts.block || "nearest" }); } }
+  if (opts.focus) { const el = document.querySelector(opts.focus); if (el) { el.focus({ preventScroll: !!opts.noScroll }); if (el.tagName === "INPUT") { try { el.setSelectionRange(el.value.length, el.value.length); } catch (e) {} } if (!opts.noScroll && el.scrollIntoView) el.scrollIntoView({ block: opts.block || "nearest" }); } }
   else if (key && document.activeElement === document.body) { const el = document.querySelector(`[data-k="${key}"]`); if (el) el.focus({ preventScroll: true }); }
 }
 
@@ -679,13 +743,37 @@ document.addEventListener("click", e => {
   }
   else if (act === "open") openLesson(id);
   else if (act === "back") backToMap();
-  else if (act === "step") { const n = (SUB[id].lesson.example.steps || []).length; ui.steps[id] = Math.min(n, (ui.steps[id] || 0) + 1); render({ focus: ui.steps[id] >= n ? `[data-k="steps-reset"]` : `[data-k="step"]`, noScroll: true }); }
-  else if (act === "steps-all") { ui.steps[id] = (SUB[id].lesson.example.steps || []).length; render({ focus: `[data-k="steps-reset"]`, noScroll: true }); }
-  else if (act === "steps-reset") { ui.steps[id] = 0; render({ focus: `[data-k="step"]`, noScroll: true }); }
-  else if (act === "reveal") { ui.revealed[id] = true; render({ focus: `[data-k="k-${id}"]`, noScroll: true }); }
-  else if (act === "check") { const v = b.dataset.v; if (progress.checks[id] !== v) record({ checks: { [id]: v } }); render({ focus: `[data-k="${v === "know" ? "k" : "n"}-${id}"]`, noScroll: true }); }
+  else if (act === "step" || act === "steps-all" || act === "steps-reset") {
+    const k = +b.dataset.ex, key = `${id}#${k}`, n = ((SUB[id].examples[k] || {}).steps || []).length;
+    ui.steps[key] = act === "step" ? Math.min(n, (ui.steps[key] || 0) + 1) : act === "steps-all" ? n : 0;
+    render({ focus: ui.steps[key] >= n ? `[data-k="steps-reset-${k}"]` : `[data-k="step-${k}"]`, noScroll: true });
+  }
+  else if (act === "chk-opt") { const c = findCheck(id), j = +b.dataset.i; answerCheck(id, j === c.correct, { opt: j }); focusCheck(id); }
+  else if (act === "chk-submit") submitInput(id);
+  else if (act === "chk-show") { const u = ui.chk[id]; if (u) { u.phase = "done"; u.result = "not-yet"; u.msg = "Ось правильна відповідь і пояснення. Спробуй потім ще раз."; record({ checks: { [id]: "not-yet" } }); } focusCheck(id); }
+  else if (act === "chk-again") { ui.chk[id] = { phase: "fresh", value: "", wrong: [] }; focusCheck(id); }
   else if (act === "read") { record({ read: { [id]: !progress.read[id] } }); render({ focus: `[data-k="read"]`, noScroll: true }); }
   else if (act === "copy") copyAsk(b);
+});
+function focusCheck(id) {
+  const u = ui.chk[id], c = findCheck(id);
+  let sel = `[data-k="again-${id}"]`;
+  if (u && u.phase !== "done") sel = c && c.options ? `[data-check="${id}"] .opt:not([disabled])` : `[data-k="in-${id}"]`;
+  render({ focus: sel, noScroll: true });
+}
+function submitInput(id) {
+  const inp = document.getElementById("in-" + id), c = findCheck(id);
+  if (!inp || !c) return;
+  const v = inp.value;
+  if (!v.trim()) { inp.focus(); return; }
+  answerCheck(id, isAccepted(c, v), { value: v });
+  focusCheck(id);
+}
+document.addEventListener("keydown", e => {
+  if (e.key === "Enter" && e.target.classList && e.target.classList.contains("chk-in")) { e.preventDefault(); submitInput(e.target.dataset.id); }
+});
+document.addEventListener("input", e => {
+  if (e.target.classList && e.target.classList.contains("chk-in")) { const id = e.target.dataset.id; (ui.chk[id] = ui.chk[id] || { phase: "fresh", value: "", wrong: [] }).value = e.target.value; }
 });
 $("parents-toggle").addEventListener("click", () => {
   ui.view = ui.view === "parents" ? "map" : "parents";
@@ -728,10 +816,16 @@ function watch(path, onData) {
   };
   start();
 }
+let softPending = false;
 function rerenderSoft() {
-  // Не перебудовуємо сторінку, поки учень друкує або виділяє текст запиту.
-  render();
+  // Поки учень друкує відповідь, не перебудовуємо сторінку: оновимося, коли поле втратить фокус.
+  const ae = document.activeElement;
+  if (ae && ae.classList && ae.classList.contains("chk-in")) { softPending = true; return; }
+  softPending = false; render();
 }
+document.addEventListener("focusout", e => {
+  if (softPending && e.target.classList && e.target.classList.contains("chk-in")) setTimeout(() => { if (softPending) rerenderSoft(); }, 0);
+});
 async function connect() {
   const c = window.claude;
   if (!c || typeof c.use !== "function") return;

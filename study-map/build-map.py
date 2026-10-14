@@ -40,7 +40,8 @@ SUBJECT_KEYS = {"id", "name", "grade", "tutor", "tutorCall", "icon", "files"}
 SECTION_KEYS = {"id", "subject", "name", "what", "topics"}
 TOPIC_KEYS = {"id", "name", "what", "subtopics"}
 SUBTOPIC_KEYS = {"id", "name", "status", "programmeRef", "lesson"}
-LESSON_KEYS = {"what", "ideas", "rules", "example", "mistakes", "check"}
+LESSON_KEYS = {"what", "ideas", "rules", "examples", "mistakes", "check"}
+CHECK_KEYS = {"q", "a", "options", "correct", "accept"}
 
 
 class Report:
@@ -99,7 +100,7 @@ def validate_lesson(rep, where, lesson):
     if not isinstance(lesson, dict):
         rep.err(where, "«lesson» має бути об'єктом")
         return
-    extra_keys(rep, f"{where}.lesson", lesson, LESSON_KEYS)
+    extra_keys(rep, f"{where}.lesson", lesson, LESSON_KEYS | {"example"})
     w = f"{where}.lesson"
     need_str(rep, w, lesson, "what")
     need_str_list(rep, w, lesson, "ideas")
@@ -113,33 +114,65 @@ def validate_lesson(rep, where, lesson):
                 continue
             need_str(rep, f"{w}.rules[{i}]", r, "f")
             need_str(rep, f"{w}.rules[{i}]", r, "means")
-    ex = lesson.get("example")
-    if not isinstance(ex, dict):
-        rep.err(w, "«example» має бути об'єктом {task, steps, answer}")
-    else:
-        need_str(rep, f"{w}.example", ex, "task")
-        need_str(rep, f"{w}.example", ex, "answer")
+    if "example" in lesson:
+        rep.err(w, "застарілий ключ example — використовуй examples")
+    exs = lesson.get("examples")
+    if not isinstance(exs, list) or not 2 <= len(exs) <= 3:
+        rep.err(w, "«examples» має бути списком з 2–3 прикладів {task, steps, answer} (від легшого до складнішого)")
+        exs = exs if isinstance(exs, list) else []
+    for k, ex in enumerate(exs):
+        we = f"{w}.examples[{k}]"
+        if not isinstance(ex, dict):
+            rep.err(we, "приклад має бути об'єктом {task, steps, answer}")
+            continue
+        extra_keys(rep, we, ex, {"task", "steps", "answer"})
+        need_str(rep, we, ex, "task")
+        need_str(rep, we, ex, "answer")
         steps = ex.get("steps")
         if not isinstance(steps, list) or not steps:
-            rep.err(f"{w}.example", "«steps» має бути непорожнім списком {do, why}")
-        else:
-            for i, s in enumerate(steps):
-                if not isinstance(s, dict):
-                    rep.err(f"{w}.example", f"steps[{i}] має бути об'єктом {{do, why}}")
-                    continue
-                need_str(rep, f"{w}.example.steps[{i}]", s, "do")
-                need_str(rep, f"{w}.example.steps[{i}]", s, "why")
+            rep.err(we, "«steps» має бути непорожнім списком {do, why}")
+            continue
+        for i, s in enumerate(steps):
+            if not isinstance(s, dict):
+                rep.err(we, f"steps[{i}] має бути об'єктом {{do, why}}")
+                continue
+            need_str(rep, f"{we}.steps[{i}]", s, "do")
+            need_str(rep, f"{we}.steps[{i}]", s, "why")
     need_str_list(rep, w, lesson, "mistakes")
     checks = lesson.get("check")
     if not isinstance(checks, list) or not checks:
-        rep.err(w, "«check» має бути непорожнім списком {q, a}")
-    else:
-        for i, c in enumerate(checks):
-            if not isinstance(c, dict):
-                rep.err(w, f"check[{i}] має бути об'єктом {{q, a}}")
-                continue
-            need_str(rep, f"{w}.check[{i}]", c, "q")
-            need_str(rep, f"{w}.check[{i}]", c, "a")
+        rep.err(w, "«check» має бути непорожнім списком запитань")
+        return
+    for i, c in enumerate(checks):
+        wc = f"{w}.check[{i}]"
+        if not isinstance(c, dict):
+            rep.err(wc, "запитання має бути об'єктом {q, a, options+correct або accept}")
+            continue
+        extra_keys(rep, wc, c, CHECK_KEYS)
+        need_str(rep, wc, c, "q")
+        need_str(rep, wc, c, "a")
+        has_opts, has_acc = "options" in c, "accept" in c
+        if has_opts == has_acc:
+            rep.err(wc, "потрібне рівно одне з двох: «options» + «correct» (вибір варіанта) або «accept» (введення відповіді)")
+            continue
+        if has_opts:
+            opts = c.get("options")
+            if not isinstance(opts, list) or not 2 <= len(opts) <= 4 or not all(isinstance(o, str) and o.strip() for o in opts):
+                rep.err(wc, "«options» — від 2 до 4 непорожніх рядків")
+            else:
+                for j, o in enumerate(opts):
+                    check_html(rep, f"{wc}.options[{j}]", o)
+                if len(set(opts)) != len(opts):
+                    rep.err(wc, "варіанти в «options» повторюються")
+                k = c.get("correct")
+                if not isinstance(k, int) or isinstance(k, bool) or not 0 <= k < len(opts):
+                    rep.err(wc, f"«correct» має бути номером правильного варіанта від 0 до {len(opts) - 1}, а не {k!r}")
+        else:
+            if "correct" in c:
+                rep.err(wc, "«correct» потрібен лише разом з «options»")
+            acc = c.get("accept")
+            if not isinstance(acc, list) or not acc or not all(isinstance(a, str) and a.strip() for a in acc):
+                rep.err(wc, "«accept» має бути непорожнім списком непорожніх рядків (правильні відповіді)")
 
 
 def validate_section(rep, where, data, subject_id, seen_ids):
