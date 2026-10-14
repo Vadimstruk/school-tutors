@@ -201,6 +201,20 @@ ol.steps .why b { color: var(--ink); }
 .check { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 10px; background: var(--bg); }
 .check .q { font-weight: 700; }
 .examples { display: grid; gap: 14px; }
+.q-steps { list-style: none; margin: 12px 0 0 !important; padding: 0 !important; display: grid; gap: 12px; }
+.q-step { border-left: 4px solid var(--accent); padding: 2px 0 2px 12px; display: grid; gap: 8px; min-width: 0; }
+.q-step.info { border-left-color: var(--line); }
+.q-n { font-size: .82rem; font-weight: 800; color: var(--accent); }
+.q-prompt { font-weight: 700; }
+.q-step .opts { gap: 8px; }
+.q-opt { width: 100%; }
+.q-fb { font-weight: 700; font-size: .95rem; }
+.q-fb.ok { color: var(--good); }
+.q-fb.no { color: var(--bad); }
+.q-res .do { font-weight: 700; }
+.q-step .why { font-size: .93rem; color: var(--ink-soft); }
+.q-step .why b { color: var(--ink); }
+.q-sum { margin-top: 8px; font-weight: 700; color: var(--ink-soft); }
 .example { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--bg); min-width: 0; }
 .ex-n { font-size: .9rem; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
 .example .task { background: var(--surface); }
@@ -316,7 +330,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-14k";
+const MAP_VERSION = "2026-10-15a";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -473,6 +487,7 @@ const ui = {
   open: new Set(Array.isArray(uiSaved.open) ? uiSaved.open : []),
   openTouched: !!uiSaved.openTouched,
   steps: {},           // скільки кроків показано: ключ «<підтема>#<номер прикладу>»
+  quiz: {},            // приклад-вправа: { pos, wrong: {крок: [варіанти]}, shown: {крок: true}, first: {крок: true} }; лише в пам'яті
   chk: {},             // самоперевірка в цьому візиті: { phase: "fresh"|"retry"|"done", value, wrong: [], msg }
   copied: null
 };
@@ -899,7 +914,69 @@ function lessonHtml(st) {
     ${prev || next ? `<nav class="pager" aria-label="Інші уроки">${prev ? `<button class="btn ghost" type="button" data-act="open" data-id="${prev.id}" data-k="prev"><span>← ${rich(prev.name)}</span></button>` : ""}${next ? `<button class="btn ghost nx" type="button" data-act="open" data-id="${next.id}" data-k="next"><span>${rich(next.name)} →</span></button>` : ""}</nav>` : ""}
   </article>`;
 }
+const isQuizEx = ex => (ex.steps || []).some(x => Array.isArray(x.options) && x.options.length);
+const ABC = "АБВГ";
+function quizState(key) { return ui.quiz[key] || (ui.quiz[key] = { pos: 0, wrong: {}, shown: {}, first: {} }); }
+/* Приклад-вправа: учень сам обирає наступний крок. Кроки без варіантів — просто інформація з кнопкою «Далі». */
+function quizHtml(st, ex, k) {
+  const key = `${st.id}#${k}`, q = quizState(key), steps = ex.steps || [], N = steps.length, n = st.examples.length;
+  const hasOpt = x => Array.isArray(x.options) && x.options.length;
+  // Підсвітка малюнка: крок, до якого дійшли (інформаційний) або на який щойно відповіли.
+  let hlStep = null;
+  if (q.pos < N && !hasOpt(steps[q.pos])) hlStep = steps[q.pos];
+  else if (q.pos > 0 && q.pos < N) hlStep = steps[q.pos - 1];
+  const hl = hlStep && Array.isArray(hlStep.hl) ? hlStep.hl.map(String) : [];
+  const result = x => `<p class="q-res"><span class="do">${rich(x.do)}</span></p><p class="why"><b>Чому:</b> ${rich(x.why)}</p>`;
+  const items = [];
+  for (let i = 0; i <= Math.min(q.pos, N - 1); i++) {
+    const x = steps[i], done = i < q.pos, wrong = q.wrong[i] || [];
+    const head = `<p class="q-n">Крок ${i + 1} з ${N}</p>`;
+    if (!hasOpt(x)) {
+      items.push(`<li class="q-step info">${head}${result(x)}${done ? "" : `<div class="row"><button class="btn" type="button" data-act="q-next" data-id="${st.id}" data-ex="${k}" data-k="qnext-${k}">Далі</button></div>`}</li>`);
+      continue;
+    }
+    const opts = x.options.map((o, j) => {
+      const isRight = j === x.correct, isWrong = wrong.includes(j);
+      const cls = done && isRight ? " right" : isWrong ? " wrong" : "";
+      const dis = done || isWrong ? " disabled" : "";
+      return `<button class="opt q-opt${cls}" type="button" data-act="q-opt" data-id="${st.id}" data-ex="${k}" data-step="${i}" data-i="${j}" data-k="qo-${k}-${i}-${j}"${dis}${done && isRight ? ' aria-label="Правильно: ' + esc(plain(o)) + '"' : ""}>${ABC[j]}) ${rich(o)}</button>`;
+    }).join("");
+    let fb = "";
+    if (done) fb = `<p class="q-fb ok">${q.shown[i] ? "Ось правильний крок." : wrong.length ? "Правильно!" : "Правильно з першої спроби!"}</p>${result(x)}`;
+    else if (wrong.length) {
+      const last = wrong[wrong.length - 1], h = Array.isArray(x.hints) ? x.hints[last] : null;
+      fb = `<p class="q-fb no">${h ? rich(h) : "Не зовсім. Подумай ще раз."}</p>`
+        + (wrong.length >= 2 ? `<div class="row"><button class="btn ghost" type="button" data-act="q-show" data-id="${st.id}" data-ex="${k}" data-step="${i}" data-k="qshow-${k}">Показати правильний</button></div>` : "");
+    }
+    items.push(`<li class="q-step">${head}<p class="q-prompt">${x.q ? rich(x.q) : "Що далі?"}</p>
+      <div class="opts" role="group" aria-label="Варіанти кроку ${i + 1}">${opts}</div>
+      <div class="q-feedback" aria-live="polite">${fb}</div></li>`);
+  }
+  let tail = "";
+  if (q.pos >= N) {
+    const optSteps = steps.map((x, i) => [x, i]).filter(([x]) => hasOpt(x)), firstOk = optSteps.filter(([, i]) => q.first[i]).length;
+    tail = `<p class="answer" aria-live="polite"><b>Відповідь:</b> ${rich(String(ex.answer).replace(/^\s*(<b>)?\s*Відповідь\s*:\s*(<\/b>)?\s*/i, ""))}</p>
+      ${optSteps.length ? `<p class="q-sum">Кроки з першої спроби: ${firstOk} з ${optSteps.length}</p>` : ""}
+      <div class="row" style="margin-top:10px"><button class="btn ghost" type="button" data-act="q-reset" data-id="${st.id}" data-ex="${k}" data-k="qreset-${k}">Почати заново</button></div>`;
+  }
+  return `<div class="example quiz"><p class="ex-n">Приклад ${k + 1} з ${n} · розв'язуй сам</p>
+    <p class="task">${rich(ex.task)}</p>
+    ${ex.fig ? renderFig(ex.fig, hl) : ""}
+    <ol class="q-steps">${items.join("")}</ol>${tail}
+  </div>`;
+}
+function quizFocus(st, k) {
+  const key = `${st.id}#${k}`, q = quizState(key), steps = st.examples[k].steps || [];
+  if (q.pos >= steps.length) return `[data-k="qreset-${k}"]`;
+  const x = steps[q.pos];
+  if (!(Array.isArray(x.options) && x.options.length)) return `[data-k="qnext-${k}"]`;
+  const w = q.wrong[q.pos] || [];
+  if (w.length >= 2) return `[data-k="qshow-${k}"]`;
+  const j = x.options.findIndex((_, j) => !w.includes(j));
+  return `[data-k="qo-${k}-${q.pos}-${j}"]`;
+}
 function exampleHtml(st, ex, k) {
+  if (isQuizEx(ex)) return quizHtml(st, ex, k);
   const key = `${st.id}#${k}`, shown = ui.steps[key] || 0, steps = ex.steps || [], n = st.examples.length;
   return `<div class="example"><p class="ex-n">Приклад ${k + 1} з ${n}</p>
     <p class="task">${rich(ex.task)}</p>
@@ -1079,6 +1156,23 @@ document.addEventListener("click", e => {
     const k = +b.dataset.ex, key = `${id}#${k}`, n = ((SUB[id].examples[k] || {}).steps || []).length;
     ui.steps[key] = act === "step" ? Math.min(n, (ui.steps[key] || 0) + 1) : act === "steps-all" ? n : 0;
     render({ focus: ui.steps[key] >= n ? `[data-k="steps-reset-${k}"]` : `[data-k="step-${k}"]`, noScroll: true });
+  }
+  else if (act === "q-opt" || act === "q-show" || act === "q-next" || act === "q-reset") {
+    const st = SUB[id], k = +b.dataset.ex, key = `${id}#${k}`, q = quizState(key), steps = st.examples[k].steps || [];
+    if (act === "q-reset") ui.quiz[key] = { pos: 0, wrong: {}, shown: {}, first: {} };
+    else if (act === "q-next") { if (q.pos < steps.length) q.pos++; }
+    else {
+      const i = +b.dataset.step, x = steps[i];
+      if (i !== q.pos || !x) return;
+      if (act === "q-show") { q.shown[i] = true; q.pos++; }
+      else {
+        const j = +b.dataset.i, w = q.wrong[i] || (q.wrong[i] = []);
+        if (j === x.correct) { if (!w.length) q.first[i] = true; q.pos++; }
+        else if (!w.includes(j)) w.push(j);
+      }
+    }
+    const sel = act === "q-reset" ? `[data-k="qo-${k}-0-0"], [data-k="qnext-${k}"]` : quizFocus(st, k);
+    render({ focus: sel, block: "nearest" });
   }
   else if (act === "chk-opt") { const c = findCheck(id), j = +b.dataset.i; answerCheck(id, j === c.correct, { opt: j }); focusCheck(id); }
   else if (act === "chk-submit") submitInput(id);

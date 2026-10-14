@@ -434,6 +434,45 @@ def fig_assert(kind, a, P):
     return None
 
 
+
+def validate_step_quiz(rep, ws, s):
+    """Крок-вибір у прикладі: options (2–4 різні рядки) + correct; hints — пояснення до неправильних варіантів."""
+    if "q" in s:
+        need_str(rep, ws, s, "q")
+    has_o, has_c = "options" in s, "correct" in s
+    if not has_o and not has_c:
+        if "hints" in s:
+            rep.err(ws, "«hints» потрібні лише разом з «options»")
+        return
+    if has_o != has_c:
+        rep.err(ws, "крок-вибір потребує і «options», і «correct»")
+        return
+    opts = s["options"]
+    if not isinstance(opts, list) or not 2 <= len(opts) <= 4 or not all(isinstance(o, str) and o.strip() for o in opts):
+        rep.err(ws, "«options» — від 2 до 4 непорожніх рядків")
+        return
+    for j, o in enumerate(opts):
+        check_html(rep, f"{ws}.options[{j}]", o)
+    if len(set(o.strip() for o in opts)) != len(opts):
+        rep.err(ws, "варіанти в «options» повторюються")
+    k = s["correct"]
+    if not isinstance(k, int) or isinstance(k, bool) or not 0 <= k < len(opts):
+        rep.err(ws, f"«correct» має бути номером правильного варіанта від 0 до {len(opts) - 1}, а не {k!r}")
+        k = None
+    if "hints" in s:
+        h = s["hints"]
+        if not isinstance(h, list) or len(h) != len(opts):
+            rep.err(ws, f"«hints» має бути списком такої ж довжини, як «options» ({len(opts)}): рядок або null для кожного варіанта")
+        else:
+            for j, x in enumerate(h):
+                if x is not None and not isinstance(x, str):
+                    rep.err(ws, f"hints[{j}] має бути рядком або null")
+                elif isinstance(x, str):
+                    check_html(rep, f"{ws}.hints[{j}]", x)
+            if k is not None and isinstance(h[k], str) and h[k].strip():
+                rep.err(ws, f"hints[{k}] — підказка до правильного варіанта; має бути null або порожньою")
+
+
 def validate_lesson(rep, where, lesson):
     if not isinstance(lesson, dict):
         rep.err(where, "«lesson» має бути об'єктом")
@@ -478,9 +517,10 @@ def validate_lesson(rep, where, lesson):
                 rep.err(we, f"steps[{i}] має бути об'єктом {{do, why}}")
                 continue
             ws = f"{where} › приклад {k + 1} › крок {i + 1}"
-            extra_keys(rep, ws, s, {"do", "why", "hl"})
+            extra_keys(rep, ws, s, {"do", "why", "hl", "q", "options", "correct", "hints"})
             need_str(rep, f"{we}.steps[{i}]", s, "do")
             need_str(rep, f"{we}.steps[{i}]", s, "why")
+            validate_step_quiz(rep, ws, s)
             if "hl" in s:
                 hl = s["hl"]
                 if "fig" not in ex:
