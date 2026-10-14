@@ -316,7 +316,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-14f";
+const MAP_VERSION = "2026-10-14g";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -914,8 +914,11 @@ function exampleHtml(st, ex, k) {
 /* Перевірка введеної відповіді: однаково записані відповіді збігаються, а числа порівнюються як числа
    («x = 65», «65 грн» і «65» — те саме; «2,5» = «2.5»; «−2» = «-2»). */
 function normAns(x) {
-  let v = String(x == null ? "" : x).trim().toLowerCase().replace(/\s+/g, "")
+  // Пробіл між двома буквами значущий («не знаю» ≠ «незнаю»); решту пробілів ігноруємо («x = 65» = «x=65»).
+  let v = String(x == null ? "" : x).normalize("NFD").replace(/\u0301/g, "").normalize("NFC").trim().toLowerCase()
+    .replace(/[’ʼ‘`´]/g, "'").replace(/\s+/g, " ")
     .replace(/[−–—‐‑]/g, "-").replace(/,/g, ".").replace(/[×*]/g, "·");
+  v = v.replace(/(^|[^\p{L}]) | (?=[^\p{L}]|$)/gu, "$1");
   return v.replace(/\.$/, "");
 }
 function numAns(x) {
