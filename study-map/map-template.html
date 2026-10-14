@@ -316,7 +316,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-14h";
+const MAP_VERSION = "2026-10-14i";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -907,7 +907,7 @@ function exampleHtml(st, ex, k) {
     <ol class="steps" aria-live="polite">${steps.slice(0, shown).map(x => `<li><span class="do">${rich(x.do)}</span><span class="why"><b>Чому:</b> ${rich(x.why)}</span></li>`).join("")}</ol>
     ${shown < steps.length
       ? `<div class="row" style="margin-top:12px"><button class="btn" type="button" data-act="step" data-id="${st.id}" data-ex="${k}" data-k="step-${k}">${shown === 0 ? "Показати перший крок" : `Наступний крок (${shown + 1} з ${steps.length})`}</button><button class="btn ghost" type="button" data-act="steps-all" data-id="${st.id}" data-ex="${k}" data-k="steps-all-${k}">Показати все</button></div>`
-      : `<p class="answer" aria-live="polite"><b>Відповідь:</b> ${rich(ex.answer)}</p><div class="row" style="margin-top:10px"><button class="btn ghost" type="button" data-act="steps-reset" data-id="${st.id}" data-ex="${k}" data-k="steps-reset-${k}">Сховати кроки й спробувати самому</button></div>`}
+      : `<p class="answer" aria-live="polite"><b>Відповідь:</b> ${rich(String(ex.answer).replace(/^\s*(<b>)?\s*Відповідь\s*:\s*(<\/b>)?\s*/i, ""))}</p><div class="row" style="margin-top:10px"><button class="btn ghost" type="button" data-act="steps-reset" data-id="${st.id}" data-ex="${k}" data-k="steps-reset-${k}">Сховати кроки й спробувати самому</button></div>`}
   </div>`;
 }
 
