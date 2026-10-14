@@ -44,6 +44,30 @@
         "ukr/u6.json",
         "ukr/u7.json"
       ]
+    },
+    {
+      "id": "eng",
+      "name": "Англійська мова",
+      "grade": 7,
+      "tutor": "Том",
+      "tutorCall": "Томе",
+      "icon": "🇬🇧",
+      "refLabel": "З підручника «Think 2»",
+      "files": [
+        "eng/e0.json",
+        "eng/e1.json",
+        "eng/e2.json",
+        "eng/e3.json",
+        "eng/e4.json",
+        "eng/e5.json",
+        "eng/e6.json",
+        "eng/e7.json",
+        "eng/e8.json",
+        "eng/e9.json",
+        "eng/e10.json",
+        "eng/e11.json",
+        "eng/e12.json"
+      ]
     }
   ]
 }

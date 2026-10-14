@@ -18,5 +18,5 @@
 
 Учень (People Liceum, Think Global) вчиться за **Cambridge University Press «Think» Level 2, 2nd edition** (Herbert Puchta, Jeff Stranks, Peter Lewis-Jones), CEFR B1 — Student's Book with Workbook Digital Pack і Workbook with Digital Pack.
 
-- Зміст юнітів (назви, граматика, лексика) — у `../think2-contents.md`, коли його складуть за сторінкою «Contents» підручника (фото від батьків). **Поки його немає.**
+- Зміст юнітів (назви, функції, граматика, лексика, вимова, навички) — у `../think2-contents.md`, переписаний зі сторінки «Contents» (с. 2–3) за фото від батьків (2026-10-14).
 - Тексти, вправи, аудіо підручника захищені авторським правом — у набір їх не копіюємо. Беремо лише структуру: юніти, граматичні теми, тематичну лексику; уроки й вправи пишемо свої.

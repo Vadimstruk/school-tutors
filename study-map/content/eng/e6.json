@@ -1,0 +1,77 @@
+{
+  "id": "E6",
+  "subject": "eng",
+  "name": "Unit 6. No planet B",
+  "what": "Довкілля: прогнози й First Conditional.",
+  "topics": [
+    {
+      "id": "E6.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E6.1.1",
+          "name": "will, may, might for prediction",
+          "status": "planned",
+          "programmeRef": "will (not), may (not), might (not) for prediction"
+        },
+        {
+          "id": "E6.1.2",
+          "name": "First conditional",
+          "status": "planned",
+          "programmeRef": "First conditional"
+        },
+        {
+          "id": "E6.1.3",
+          "name": "unless in first conditional sentences",
+          "status": "planned",
+          "programmeRef": "unless in first conditional sentences"
+        }
+      ]
+    },
+    {
+      "id": "E6.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E6.2.1",
+          "name": "The environment",
+          "status": "planned",
+          "programmeRef": "The environment"
+        },
+        {
+          "id": "E6.2.2",
+          "name": "Verbs to talk about energy",
+          "status": "planned",
+          "programmeRef": "Verbs to talk about energy"
+        }
+      ]
+    },
+    {
+      "id": "E6.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E6.3.1",
+          "name": "Expressing surprise and enthusiasm",
+          "status": "planned",
+          "programmeRef": "Expressing surprise and enthusiasm"
+        },
+        {
+          "id": "E6.3.2",
+          "name": "An article for the school magazine",
+          "status": "planned",
+          "programmeRef": "An article for the school magazine"
+        },
+        {
+          "id": "E6.3.3",
+          "name": "/f/, /v/, /b/ consonant sounds",
+          "status": "planned",
+          "programmeRef": "/f/, /v/, /b/ consonant sounds"
+        }
+      ]
+    }
+  ]
+}

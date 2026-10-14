@@ -316,7 +316,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-14i";
+const MAP_VERSION = "2026-10-14j";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -895,7 +895,7 @@ function lessonHtml(st) {
       <textarea id="ask-text" readonly rows="2" aria-label="Текст запиту репетиторові">${esc(ask)}</textarea>
       <div class="row"><button class="btn" type="button" data-act="copy" data-k="copy">${ui.copied === st.id ? "Скопійовано ✓" : "Скопіювати"}</button><span class="note" id="copy-note" role="status"></span></div>
     </section>
-    ${st.programmeRef ? `<p class="ref">З програми: «${rich(st.programmeRef)}»</p>` : ""}
+    ${st.programmeRef ? `<p class="ref">${esc(s.refLabel || "З програми")}: «${rich(st.programmeRef)}»</p>` : ""}
     ${prev || next ? `<nav class="pager" aria-label="Інші уроки">${prev ? `<button class="btn ghost" type="button" data-act="open" data-id="${prev.id}" data-k="prev"><span>← ${rich(prev.name)}</span></button>` : ""}${next ? `<button class="btn ghost nx" type="button" data-act="open" data-id="${next.id}" data-k="next"><span>${rich(next.name)} →</span></button>` : ""}</nav>` : ""}
   </article>`;
 }

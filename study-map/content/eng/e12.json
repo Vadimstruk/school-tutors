@@ -1,0 +1,71 @@
+{
+  "id": "E12",
+  "subject": "eng",
+  "name": "Unit 12. Rules and regulations",
+  "what": "Правила: дозволи, let / be allowed to, Third Conditional.",
+  "topics": [
+    {
+      "id": "E12.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E12.1.1",
+          "name": "be allowed to / let",
+          "status": "planned",
+          "programmeRef": "be allowed to / let"
+        },
+        {
+          "id": "E12.1.2",
+          "name": "Third conditional",
+          "status": "planned",
+          "programmeRef": "Third conditional"
+        }
+      ]
+    },
+    {
+      "id": "E12.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E12.2.1",
+          "name": "Discipline",
+          "status": "planned",
+          "programmeRef": "Discipline"
+        },
+        {
+          "id": "E12.2.2",
+          "name": "Consequences and reasons",
+          "status": "planned",
+          "programmeRef": "Consequences and reasons"
+        }
+      ]
+    },
+    {
+      "id": "E12.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E12.3.1",
+          "name": "Talking about permission. Giving instructions",
+          "status": "planned",
+          "programmeRef": "Following and giving simple instructions"
+        },
+        {
+          "id": "E12.3.2",
+          "name": "A set of rules",
+          "status": "planned",
+          "programmeRef": "A set of rules"
+        },
+        {
+          "id": "E12.3.3",
+          "name": "Silent consonants",
+          "status": "planned",
+          "programmeRef": "Silent consonants"
+        }
+      ]
+    }
+  ]
+}

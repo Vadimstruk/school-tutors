@@ -1,0 +1,71 @@
+{
+  "id": "E2",
+  "subject": "eng",
+  "name": "Unit 2. A good education",
+  "what": "Освіта: шкільне життя, дозволи, артиклі й Present Perfect з for / since.",
+  "topics": [
+    {
+      "id": "E2.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E2.1.1",
+          "name": "Present perfect with for and since",
+          "status": "planned",
+          "programmeRef": "Present perfect with for and since"
+        },
+        {
+          "id": "E2.1.2",
+          "name": "a, an, the or no article",
+          "status": "planned",
+          "programmeRef": "a, an, the or no article"
+        }
+      ]
+    },
+    {
+      "id": "E2.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E2.2.1",
+          "name": "School subjects",
+          "status": "planned",
+          "programmeRef": "School subjects"
+        },
+        {
+          "id": "E2.2.2",
+          "name": "Verbs about thinking",
+          "status": "planned",
+          "programmeRef": "Verbs about thinking"
+        }
+      ]
+    },
+    {
+      "id": "E2.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E2.3.1",
+          "name": "Asking for, giving and refusing permission",
+          "status": "planned",
+          "programmeRef": "Asking and giving / refusing permission to do something"
+        },
+        {
+          "id": "E2.3.2",
+          "name": "An email describing your school routine",
+          "status": "planned",
+          "programmeRef": "An email describing your school routine"
+        },
+        {
+          "id": "E2.3.3",
+          "name": "Word stress",
+          "status": "planned",
+          "programmeRef": "Word stress"
+        }
+      ]
+    }
+  ]
+}

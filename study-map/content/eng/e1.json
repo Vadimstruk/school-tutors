@@ -1,0 +1,77 @@
+{
+  "id": "E1",
+  "subject": "eng",
+  "name": "Unit 1. Incredible people",
+  "what": "Неймовірні люди: що ти вже робив і чого ні, характер і зовнішність.",
+  "topics": [
+    {
+      "id": "E1.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E1.1.1",
+          "name": "Present perfect: just, already, yet",
+          "status": "planned",
+          "programmeRef": "Present perfect with just, already and yet"
+        },
+        {
+          "id": "E1.1.2",
+          "name": "Present perfect vs. past simple",
+          "status": "planned",
+          "programmeRef": "Present perfect vs. past simple"
+        }
+      ]
+    },
+    {
+      "id": "E1.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E1.2.1",
+          "name": "Personality adjectives",
+          "status": "planned",
+          "programmeRef": "Personality adjectives"
+        },
+        {
+          "id": "E1.2.2",
+          "name": "Collocations",
+          "status": "planned",
+          "programmeRef": "Collocations"
+        },
+        {
+          "id": "E1.2.3",
+          "name": "Phrases with just",
+          "status": "planned",
+          "programmeRef": "WordWise: Phrases with just"
+        }
+      ]
+    },
+    {
+      "id": "E1.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E1.3.1",
+          "name": "Talking about experiences. Offering encouragement",
+          "status": "planned",
+          "programmeRef": "Developing Speaking: Offering encouragement"
+        },
+        {
+          "id": "E1.3.2",
+          "name": "A short passage about someone you admire",
+          "status": "planned",
+          "programmeRef": "A short passage about someone you admire"
+        },
+        {
+          "id": "E1.3.3",
+          "name": "Intonation and sentence stress",
+          "status": "planned",
+          "programmeRef": "Intonation and sentence stress"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "E3",
+  "subject": "eng",
+  "name": "Unit 3. On the screen",
+  "what": "Кіно й телебачення: порівняння речей і дій.",
+  "topics": [
+    {
+      "id": "E3.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E3.1.1",
+          "name": "Comparative and superlative adjectives",
+          "status": "planned",
+          "programmeRef": "Comparative and superlative adjectives (review)"
+        },
+        {
+          "id": "E3.1.2",
+          "name": "(not) as … as",
+          "status": "planned",
+          "programmeRef": "(not) as … as comparatives"
+        },
+        {
+          "id": "E3.1.3",
+          "name": "Making a comparison stronger or weaker",
+          "status": "planned",
+          "programmeRef": "Making a comparison stronger or weaker"
+        },
+        {
+          "id": "E3.1.4",
+          "name": "Adverbs and comparative adverbs",
+          "status": "planned",
+          "programmeRef": "Adverbs and comparative adverbs"
+        },
+        {
+          "id": "E3.1.5",
+          "name": "Order of adjectives. Adverbs of degree",
+          "status": "planned",
+          "programmeRef": "Order of adjectives; adverbs of degree"
+        }
+      ]
+    },
+    {
+      "id": "E3.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E3.2.1",
+          "name": "Types of films",
+          "status": "planned",
+          "programmeRef": "Types of films"
+        },
+        {
+          "id": "E3.2.2",
+          "name": "Types of TV programmes",
+          "status": "planned",
+          "programmeRef": "Types of TV programmes"
+        },
+        {
+          "id": "E3.2.3",
+          "name": "Expressions with get",
+          "status": "planned",
+          "programmeRef": "WordWise: Expressions with get"
+        }
+      ]
+    },
+    {
+      "id": "E3.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E3.3.1",
+          "name": "Comparing. Asking for and offering help",
+          "status": "planned",
+          "programmeRef": "Developing Speaking: Asking for and offering help"
+        },
+        {
+          "id": "E3.3.2",
+          "name": "A paragraph about your TV habits",
+          "status": "planned",
+          "programmeRef": "A paragraph about your TV habits"
+        },
+        {
+          "id": "E3.3.3",
+          "name": "Words ending in /ə/",
+          "status": "planned",
+          "programmeRef": "Words ending in /ə/"
+        }
+      ]
+    }
+  ]
+}

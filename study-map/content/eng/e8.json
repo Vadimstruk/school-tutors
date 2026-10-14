@@ -1,0 +1,83 @@
+{
+  "id": "E8",
+  "subject": "eng",
+  "name": "Unit 8. Science and us",
+  "what": "Наука: минулі звички, уявні ситуації, Second Conditional і I wish.",
+  "topics": [
+    {
+      "id": "E8.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E8.1.1",
+          "name": "Past simple vs. past continuous",
+          "status": "planned",
+          "programmeRef": "Past simple vs. past continuous (review)"
+        },
+        {
+          "id": "E8.1.2",
+          "name": "used to",
+          "status": "planned",
+          "programmeRef": "used to"
+        },
+        {
+          "id": "E8.1.3",
+          "name": "Second conditional",
+          "status": "planned",
+          "programmeRef": "Second conditional"
+        },
+        {
+          "id": "E8.1.4",
+          "name": "I wish",
+          "status": "planned",
+          "programmeRef": "I wish"
+        }
+      ]
+    },
+    {
+      "id": "E8.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E8.2.1",
+          "name": "Direction and movement",
+          "status": "planned",
+          "programmeRef": "Direction and movement"
+        },
+        {
+          "id": "E8.2.2",
+          "name": "Science",
+          "status": "planned",
+          "programmeRef": "Science"
+        }
+      ]
+    },
+    {
+      "id": "E8.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E8.3.1",
+          "name": "Talking about past habits and imaginary situations",
+          "status": "planned",
+          "programmeRef": "Talking about imaginary situations"
+        },
+        {
+          "id": "E8.3.2",
+          "name": "A blog entry",
+          "status": "planned",
+          "programmeRef": "A blog entry"
+        },
+        {
+          "id": "E8.3.3",
+          "name": "The /juː/ sound",
+          "status": "planned",
+          "programmeRef": "The /juː/ sound"
+        }
+      ]
+    }
+  ]
+}

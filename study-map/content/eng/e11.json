@@ -1,0 +1,71 @@
+{
+  "id": "E11",
+  "subject": "eng",
+  "name": "Unit 11. Breaking news",
+  "what": "Новини: непряма мова, дієслово + об'єкт + інфінітив.",
+  "topics": [
+    {
+      "id": "E11.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E11.1.1",
+          "name": "Reported statements",
+          "status": "planned",
+          "programmeRef": "Reported statements"
+        },
+        {
+          "id": "E11.1.2",
+          "name": "Verb patterns: object + infinitive",
+          "status": "planned",
+          "programmeRef": "Verb patterns: object + infinitive"
+        }
+      ]
+    },
+    {
+      "id": "E11.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E11.2.1",
+          "name": "Fun",
+          "status": "planned",
+          "programmeRef": "Fun"
+        },
+        {
+          "id": "E11.2.2",
+          "name": "Expressions with make",
+          "status": "planned",
+          "programmeRef": "WordWise: Expressions with make"
+        }
+      ]
+    },
+    {
+      "id": "E11.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E11.3.1",
+          "name": "Reporting what someone said. Expressing anger",
+          "status": "planned",
+          "programmeRef": "Developing Speaking: Expressing feelings: anger"
+        },
+        {
+          "id": "E11.3.2",
+          "name": "A news report",
+          "status": "planned",
+          "programmeRef": "A news report"
+        },
+        {
+          "id": "E11.3.3",
+          "name": "Intonation: rude or polite?",
+          "status": "planned",
+          "programmeRef": "Intonation: rude or polite?"
+        }
+      ]
+    }
+  ]
+}

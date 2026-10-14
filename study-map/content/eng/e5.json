@@ -1,0 +1,71 @@
+{
+  "id": "E5",
+  "subject": "eng",
+  "name": "Unit 5. Music to my ears",
+  "what": "Музика: Present Perfect Continuous, інструменти, фразові дієслова.",
+  "topics": [
+    {
+      "id": "E5.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E5.1.1",
+          "name": "Present perfect continuous",
+          "status": "planned",
+          "programmeRef": "Present perfect continuous"
+        },
+        {
+          "id": "E5.1.2",
+          "name": "Present perfect simple vs. continuous",
+          "status": "planned",
+          "programmeRef": "Present perfect simple vs. present perfect continuous"
+        }
+      ]
+    },
+    {
+      "id": "E5.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E5.2.1",
+          "name": "Making music. Musical instruments",
+          "status": "planned",
+          "programmeRef": "Making music; Musical instruments"
+        },
+        {
+          "id": "E5.2.2",
+          "name": "Phrasal verbs with out",
+          "status": "planned",
+          "programmeRef": "WordWise: Phrasal verbs with out"
+        }
+      ]
+    },
+    {
+      "id": "E5.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E5.3.1",
+          "name": "Making suggestions. Asking about feelings",
+          "status": "planned",
+          "programmeRef": "Developing Speaking: Asking about feelings"
+        },
+        {
+          "id": "E5.3.2",
+          "name": "The story of your favourite band",
+          "status": "planned",
+          "programmeRef": "The story of your favourite band"
+        },
+        {
+          "id": "E5.3.3",
+          "name": "been: strong and weak forms",
+          "status": "planned",
+          "programmeRef": "been: strong /biːn/ and weak /bɪn/"
+        }
+      ]
+    }
+  ]
+}

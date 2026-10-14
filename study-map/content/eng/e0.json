@@ -1,0 +1,70 @@
+{
+  "id": "E0",
+  "subject": "eng",
+  "name": "Welcome",
+  "what": "Повторення на початку року: знайомство, питання, погода, родина, їжа, покупки, плани.",
+  "topics": [
+    {
+      "id": "E0.1",
+      "name": "Welcome A–B",
+      "what": "Знайомство, питання, погода, родина, речі вдома.",
+      "subtopics": [
+        {
+          "id": "E0.1.1",
+          "name": "Introducing yourself. Asking questions",
+          "status": "planned",
+          "programmeRef": "Introducing yourself; Asking questions"
+        },
+        {
+          "id": "E0.1.2",
+          "name": "The weather. Families",
+          "status": "planned",
+          "programmeRef": "The weather; Families"
+        },
+        {
+          "id": "E0.1.3",
+          "name": "Irregular past participles",
+          "status": "planned",
+          "programmeRef": "Irregular past participles"
+        },
+        {
+          "id": "E0.1.4",
+          "name": "Furniture. Losing things",
+          "status": "planned",
+          "programmeRef": "Losing things; Furniture"
+        }
+      ]
+    },
+    {
+      "id": "E0.2",
+      "name": "Welcome C–D",
+      "what": "Їжа, магазини, обов'язки, плани, спорт, подорожі.",
+      "subtopics": [
+        {
+          "id": "E0.2.1",
+          "name": "Food. In a restaurant. Shops",
+          "status": "planned",
+          "programmeRef": "Buying and talking about food; In a restaurant; Shops"
+        },
+        {
+          "id": "E0.2.2",
+          "name": "Things you have to do",
+          "status": "planned",
+          "programmeRef": "Things you have to do"
+        },
+        {
+          "id": "E0.2.3",
+          "name": "Plans and arrangements. Travel plans",
+          "status": "planned",
+          "programmeRef": "Plans and arrangements"
+        },
+        {
+          "id": "E0.2.4",
+          "name": "Sports and sport verbs",
+          "status": "planned",
+          "programmeRef": "Sports and sport verbs"
+        }
+      ]
+    }
+  ]
+}

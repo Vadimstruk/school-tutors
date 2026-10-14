@@ -1,0 +1,83 @@
+{
+  "id": "E4",
+  "subject": "eng",
+  "name": "Unit 4. Online life",
+  "what": "Життя онлайн: технології, спілкування, поради.",
+  "topics": [
+    {
+      "id": "E4.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E4.1.1",
+          "name": "Indefinite pronouns",
+          "status": "planned",
+          "programmeRef": "Indefinite pronouns (everyone, no one, someone, etc.)"
+        },
+        {
+          "id": "E4.1.2",
+          "name": "all / some / none / any of them",
+          "status": "planned",
+          "programmeRef": "all / some / none / any of them"
+        },
+        {
+          "id": "E4.1.3",
+          "name": "should(n't), had better, ought to",
+          "status": "planned",
+          "programmeRef": "should(n't), had better, ought to"
+        },
+        {
+          "id": "E4.1.4",
+          "name": "Modal verbs in the past",
+          "status": "planned",
+          "programmeRef": "modal verbs in the past tense"
+        }
+      ]
+    },
+    {
+      "id": "E4.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E4.2.1",
+          "name": "IT terms",
+          "status": "planned",
+          "programmeRef": "IT terms"
+        },
+        {
+          "id": "E4.2.2",
+          "name": "Language for giving advice",
+          "status": "planned",
+          "programmeRef": "Language for giving advice"
+        }
+      ]
+    },
+    {
+      "id": "E4.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E4.3.1",
+          "name": "Giving advice",
+          "status": "planned",
+          "programmeRef": "Giving advice, talking about technology and ways of communicating and socialising"
+        },
+        {
+          "id": "E4.3.2",
+          "name": "A web page giving advice",
+          "status": "planned",
+          "programmeRef": "A web page giving advice"
+        },
+        {
+          "id": "E4.3.3",
+          "name": "The short /ʌ/ vowel sound",
+          "status": "planned",
+          "programmeRef": "The short /ʌ/ vowel sound"
+        }
+      ]
+    }
+  ]
+}

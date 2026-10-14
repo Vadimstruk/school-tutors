@@ -1,0 +1,71 @@
+{
+  "id": "E9",
+  "subject": "eng",
+  "name": "Unit 9. Working week",
+  "what": "Робота: пасивний стан, професії, запрошення.",
+  "topics": [
+    {
+      "id": "E9.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E9.1.1",
+          "name": "The passive: present and past simple",
+          "status": "planned",
+          "programmeRef": "The passive (present simple, past simple, present continuous, present perfect)"
+        },
+        {
+          "id": "E9.1.2",
+          "name": "The passive: present continuous and present perfect",
+          "status": "planned",
+          "programmeRef": "The passive (present simple, past simple, present continuous, present perfect)"
+        }
+      ]
+    },
+    {
+      "id": "E9.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E9.2.1",
+          "name": "Jobs. work as / in / for. work vs. job",
+          "status": "planned",
+          "programmeRef": "work as / in / for; work vs. job"
+        },
+        {
+          "id": "E9.2.2",
+          "name": "Time expressions with in",
+          "status": "planned",
+          "programmeRef": "WordWise: Time expressions with in"
+        }
+      ]
+    },
+    {
+      "id": "E9.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E9.3.1",
+          "name": "Accepting and refusing offers and invitations",
+          "status": "planned",
+          "programmeRef": "Developing Speaking: Accepting and refusing offers and invitations"
+        },
+        {
+          "id": "E9.3.2",
+          "name": "A short essay about jobs in the future",
+          "status": "planned",
+          "programmeRef": "A short essay about jobs in the future"
+        },
+        {
+          "id": "E9.3.3",
+          "name": "/tʃ/ and /dʒ/ consonant sounds",
+          "status": "planned",
+          "programmeRef": "/tʃ/ and /dʒ/ consonant sounds"
+        }
+      ]
+    }
+  ]
+}

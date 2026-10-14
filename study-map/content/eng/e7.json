@@ -1,0 +1,89 @@
+{
+  "id": "E7",
+  "subject": "eng",
+  "name": "Unit 7. The future is now",
+  "what": "Майбутнє: способи говорити про майбутнє, розділові питання.",
+  "topics": [
+    {
+      "id": "E7.1",
+      "name": "Grammar",
+      "what": "Граматика юніту.",
+      "subtopics": [
+        {
+          "id": "E7.1.1",
+          "name": "Future forms",
+          "status": "planned",
+          "programmeRef": "Future forms"
+        },
+        {
+          "id": "E7.1.2",
+          "name": "Question tags",
+          "status": "planned",
+          "programmeRef": "Question tags"
+        },
+        {
+          "id": "E7.1.3",
+          "name": "Nor, neither and so",
+          "status": "planned",
+          "programmeRef": "Nor, neither and so"
+        },
+        {
+          "id": "E7.1.4",
+          "name": "Future continuous",
+          "status": "planned",
+          "programmeRef": "future continuous tense"
+        }
+      ]
+    },
+    {
+      "id": "E7.2",
+      "name": "Vocabulary",
+      "what": "Нові слова й вирази.",
+      "subtopics": [
+        {
+          "id": "E7.2.1",
+          "name": "Future time expressions",
+          "status": "planned",
+          "programmeRef": "Future time expressions"
+        },
+        {
+          "id": "E7.2.2",
+          "name": "Arranging a party",
+          "status": "planned",
+          "programmeRef": "Arranging a party"
+        },
+        {
+          "id": "E7.2.3",
+          "name": "Phrases with about",
+          "status": "planned",
+          "programmeRef": "WordWise: Phrases with about"
+        }
+      ]
+    },
+    {
+      "id": "E7.3",
+      "name": "Speaking & Writing",
+      "what": "Говоріння, письмо й вимова.",
+      "subtopics": [
+        {
+          "id": "E7.3.1",
+          "name": "Checking information. Agreeing",
+          "status": "planned",
+          "programmeRef": "Developing Speaking: Agreeing"
+        },
+        {
+          "id": "E7.3.2",
+          "name": "An invitation to a party",
+          "status": "planned",
+          "programmeRef": "An invitation to a party"
+        },
+        {
+          "id": "E7.3.3",
+          "name": "Intonation of question tags",
+          "status": "planned",
+          "programmeRef": "Intonation of question tags"
+        }
+      ]
+    }
+  ]
+}

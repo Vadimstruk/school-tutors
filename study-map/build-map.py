@@ -37,7 +37,7 @@ SUBJECT_ID = re.compile(r"^[a-z][a-z0-9-]{0,39}$")
 SECTION_ID = re.compile(r"^[A-Za-z][A-Za-z0-9]{0,9}$")
 STATUSES = {"ready", "planned"}
 
-SUBJECT_KEYS = {"id", "name", "grade", "tutor", "tutorCall", "icon", "files"}
+SUBJECT_KEYS = {"id", "name", "grade", "tutor", "tutorCall", "icon", "files", "refLabel"}
 SECTION_KEYS = {"id", "subject", "name", "what", "topics"}
 TOPIC_KEYS = {"id", "name", "what", "subtopics"}
 SUBTOPIC_KEYS = {"id", "name", "status", "programmeRef", "lesson"}
@@ -672,6 +672,8 @@ def build_content(content_dir: Path, rep: Report) -> dict:
             if validate_section(rep, where, data, s["id"], seen_ids):
                 sections.append(data)
         subj = {k: s[k] for k in ("id", "name", "grade", "tutor", "tutorCall", "icon")}
+        if isinstance(s.get("refLabel"), str) and s["refLabel"].strip():
+            subj["refLabel"] = s["refLabel"].strip()
         subj["sections"] = sections
         out.append(subj)
 
