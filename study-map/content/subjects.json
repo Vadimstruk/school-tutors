@@ -27,6 +27,23 @@
         "geometry/g3.json",
         "geometry/g4.json"
       ]
+    },
+    {
+      "id": "ukr",
+      "name": "Українська мова",
+      "grade": 7,
+      "tutor": "Леся",
+      "tutorCall": "Лесю",
+      "icon": "📖",
+      "files": [
+        "ukr/u1.json",
+        "ukr/u2.json",
+        "ukr/u3.json",
+        "ukr/u4.json",
+        "ukr/u5.json",
+        "ukr/u6.json",
+        "ukr/u7.json"
+      ]
     }
   ]
 }
