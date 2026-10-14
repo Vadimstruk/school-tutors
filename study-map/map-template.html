@@ -29,6 +29,7 @@
   --bad: #b0413b;
   --bad-soft: #f6dfdd;
   --now: #b4530e;
+  --accent2: #c2410c;
   --now-soft: #fbe7d6;
   --next: #6247c8;
   --next-soft: #e9e4fb;
@@ -42,7 +43,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #14171d; --surface: #1c2028; --surface-2: #232833; --ink: #e9ebef; --ink-soft: #a9b0bc;
-    --line: #363d4a; --track: #2c323e; --accent: #4fc0cf; --accent-ink: #0d2226; --accent-soft: #1d3a40;
+    --line: #363d4a; --track: #2c323e; --accent: #4fc0cf; --accent-ink: #0d2226; --accent-soft: #1d3a40; --accent2: #f08a4b;
     --focus: #8aaeff; --good: #6cc792; --good-soft: #1e3628; --mid: #e6b45c; --mid-soft: #3a2f1a;
     --bad: #f08a83; --bad-soft: #3d2423; --now: #f0a064; --now-soft: #3e2a1b; --next: #b3a2ff; --next-soft: #2c2645;
     --planned: #7d838d; --s1: #4fc0cf; --s2: #b3a2ff; --s3: #f0a064; --s4: #6cc792;
@@ -52,7 +53,7 @@
 }
 :root[data-theme="dark"] {
   --bg: #14171d; --surface: #1c2028; --surface-2: #232833; --ink: #e9ebef; --ink-soft: #a9b0bc;
-  --line: #363d4a; --track: #2c323e; --accent: #4fc0cf; --accent-ink: #0d2226; --accent-soft: #1d3a40;
+  --line: #363d4a; --track: #2c323e; --accent: #4fc0cf; --accent-ink: #0d2226; --accent-soft: #1d3a40; --accent2: #f08a4b;
   --focus: #8aaeff; --good: #6cc792; --good-soft: #1e3628; --mid: #e6b45c; --mid-soft: #3a2f1a;
   --bad: #f08a83; --bad-soft: #3d2423; --now: #f0a064; --now-soft: #3e2a1b; --next: #b3a2ff; --next-soft: #2c2645;
   --planned: #7d838d; --s1: #4fc0cf; --s2: #b3a2ff; --s3: #f0a064; --s4: #6cc792;
@@ -241,6 +242,43 @@ table.acc .bar { width: 100%; min-width: 50px; }
 .weak { margin: 0; padding-left: 22px; display: grid; gap: 4px; }
 .tips { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
 
+/* ---------- Малюнки ---------- */
+.fig { margin: 12px 0 0; display: grid; justify-items: center; gap: 4px; min-width: 0; }
+.fig-svg { display: block; max-width: 100%; height: auto; overflow: visible; }
+.fig figcaption { font-size: .8rem; line-height: 1.4; color: var(--ink-soft); text-align: center; max-width: 340px; }
+.card { --fig-bg: var(--surface); }
+.example, .check { --fig-bg: var(--bg); }
+.fig .it { color: var(--ink); }
+/* Ореол під текстом малюнка: читається поверх ліній. */
+.fig .f-num, .fig .f-axl, .fig .plb, .fig .flb, .fig .alb { paint-order: stroke; stroke: var(--fig-bg, var(--surface)); stroke-width: 3px; stroke-linejoin: round; }
+.fig .s-hl { color: var(--accent); }
+.fig .s-hl2 { color: var(--accent2); }
+.fig .s-faint { color: var(--ink-soft); }
+.fig .stk { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.fig .stk.fill { fill: color-mix(in srgb, currentColor 10%, transparent); }
+.fig .s-hl .stk, .fig .s-hl2 .stk { stroke-width: 3; }
+.fig .s-faint .stk { stroke-width: 1.2; }
+.fig .s-dash .stk, .fig .s-dash .arc { stroke-dasharray: 6 5; }
+.fig .arc { fill: none; stroke: currentColor; stroke-width: 2; }
+.fig .alb { fill: currentColor; font: 700 14px var(--font-body); }
+.fig .tick { stroke: var(--accent2); stroke-width: 2.5; stroke-linecap: round; }
+.fig .s-hl .tick, .fig .s-hl2 .tick { stroke: currentColor; }
+.fig .rmk { fill: none; stroke: currentColor; stroke-width: 1.6; }
+.fig .pt { fill: var(--ink); }
+.fig .plb { fill: var(--ink); font: italic 700 17px var(--font-body); }
+.fig .flb { fill: currentColor; font: italic 700 15px var(--font-body); }
+.fig .f-grid { fill: none; stroke: var(--track); stroke-width: 1; }
+.fig .f-axis { fill: none; stroke: var(--ink-soft); stroke-width: 1.4; }
+.fig .f-arrow { fill: var(--ink-soft); }
+.fig .f-axl { fill: var(--ink-soft); font: italic 700 15px var(--font-body); }
+.fig .f-num { fill: var(--ink-soft); font: 600 12px var(--font-body); }
+/* Підсвітка на кроці прикладу: товстіше; без власного кольору — основний колір. */
+.fig .it.on { color: var(--accent); }
+.fig .it.on.s-hl2 { color: var(--accent2); }
+.fig .it.on .stk, .fig .it.on .arc { stroke-width: 4.5; }
+.fig .it.on .tick, .fig .it.on .rmk { stroke-width: 3; }
+.fig .it.on .alb, .fig .it.on .flb { font-weight: 800; font-size: 16px; }
+
 footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size: .82rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; }
 
 @media (max-width: 560px) {
@@ -278,7 +316,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-14d";
+const MAP_VERSION = "2026-10-14f";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -297,7 +335,7 @@ DATA.subjects.forEach((s, si) => {
         st.topic = t; st.section = sec; st.subject = s; SUB[st.id] = st;
         st.ready = st.status === "ready" && !!st.lesson;
         st.checks = st.ready ? (st.lesson.check || []).map((c, i) => ({ id: `${st.id}-${i + 1}`, q: c.q, a: c.a,
-          options: Array.isArray(c.options) ? c.options : null, correct: c.correct, accept: Array.isArray(c.accept) ? c.accept : null })) : [];
+          fig: c.fig || null, options: Array.isArray(c.options) ? c.options : null, correct: c.correct, accept: Array.isArray(c.accept) ? c.accept : null })) : [];
         st.examples = st.ready && Array.isArray(st.lesson.examples) ? st.lesson.examples : [];
         sec.subs.push(st); s.subs.push(st);
       });
@@ -539,6 +577,296 @@ function subRowHtml(st) {
   return `<li><button class="sub${isNext ? " is-next" : ""}" type="button" data-act="open" data-id="${st.id}" data-k="s-${st.id}" aria-label="${esc(plain(st.name))}, урок. ${STATUS[s][0]}${isNext ? ", наступний крок" : ""}">${label}${tags}</button></li>`;
 }
 
+/* ---------- Малюнки (fig): опис фігури → SVG. Формат — study-map/FIGURES.md ----------
+   Математичні координати (y вгору) переводимо в пікселі самі, тож товщина ліній не залежить від `view`.
+   Зламаний малюнок не малюємо (console.warn), сторінка працює далі. */
+const FIG = { maxW: 300, maxH: 300, pad: 26, dot: 3.5, tick: 12, tickGap: 5, right: 12, arcGap: 5 };
+let figSeq = 0;
+const SUBS = "₀₁₂₃₄₅₆₇₈₉";
+function figName(n) { const m = String(n).match(/^(.*?\D)(\d+)$/); return m ? m[1] + m[2].replace(/\d/g, d => SUBS[+d]) : String(n); }
+function figNum(v) { const r = Math.round(v * 1000) / 1000; return (r < 0 ? "−" : "") + String(Math.abs(r)).replace(".", ","); }
+const fin = v => typeof v === "number" && isFinite(v);
+const LP = { n: [0, -1], ne: [.75, -.75], e: [1, 0], se: [.75, .75], s: [0, 1], sw: [-.75, .75], w: [-1, 0], nw: [-.75, -.75] };
+function figStyle(s) {
+  const t = String(s || "").split(/\s+/).filter(Boolean);
+  return { cls: t.map(x => "s-" + x).join(" "), hl: t.includes("hl"), hl2: t.includes("hl2"), tokens: t };
+}
+// Відрізок, обрізаний прямокутником (Liang–Barsky). t0, t1 — межі параметра; повертає [x0, y0, x1, y1] або null.
+function clipLine(x0, y0, dx, dy, t0, t1, v) {
+  const p = [-dx, dx, -dy, dy], q = [x0 - v[0], v[2] - x0, y0 - v[1], v[3] - y0];
+  for (let i = 0; i < 4; i++) {
+    if (Math.abs(p[i]) < 1e-12) { if (q[i] < 0) return null; continue; }
+    const r = q[i] / p[i];
+    if (p[i] < 0) { if (r > t1) return null; if (r > t0) t0 = r; }
+    else { if (r < t0) return null; if (r < t1) t1 = r; }
+  }
+  return [x0 + t0 * dx, y0 + t0 * dy, x0 + t1 * dx, y0 + t1 * dy];
+}
+function renderFig(fig, hl) {
+  try { return buildFig(fig, hl || []); }
+  catch (e) { try { console.warn("Малюнок не намальовано:", e && e.message, fig && fig.caption); } catch (_) {} return ""; }
+}
+function buildFig(fig, hl) {
+  if (!isObj(fig)) throw new Error("fig не об'єкт");
+  const v = fig.view;
+  if (!Array.isArray(v) || v.length !== 4 || !v.every(fin) || v[0] >= v[2] || v[1] >= v[3]) throw new Error("погане view");
+  const P = {};
+  Object.keys(fig.points || {}).forEach(k => { const p = fig.points[k]; if (!Array.isArray(p) || p.length !== 2 || !fin(p[0]) || !fin(p[1])) throw new Error("погана точка " + k); P[k] = p; });
+  const pt = n => { if (Array.isArray(n) && n.length === 2 && fin(n[0]) && fin(n[1])) return n; if (!P[n]) throw new Error("немає точки " + n); return P[n]; };
+  const dx = v[2] - v[0], dy = v[3] - v[1];
+  const sc = Math.min(FIG.maxW / dx, FIG.maxH / dy), pad = FIG.pad;
+  const W = dx * sc + 2 * pad, H = dy * sc + 2 * pad;
+  const X = x => pad + (x - v[0]) * sc, Y = y => pad + (v[3] - y) * sc;
+  const f = n => Math.round(n * 10) / 10;
+  const id = "fg" + (++figSeq);
+  const back = [], body = [], top = [], front = [];
+  const hlSet = new Set(hl);
+  // Радіус дуги: біля спільної вершини менший кут — ближче до вершини (як у зразку).
+  const angRank = {};
+  (fig.items || []).forEach((it, i) => {
+    if (!isObj(it) || it.t !== "angle" || !Array.isArray(it.p) || it.p.length !== 3 || !P[it.p[0]] || !P[it.p[1]] || !P[it.p[2]]) return;
+    const [A, O, B] = it.p.map(n => P[n]), tA = Math.atan2(A[1] - O[1], A[0] - O[0]), tB = Math.atan2(B[1] - O[1], B[0] - O[0]);
+    let a = tB - tA; while (a <= -Math.PI) a += 2 * Math.PI; while (a > Math.PI) a -= 2 * Math.PI;
+    if (Math.abs(Math.abs(a) - Math.PI) < 1e-9) a = Math.PI; // розгорнутий — проти годинникової від OA
+    const s = a >= 0 ? tA : tB, d = Math.abs(a);
+    (angRank[it.p[1]] = angRank[it.p[1]] || []).push([d, i, s]);
+  });
+  // Дуга відходить далі від вершини лише тоді, коли всередині цього кута лежить менший кут
+  // (вкладені кути). Сусідні кути, що не перекриваються (напр. чотири кути при перетині прямих), — однаковий радіус.
+  const rankOf = {};
+  const norm = t => { t %= 2 * Math.PI; return t < 0 ? t + 2 * Math.PI : t; };
+  const inside = (inner, outer) => { const off = norm(inner[2] - outer[2]); return off <= outer[0] + 1e-6 && off + inner[0] <= outer[0] + 1e-6; };
+  Object.values(angRank).forEach(list => list.forEach(x => {
+    let k = 0;
+    list.forEach(y => { if (y !== x && (y[0] < x[0] - 1e-6 || (Math.abs(y[0] - x[0]) <= 1e-6 && y[1] < x[1])) && inside(y, x)) k++; });
+    rankOf[x[1]] = k;
+  }));
+  // Перешкоди для підписів: відрізки ліній (px) і зайняті прямокутники.
+  const segs = [], boxes = [], later = [];
+  const addSeg = (x1, y1, x2, y2) => segs.push([x1, y1, x2, y2]);
+  const hitBox = (sg, b) => !!clipLine(sg[0], sg[1], sg[2] - sg[0], sg[3] - sg[1], 0, 1, [b[0], b[1], b[2], b[3]]);
+  const overlap = (a, b) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
+  const textW = (txt, size) => [...String(txt)].reduce((w, ch) => w + (SUBS.includes(ch) ? 0.42 : /[ .,:;'′()|]/.test(ch) ? 0.3 : /[A-ZА-ЯІЇЄҐ]/.test(ch) ? 0.68 : 0.58) * size, 0);
+  // Ставить підпис у найкращий із кандидатів {x, y, ux, uy}: без перетину ліній, інших підписів і виходу за малюнок.
+  // opt.inside — прямокутник [x0, y0, x1, y1], у якому підпис має бути повністю (для fn/vline — видима область view); тоді без зсуву.
+  const viewBox = [X(v[0]), Y(v[3]), X(v[2]), Y(v[1])];
+  function place(cands, txt, cls, size, opt) {
+    opt = opt || {};
+    const w = textW(txt, size), h = size * 0.9;
+    let best = null;
+    cands.forEach((c, idx) => {
+      const anchor = c.ux > 0.38 ? "start" : c.ux < -0.38 ? "end" : "middle", base = c.uy > 0.38 ? "hanging" : c.uy < -0.38 ? "auto" : "central";
+      let x0 = anchor === "start" ? c.x : anchor === "end" ? c.x - w : c.x - w / 2;
+      let y0 = base === "hanging" ? c.y : base === "auto" ? c.y - h : c.y - h / 2;
+      let shift = 0, pen0 = 0;
+      if (opt.inside) { const r = opt.inside; if (x0 < r[0] || x0 + w > r[2] || y0 < r[1] || y0 + h > r[3]) pen0 = 200; }
+      else if (x0 < 2) { shift = 2 - x0; } else if (x0 + w > W - 2) { shift = W - 2 - (x0 + w); }
+      x0 += shift;
+      const b = [x0 - 1, y0 - 1, x0 + w + 1, y0 + h + 1];
+      let pen = pen0 + idx * 0.6 + Math.abs(shift) * 0.4;
+      if (b[1] < 0) pen += 40 + -b[1]; if (b[3] > H) pen += 40 + b[3] - H;
+      segs.forEach(sg => { if (hitBox(sg, b)) pen += 50; });
+      boxes.forEach(o => { const a = overlap(b, o); if (a > 0) pen += 30 + a * 0.05; });
+      if (!best || pen < best.pen) best = { pen, b, x: c.x + shift, y: c.y, anchor, base };
+    });
+    if (!best) return "";
+    boxes.push(best.b);
+    return `<text class="${cls}" x="${f(best.x)}" y="${f(best.y)}" text-anchor="${best.anchor}" dominant-baseline="${best.base}">${esc(txt)}</text>`;
+  }
+
+  if (isObj(fig.axes)) {
+    const st = +fig.axes.step > 0 ? +fig.axes.step : 1, ev = Math.max(1, Math.round(+fig.axes.every || 1));
+    const g = [];
+    for (let i = Math.ceil(v[0] / st); i * st <= v[2] + 1e-9; i++) g.push(`M${f(X(i * st))} ${f(Y(v[1]))}V${f(Y(v[3]))}`);
+    for (let i = Math.ceil(v[1] / st); i * st <= v[3] + 1e-9; i++) g.push(`M${f(X(v[0]))} ${f(Y(i * st))}H${f(X(v[2]))}`);
+    back.push(`<path class="f-grid" d="${g.join("")}"/>`);
+    const ax = [], nums = []; // лінії осей — знизу; підписи й числа — у верхньому шарі (top), з ореолом
+    const yAx = v[0] <= 0 && 0 <= v[2], xAx = v[1] <= 0 && 0 <= v[3];
+    const ox = X(Math.min(Math.max(0, v[0]), v[2])), oy = Y(Math.min(Math.max(0, v[1]), v[3]));
+    if (xAx) {
+      const x1 = X(v[2]) + 14;
+      addSeg(X(v[0]), oy, x1, oy);
+      ax.push(`<path class="f-axis" d="M${f(X(v[0]))} ${f(oy)}H${f(x1)}"/><path class="f-arrow" d="M${f(x1)} ${f(oy)}l-9 -4v8z"/>`);
+      top.push(`<text class="f-axl" x="${f(x1 - 2)}" y="${f(oy + 18)}" text-anchor="end">x</text>`); boxes.push([x1 - 12, oy + 4, x1, oy + 20]);
+    }
+    if (yAx) {
+      const y1 = Y(v[3]) - 14;
+      addSeg(ox, Y(v[1]), ox, y1);
+      ax.push(`<path class="f-axis" d="M${f(ox)} ${f(Y(v[1]))}V${f(y1)}"/><path class="f-arrow" d="M${f(ox)} ${f(y1)}l-4 9h8z"/>`);
+      top.push(`<text class="f-axl" x="${f(ox - 9)}" y="${f(y1 + 6)}" text-anchor="end">y</text>`); boxes.push([ox - 20, y1 - 8, ox - 8, y1 + 8]);
+    }
+    if (xAx && yAx) { top.push(`<text class="f-num" x="${f(ox - 5)}" y="${f(oy + 5)}" text-anchor="end" dominant-baseline="hanging">O</text>`); boxes.push([ox - 15, oy + 5, ox - 5, oy + 17]); }
+    const S = st * ev;
+    for (let i = Math.ceil(v[0] / S); i * S <= v[2] + 1e-9; i++) {
+      const x = i * S; if (Math.abs(x) < 1e-9 || X(x) > X(v[2]) - 10) continue;
+      top.push(`<text class="f-num" x="${f(X(x))}" y="${f(oy + 5)}" text-anchor="middle" dominant-baseline="hanging">${figNum(x)}</text>`);
+      { const w = textW(figNum(x), 12); boxes.push([X(x) - w / 2, oy + 5, X(x) + w / 2, oy + 17]); }
+      nums.push(`<path class="f-axis" d="M${f(X(x))} ${f(oy - 3)}v6"/>`);
+    }
+    for (let i = Math.ceil(v[1] / S); i * S <= v[3] + 1e-9; i++) {
+      const y = i * S; if (Math.abs(y) < 1e-9 || Y(y) < Y(v[3]) + 10) continue;
+      top.push(`<text class="f-num" x="${f(ox - 6)}" y="${f(Y(y))}" text-anchor="end" dominant-baseline="central">${figNum(y)}</text>`);
+      { const w = textW(figNum(y), 12); boxes.push([ox - 6 - w, Y(y) - 6, ox - 6, Y(y) + 6]); }
+      nums.push(`<path class="f-axis" d="M${f(ox - 3)} ${f(Y(y))}h6"/>`);
+    }
+    back.push(ax.join(""), nums.join(""));
+  }
+
+  const lineEnds = (a, b, t0, t1) => { const c = clipLine(a[0], a[1], b[0] - a[0], b[1] - a[1], t0, t1, v); if (!c) return ""; addSeg(X(c[0]), Y(c[1]), X(c[2]), Y(c[3])); return `M${f(X(c[0]))} ${f(Y(c[1]))}L${f(X(c[2]))} ${f(Y(c[3]))}`; };
+
+  (fig.items || []).forEach((it, idx) => {
+    if (!isObj(it)) throw new Error("елемент не об'єкт");
+    const sty = figStyle(it.s), on = it.id != null && hlSet.has(String(it.id));
+    const cls = `it t-${esc(it.t)} ${sty.cls}${on ? " on" : ""}`, data = it.id != null ? ` data-fid="${esc(it.id)}"` : "";
+    const out = [];
+    const p = Array.isArray(it.p) ? it.p.map(pt) : [];
+    switch (it.t) {
+      case "seg": {
+        if (p.length !== 2) throw new Error("seg: потрібні 2 точки");
+        addSeg(X(p[0][0]), Y(p[0][1]), X(p[1][0]), Y(p[1][1]));
+        out.push(`<path class="stk" d="M${f(X(p[0][0]))} ${f(Y(p[0][1]))}L${f(X(p[1][0]))} ${f(Y(p[1][1]))}" clip-path="url(#${id}-c)"/>`);
+        const n = Math.max(0, Math.min(3, Math.round(+it.ticks || 0)));
+        if (n) {
+          const ax = X(p[0][0]), ay = Y(p[0][1]), bx = X(p[1][0]), by = Y(p[1][1]), L = Math.hypot(bx - ax, by - ay) || 1;
+          const ux = (bx - ax) / L, uy = (by - ay) / L, nx = -uy, ny = ux, mx = (ax + bx) / 2, my = (ay + by) / 2, h = FIG.tick / 2;
+          let d = "";
+          for (let i = 0; i < n; i++) { const o = (i - (n - 1) / 2) * FIG.tickGap, cx = mx + ux * o, cy = my + uy * o; d += `M${f(cx - nx * h)} ${f(cy - ny * h)}L${f(cx + nx * h)} ${f(cy + ny * h)}`; }
+          out.push(`<path class="tick" d="${d}"/>`);
+        }
+        break;
+      }
+      case "ray": case "line": {
+        if (p.length !== 2) throw new Error(it.t + ": потрібні 2 точки");
+        if (p[0][0] === p[1][0] && p[0][1] === p[1][1]) throw new Error(it.t + ": точки збігаються");
+        const d = lineEnds(p[0], p[1], it.t === "ray" ? 0 : -1e9, 1e9);
+        if (d) out.push(`<path class="stk" d="${d}"/>`);
+        break;
+      }
+      case "poly": {
+        if (p.length < 3) throw new Error("poly: потрібно ≥ 3 точки");
+        p.forEach((q, j) => { const r2 = p[(j + 1) % p.length]; addSeg(X(q[0]), Y(q[1]), X(r2[0]), Y(r2[1])); });
+        out.push(`<path class="stk${it.fill ? " fill" : ""}" d="M${p.map(q => `${f(X(q[0]))} ${f(Y(q[1]))}`).join("L")}Z" clip-path="url(#${id}-c)"/>`);
+        break;
+      }
+      case "circle": {
+        const c = pt(it.c), r = it.through != null ? Math.hypot(pt(it.through)[0] - c[0], pt(it.through)[1] - c[1]) : +it.r;
+        if (!(r > 0)) throw new Error("circle: поганий радіус");
+        for (let j = 0; j < 36; j++) { const t0 = j * Math.PI / 18, t1 = (j + 1) * Math.PI / 18; addSeg(X(c[0]) + r * sc * Math.cos(t0), Y(c[1]) - r * sc * Math.sin(t0), X(c[0]) + r * sc * Math.cos(t1), Y(c[1]) - r * sc * Math.sin(t1)); }
+        out.push(`<circle class="stk" cx="${f(X(c[0]))}" cy="${f(Y(c[1]))}" r="${f(r * sc)}" clip-path="url(#${id}-c)"/>`);
+        break;
+      }
+      case "angle": {
+        if (p.length !== 3) throw new Error("angle: потрібні 3 точки");
+        const [A, O, B] = p, a1 = Math.atan2(A[1] - O[1], A[0] - O[0]), a2 = Math.atan2(B[1] - O[1], B[0] - O[0]);
+        let d = a2 - a1; while (d <= -Math.PI) d += 2 * Math.PI; while (d > Math.PI) d -= 2 * Math.PI;
+        if (Math.abs(Math.abs(d) - Math.PI) < 1e-6) d = Math.PI; // розгорнутий — проти годинникової від OA до OB
+        const k = (rankOf[idx] || 0) + 1;
+        const lenA = Math.hypot(A[0] - O[0], A[1] - O[1]) * sc, lenB = Math.hypot(B[0] - O[0], B[1] - O[1]) * sc;
+        if (!(lenA > 0 && lenB > 0)) throw new Error("angle: нульовий промінь");
+        const arcs = Math.max(1, Math.min(3, Math.round(+it.arcs || 1)));
+        let r = fin(it.r) && it.r > 0 ? it.r : Math.max(16, Math.min(28 + (k - 1) * 12, 0.45 * Math.min(lenA, lenB)));
+        const cx = X(O[0]), cy = Y(O[1]);
+        const at = (th, rr) => [cx + rr * Math.cos(th), cy - rr * Math.sin(th)];
+        let path = "";
+        for (let i = 0; i < arcs; i++) {
+          const rr = r + i * FIG.arcGap, m = a1 + d / 2, s0 = at(a1, rr), s1 = at(m, rr), s2 = at(a1 + d, rr), sw = d > 0 ? 0 : 1;
+          path += `M${f(s0[0])} ${f(s0[1])}A${f(rr)} ${f(rr)} 0 0 ${sw} ${f(s1[0])} ${f(s1[1])}A${f(rr)} ${f(rr)} 0 0 ${sw} ${f(s2[0])} ${f(s2[1])}`;
+        }
+        out.push(`<path class="arc" d="${path}"/>`);
+        if (it.label != null && String(it.label) !== "") {
+          const m = a1 + d / 2, ux = Math.cos(m), uy = -Math.sin(m), txt = String(it.label);
+          const outer = r + (arcs - 1) * FIG.arcGap, tw = textW(txt, 14), dist = outer + 6 + Math.abs(ux) * tw / 2 + Math.abs(uy) * 8;
+          const lx = cx + ux * dist, ly = cy + uy * dist, lw = textW(txt, 14);
+          boxes.push([lx - lw / 2, ly - 7, lx + lw / 2, ly + 7]);
+          out.push(`<text class="alb" x="${f(lx)}" y="${f(ly)}" text-anchor="middle" dominant-baseline="central">${esc(txt)}</text>`);
+        }
+        break;
+      }
+      case "right": {
+        if (p.length !== 3) throw new Error("right: потрібні 3 точки");
+        const [A, Hh, B] = p, hx = X(Hh[0]), hy = Y(Hh[1]);
+        const u = [X(A[0]) - hx, Y(A[1]) - hy], w = [X(B[0]) - hx, Y(B[1]) - hy], lu = Math.hypot(...u), lw = Math.hypot(...w);
+        if (!(lu > 0 && lw > 0)) throw new Error("right: нульова сторона");
+        const s = FIG.right, a = [hx + u[0] / lu * s, hy + u[1] / lu * s], b = [hx + w[0] / lw * s, hy + w[1] / lw * s];
+        out.push(`<path class="rmk" d="M${f(a[0])} ${f(a[1])}L${f(a[0] + b[0] - hx)} ${f(a[1] + b[1] - hy)}L${f(b[0])} ${f(b[1])}"/>`);
+        break;
+      }
+      case "label": {
+        const q = pt(it.at);
+        { const lw = textW(it.text, 15); boxes.push([X(q[0]) - lw / 2, Y(q[1]) - 8, X(q[0]) + lw / 2, Y(q[1]) + 8]); }
+        out.push(`<text class="flb" x="${f(X(q[0]))}" y="${f(Y(q[1]))}" text-anchor="middle" dominant-baseline="central">${esc(it.text)}</text>`);
+        break;
+      }
+      case "fn": {
+        if (!fin(it.k) || !fin(it.b)) throw new Error("fn: k і b — числа");
+        const c = clipLine(v[0], it.k * v[0] + it.b, dx, it.k * dx, 0, 1, v);
+        if (c) {
+          const sx = X(c[0]), sy = Y(c[1]), ex = X(c[2]), ey = Y(c[3]);
+          addSeg(sx, sy, ex, ey);
+          out.push(`<path class="stk" d="M${f(sx)} ${f(sy)}L${f(ex)} ${f(ey)}"/>`);
+          if (it.label) {
+            const L = Math.hypot(ex - sx, ey - sy) || 1, ux = (ex - sx) / L, uy = (ey - sy) / L, cands = [];
+            // Уздовж видимої частини прямої, по обидва боки, перпендикулярно до неї.
+            [10, 18].forEach(off => [0.8, 0.65, 0.5, 0.35, 0.2].forEach(t => [[uy, -ux], [-uy, ux]].forEach(([nx, ny]) => cands.push({ x: sx + (ex - sx) * t + nx * off, y: sy + (ey - sy) * t + ny * off, ux: nx, uy: ny }))));
+            later.push({ g: idx, html: () => place(cands, it.label, "flb", 15, { inside: viewBox }) });
+          }
+        }
+        break;
+      }
+      case "vline": {
+        if (!fin(it.x)) throw new Error("vline: x — число");
+        if (it.x >= v[0] && it.x <= v[2]) {
+          const xx = X(it.x); addSeg(xx, Y(v[1]), xx, Y(v[3]));
+          out.push(`<path class="stk" d="M${f(xx)} ${f(Y(v[1]))}V${f(Y(v[3]))}"/>`);
+          if (it.label) {
+            const cands = [];
+            [10, 18].forEach(off => [0.8, 0.65, 0.5, 0.35, 0.2].forEach(t => { const yy = Y(v[1]) + (Y(v[3]) - Y(v[1])) * t; cands.push({ x: xx + off, y: yy, ux: 1, uy: 0 }, { x: xx - off, y: yy, ux: -1, uy: 0 }); }));
+            later.push({ g: idx, html: () => place(cands, it.label, "flb", 15, { inside: viewBox }) });
+          }
+        }
+        break;
+      }
+      case "plot": {
+        const ps = (it.pts || []).map(q => pt(q));
+        if (ps.length < 2) throw new Error("plot: потрібно ≥ 2 точки");
+        ps.slice(1).forEach((q, j) => addSeg(X(ps[j][0]), Y(ps[j][1]), X(q[0]), Y(q[1])));
+        out.push(`<path class="stk" d="M${ps.map(q => `${f(X(q[0]))} ${f(Y(q[1]))}`).join("L")}" clip-path="url(#${id}-c)"/>`);
+        break;
+      }
+      default: throw new Error("невідомий тип " + it.t);
+    }
+    body.push([`<g class="${cls}"${data}>${out.join("")}`, "</g>"]);
+  });
+
+  // Точки й підписи — поверх усього.
+  const hide = new Set(Array.isArray(fig.hide) ? fig.hide : []), lp = isObj(fig.lp) ? fig.lp : {};
+  const shown = Object.keys(P).filter(k => !hide.has(k));
+  const cxm = shown.reduce((a, k) => a + P[k][0], 0) / (shown.length || 1), cym = shown.reduce((a, k) => a + P[k][1], 0) / (shown.length || 1);
+  shown.forEach(k => { const x = X(P[k][0]), y = Y(P[k][1]); boxes.push([x - 4, y - 4, x + 4, y + 4]); front.push(`<circle class="pt" cx="${f(x)}" cy="${f(y)}" r="${FIG.dot}"/>`); });
+  const dirs = Object.keys(LP).map(key => { const [a, b] = LP[key], L = Math.hypot(a, b); return [a / L, b / L]; });
+  shown.forEach(k => {
+    const x = X(P[k][0]), y = Y(P[k][1]);
+    let prefer = LP[lp[k]] ? [LP[lp[k]]] : null;
+    if (!prefer) {
+      let ax = P[k][0] - cxm, ay = -(P[k][1] - cym); const L = Math.hypot(ax, ay);
+      if (L < 1e-9) { ax = 0.7; ay = -0.7; } else { ax /= L; ay /= L; }
+      prefer = dirs.slice().sort((p1, p2) => (p2[0] * ax + p2[1] * ay) - (p1[0] * ax + p1[1] * ay));
+    }
+    const cands = prefer.map(([a, b]) => { const L = Math.hypot(a, b); return { x: x + a / L * 9, y: y + b / L * 9, ux: a / L, uy: b / L }; });
+    // Власна точка не заважає своєму підпису: тимчасово прибираємо її квадратик.
+    const own = boxes.findIndex(bx => bx[0] === x - 4 && bx[1] === y - 4);
+    const saved = own >= 0 ? boxes.splice(own, 1)[0] : null;
+    front.push(place(cands, figName(k), "plb", 17));
+    if (saved) boxes.push(saved);
+  });
+  later.forEach(l => { body[l.g] && (body[l.g][0] += l.html()); });
+  const cap = String(fig.caption || "");
+  return `<figure class="fig"><svg class="fig-svg" viewBox="0 0 ${f(W)} ${f(H)}" width="${f(W)}" height="${f(H)}" role="img" aria-label="${esc(cap)}">`
+    + `<defs><clipPath id="${id}-c"><rect x="${f(X(v[0]))}" y="${f(Y(v[3]))}" width="${f(dx * sc)}" height="${f(dy * sc)}"/></clipPath></defs>`
+    + back.join("") + body.map(x => x.join("")).join("") + top.join("") + front.join("")
+    + `</svg>${cap ? `<figcaption aria-hidden="true">${esc(cap)}</figcaption>` : ""}</figure>`;
+}
+
 /* ---------- Урок ---------- */
 function lessonHtml(st) {
   const L = st.lesson, s = st.subject, stt = statusOf(st), p = practiceOf(st.id);
@@ -554,7 +882,7 @@ function lessonHtml(st) {
       <h2 class="lesson-title" id="lesson-title" tabindex="-1"><span class="code">${esc(st.id)}</span> ${rich(st.name)}</h2>
       <div class="row" style="margin-top:8px">${isNext ? `<span class="badge next">Наступний крок</span>` : ""}${stt !== "new" ? `<span class="pill ${STATUS[stt][1]}">${STATUS[stt][0]}</span>` : ""}</div>
     </div>
-    <section class="card"><h3>Що це</h3><p>${rich(L.what)}</p></section>
+    <section class="card"><h3>Що це</h3><p>${rich(L.what)}</p>${L.fig ? renderFig(L.fig) : ""}</section>
     ${(L.ideas || []).length ? `<section class="card"><h3>Головне</h3><ul>${L.ideas.map(x => `<li>${rich(x)}</li>`).join("")}</ul></section>` : ""}
     ${(L.rules || []).length ? `<section class="card"><h3>Правила</h3><div class="rules">${L.rules.map(r => `<div class="rule"><div class="f">${rich(r.f)}</div><div class="m">${rich(r.means)}</div></div>`).join("")}</div></section>` : ""}
     ${st.examples.length ? `<section class="card" id="examples"><h3>Розв'язуємо разом</h3><div class="examples">${st.examples.map((ex, k) => exampleHtml(st, ex, k)).join("")}</div></section>` : ""}
@@ -575,6 +903,7 @@ function exampleHtml(st, ex, k) {
   const key = `${st.id}#${k}`, shown = ui.steps[key] || 0, steps = ex.steps || [], n = st.examples.length;
   return `<div class="example"><p class="ex-n">Приклад ${k + 1} з ${n}</p>
     <p class="task">${rich(ex.task)}</p>
+    ${ex.fig ? renderFig(ex.fig, shown > 0 && shown < steps.length && Array.isArray(steps[shown - 1].hl) ? steps[shown - 1].hl.map(String) : []) : ""}
     <ol class="steps" aria-live="polite">${steps.slice(0, shown).map(x => `<li><span class="do">${rich(x.do)}</span><span class="why"><b>Чому:</b> ${rich(x.why)}</span></li>`).join("")}</ol>
     ${shown < steps.length
       ? `<div class="row" style="margin-top:12px"><button class="btn" type="button" data-act="step" data-id="${st.id}" data-ex="${k}" data-k="step-${k}">${shown === 0 ? "Показати перший крок" : `Наступний крок (${shown + 1} з ${steps.length})`}</button><button class="btn ghost" type="button" data-act="steps-all" data-id="${st.id}" data-ex="${k}" data-k="steps-all-${k}">Показати все</button></div>`
@@ -604,7 +933,7 @@ function isAccepted(c, input) {
 }
 function checkHtml(c, i) {
   const stored = progress.checks[c.id], u = ui.chk[c.id];
-  const head = `<p class="q">${i + 1}. ${rich(c.q)}</p>`;
+  const head = `${c.fig ? renderFig(c.fig) : ""}<p class="q">${i + 1}. ${rich(c.q)}</p>`;
   const explain = `<p class="a"><b>Пояснення:</b> ${rich(c.a)}</p>`;
   const again = `<div class="row"><button class="btn ghost" type="button" data-act="chk-again" data-id="${c.id}" data-k="again-${c.id}">Спробувати ще раз</button></div>`;
   // Уже відповідали раніше (або щойно): показати результат і пояснення.
