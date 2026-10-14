@@ -1,3 +1,32 @@
 {
-  "subjects": []
+  "subjects": [
+    {
+      "id": "algebra",
+      "name": "Алгебра",
+      "grade": 7,
+      "tutor": "Оля",
+      "tutorCall": "Олю",
+      "icon": "➗",
+      "files": [
+        "algebra/a1.json",
+        "algebra/a2.json",
+        "algebra/a3.json",
+        "algebra/a4.json"
+      ]
+    },
+    {
+      "id": "geometry",
+      "name": "Геометрія",
+      "grade": 7,
+      "tutor": "Оля",
+      "tutorCall": "Олю",
+      "icon": "📐",
+      "files": [
+        "geometry/g1.json",
+        "geometry/g2.json",
+        "geometry/g3.json",
+        "geometry/g4.json"
+      ]
+    }
+  ]
 }
