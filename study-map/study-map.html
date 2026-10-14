@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Моя карта навчання</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Карта навчання для 7 класу: предмет → розділ → тема → підтема → урок.
+   Шрифти з Google Fonts мають кирилицю; без мережі сторінка бере системні шрифти. */
+:root {
+  --bg: #f6f4ee;
+  --surface: #ffffff;
+  --surface-2: #f1eee6;
+  --ink: #1f2933;
+  --ink-soft: #55606b;
+  --line: #d8d3c7;
+  --track: #e6e1d6;
+  --accent: #19717f;
+  --accent-ink: #ffffff;
+  --accent-soft: #dcefF1;
+  --focus: #2457d6;
+  --good: #2e7a4c;
+  --good-soft: #def0e4;
+  --mid: #9a6400;
+  --mid-soft: #f7ead2;
+  --bad: #b0413b;
+  --bad-soft: #f6dfdd;
+  --now: #b4530e;
+  --now-soft: #fbe7d6;
+  --next: #6247c8;
+  --next-soft: #e9e4fb;
+  --planned: #8b9097;
+  --s1: #19717f; --s2: #6247c8; --s3: #b4530e; --s4: #2e7a4c;
+  --shadow: 0 1px 2px rgba(31, 41, 51, .06), 0 4px 14px rgba(31, 41, 51, .06);
+  --font-body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171d; --surface: #1c2028; --surface-2: #232833; --ink: #e9ebef; --ink-soft: #a9b0bc;
+    --line: #363d4a; --track: #2c323e; --accent: #4fc0cf; --accent-ink: #0d2226; --accent-soft: #1d3a40;
+    --focus: #8aaeff; --good: #6cc792; --good-soft: #1e3628; --mid: #e6b45c; --mid-soft: #3a2f1a;
+    --bad: #f08a83; --bad-soft: #3d2423; --now: #f0a064; --now-soft: #3e2a1b; --next: #b3a2ff; --next-soft: #2c2645;
+    --planned: #7d838d; --s1: #4fc0cf; --s2: #b3a2ff; --s3: #f0a064; --s4: #6cc792;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171d; --surface: #1c2028; --surface-2: #232833; --ink: #e9ebef; --ink-soft: #a9b0bc;
+  --line: #363d4a; --track: #2c323e; --accent: #4fc0cf; --accent-ink: #0d2226; --accent-soft: #1d3a40;
+  --focus: #8aaeff; --good: #6cc792; --good-soft: #1e3628; --mid: #e6b45c; --mid-soft: #3a2f1a;
+  --bad: #f08a83; --bad-soft: #3d2423; --now: #f0a064; --now-soft: #3e2a1b; --next: #b3a2ff; --next-soft: #2c2645;
+  --planned: #7d838d; --s1: #4fc0cf; --s2: #b3a2ff; --s3: #f0a064; --s4: #6cc792;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--font-body); overflow-x: hidden; }
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
+sub, sup { line-height: 0; }
+h1, h2, h3, p { margin: 0; }
+.code { font: 600 .8em/1 var(--font-mono); color: var(--ink-soft); white-space: nowrap; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Шапка ---------- */
+header.top { background: var(--surface); border-bottom: 1px solid var(--line); }
+.top-inner { max-width: 880px; margin: 0 auto; padding: 14px 16px 0; display: grid; gap: 10px; }
+.top-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.brand { font-size: 1.3rem; font-weight: 800; letter-spacing: -.01em; line-height: 1.2; }
+.brand small { display: block; font-size: .92rem; font-weight: 600; color: var(--ink-soft); letter-spacing: 0; }
+.toggle { min-height: 44px; border: 2px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 16px; font-weight: 700; }
+.toggle:hover { border-color: var(--ink-soft); }
+.toggle[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; margin: 0 -4px; padding: 0 4px; }
+.tab { flex: none; min-height: 48px; border: 0; background: none; padding: 8px 14px; border-bottom: 4px solid transparent; font-weight: 700; color: var(--ink-soft); display: flex; align-items: center; gap: 8px; border-radius: 8px 8px 0 0; }
+.tab:hover { color: var(--ink); background: var(--surface-2); }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--tab-c, var(--accent)); }
+.tab .ic { font-size: 1.2rem; line-height: 1; }
+.tabs-spacer { height: 0; }
+
+/* ---------- Основна частина ---------- */
+main { max-width: 880px; margin: 0 auto; padding: 20px 16px 40px; display: grid; gap: 18px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); min-width: 0; }
+.card h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+.card p + p { margin-top: 8px; }
+.note { font-size: .9rem; color: var(--ink-soft); }
+.btn { min-height: 44px; border: 2px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 12px; padding: 8px 16px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-align: center; }
+.btn:hover { filter: brightness(1.07); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); font-weight: 700; }
+.btn.ghost:hover { border-color: var(--ink-soft); filter: none; }
+.btn[aria-pressed="true"].mark { background: var(--good); border-color: var(--good); color: #fff; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+/* Вступ до предмета */
+.intro { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: center; }
+.intro h2 { font-size: 1.35rem; font-weight: 800; line-height: 1.25; }
+.intro .sub-line { color: var(--ink-soft); font-size: .95rem; }
+.hints { display: grid; gap: 10px; }
+.hint { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 14px; border-radius: 12px; border: 1px solid transparent; }
+.hint.now { background: var(--now-soft); border-color: color-mix(in srgb, var(--now) 35%, transparent); }
+.hint.next { background: var(--next-soft); border-color: color-mix(in srgb, var(--next) 35%, transparent); }
+.hint .lbl { font-weight: 800; }
+.hint.now .lbl { color: var(--now); }
+.hint.next .lbl { color: var(--next); }
+.chip { min-height: 40px; display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 4px 14px; font-weight: 700; font-size: .92rem; border: 2px solid currentColor; background: var(--surface); }
+.chip.next { color: var(--next); }
+.chip.now { color: var(--now); }
+.chip:hover { background: var(--surface-2); }
+.badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 1px 10px; font-size: .78rem; font-weight: 800; line-height: 1.6; white-space: nowrap; }
+.badge.now { background: var(--now); color: #fff; }
+.badge.next { background: var(--next); color: #fff; }
+
+/* Умовні позначення */
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .85rem; color: var(--ink-soft); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* Кільце прогресу */
+.ring { flex: none; display: block; }
+.ring .trk { fill: none; stroke: var(--track); }
+.ring .val { fill: none; stroke: var(--ring-c, var(--accent)); stroke-linecap: round; }
+.ring text { font: 800 12px var(--font-body); fill: var(--ink); text-anchor: middle; dominant-baseline: central; }
+.ring.big text { font-size: 15px; }
+
+/* Дерево */
+.tree, .topics, .subs { list-style: none; margin: 0; padding: 0; }
+.tree { display: grid; gap: 14px; }
+.sec { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; min-width: 0; }
+.sec > h2, .topic > h3 { margin: 0; font-size: inherit; }
+.sec-head { width: 100%; min-height: 72px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; text-align: left; background: none; border: 0; padding: 14px 16px; }
+.sec-head:hover { background: var(--surface-2); }
+.sec-head .nm { display: block; font-size: 1.1rem; font-weight: 800; line-height: 1.3; overflow-wrap: anywhere; }
+.sec-head .meta { display: block; font-size: .85rem; color: var(--ink-soft); }
+.chev { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: var(--surface-2); transition: transform .15s; font-size: .8rem; color: var(--ink-soft); }
+[aria-expanded="true"] > .chev { transform: rotate(90deg); }
+.sec-body { padding: 0 16px 16px; display: grid; gap: 10px; }
+.sec-body > .what { color: var(--ink-soft); font-size: .95rem; }
+.topics { display: grid; gap: 8px; }
+.topic { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); min-width: 0; }
+.topic.now { border: 2px solid var(--now); background: var(--now-soft); }
+.topic-head { width: 100%; min-height: 56px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: center; text-align: left; background: none; border: 0; padding: 10px 12px; border-radius: 12px; }
+.topic-head:hover { background: color-mix(in srgb, var(--surface-2) 70%, transparent); }
+.topic-head .t1 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; min-width: 0; }
+.topic-head .nm { font-weight: 800; overflow-wrap: anywhere; }
+.topic-head .t2 { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; font-size: .82rem; color: var(--ink-soft); }
+.topic-head .chev { grid-row: 1; grid-column: 2; }
+.bar { height: 10px; border-radius: 5px; background: var(--track); overflow: hidden; display: block; min-width: 60px; }
+.bar i { display: block; height: 100%; background: var(--bar-c, var(--accent)); border-radius: 5px; }
+.topic-body { padding: 0 12px 12px; display: grid; gap: 8px; }
+.topic-body > .what { font-size: .92rem; color: var(--ink-soft); }
+.subs { display: grid; gap: 6px; }
+.sub { width: 100%; min-height: 48px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 8px 12px; }
+button.sub:hover { border-color: var(--ink-soft); }
+.sub .nm { font-weight: 700; overflow-wrap: anywhere; }
+.sub .tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; align-items: center; }
+.sub.planned { background: transparent; border-style: dashed; color: var(--planned); }
+.sub.planned .nm { font-weight: 600; }
+.sub.is-next { border: 2px solid var(--next); }
+.pill { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 1px 10px; font-size: .78rem; font-weight: 800; line-height: 1.6; white-space: nowrap; background: var(--surface-2); color: var(--ink-soft); }
+.pill.st-read { background: var(--accent-soft); color: var(--accent); }
+.pill.st-checked { background: var(--mid-soft); color: var(--mid); }
+.pill.st-mastered { background: var(--good-soft); color: var(--good); }
+.pill.st-planned { background: transparent; border: 1px dashed var(--planned); color: var(--planned); }
+.pill.prac { background: transparent; border: 1px solid var(--line); color: var(--ink-soft); font-family: var(--font-mono); font-weight: 600; }
+.empty { text-align: center; padding: 36px 20px; display: grid; gap: 10px; justify-items: center; }
+.empty .big { font-size: 2.6rem; line-height: 1; }
+.empty h2 { font-size: 1.3rem; font-weight: 800; }
+.empty p { max-width: 46ch; color: var(--ink-soft); }
+
+/* ---------- Урок ---------- */
+.lesson { display: grid; gap: 16px; min-width: 0; }
+.crumbs { font-size: .88rem; color: var(--ink-soft); overflow-wrap: anywhere; }
+.lesson-title { font-size: 1.5rem; font-weight: 800; line-height: 1.25; overflow-wrap: anywhere; }
+.lesson-title:focus { outline: none; }
+.lesson-title:focus-visible { outline: 3px solid var(--focus); }
+.lesson .card ul, .lesson .card ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+.rules { display: grid; gap: 10px; }
+.rule { border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: 10px; padding: 10px 12px; background: var(--bg); display: grid; gap: 4px; min-width: 0; }
+.rule .f { font: 600 1.05rem/1.5 var(--font-mono); overflow-wrap: anywhere; }
+.rule .m { font-size: .95rem; color: var(--ink-soft); }
+.task { padding: 12px 14px; border-radius: 10px; background: var(--surface-2); font-weight: 600; }
+ol.steps { list-style: none; padding: 0 !important; counter-reset: st; margin-top: 12px !important; }
+ol.steps li { counter-increment: st; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 4px 10px; align-items: start; }
+ol.steps li::before { content: counter(st); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font-weight: 800; font-size: .9rem; grid-row: span 2; }
+ol.steps .do { font-weight: 700; }
+ol.steps .why { font-size: .93rem; color: var(--ink-soft); }
+ol.steps .why b { color: var(--ink); }
+.answer { margin-top: 12px; padding: 10px 14px; border-radius: 10px; background: var(--good-soft); color: var(--ink); }
+.answer b { color: var(--good); }
+.mistakes li::marker { content: "⚠︎  "; color: var(--mid); }
+.checks { display: grid; gap: 10px; }
+.check { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 10px; background: var(--bg); }
+.check .q { font-weight: 700; }
+.check .a { padding: 8px 12px; border-radius: 8px; background: var(--surface); border: 1px dashed var(--line); }
+.check .res { font-size: .9rem; font-weight: 700; }
+.check .res.know { color: var(--good); }
+.check .res.not-yet { color: var(--mid); }
+.btn.know[aria-pressed="true"] { background: var(--good); border-color: var(--good); color: #fff; }
+.btn.not-yet[aria-pressed="true"] { background: var(--mid); border-color: var(--mid); color: #fff; }
+.ask { display: grid; gap: 10px; }
+.ask textarea { width: 100%; min-height: 64px; resize: none; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--bg); color: var(--ink); font-size: .95rem; line-height: 1.45; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pager .btn { justify-content: flex-start; text-align: left; min-width: 0; }
+.pager .btn.nx { justify-content: flex-end; text-align: right; grid-column: 2; }
+.pager .btn span { overflow-wrap: anywhere; }
+.ref { font-size: .85rem; color: var(--ink-soft); border-left: 3px solid var(--line); padding-left: 10px; }
+
+/* ---------- Для батьків ---------- */
+.par-head h2 { font-size: 1.35rem; font-weight: 800; }
+.subj-cards { display: grid; gap: 14px; }
+.meter { display: grid; gap: 4px; }
+.meter .lbl { display: flex; justify-content: space-between; gap: 10px; font-size: .92rem; }
+.meter .lbl b { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.meter .bar { height: 14px; border-radius: 7px; }
+.meters { display: grid; gap: 10px; margin-top: 10px; }
+table.acc { width: 100%; border-collapse: collapse; font-size: .92rem; }
+table.acc th, table.acc td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--track); vertical-align: middle; }
+table.acc th { font-size: .8rem; color: var(--ink-soft); font-weight: 700; }
+table.acc td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+table.acc .bar { width: 100%; min-width: 50px; }
+.weak { margin: 0; padding-left: 22px; display: grid; gap: 4px; }
+.tips { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+
+footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size: .82rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; }
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .card { padding: 14px; border-radius: 14px; }
+  .sec-head { padding: 12px; gap: 10px; }
+  .sec-body { padding: 0 10px 12px; }
+  .intro { grid-template-columns: minmax(0, 1fr); }
+  .intro .ring { display: none; }
+  .sub { grid-template-columns: minmax(0, 1fr); }
+  .sub .tags { justify-content: flex-start; }
+  .pager { grid-template-columns: minmax(0, 1fr); }
+  .pager .btn.nx { grid-column: 1; }
+  .lesson-title { font-size: 1.3rem; }
+  table.acc .barcol { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .chev { transition: none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="top-row">
+      <h1 class="brand" id="brand">Моя карта навчання<small id="who"></small></h1>
+      <button class="toggle" id="parents-toggle" type="button" aria-pressed="false">Для батьків</button>
+    </div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Предмети"></div>
+    <div class="tabs-spacer"></div>
+  </div>
+</header>
+<main id="main" tabindex="-1" aria-live="off"></main>
+<footer class="foot"><span id="store-status"></span><span id="ver"></span></footer>
+
+<script>
+/* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
+const CONTENT = {"subjects":[]};
+// Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
+const MAP_VERSION = "2026-10-14a";
+const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
+
+/* ---------- Покажчики ---------- */
+const SUBJ = {}, SEC = {}, TOP = {}, SUB = {};
+DATA.subjects.forEach((s, si) => {
+  s.color = `var(--s${(si % 4) + 1})`;
+  s.sections = Array.isArray(s.sections) ? s.sections : [];
+  s.subs = [];
+  SUBJ[s.id] = s;
+  s.sections.forEach(sec => {
+    sec.subject = s; SEC[sec.id] = sec; sec.subs = [];
+    (sec.topics || []).forEach(t => {
+      t.section = sec; t.subject = s; TOP[t.id] = t;
+      t.subtopics = t.subtopics || [];
+      t.subtopics.forEach(st => {
+        st.topic = t; st.section = sec; st.subject = s; SUB[st.id] = st;
+        st.ready = st.status === "ready" && !!st.lesson;
+        st.checks = st.ready ? (st.lesson.check || []).map((c, i) => ({ id: `${st.id}-${i + 1}`, q: c.q, a: c.a })) : [];
+        sec.subs.push(st); s.subs.push(st);
+      });
+    });
+  });
+});
+
+/* ---------- Сховище ---------- */
+const LS_PROGRESS = "school-map:progress", LS_UI = "school-map:ui";
+function lsGet(k) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+const clone = o => JSON.parse(JSON.stringify(o == null ? {} : o));
+const isObj = v => !!v && typeof v === "object" && !Array.isArray(v);
+function deepMerge(into, patch) {
+  Object.keys(patch || {}).forEach(k => { if (isObj(patch[k])) into[k] = deepMerge(isObj(into[k]) ? into[k] : {}, patch[k]); else into[k] = patch[k]; });
+  return into;
+}
+function normProgress(d) { d = isObj(d) ? d : {}; return { read: isObj(d.read) ? d.read : {}, checks: isObj(d.checks) ? d.checks : {}, updatedAt: d.updatedAt || null }; }
+
+let progress = normProgress(lsGet(LS_PROGRESS));
+let practice = {};                   // learner/practice → subtopics
+let plan = { name: "", current: null, next: [] }; // learner/plan
+let db = null, dbState = "local";    // local | live | readonly
+let remoteExists = false, remoteBase = null;
+let pending = null, inflight = null, writing = false;
+
+/* Запис лише після дії учня, по одному за раз: зміни, що прийшли під час запису, чекають і йдуть одним наступним записом. */
+function record(patch) {
+  const now = new Date().toISOString();
+  deepMerge(progress, patch);
+  progress.updatedAt = now;
+  lsSet(LS_PROGRESS, progress);
+  if (!db || dbState !== "live") return;
+  pending = deepMerge(pending || {}, patch);
+  pump();
+}
+async function pump() {
+  if (writing || !pending || !db) return;
+  writing = true; inflight = pending; pending = null;
+  const stamp = { updatedAt: new Date().toISOString(), mapVersion: MAP_VERSION };
+  const ref = db.doc("learner/progress");
+  const whole = () => ref.set(Object.assign(clone({ read: progress.read, checks: progress.checks }), stamp));
+  try {
+    if (!remoteExists) { await whole(); remoteExists = true; }
+    else {
+      try { await ref.update(Object.assign(clone(inflight), stamp)); }
+      catch (e) {
+        if (e && e.code === "invalid_argument") { await whole(); remoteExists = true; } // документ могли видалити
+        else if (e && e.code === "unavailable") { await new Promise(r => setTimeout(r, 600 + Math.random() * 900)); await ref.update(Object.assign(clone(inflight), stamp)); }
+        else throw e;
+      }
+    }
+  } catch (e) {
+    if (e && (e.code === "invalid_argument" || e.code === "revoked" || e.code === "not_granted")) { dbState = "readonly"; pending = null; paintStatus(); }
+  } finally {
+    inflight = null; writing = false;
+    if (pending) pump();
+  }
+}
+function applyRemoteProgress(d) {
+  remoteBase = normProgress(clone(d));
+  const merged = normProgress(clone(remoteBase));
+  if (inflight) deepMerge(merged, inflight);
+  if (pending) deepMerge(merged, pending);
+  const changed = JSON.stringify([merged.read, merged.checks]) !== JSON.stringify([progress.read, progress.checks]);
+  progress = merged;
+  lsSet(LS_PROGRESS, progress);
+  return changed;
+}
+
+/* ---------- Підрахунки ---------- */
+function practiceOf(id) { const p = practice[id]; return p && +p.answered > 0 ? { answered: +p.answered, correct: +p.correct || 0, last: p.last || "" } : null; }
+function isMastered(p) { return !!p && p.answered >= 3 && p.correct / p.answered >= 0.8; }
+function checkCount(st) { const know = st.checks.filter(c => progress.checks[c.id] === "know").length; return { know, total: st.checks.length }; }
+function statusOf(st) {
+  if (!st.ready) return "planned";
+  if (isMastered(practiceOf(st.id))) return "mastered";
+  const c = checkCount(st);
+  if (c.total && c.know === c.total) return "checked";
+  if (progress.read[st.id]) return "read";
+  return "new";
+}
+const STATUS = {
+  planned: ["урок готується", "st-planned"],
+  mastered: ["опановано на практиці", "st-mastered"],
+  checked: ["самоперевірка пройдена", "st-checked"],
+  read: ["прочитано", "st-read"],
+  new: ["ще не відкрито", "st-new"]
+};
+// Бал підтеми: прочитано, самоперевірка, практика — по третині; «опановано» = 100 %.
+function scoreOf(st) {
+  const p = practiceOf(st.id);
+  if (isMastered(p)) return 1;
+  const c = checkCount(st);
+  const prac = p ? Math.min(1, p.answered / 3) * Math.min(1, (p.correct / p.answered) / 0.8) : 0;
+  return ((progress.read[st.id] ? 1 : 0) + (c.total ? c.know / c.total : 0) + prac) / 3;
+}
+function agg(subs) {
+  const ready = subs.filter(s => s.ready);
+  const pct = ready.length ? Math.round(ready.reduce((a, s) => a + scoreOf(s), 0) / ready.length * 100) : null;
+  return { all: subs.length, ready: ready.length, pct,
+    read: ready.filter(s => progress.read[s.id]).length,
+    mastered: ready.filter(s => isMastered(practiceOf(s.id))).length };
+}
+const topicSubs = t => t.subtopics;
+
+/* ---------- Допоміжне ---------- */
+function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+// У текстах уроків дозволено лише <b>, <i>, <sub>, <sup>; усе інше екранується.
+function rich(s) { return esc(s).replace(/&lt;(\/?)(b|i|sub|sup)&gt;/g, "<$1$2>"); }
+function plain(s) { return String(s == null ? "" : s).replace(/<\/?(b|i|sub|sup)>/g, ""); }
+function plural(n, f) { const a = Math.abs(n) % 100, b = a % 10; return a > 10 && a < 20 ? f[2] : b === 1 ? f[0] : b >= 2 && b <= 4 ? f[1] : f[2]; }
+function fmtDate(iso) {
+  if (!iso) return "";
+  const d = new Date(String(iso).length === 10 ? iso + "T12:00:00" : iso);
+  if (isNaN(d)) return String(iso);
+  try { return d.toLocaleDateString("uk-UA", { day: "numeric", month: "long", year: "numeric" }).replace(/\s*р\.$/, ""); } catch (e) { return String(iso).slice(0, 10); }
+}
+function ring(pct, size, color, big) {
+  const sw = big ? 7 : 6, r = (size - sw) / 2, c = 2 * Math.PI * r, cx = size / 2;
+  const v = pct == null ? 0 : Math.max(0, Math.min(100, pct));
+  return `<svg class="ring${big ? " big" : ""}" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" aria-hidden="true" style="--ring-c:${color}">`
+    + `<circle class="trk" cx="${cx}" cy="${cx}" r="${r}" stroke-width="${sw}"/>`
+    + (v > 0 ? `<circle class="val" cx="${cx}" cy="${cx}" r="${r}" stroke-width="${sw}" stroke-dasharray="${(c * v / 100).toFixed(2)} ${c.toFixed(2)}" transform="rotate(-90 ${cx} ${cx})"/>` : "")
+    + `<text x="${cx}" y="${cx}">${pct == null ? "—" : pct + "%"}</text></svg>`;
+}
+function bar(pct, color) { return `<span class="bar" aria-hidden="true"><i style="width:${pct || 0}%;${color ? `--bar-c:${color}` : ""}"></i></span>`; }
+
+/* ---------- Стан інтерфейсу ---------- */
+const uiSaved = lsGet(LS_UI) || {};
+const ui = {
+  subject: SUBJ[uiSaved.subject] ? uiSaved.subject : (DATA.subjects[0] && DATA.subjects[0].id) || null,
+  view: "map",         // map | lesson | parents
+  lesson: null,
+  open: new Set(Array.isArray(uiSaved.open) ? uiSaved.open : []),
+  openTouched: !!uiSaved.openTouched,
+  steps: {},           // скільки кроків прикладу показано
+  revealed: {},        // які відповіді самоперевірки відкрито
+  copied: null
+};
+function saveUi() { lsSet(LS_UI, { subject: ui.subject, open: [...ui.open], openTouched: ui.openTouched }); }
+function autoOpen() {
+  // Поки учень сам нічого не розгортав: розгорнути тему «Зараз у школі» (або перший розділ).
+  if (ui.openTouched) return;
+  const cur = plan.current && TOP[plan.current.topic];
+  if (cur && cur.subject.id === ui.subject) { ui.open.add(cur.section.id); ui.open.add(cur.id); return; }
+  const s = SUBJ[ui.subject];
+  if (s && s.sections[0] && !s.sections.some(x => ui.open.has(x.id))) ui.open.add(s.sections[0].id);
+}
+
+/* ---------- Шапка ---------- */
+const $ = id => document.getElementById(id);
+function renderHeader() {
+  const grades = [...new Set(DATA.subjects.map(s => s.grade).filter(Boolean))];
+  const bits = [];
+  if (plan.name) bits.push(esc(plan.name));
+  if (grades.length === 1) bits.push(`${grades[0]} клас`);
+  $("who").innerHTML = bits.join(" · ");
+  $("who").hidden = !bits.length;
+  const tabs = $("tabs");
+  tabs.hidden = !DATA.subjects.length || ui.view === "parents";
+  tabs.innerHTML = DATA.subjects.map(s => {
+    const sel = s.id === ui.subject;
+    return `<button class="tab" type="button" role="tab" id="tab-${s.id}" aria-selected="${sel}" aria-controls="main" tabindex="${sel ? 0 : -1}" data-act="tab" data-id="${s.id}" data-k="tab-${s.id}" style="--tab-c:${s.color}"><span class="ic" aria-hidden="true">${esc(s.icon || "")}</span>${esc(s.name)}</button>`;
+  }).join("");
+  const pt = $("parents-toggle");
+  pt.hidden = !DATA.subjects.length;
+  pt.setAttribute("aria-pressed", String(ui.view === "parents"));
+  const main = $("main");
+  if (ui.view !== "parents" && ui.subject) { main.setAttribute("role", "tabpanel"); main.setAttribute("aria-labelledby", "tab-" + ui.subject); }
+  else { main.removeAttribute("role"); main.removeAttribute("aria-labelledby"); }
+}
+function paintStatus() {
+  $("store-status").textContent = dbState === "live" ? "Прогрес зберігається разом з твоєю картою."
+    : dbState === "readonly" ? "Цю карту відкрито лише для перегляду: позначки зберігаються тільки в цьому браузері."
+    : "Прогрес зберігається в цьому браузері.";
+  $("ver").textContent = "Версія карти " + MAP_VERSION;
+}
+
+/* ---------- Карта предмета ---------- */
+function emptyHtml(title, text) {
+  return `<div class="card empty"><div class="big" aria-hidden="true">🌱</div><h2>${title}</h2><p>${text}</p></div>`;
+}
+function subjectHtml(s) {
+  if (!s.sections.length) return emptyHtml("Карта ще наповнюється…", `Уроки з предмета «${esc(s.name)}» скоро з'являться. А поки можна просто поговорити з репетитором: напиши «Привіт, ${esc(s.tutorCall || s.tutor || "")}».`);
+  const a = agg(s.subs);
+  const cur = plan.current && plan.current.subject === s.id ? TOP[plan.current.topic] : null;
+  const next = (plan.next || []).map(id => SUB[id]).filter(st => st && st.subject.id === s.id);
+  let hints = "";
+  if (cur || next.length) {
+    hints = `<div class="hints">`
+      + (cur ? `<div class="hint now"><span class="lbl">📍 Зараз у школі:</span><span>${rich(cur.name)}</span><button class="chip now" type="button" data-act="goto-topic" data-id="${cur.id}" data-k="goto-${cur.id}">Показати на карті</button></div>` : "")
+      + (next.length ? `<div class="hint next"><span class="lbl">➜ Наступний крок:</span>${next.map(st => `<button class="chip next" type="button" data-act="open" data-id="${st.id}" data-k="nx-${st.id}">${rich(st.name)}</button>`).join("")}</div>` : "")
+      + `</div>`;
+  }
+  return `<section class="card intro" aria-label="Огляд предмета">
+      ${ring(a.pct, 76, s.color, true)}
+      <div><h2>${esc(s.icon || "")} ${esc(s.name)}</h2>
+      <p class="sub-line">${s.tutor ? `Репетитор: ${esc(s.tutor)} · ` : ""}готових уроків ${a.ready} з ${a.all} · прочитано ${a.read}${a.mastered ? ` · опановано ${a.mastered}` : ""}</p></div>
+    </section>
+    ${hints}
+    <div class="legend" aria-label="Умовні позначення">
+      <span><span class="pill st-read">прочитано</span></span>
+      <span><span class="pill st-checked">самоперевірка пройдена</span></span>
+      <span><span class="pill st-mastered">опановано на практиці</span></span>
+      <span><span class="pill st-planned">урок готується</span></span>
+    </div>
+    <ol class="tree">${s.sections.map(sec => sectionHtml(sec, cur)).join("")}</ol>`;
+}
+function sectionHtml(sec, cur) {
+  const open = ui.open.has(sec.id), a = agg(sec.subs);
+  return `<li class="sec"><h2><button class="sec-head" type="button" aria-expanded="${open}" aria-controls="b-${sec.id}" data-act="toggle" data-id="${sec.id}" data-k="h-${sec.id}">
+      ${ring(a.pct, 52, sec.subject.color)}
+      <span><span class="code">${esc(sec.id)}</span> <span class="nm">${rich(sec.name)}</span>
+      <span class="meta">${sec.topics.length} ${plural(sec.topics.length, ["тема", "теми", "тем"])} · готових уроків ${a.ready} з ${a.all}${a.read ? ` · прочитано ${a.read}` : ""}${cur && cur.section === sec ? " · 📍 зараз у школі" : ""}</span></span>
+      <span class="chev" aria-hidden="true">▶</span></button></h2>
+    <div class="sec-body" id="b-${sec.id}"${open ? "" : " hidden"}>
+      ${sec.what ? `<p class="what">${rich(sec.what)}</p>` : ""}
+      <ul class="topics">${sec.topics.map(t => topicHtml(t, cur)).join("")}</ul>
+    </div></li>`;
+}
+function topicHtml(t, cur) {
+  const open = ui.open.has(t.id), a = agg(topicSubs(t)), isNow = cur === t;
+  return `<li class="topic${isNow ? " now" : ""}" id="topic-${t.id}"><h3><button class="topic-head" type="button" aria-expanded="${open}" aria-controls="b-${t.id}" data-act="toggle" data-id="${t.id}" data-k="h-${t.id}">
+      <span class="t1"><span class="code">${esc(t.id)}</span><span class="nm">${rich(t.name)}</span>${isNow ? `<span class="badge now">Зараз у школі</span>` : ""}</span>
+      <span class="chev" aria-hidden="true">▶</span>
+      <span class="t2">${a.ready ? bar(a.pct, t.subject.color) : `<span>уроки готуються</span>`}<span>${a.ready ? `${a.pct}% · ` : ""}${a.all} ${plural(a.all, ["підтема", "підтеми", "підтем"])}</span></span>
+    </button></h3>
+    <div class="topic-body" id="b-${t.id}"${open ? "" : " hidden"}>
+      ${t.what ? `<p class="what">${rich(t.what)}</p>` : ""}
+      <ul class="subs">${t.subtopics.map(subRowHtml).join("")}</ul>
+    </div></li>`;
+}
+function subRowHtml(st) {
+  const s = statusOf(st), p = practiceOf(st.id), isNext = (plan.next || []).includes(st.id);
+  const tags = `<span class="tags">${isNext ? `<span class="badge next">Наступний крок</span>` : ""}${s !== "new" ? `<span class="pill ${STATUS[s][1]}">${STATUS[s][0]}</span>` : ""}${p && st.ready ? `<span class="pill prac" title="Задачі з репетитором: правильно ${p.correct} з ${p.answered}">✓ ${p.correct}/${p.answered}</span>` : ""}</span>`;
+  const label = `<span><span class="code">${esc(st.id)}</span> <span class="nm">${rich(st.name)}</span></span>`;
+  if (!st.ready) return `<li><div class="sub planned">${label}${tags}</div></li>`;
+  return `<li><button class="sub${isNext ? " is-next" : ""}" type="button" data-act="open" data-id="${st.id}" data-k="s-${st.id}" aria-label="${esc(plain(st.name))}, урок. ${STATUS[s][0]}${isNext ? ", наступний крок" : ""}">${label}${tags}</button></li>`;
+}
+
+/* ---------- Урок ---------- */
+function lessonHtml(st) {
+  const L = st.lesson, s = st.subject, stt = statusOf(st), p = practiceOf(st.id);
+  const shown = ui.steps[st.id] || 0, steps = (L.example && L.example.steps) || [];
+  const readyList = s.subs.filter(x => x.ready), i = readyList.indexOf(st);
+  const prev = readyList[i - 1], next = readyList[i + 1];
+  const ask = `${s.tutorCall || s.tutor}, дай мені задачі на тему "${plain(st.name)}" (${st.id})`;
+  const isRead = !!progress.read[st.id], isNext = (plan.next || []).includes(st.id);
+  const c = checkCount(st);
+  return `<div class="row"><button class="btn ghost" type="button" data-act="back" data-k="back">← До карти</button></div>
+  <article class="lesson" aria-labelledby="lesson-title">
+    <div>
+      <p class="crumbs">${esc(s.name)} › ${rich(st.section.name)} › ${rich(st.topic.name)}</p>
+      <h2 class="lesson-title" id="lesson-title" tabindex="-1"><span class="code">${esc(st.id)}</span> ${rich(st.name)}</h2>
+      <div class="row" style="margin-top:8px">${isNext ? `<span class="badge next">Наступний крок</span>` : ""}${stt !== "new" ? `<span class="pill ${STATUS[stt][1]}">${STATUS[stt][0]}</span>` : ""}</div>
+    </div>
+    <section class="card"><h3>Що це</h3><p>${rich(L.what)}</p></section>
+    ${(L.ideas || []).length ? `<section class="card"><h3>Головне</h3><ul>${L.ideas.map(x => `<li>${rich(x)}</li>`).join("")}</ul></section>` : ""}
+    ${(L.rules || []).length ? `<section class="card"><h3>Правила</h3><div class="rules">${L.rules.map(r => `<div class="rule"><div class="f">${rich(r.f)}</div><div class="m">${rich(r.means)}</div></div>`).join("")}</div></section>` : ""}
+    ${L.example ? `<section class="card" id="example"><h3>Розв'язуємо разом</h3>
+      <p class="task">${rich(L.example.task)}</p>
+      <ol class="steps" aria-live="polite">${steps.slice(0, shown).map(x => `<li><span class="do">${rich(x.do)}</span><span class="why"><b>Чому:</b> ${rich(x.why)}</span></li>`).join("")}</ol>
+      ${shown < steps.length
+        ? `<div class="row" style="margin-top:12px"><button class="btn" type="button" data-act="step" data-id="${st.id}" data-k="step">${shown === 0 ? "Показати перший крок" : `Наступний крок (${shown + 1} з ${steps.length})`}</button><button class="btn ghost" type="button" data-act="steps-all" data-id="${st.id}" data-k="steps-all">Показати все</button></div>`
+        : `<p class="answer" aria-live="polite"><b>Відповідь:</b> ${rich(L.example.answer)}</p><div class="row" style="margin-top:10px"><button class="btn ghost" type="button" data-act="steps-reset" data-id="${st.id}" data-k="steps-reset">Сховати кроки й спробувати самому</button></div>`}
+    </section>` : ""}
+    ${(L.mistakes || []).length ? `<section class="card"><h3>Де часто помиляються</h3><ul class="mistakes">${L.mistakes.map(x => `<li>${rich(x)}</li>`).join("")}</ul></section>` : ""}
+    ${st.checks.length ? `<section class="card"><h3>Перевір себе</h3><p class="note" style="margin-bottom:10px">Спершу дай відповідь подумки, потім відкрий правильну і чесно познач. Пройдено: ${c.know} з ${c.total}.</p><div class="checks">${st.checks.map(checkHtml).join("")}</div></section>` : ""}
+    <section class="card"><h3>Задачі з репетитором</h3><p>${practiceLine(st, p)}</p></section>
+    <section class="card ask"><h3>Попроси задачі</h3>
+      <p class="note">Скопіюй цей текст і встав у чат з репетитором.</p>
+      <textarea id="ask-text" readonly rows="2" aria-label="Текст запиту репетиторові">${esc(ask)}</textarea>
+      <div class="row"><button class="btn" type="button" data-act="copy" data-k="copy">${ui.copied === st.id ? "Скопійовано ✓" : "Скопіювати"}</button><span class="note" id="copy-note" role="status"></span></div>
+    </section>
+    <div class="row"><button class="btn ghost mark" type="button" aria-pressed="${isRead}" data-act="read" data-id="${st.id}" data-k="read">${isRead ? "Прочитано ✓" : "Позначити прочитаним"}</button></div>
+    ${st.programmeRef ? `<p class="ref">З програми: «${rich(st.programmeRef)}»</p>` : ""}
+    ${prev || next ? `<nav class="pager" aria-label="Інші уроки">${prev ? `<button class="btn ghost" type="button" data-act="open" data-id="${prev.id}" data-k="prev"><span>← ${rich(prev.name)}</span></button>` : ""}${next ? `<button class="btn ghost nx" type="button" data-act="open" data-id="${next.id}" data-k="next"><span>${rich(next.name)} →</span></button>` : ""}</nav>` : ""}
+  </article>`;
+}
+function checkHtml(c, i) {
+  const st = progress.checks[c.id], open = ui.revealed[c.id] || !!st;
+  return `<div class="check"><p class="q">${i + 1}. ${rich(c.q)}</p>
+    ${open
+      ? `<p class="a"><b>Відповідь:</b> ${rich(c.a)}</p>
+         <div class="row" role="group" aria-label="Як у тебе вийшло?">
+           <button class="btn ghost know" type="button" aria-pressed="${st === "know"}" data-act="check" data-v="know" data-id="${c.id}" data-k="k-${c.id}">👍 Знаю</button>
+           <button class="btn ghost not-yet" type="button" aria-pressed="${st === "not-yet"}" data-act="check" data-v="not-yet" data-id="${c.id}" data-k="n-${c.id}">🤔 Ще ні</button>
+         </div>
+         ${st ? `<p class="res ${st}" role="status">${st === "know" ? "Записано: знаєш." : "Записано: ще повториш. Це нормально!"}</p>` : ""}`
+      : `<div class="row"><button class="btn ghost" type="button" data-act="reveal" data-id="${c.id}" data-k="r-${c.id}">Показати відповідь</button></div>`}
+  </div>`;
+}
+function practiceLine(st, p) {
+  const who = esc(st.subject.tutor || "репетитор");
+  if (!p) return dbState === "local" ? `Тут з'являться результати задач, які дасть ${who}, коли карту відкрито як твою особисту сторінку з чату.` : `Поки задач на цю тему не було. Попроси їх нижче — результат з'явиться тут.`;
+  const pct = Math.round(p.correct / p.answered * 100);
+  return `Правильно <b>${p.correct} з ${p.answered}</b> (${pct}%)${p.last ? `, востаннє ${esc(fmtDate(p.last))}` : ""}. `
+    + (isMastered(p) ? "Це вже опановано на практиці. Чудово!" : "Тему вважаємо опанованою, коли правильно хоча б 8 з 10 (і розв'язано щонайменше 3 задачі).");
+}
+
+/* ---------- Для батьків ---------- */
+function parentsHtml() {
+  const allPr = Object.keys(practice).map(id => [SUB[id], practiceOf(id)]).filter(x => x[0] && x[1]);
+  const dates = [progress.updatedAt, ...allPr.map(x => x[1].last)].filter(Boolean).map(String).sort();
+  const last = dates.length ? dates[dates.length - 1] : null;
+  const cards = DATA.subjects.map(s => {
+    const a = agg(s.subs);
+    const cur = plan.current && plan.current.subject === s.id ? TOP[plan.current.topic] : null;
+    const byTopic = [];
+    s.sections.forEach(sec => sec.topics.forEach(t => {
+      const ps = t.subtopics.map(st => practiceOf(st.id)).filter(Boolean);
+      if (!ps.length) return;
+      const ans = ps.reduce((x, p) => x + p.answered, 0), cor = ps.reduce((x, p) => x + p.correct, 0);
+      byTopic.push([t, cor, ans]);
+    }));
+    const weak = s.subs.map(st => [st, practiceOf(st.id)]).filter(([, p]) => p && p.answered >= 3 && p.correct / p.answered < 0.6);
+    const tone = pct => pct >= 80 ? "var(--good)" : pct >= 60 ? "var(--mid)" : "var(--bad)";
+    const word = pct => pct >= 80 ? "добре" : pct >= 60 ? "непогано" : "варто підтягнути";
+    return `<section class="card" aria-labelledby="ph-${s.id}">
+      <h3 id="ph-${s.id}">${esc(s.icon || "")} ${esc(s.name)}${s.tutor ? ` <span class="note">· репетитор ${esc(s.tutor)}</span>` : ""}</h3>
+      ${a.ready ? `<div class="meters">
+        <div class="meter"><div class="lbl"><span>Прочитано уроків</span><b>${a.read} з ${a.ready}</b></div>${bar(Math.round(a.read / a.ready * 100), "var(--accent)")}</div>
+        <div class="meter"><div class="lbl"><span>Опановано на практиці</span><b>${a.mastered} з ${a.ready}</b></div>${bar(Math.round(a.mastered / a.ready * 100), "var(--good)")}</div>
+      </div>
+      <p class="note" style="margin-top:8px">Рахуємо лише готові уроки (${a.ready} з ${a.all} підтем). Решта ще готується.</p>`
+      : `<p class="note">Уроки з цього предмета ще готуються.</p>`}
+      <p style="margin-top:12px"><b>Зараз у школі:</b> ${cur ? `${esc(cur.id)} ${rich(cur.name)}` : "репетитор ще не позначив тему."}</p>
+      ${byTopic.length ? `<h3 style="margin-top:14px">Точність у задачах за темами</h3>
+        <table class="acc"><thead><tr><th>Тема</th><th>Правильно</th><th class="barcol"><span class="sr">Шкала</span></th></tr></thead><tbody>
+        ${byTopic.map(([t, cor, ans]) => { const pct = Math.round(cor / ans * 100); return `<tr><td>${rich(t.name)}</td><td class="num">${cor} з ${ans} · <b style="color:${tone(pct)}">${pct}%</b> <span class="note">${word(pct)}</span></td><td class="barcol">${bar(pct, tone(pct))}</td></tr>`; }).join("")}
+        </tbody></table>` : `<p class="note" style="margin-top:8px">${dbState === "local" ? "Результати задач з репетитором видно, коли карту відкрито як особисту сторінку учня з чату." : "Задач з репетитором ще не було."}</p>`}
+      ${weak.length ? `<h3 style="margin-top:14px">Що варто підтягнути</h3><ul class="weak">${weak.map(([st, p]) => `<li>${rich(st.name)} — правильно ${p.correct} з ${p.answered}</li>`).join("")}</ul>` : ""}
+    </section>`;
+  }).join("");
+  return `<section class="par-head"><h2>Як ідуть справи</h2>
+      <p class="note" style="margin-top:4px">${last ? `Остання активність: ${esc(fmtDate(last))}.` : "Поки що жодної позначки: уроки ще не відкривали."}</p></section>
+    <div class="subj-cards">${cards}</div>
+    <section class="card"><h3>Як допомогти</h3><ul class="tips">
+      <li>Попросіть дитину пояснити Вам одну підтему своїми словами. Пояснити іншому — найкращий спосіб запам'ятати.</li>
+      <li>Короткі заняття часто (15–20 хвилин кілька разів на тиждень) дають більше, ніж одне довге.</li>
+      <li>Хваліть за старання й за чесне «Ще ні» в самоперевірці — так видно, що повторити.</li>
+      <li>Якщо тема «варто підтягнути», не сваріть: у кожному уроці є готовий запит, щоб попросити в репетитора ще задач.</li>
+      <li>Не розв'язуйте задачі замість дитини. Краще спитайте: «З чого ти почнеш?»</li>
+    </ul><p class="note" style="margin-top:10px">Відсотки тут — з карти й задач з репетитором. Це не шкільна оцінка.</p></section>`;
+}
+
+/* ---------- Малювання ---------- */
+function render(opts) {
+  opts = opts || {};
+  const main = $("main");
+  const ae = document.activeElement, key = ae && ae.closest && ae.closest("[data-k]") && ae.dataset.k;
+  renderHeader();
+  let html;
+  if (!DATA.subjects.length) html = emptyHtml("Карта ще наповнюється…", "Тут з'являться предмети, теми й короткі уроки. Зазирни трохи згодом — або вже зараз поговори з репетитором у чаті.");
+  else if (ui.view === "parents") html = parentsHtml();
+  else if (ui.view === "lesson" && SUB[ui.lesson] && SUB[ui.lesson].ready) html = lessonHtml(SUB[ui.lesson]);
+  else { ui.view = "map"; autoOpen(); html = subjectHtml(SUBJ[ui.subject]); }
+  main.innerHTML = html;
+  paintStatus();
+  if (opts.focus) { const el = document.querySelector(opts.focus); if (el) { el.focus({ preventScroll: !!opts.noScroll }); if (!opts.noScroll && el.scrollIntoView) el.scrollIntoView({ block: opts.block || "nearest" }); } }
+  else if (key && document.activeElement === document.body) { const el = document.querySelector(`[data-k="${key}"]`); if (el) el.focus({ preventScroll: true }); }
+}
+
+function openLesson(id) {
+  const st = SUB[id];
+  if (!st || !st.ready) return;
+  ui.subject = st.subject.id; ui.view = "lesson"; ui.lesson = id; ui.copied = null;
+  ui.open.add(st.section.id); ui.open.add(st.topic.id);
+  saveUi();
+  render({ focus: "#lesson-title", noScroll: true });
+  window.scrollTo(0, 0);
+}
+function backToMap() {
+  const from = ui.lesson; ui.view = "map"; ui.lesson = null;
+  render({ focus: from ? `[data-k="s-${from}"]` : "#main", block: "center" });
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-act]");
+  if (!b) return;
+  const act = b.dataset.act, id = b.dataset.id;
+  if (act === "tab") { ui.subject = id; ui.view = "map"; ui.lesson = null; saveUi(); render({ focus: `#tab-${id}`, noScroll: true }); }
+  else if (act === "toggle") {
+    ui.openTouched = true;
+    if (ui.open.has(id)) ui.open.delete(id); else ui.open.add(id);
+    saveUi(); render({ focus: `[data-k="h-${id}"]`, noScroll: true });
+  }
+  else if (act === "goto-topic") {
+    const t = TOP[id]; if (!t) return;
+    ui.open.add(t.section.id); ui.open.add(t.id); ui.openTouched = true; saveUi();
+    render({ focus: `[data-k="h-${id}"]`, block: "center" });
+  }
+  else if (act === "open") openLesson(id);
+  else if (act === "back") backToMap();
+  else if (act === "step") { const n = (SUB[id].lesson.example.steps || []).length; ui.steps[id] = Math.min(n, (ui.steps[id] || 0) + 1); render({ focus: ui.steps[id] >= n ? `[data-k="steps-reset"]` : `[data-k="step"]`, noScroll: true }); }
+  else if (act === "steps-all") { ui.steps[id] = (SUB[id].lesson.example.steps || []).length; render({ focus: `[data-k="steps-reset"]`, noScroll: true }); }
+  else if (act === "steps-reset") { ui.steps[id] = 0; render({ focus: `[data-k="step"]`, noScroll: true }); }
+  else if (act === "reveal") { ui.revealed[id] = true; render({ focus: `[data-k="k-${id}"]`, noScroll: true }); }
+  else if (act === "check") { const v = b.dataset.v; if (progress.checks[id] !== v) record({ checks: { [id]: v } }); render({ focus: `[data-k="${v === "know" ? "k" : "n"}-${id}"]`, noScroll: true }); }
+  else if (act === "read") { record({ read: { [id]: !progress.read[id] } }); render({ focus: `[data-k="read"]`, noScroll: true }); }
+  else if (act === "copy") copyAsk(b);
+});
+$("parents-toggle").addEventListener("click", () => {
+  ui.view = ui.view === "parents" ? "map" : "parents";
+  render({ focus: "#parents-toggle", noScroll: true });
+  window.scrollTo(0, 0);
+});
+// Стрілки ліворуч/праворуч, Home, End — між вкладками предметів.
+$("tabs").addEventListener("keydown", e => {
+  const ids = DATA.subjects.map(s => s.id), i = ids.indexOf(ui.subject);
+  let j = null;
+  if (e.key === "ArrowRight") j = (i + 1) % ids.length; else if (e.key === "ArrowLeft") j = (i - 1 + ids.length) % ids.length;
+  else if (e.key === "Home") j = 0; else if (e.key === "End") j = ids.length - 1;
+  if (j === null) return;
+  e.preventDefault();
+  ui.subject = ids[j]; ui.view = "map"; ui.lesson = null; saveUi();
+  render({ focus: `#tab-${ids[j]}`, noScroll: true });
+});
+function copyAsk(btn) {
+  const ta = $("ask-text"), note = $("copy-note"), id = ui.lesson;
+  const ok = () => { ui.copied = id; btn.textContent = "Скопійовано ✓"; note.textContent = "Тепер встав у чат з репетитором."; };
+  const fallback = () => {
+    ta.focus(); ta.select();
+    let done = false;
+    try { done = document.execCommand("copy"); } catch (e) {}
+    if (done) ok(); else note.textContent = "Текст виділено — натисни Ctrl+C (або «Копіювати» на телефоні).";
+  };
+  try { navigator.clipboard.writeText(ta.value).then(ok, fallback); } catch (e) { fallback(); }
+}
+
+/* ---------- Спільна база (коли карта — особиста опублікована сторінка учня) ---------- */
+let retries = 0;
+function watch(path, onData) {
+  let unsub = null;
+  const start = () => {
+    try {
+      unsub = db.doc(path).onSnapshot(snap => onData(snap.exists ? (snap.data() || {}) : null), err => {
+        if (err && err.code === "unavailable" && retries < 5) { retries++; setTimeout(start, 4000 * retries); }
+      });
+    } catch (e) {}
+  };
+  start();
+}
+function rerenderSoft() {
+  // Не перебудовуємо сторінку, поки учень друкує або виділяє текст запиту.
+  render();
+}
+async function connect() {
+  const c = window.claude;
+  if (!c || typeof c.use !== "function") return;
+  let handle = null;
+  try { handle = await c.use("db"); } catch (e) { handle = null; }
+  if (!handle) return;
+  db = handle; dbState = "live"; paintStatus();
+  try {
+    const snap = await db.doc("learner/progress").get();
+    if (snap.exists) {
+      remoteExists = true;
+      const remote = normProgress(clone(snap.data()));
+      // Позначки, зроблені в цьому браузері, поки бази не було, доливаємо одним записом (база перемагає в суперечках).
+      const extra = {};
+      ["read", "checks"].forEach(k => Object.keys(progress[k]).forEach(id => { if (!(id in remote[k])) { extra[k] = extra[k] || {}; extra[k][id] = progress[k][id]; } }));
+      applyRemoteProgress(remote);
+      if (Object.keys(extra).length) record(extra);
+    } else if (Object.keys(progress.read).length || Object.keys(progress.checks).length) {
+      record({});
+    }
+  } catch (e) {
+    if (e && (e.code === "revoked" || e.code === "not_granted" || e.code === "capability_disabled" || e.code === "capability_removed")) { db = null; dbState = "local"; paintStatus(); return; }
+  }
+  render();
+  watch("learner/progress", d => { if (d) { remoteExists = true; if (applyRemoteProgress(d)) rerenderSoft(); } });
+  watch("learner/practice", d => {
+    const next = d && isObj(d.subtopics) ? clone(d.subtopics) : {};
+    if (JSON.stringify(next) !== JSON.stringify(practice)) { practice = next; rerenderSoft(); }
+  });
+  watch("learner/plan", d => {
+    const next = { name: d && typeof d.name === "string" ? d.name.trim() : "",
+      current: d && isObj(d.current) && d.current.topic ? { subject: String(d.current.subject || (TOP[d.current.topic] ? TOP[d.current.topic].subject.id : "")), topic: String(d.current.topic) } : null,
+      next: d && Array.isArray(d.next) ? d.next.map(String) : [] };
+    if (JSON.stringify(next) !== JSON.stringify(plan)) { plan = next; rerenderSoft(); }
+  });
+}
+
+render();
+connect();
+</script>
+</body>
+</html>
