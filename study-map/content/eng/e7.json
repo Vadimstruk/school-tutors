@@ -12,26 +12,451 @@
         {
           "id": "E7.1.1",
           "name": "Future forms",
-          "status": "planned",
-          "programmeRef": "Future forms"
+          "status": "ready",
+          "programmeRef": "Future forms",
+          "lesson": {
+            "what": "В англійській є кілька способів говорити про майбутнє. Форма залежить від того, <b>що</b> ти кажеш: план, домовленість, розклад, прогноз чи рішення, яке приймаєш просто зараз.",
+            "ideas": [
+              "<b>be going to</b> — план, намір, який уже є в голові: <i>I'm going to learn the guitar this year.</i> Також прогноз, коли бачиш докази: <i>Look at those clouds! It's going to rain.</i>",
+              "<b>Present Continuous</b> — домовленість: вже вирішено, коли й з ким (часто є час і місце): <i>I'm meeting Taras at the cinema at six.</i>",
+              "<b>Present Simple</b> — розклад: потяги, уроки, фільми: <i>The train leaves at 7:15. The film starts at 8.</i>",
+              "<b>will</b> — рішення просто зараз, обіцянка, пропозиція: <i>The phone's ringing. — I'll get it! I'll help you with maths, I promise.</i> А також прогноз-думка: <i>I think you'll love this book.</i>",
+              "Українською можна сказати «Я йду в кіно сьогодні» теперішнім часом. Англійською для домовленості потрібен Present Continuous: <i>I'm going to the cinema tonight.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>am / is / are going to + V</i>",
+                "means": "План, намір; прогноз за доказами."
+              },
+              {
+                "f": "<i>am / is / are + V-ing</i> (+ time)",
+                "means": "Домовленість на конкретний час."
+              },
+              {
+                "f": "<i>Present Simple</i> (timetable)",
+                "means": "Розклад: <i>The bus leaves at 8.</i>"
+              },
+              {
+                "f": "<i>will + V</i>",
+                "means": "Рішення в момент мовлення, обіцянка, пропозиція, думка-прогноз."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose the best form. 1) A: It's so cold in here. B: I … (close / 'll close) the window. 2) Our English lesson … (starts / will start) at 9:00 every Monday.",
+                "steps": [
+                  {
+                    "do": "1) I'll close the window.",
+                    "why": "Рішення приймаєш просто зараз — <i>will</i>."
+                  },
+                  {
+                    "do": "2) Our English lesson starts at 9:00.",
+                    "why": "Це розклад — Present Simple."
+                  }
+                ],
+                "answer": "1) 'll close; 2) starts."
+              },
+              {
+                "task": "What form? Write the sentences. 1) (plan) I / learn to cook this summer. 2) (arrangement) We / play tennis with Ira / on Friday at 4.",
+                "steps": [
+                  {
+                    "do": "1) I'm going to learn to cook this summer.",
+                    "why": "Намір — <i>be going to</i>."
+                  },
+                  {
+                    "do": "2) We're playing tennis with Ira on Friday at 4.",
+                    "why": "Домовилися на конкретний час — Present Continuous."
+                  }
+                ],
+                "answer": "1) I'm going to learn to cook this summer. 2) We're playing tennis with Ira on Friday at 4."
+              },
+              {
+                "task": "Write about your weekend: one plan, one arrangement and one thing from a timetable.",
+                "steps": [
+                  {
+                    "do": "I'm going to tidy my room.",
+                    "why": "План — <i>going to</i>."
+                  },
+                  {
+                    "do": "On Saturday I'm visiting my grandparents in Poltava.",
+                    "why": "Домовленість — Present Continuous."
+                  },
+                  {
+                    "do": "Our train leaves at 9:20.",
+                    "why": "Розклад — Present Simple."
+                  }
+                ],
+                "answer": "For example: I'm going to tidy my room. On Saturday I'm visiting my grandparents in Poltava. Our train leaves at 9:20."
+              }
+            ],
+            "mistakes": [
+              "<i>I go to the dentist tomorrow at 4.</i> (калька) Правильно: <i>I'm going to the dentist tomorrow at 4.</i>",
+              "<i>She going to buy a bike.</i> Правильно: <i>She's going to buy a bike.</i> Не забувай <i>am / is / are</i>.",
+              "<i>I will to help you.</i> Правильно: <i>I'll help you.</i>",
+              "<i>A: The doorbell! B: I'm going to open it.</i> Рішення в цю мить — <i>I'll open it.</i>"
+            ],
+            "check": [
+              {
+                "q": "A: I'm so thirsty! B: Wait, I … you some water. (Обери)",
+                "options": [
+                  "get",
+                  "'ll get",
+                  "got"
+                ],
+                "correct": 1,
+                "a": "Рішення приймаєш просто зараз, коли почув друга, — <i>I'll get</i>."
+              },
+              {
+                "q": "Пастка: як запитати друга, що він робить у суботу (які в нього домовленості)?",
+                "options": [
+                  "What are you doing on Saturday?",
+                  "What do you do on Saturday?",
+                  "What will you do at Saturday?"
+                ],
+                "correct": 0,
+                "a": "Про домовленості питаємо в Present Continuous: <i>What are you doing on Saturday?</i> <i>What do you do on Saturdays?</i> — про звичку щосуботи."
+              },
+              {
+                "q": "Message: <i>Hurry up! The film … at 7:30 and it's already 7:10!</i> (Впиши дієслово <i>start</i> — одне слово)",
+                "accept": [
+                  "starts"
+                ],
+                "a": "Час фільму — це розклад, тому Present Simple: <i>starts</i>."
+              }
+            ]
+          }
         },
         {
           "id": "E7.1.2",
           "name": "Question tags",
-          "status": "planned",
-          "programmeRef": "Question tags"
+          "status": "ready",
+          "programmeRef": "Question tags",
+          "lesson": {
+            "what": "<b>Question tags</b> (розділові питання) — коротке запитання в кінці речення, як українське «…, так?» чи «…, правда ж?»: <i>It's cold today, isn't it?</i>",
+            "ideas": [
+              "Стверджувальне речення → заперечний «хвостик»: <i>You're Ivan's sister, aren't you?</i>",
+              "Заперечне речення → стверджувальний «хвостик»: <i>You aren't tired, are you?</i>",
+              "У «хвостику» — допоміжне дієслово з речення (<i>is, are, was, have, can, will…</i>) і займенник: <i>Tom can swim, can't he?</i>",
+              "Якщо допоміжного немає (Present Simple чи Past Simple), беремо <i>do / does / did</i>: <i>You like pizza, don't you? She lives here, doesn't she? They won, didn't they?</i>",
+              "Особливі випадки: <i>I'm late, aren't I?</i> (не <i>amn't I</i>); <i>Let's go, shall we?</i>",
+              "Іменник у «хвостику» заміняємо займенником: <i>Your brother plays football, doesn't <b>he</b>?</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>positive sentence, negative tag?</i>",
+                "means": "<i>It's hot, isn't it?</i>"
+              },
+              {
+                "f": "<i>negative sentence, positive tag?</i>",
+                "means": "<i>You can't drive, can you?</i>"
+              },
+              {
+                "f": "<i>Present / Past Simple → don't / doesn't / didn't</i>",
+                "means": "<i>He plays chess, doesn't he? You saw it, didn't you?</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Add the tags: 1) It's Friday today, …? 2) You like pizza, …?",
+                "steps": [
+                  {
+                    "do": "1) is → isn't it?",
+                    "why": "У реченні є <i>is</i>; речення стверджувальне, тож «хвостик» заперечний."
+                  },
+                  {
+                    "do": "2) like (Present Simple) → don't you?",
+                    "why": "Допоміжного немає — беремо <i>do</i>, заперечне <i>don't</i>."
+                  }
+                ],
+                "answer": "1) isn't it? 2) don't you?"
+              },
+              {
+                "task": "Add the tags: 1) Your sister went to Lviv, …? 2) He can't skate, …? 3) You won't forget, …?",
+                "steps": [
+                  {
+                    "do": "1) went → didn't she?",
+                    "why": "Past Simple — <i>did</i>; <i>your sister</i> → <i>she</i>."
+                  },
+                  {
+                    "do": "2) can't → can he?",
+                    "why": "Речення заперечне — «хвостик» стверджувальний."
+                  },
+                  {
+                    "do": "3) won't → will you?",
+                    "why": "<i>won't</i> = <i>will not</i>, тож у «хвостику» <i>will</i>."
+                  }
+                ],
+                "answer": "1) didn't she? 2) can he? 3) will you?"
+              },
+              {
+                "task": "You've just met a new classmate. Check two things you think you know about him.",
+                "steps": [
+                  {
+                    "do": "You've just moved here from Kharkiv, haven't you?",
+                    "why": "<i>have</i> у реченні → <i>haven't you?</i>"
+                  },
+                  {
+                    "do": "You play basketball, don't you?",
+                    "why": "Present Simple → <i>don't you?</i>"
+                  }
+                ],
+                "answer": "For example: You've just moved here from Kharkiv, haven't you? You play basketball, don't you?"
+              }
+            ],
+            "mistakes": [
+              "Універсальний «хвостик», як «так?»: <i>You like pizza, isn't it?</i> Правильно: <i>You like pizza, don't you?</i> Дієслово в «хвостику» залежить від речення.",
+              "<i>She lives here, don't she?</i> Правильно: <i>doesn't she?</i>",
+              "<i>I'm right, amn't I?</i> Правильно: <i>I'm right, aren't I?</i>",
+              "Іменник у «хвостику»: <i>Max is here, isn't Max?</i> Правильно: <i>isn't he?</i>"
+            ],
+            "check": [
+              {
+                "q": "You've finished your project, …? (Впиши «хвостик» — 2 слова)",
+                "accept": [
+                  "haven't you",
+                  "haven't you?",
+                  "have you not",
+                  "have you not?"
+                ],
+                "a": "У реченні <i>have</i>, речення стверджувальне → <i>haven't you?</i> (повна форма <i>have you not?</i> звучить дуже офіційно)."
+              },
+              {
+                "q": "Пастка: I'm late, …?",
+                "options": [
+                  "amn't I",
+                  "aren't I",
+                  "am I"
+                ],
+                "correct": 1,
+                "a": "Особливий випадок: <i>I am</i> → <i>aren't I?</i> Форми <i>amn't</i> у стандартній англійській немає."
+              },
+              {
+                "q": "A message: <i>Pizza at Max's on Saturday at 6. You're coming, …?</i> (Обери)",
+                "options": [
+                  "aren't you",
+                  "don't you",
+                  "are you"
+                ],
+                "correct": 0,
+                "a": "<i>You're</i> = <i>you are</i>, речення стверджувальне → <i>aren't you?</i>"
+              }
+            ]
+          }
         },
         {
           "id": "E7.1.3",
           "name": "Nor, neither and so",
-          "status": "planned",
-          "programmeRef": "Nor, neither and so"
+          "status": "ready",
+          "programmeRef": "Nor, neither and so",
+          "lesson": {
+            "what": "Як сказати «я теж» або «я теж ні»: <i>So do I.</i> / <i>Neither do I.</i> (або <i>Nor do I.</i>)",
+            "ideas": [
+              "Погоджуємося зі <b>стверджувальним</b> реченням: <i>So</i> + допоміжне дієслово + підмет: <i>A: I love cats. B: So do I.</i>",
+              "Погоджуємося із <b>заперечним</b> реченням: <i>Neither / Nor</i> + допоміжне дієслово + підмет: <i>A: I can't swim. B: Neither can I.</i>",
+              "Допоміжне дієслово — таке, як у реченні співрозмовника: <i>I'm tired → So am I. I went → So did I. I haven't seen it → Neither have I.</i>",
+              "Після <i>Neither / Nor</i> дієслово <b>стверджувальне</b>: заперечення вже в слові <i>neither</i>.",
+              "У розмові можна коротше: <i>Me too.</i> (після стверджувального) і <i>Me neither.</i> (після заперечного).",
+              "Не згоден? Скажи навпаки: <i>A: I don't like horror films. B: Oh, I do!</i> <i>A: I like rap. B: I don't.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>So + auxiliary + subject</i>",
+                "means": "«Я / він теж»: <i>So do I. So is she.</i>"
+              },
+              {
+                "f": "<i>Neither / Nor + auxiliary + subject</i>",
+                "means": "«Я / він теж ні»: <i>Neither can I. Nor did we.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Agree: 1) A: I love cats. B: … 2) A: I can't swim. B: …",
+                "steps": [
+                  {
+                    "do": "1) So do I.",
+                    "why": "<i>love</i> — Present Simple без допоміжного, тому <i>do</i>."
+                  },
+                  {
+                    "do": "2) Neither can I. (= Nor can I.)",
+                    "why": "Речення заперечне, тож <i>Neither</i>; дієслово — <i>can</i>."
+                  }
+                ],
+                "answer": "1) So do I. 2) Neither can I. / Nor can I."
+              },
+              {
+                "task": "Agree: 1) A: I went to the concert. B: … 2) A: I haven't seen the new film. B: … 3) A: I'm hungry. B: …",
+                "steps": [
+                  {
+                    "do": "1) So did I.",
+                    "why": "Past Simple — <i>did</i>."
+                  },
+                  {
+                    "do": "2) Neither have I.",
+                    "why": "<i>haven't</i> → <i>have</i>; заперечне → <i>Neither</i>."
+                  },
+                  {
+                    "do": "3) So am I.",
+                    "why": "<i>I'm</i> = <i>I am</i> → <i>am</i>."
+                  }
+                ],
+                "answer": "1) So did I. 2) Neither have I. 3) So am I."
+              },
+              {
+                "task": "Disagree: 1) A: I don't like horror films. B: … 2) A: I can ski. B: …",
+                "steps": [
+                  {
+                    "do": "1) Oh, I do!",
+                    "why": "Співрозмовник сказав «ні», ти — «так»: <i>I do</i>."
+                  },
+                  {
+                    "do": "2) I can't.",
+                    "why": "Він уміє, а ти ні: <i>I can't</i>."
+                  }
+                ],
+                "answer": "1) Oh, I do! 2) I can't."
+              }
+            ],
+            "mistakes": [
+              "<i>So I do.</i> Правильно: <i>So do I.</i> Спочатку допоміжне дієслово, потім підмет.",
+              "<i>Neither I can't.</i> / <i>Neither can't I.</i> Правильно: <i>Neither can I.</i> — без другого заперечення.",
+              "<i>A: I don't like tea. B: Me too.</i> Правильно: <i>Me neither.</i>",
+              "<i>A: I like it. B: So am I.</i> Правильно: <i>So do I.</i> Дієслово — як у співрозмовника.",
+              "«Я також» — <i>I also.</i> Так не кажуть окремо. Правильно: <i>So do I</i> або <i>Me too</i>."
+            ],
+            "check": [
+              {
+                "q": "A: I've never been to London. B: … have I. (Впиши одне слово)",
+                "accept": [
+                  "neither",
+                  "nor"
+                ],
+                "a": "<i>never</i> робить речення заперечним, тому <i>Neither have I</i> (або <i>Nor have I</i>)."
+              },
+              {
+                "q": "Пастка: A: I didn't watch the match. B: …",
+                "options": [
+                  "So did I.",
+                  "Neither didn't I.",
+                  "Neither did I."
+                ],
+                "correct": 2,
+                "a": "Речення заперечне → <i>Neither</i>, а після нього дієслово стверджувальне: <i>Neither did I.</i>"
+              },
+              {
+                "q": "A message from a friend: <i>I'm so bored with this homework!</i> You agree: <i>So … I!</i> (Впиши одне слово)",
+                "accept": [
+                  "am"
+                ],
+                "a": "<i>I'm</i> = <i>I am</i>, тому <i>So am I!</i>"
+              }
+            ]
+          }
         },
         {
           "id": "E7.1.4",
           "name": "Future continuous",
-          "status": "planned",
-          "programmeRef": "future continuous tense"
+          "status": "ready",
+          "programmeRef": "future continuous tense",
+          "lesson": {
+            "what": "<b>Future Continuous</b> (<i>will be + V-ing</i>) показує дію, яка <b>буде тривати</b> в певний момент у майбутньому: <i>This time tomorrow I'll be flying to Warsaw.</i>",
+            "ideas": [
+              "Уяви «фото» майбутнього моменту: <i>At 10 a.m. tomorrow we'll be writing a test.</i> — о 10 ми будемо саме в процесі.",
+              "Часто є точний час: <i>at 8 o'clock tonight, this time next week, all day tomorrow</i>.",
+              "Форма: <i>will be + V-ing</i> для всіх осіб. Заперечення: <i>won't be + V-ing</i>. Питання: <i>Will you be using…?</i>",
+              "Ввічливе питання про плани: <i>Will you be using your bike tomorrow?</i> — звучить м'якше, ніж просто прохання.",
+              "Порівняй: <i>When you call, I'll answer.</i> (спершу дзвінок, потім відповідь) і <i>When you call, I'll be having a shower.</i> (душ уже триває).",
+              "Дієслова стану (<i>know, like, want, understand</i>) у Continuous не вживаються: <i>I'll know the answer</i>, а не <i>I'll be knowing</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>will be + V-ing</i>",
+                "means": "Дія триватиме в певний момент у майбутньому."
+              },
+              {
+                "f": "<i>won't be + V-ing</i>; <i>Will … be + V-ing?</i>",
+                "means": "Заперечення й питання."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Put the verb in the Future Continuous: At 10 a.m. tomorrow, we … (write) a history test.",
+                "steps": [
+                  {
+                    "do": "will be + V-ing",
+                    "why": "О 10 ранку дія буде в процесі."
+                  },
+                  {
+                    "do": "write → writing",
+                    "why": "Німе <i>e</i> зникає перед <i>-ing</i>."
+                  }
+                ],
+                "answer": "will be writing."
+              },
+              {
+                "task": "Choose: 1) When you get home, I … (will make / will be making) you a cup of tea. 2) Don't call at 8 — I … (will have / will be having) my piano lesson.",
+                "steps": [
+                  {
+                    "do": "1) will make",
+                    "why": "Спершу ти прийдеш, потім я зроблю чай — одна дія після іншої."
+                  },
+                  {
+                    "do": "2) will be having",
+                    "why": "О 8 урок уже триватиме — процес."
+                  }
+                ],
+                "answer": "1) will make; 2) will be having."
+              },
+              {
+                "task": "What will you be doing at these times? 1) at 8 a.m. next Monday 2) this time next summer",
+                "steps": [
+                  {
+                    "do": "1) At 8 a.m. next Monday, I'll be walking to school.",
+                    "why": "Процес у конкретний момент."
+                  },
+                  {
+                    "do": "2) This time next summer, I'll be swimming in the sea.",
+                    "why": "Уявляємо «картинку» в майбутньому."
+                  }
+                ],
+                "answer": "For example: At 8 a.m. next Monday, I'll be walking to school. This time next summer, I'll be swimming in the sea."
+              }
+            ],
+            "mistakes": [
+              "<i>I will being sleeping.</i> / <i>I will sleeping.</i> Правильно: <i>I will be sleeping.</i>",
+              "<i>I'll be knowing the result tomorrow.</i> Правильно: <i>I'll know the result tomorrow.</i>",
+              "<i>At 9 tomorrow I sleep.</i> (калька «о 9 я спатиму»). Правильно: <i>At 9 tomorrow I'll be sleeping.</i>"
+            ],
+            "check": [
+              {
+                "q": "Don't call me at 7 — I … my piano lesson then. (Впиши дієслово <i>have</i> у Future Continuous — 3 слова)",
+                "accept": [
+                  "will be having",
+                  "'ll be having"
+                ],
+                "a": "О сьомій урок триватиме, тому <i>will be having</i> (або коротко <i>'ll be having</i>)."
+              },
+              {
+                "q": "Пастка: This time next week I … the results of the exam. (Обери)",
+                "options": [
+                  "will be knowing",
+                  "will know",
+                  "am knowing"
+                ],
+                "correct": 1,
+                "a": "<i>know</i> — дієслово стану, у Continuous його не ставимо: <i>I will know</i>."
+              },
+              {
+                "q": "An email to a friend: <i>Sorry, I can't come to your party. On Saturday at noon we … to Odesa.</i> (Обери)",
+                "options": [
+                  "are drive",
+                  "will driving",
+                  "will be driving"
+                ],
+                "correct": 2,
+                "a": "Опівдні поїздка вже триватиме — <i>will be driving</i>. Інші варіанти граматично неправильні."
+              }
+            ]
+          }
         }
       ]
     },
@@ -43,20 +468,359 @@
         {
           "id": "E7.2.1",
           "name": "Future time expressions",
-          "status": "planned",
-          "programmeRef": "Future time expressions"
+          "status": "ready",
+          "programmeRef": "Future time expressions",
+          "lesson": {
+            "what": "Слова й вирази, які показують, <b>коли</b> щось станеться в майбутньому: <i>tomorrow, next week, in two days, the day after tomorrow</i>.",
+            "ideas": [
+              "<b>tonight</b> — сьогодні ввечері; <b>tomorrow morning / afternoon / evening</b> — завтра вранці / вдень / ввечері.",
+              "<b>the day after tomorrow</b> — післязавтра.",
+              "<b>next</b> week / month / year / Monday — наступного тижня / місяця… Без <i>the</i> і без прийменника: <i>next week</i>, а не <i>on the next week</i>.",
+              "<b>this</b> weekend / evening / summer — цими вихідними, цього вечора, цього літа.",
+              "<b>in</b> + період = «через»: <i>in two days, in ten minutes, in a week's time, in ten years' time</i>.",
+              "<b>soon</b> — скоро; <b>later</b> — пізніше; <b>one day</b> / <b>in the future</b> — колись, у майбутньому.",
+              "<b>by</b> + час = «до (не пізніше)»: <i>Finish it by Friday.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>in + period</i>",
+                "means": "«Через»: <i>in two weeks</i> — через два тижні."
+              },
+              {
+                "f": "<i>next / this + week, Monday…</i>",
+                "means": "Без <i>on / in / at</i> і без <i>the</i>."
+              },
+              {
+                "f": "<i>the day after tomorrow</i>",
+                "means": "Післязавтра."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Translate: через тиждень; наступного понеділка; післязавтра.",
+                "steps": [
+                  {
+                    "do": "через тиждень → in a week (in a week's time)",
+                    "why": "«Через» + період — <i>in</i>, а не <i>after</i> чи <i>through</i>."
+                  },
+                  {
+                    "do": "наступного понеділка → next Monday",
+                    "why": "Без <i>on</i> і без <i>the</i>."
+                  },
+                  {
+                    "do": "післязавтра → the day after tomorrow",
+                    "why": "Сталий вираз."
+                  }
+                ],
+                "answer": "in a week (in a week's time); next Monday; the day after tomorrow."
+              },
+              {
+                "task": "Today is Monday 12 May. What's the date: 1) in three days 2) the day after tomorrow 3) next Monday?",
+                "steps": [
+                  {
+                    "do": "1) 12 + 3 = 15 → Thursday 15 May",
+                    "why": "<i>in three days</i> — через три дні."
+                  },
+                  {
+                    "do": "2) 12 + 2 = 14 → Wednesday 14 May",
+                    "why": "Післязавтра — через два дні."
+                  },
+                  {
+                    "do": "3) 12 + 7 = 19 → Monday 19 May",
+                    "why": "Наступний понеділок — через тиждень."
+                  }
+                ],
+                "answer": "1) Thursday 15 May; 2) Wednesday 14 May; 3) Monday 19 May."
+              },
+              {
+                "task": "Write three sentences about your plans with <i>tonight</i>, <i>next summer</i> and <i>in ten years' time</i>.",
+                "steps": [
+                  {
+                    "do": "Tonight I'm going to watch a film with my brother.",
+                    "why": "Вираз часу може стояти на початку або в кінці."
+                  },
+                  {
+                    "do": "Next summer we're going to the Carpathians.",
+                    "why": "<i>next summer</i> — без прийменника."
+                  },
+                  {
+                    "do": "In ten years' time I'll probably be at university.",
+                    "why": "<i>in … time</i> — через стільки-то часу."
+                  }
+                ],
+                "answer": "For example: Tonight I'm going to watch a film with my brother. Next summer we're going to the Carpathians. In ten years' time I'll probably be at university."
+              }
+            ],
+            "mistakes": [
+              "<i>after two days</i> (калька «через два дні») про майбутнє. Правильно: <i>in two days</i>.",
+              "<i>on the next week</i>, <i>in next year</i>. Правильно: <i>next week</i>, <i>next year</i>.",
+              "<i>after tomorrow</i> (без <i>the day</i>). Правильно: <i>the day after tomorrow</i>.",
+              "<i>this night</i> про сьогоднішній вечір. Природніше: <i>tonight</i>."
+            ],
+            "check": [
+              {
+                "q": "My birthday is … two weeks! (Впиши одне слово)",
+                "accept": [
+                  "in"
+                ],
+                "a": "«Через два тижні» — <i>in two weeks</i>."
+              },
+              {
+                "q": "Пастка: обери правильне речення.",
+                "options": [
+                  "We're going to Kraków on next week.",
+                  "We're going to Kraków in next week.",
+                  "We're going to Kraków next week."
+                ],
+                "correct": 2,
+                "a": "Перед <i>next week</i> прийменника немає."
+              },
+              {
+                "q": "Today is Friday. Your friend texts: <i>See you the day after tomorrow!</i> Which day is that?",
+                "options": [
+                  "Sunday",
+                  "Saturday",
+                  "Monday"
+                ],
+                "correct": 0,
+                "a": "<i>the day after tomorrow</i> — післязавтра. Завтра субота, отже післязавтра — неділя (<i>Sunday</i>)."
+              }
+            ]
+          }
         },
         {
           "id": "E7.2.2",
           "name": "Arranging a party",
-          "status": "planned",
-          "programmeRef": "Arranging a party"
+          "status": "ready",
+          "programmeRef": "Arranging a party",
+          "lesson": {
+            "what": "Слова й вирази, щоб планувати вечірку: запросити гостей, прикрасити кімнату, приготувати їжу й музику.",
+            "ideas": [
+              "<b>have / throw a party</b> — влаштувати вечірку; <b>a surprise party</b> — вечірка-сюрприз: <i>We're throwing a surprise party for Oksana.</i>",
+              "<b>invite</b> guests — запросити гостей; <b>send out invitations</b> — розіслати запрошення; <b>a guest list</b> — список гостей.",
+              "<b>decorate</b> the room — прикрасити кімнату; <b>put up decorations</b> — повісити прикраси; <b>blow up balloons</b> — надути кульки.",
+              "<b>bake a cake</b> — спекти торт; <b>order pizza</b> — замовити піцу; <b>do the shopping</b> — зробити покупки.",
+              "<b>make a playlist</b> — скласти список пісень; <b>sort out</b> the music — подбати про музику.",
+              "<b>a theme</b> — тема вечірки; <b>fancy dress</b> — костюми (маскарад): <i>It's a fancy dress party.</i>",
+              "<b>clean up / tidy up</b> (after the party) — прибрати після вечірки."
+            ],
+            "rules": [
+              {
+                "f": "<i>have / throw a party</i>",
+                "means": "Не <i>make a party</i>."
+              },
+              {
+                "f": "<i>send out invitations</i>; <i>blow up balloons</i>",
+                "means": "Колокації з фразовими дієсловами."
+              },
+              {
+                "f": "<i>clean up / tidy up (the mess)</i>",
+                "means": "Прибрати після вечірки."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose the verb: … a party / … invitations / … balloons (blow up, throw, send out).",
+                "steps": [
+                  {
+                    "do": "throw a party",
+                    "why": "Влаштувати вечірку — <i>throw</i> або <i>have</i>."
+                  },
+                  {
+                    "do": "send out invitations",
+                    "why": "Розіслати запрошення."
+                  },
+                  {
+                    "do": "blow up balloons",
+                    "why": "Надути кульки."
+                  }
+                ],
+                "answer": "throw a party, send out invitations, blow up balloons."
+              },
+              {
+                "task": "Put the party plan in order: clean up / send out invitations / decorate the room / make a guest list.",
+                "steps": [
+                  {
+                    "do": "1) make a guest list",
+                    "why": "Спершу вирішуємо, кого кликати."
+                  },
+                  {
+                    "do": "2) send out invitations",
+                    "why": "Потім запрошуємо."
+                  },
+                  {
+                    "do": "3) decorate the room",
+                    "why": "У день вечірки прикрашаємо."
+                  },
+                  {
+                    "do": "4) clean up",
+                    "why": "Наприкінці — прибираємо."
+                  }
+                ],
+                "answer": "make a guest list → send out invitations → decorate the room → clean up."
+              },
+              {
+                "task": "Write a message to your friends' group chat: who does what for the party?",
+                "steps": [
+                  {
+                    "do": "Hi all! I'll bake a cake.",
+                    "why": "Пропозиція в момент мовлення — <i>I'll</i>."
+                  },
+                  {
+                    "do": "Can Dima make a playlist?",
+                    "why": "Прохання — <i>Can…?</i>"
+                  },
+                  {
+                    "do": "Lisa and Ira, can you blow up the balloons on Saturday morning?",
+                    "why": "Колокація <i>blow up balloons</i>."
+                  }
+                ],
+                "answer": "For example: Hi all! I'll bake a cake. Can Dima make a playlist? Lisa and Ira, can you blow up the balloons on Saturday morning?"
+              }
+            ],
+            "mistakes": [
+              "<i>make a party</i> (калька «зробити вечірку»). Правильно: <i>have a party</i> або <i>throw a party</i>.",
+              "<i>invite on the party</i>. Правильно: <i>invite someone to a party</i>.",
+              "<i>do a cake</i>. Правильно: <i>bake / make a cake</i>."
+            ],
+            "check": [
+              {
+                "q": "We're going to … a surprise party for Bohdan. (Обери)",
+                "options": [
+                  "make",
+                  "do",
+                  "throw"
+                ],
+                "correct": 2,
+                "a": "Влаштувати вечірку — <i>throw a party</i> або <i>have a party</i>. <i>make / do a party</i> так не кажуть."
+              },
+              {
+                "q": "Пастка: after the party we need to … the mess. (Впиши 2 слова: «прибрати»)",
+                "accept": [
+                  "clean up",
+                  "clear up",
+                  "tidy up"
+                ],
+                "a": "Підходить <i>clean up</i>, <i>clear up</i> або <i>tidy up</i> — «прибрати». Не <i>clean</i> без <i>up</i> і не <i>remove</i>."
+              },
+              {
+                "q": "In the group chat: <i>Can someone … the music? I've got speakers but no songs.</i> (Обери)",
+                "options": [
+                  "sort out",
+                  "blow up",
+                  "send out"
+                ],
+                "correct": 0,
+                "a": "<i>sort out the music</i> — подбати про музику. <i>blow up</i> — про кульки, <i>send out</i> — про запрошення."
+              }
+            ]
+          }
         },
         {
           "id": "E7.2.3",
           "name": "Phrases with about",
-          "status": "planned",
-          "programmeRef": "WordWise: Phrases with about"
+          "status": "ready",
+          "programmeRef": "WordWise: Phrases with about",
+          "lesson": {
+            "what": "Слово <i>about</i> буває не лише «про». Є корисні вирази з ним: <i>be about to</i>, <i>How about…?</i>, <i>just about</i> та інші.",
+            "ideas": [
+              "<b>be about to + V</b> — ось-ось зробити: <i>Hurry! The bus is about to leave.</i>",
+              "<b>How about / What about + V-ing / noun?</b> — пропозиція «а як щодо…?»: <i>How about going to the park? What about pizza?</i>",
+              "<b>What's it about?</b> — про що це (книжка, фільм)? <i>It's about a girl who can talk to animals.</i>",
+              "<b>just about</b> — майже: <i>I've just about finished.</i>",
+              "<b>worry about / think about / talk about</b> — хвилюватися через / думати про / говорити про: <i>Don't worry about the test.</i>",
+              "<b>It's about time!</b> — нарешті, давно пора! <i>The bus is here. It's about time!</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>be about to + V</i>",
+                "means": "Ось-ось, саме збираюся: <i>I'm about to go out.</i>"
+              },
+              {
+                "f": "<i>How / What about + V-ing?</i>",
+                "means": "Пропозиція; після <i>about</i> — <i>-ing</i>."
+              },
+              {
+                "f": "<i>just about</i>",
+                "means": "Майже."
+              }
+            ],
+            "examples": [
+              {
+                "task": "What does it mean? <i>Shh! The film is about to start.</i>",
+                "steps": [
+                  {
+                    "do": "is about to start",
+                    "why": "<i>be about to</i> + дієслово — ось-ось."
+                  },
+                  {
+                    "do": "= The film will start in a moment.",
+                    "why": "Фільм почнеться за мить."
+                  }
+                ],
+                "answer": "The film is going to start very soon (in a moment)."
+              },
+              {
+                "task": "Make suggestions with <i>How about…?</i>: 1) (watch a film) 2) (a picnic)",
+                "steps": [
+                  {
+                    "do": "1) How about watching a film?",
+                    "why": "Після <i>about</i> дієслово з <i>-ing</i>."
+                  },
+                  {
+                    "do": "2) How about a picnic?",
+                    "why": "Можна й просто іменник."
+                  }
+                ],
+                "answer": "1) How about watching a film? 2) How about a picnic?"
+              },
+              {
+                "task": "Your friend asks about a book you are reading. Answer and suggest something.",
+                "steps": [
+                  {
+                    "do": "A: What's it about? B: It's about two friends who build a robot.",
+                    "why": "<i>What's it about?</i> — про що це?"
+                  },
+                  {
+                    "do": "B: I've just about finished it. How about reading it after me?",
+                    "why": "<i>just about</i> — майже; <i>How about + -ing</i> — пропозиція."
+                  }
+                ],
+                "answer": "For example: It's about two friends who build a robot. I've just about finished it. How about reading it after me?"
+              }
+            ],
+            "mistakes": [
+              "<i>How about go to the park?</i> / <i>How about to go…?</i> Правильно: <i>How about going to the park?</i>",
+              "<i>The bus is about leave.</i> Правильно: <i>The bus is about to leave.</i> Не забувай <i>to</i>.",
+              "<i>Don't worry for the test.</i> Правильно: <i>Don't worry about the test.</i>"
+            ],
+            "check": [
+              {
+                "q": "Shh! The film is about … start. (Впиши одне слово)",
+                "accept": [
+                  "to"
+                ],
+                "a": "<i>be about to</i> + дієслово: <i>The film is about to start</i> — ось-ось почнеться."
+              },
+              {
+                "q": "Пастка: обери правильну пропозицію.",
+                "options": [
+                  "How about to watch a film?",
+                  "How about watching a film?",
+                  "How about watch a film?"
+                ],
+                "correct": 1,
+                "a": "Після <i>How about</i> — дієслово з <i>-ing</i>: <i>How about watching a film?</i>"
+              },
+              {
+                "q": "A text from a friend: <i>I've … finished my project. Just one more picture to add!</i> (Впиши 2 слова з <i>about</i>: «майже»)",
+                "accept": [
+                  "just about"
+                ],
+                "a": "<i>just about</i> — майже: лишилося додати одну картинку."
+              }
+            ]
+          }
         }
       ]
     },
@@ -68,20 +832,342 @@
         {
           "id": "E7.3.1",
           "name": "Checking information. Agreeing",
-          "status": "planned",
-          "programmeRef": "Developing Speaking: Agreeing"
+          "status": "ready",
+          "programmeRef": "Developing Speaking: Agreeing",
+          "lesson": {
+            "what": "Як <b>перепитати й уточнити</b> інформацію (щоб нічого не переплутати) і як <b>погодитися</b> з думкою співрозмовника.",
+            "ideas": [
+              "Уточнити те, що ти, здається, знаєш: «хвостик»-питання: <i>The match is at five, isn't it?</i> Або <i>So it's at five, right?</i>",
+              "Перепитати, якщо не почув: <i>Sorry, what time did you say? Did you say Room 12?</i>",
+              "Перевірити, чи правильно зрозумів: <i>Just to check — we're meeting outside the school?</i>",
+              "Погодитися повністю: <i>I agree (with you). You're right. Absolutely! Exactly! That's true. Good point. I think so too.</i>",
+              "Погодитися частково: <i>Maybe, but… I see what you mean, but…</i>",
+              "Модель: <i>A: So we're meeting at the stadium at four, right? B: Yes, that's right. A: And we should bring water, shouldn't we? B: Absolutely. It's going to be hot.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>…, isn't it? / …, right?</i>",
+                "means": "Уточнюємо те, що, здається, знаємо."
+              },
+              {
+                "f": "<i>Sorry, what / where / when did you say?</i>",
+                "means": "Перепитуємо, бо не почули."
+              },
+              {
+                "f": "<i>I agree (with you). / You're right. / Absolutely!</i>",
+                "means": "Погоджуємося. <i>agree</i> — дієслово, без <i>am</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Your friend says the school trip is on Thursday, but you didn't hear the time. Check the day and ask about the time.",
+                "steps": [
+                  {
+                    "do": "The trip's on Thursday, isn't it?",
+                    "why": "Уточнюємо день «хвостиком»."
+                  },
+                  {
+                    "do": "Sorry, what time did you say?",
+                    "why": "Перепитуємо час."
+                  }
+                ],
+                "answer": "The trip's on Thursday, isn't it? Sorry, what time did you say?"
+              },
+              {
+                "task": "React: A: <i>We should have more PE lessons.</i> 1) You agree completely. 2) You agree only a little.",
+                "steps": [
+                  {
+                    "do": "1) Absolutely! I agree with you.",
+                    "why": "Повна згода."
+                  },
+                  {
+                    "do": "2) I see what you mean, but we need time for other subjects too.",
+                    "why": "Часткова згода: <i>I see what you mean, but…</i>"
+                  }
+                ],
+                "answer": "1) Absolutely! I agree with you. 2) I see what you mean, but we need time for other subjects too."
+              },
+              {
+                "task": "Complete the dialogue: A: So the concert starts at seven, …? B: Yes, that's right. A: I think we should get there early. B: …",
+                "steps": [
+                  {
+                    "do": "A: …, right? / …, doesn't it?",
+                    "why": "<i>starts</i> — Present Simple, тож «хвостик» <i>doesn't it?</i> або просто <i>right?</i>"
+                  },
+                  {
+                    "do": "B: Good point. Let's meet at six thirty.",
+                    "why": "Погоджуємося й пропонуємо."
+                  }
+                ],
+                "answer": "For example: A: …, doesn't it? (…, right?) B: Good point. Let's meet at six thirty."
+              }
+            ],
+            "mistakes": [
+              "<i>I am agree.</i> (калька «я згоден»). Правильно: <i>I agree.</i>",
+              "<i>I agree to you.</i> Правильно: <i>I agree with you.</i>",
+              "<i>What?</i> — грубо, щоб перепитати. Ввічливіше: <i>Sorry? Sorry, what did you say?</i>"
+            ],
+            "check": [
+              {
+                "q": "Your friend says: <i>Phones should be switched off during lessons.</i> You agree completely. (Обери)",
+                "options": [
+                  "I am agree.",
+                  "Absolutely! I agree.",
+                  "Agree you."
+                ],
+                "correct": 1,
+                "a": "<i>Absolutely! I agree.</i> — повна згода. <i>agree</i> — дієслово, тому без <i>am</i>."
+              },
+              {
+                "q": "Пастка: обери правильне речення.",
+                "options": [
+                  "I agree with you.",
+                  "I'm agree with you.",
+                  "I agree to you."
+                ],
+                "correct": 0,
+                "a": "Правильно: <i>I agree with you.</i> Без <i>am</i> і з прийменником <i>with</i>."
+              },
+              {
+                "q": "On the phone: <i>The match is at… (noise) …o'clock.</i> You: <i>Sorry, … time did you say?</i> (Впиши одне слово)",
+                "accept": [
+                  "what"
+                ],
+                "a": "<i>Sorry, what time did you say?</i> — ввічливо перепитуємо, о котрій."
+              }
+            ]
+          }
         },
         {
           "id": "E7.3.2",
           "name": "An invitation to a party",
-          "status": "planned",
-          "programmeRef": "An invitation to a party"
+          "status": "ready",
+          "programmeRef": "An invitation to a party",
+          "lesson": {
+            "what": "<b>Запрошення на вечірку</b> — коротке повідомлення чи лист другові. Читач має одразу зрозуміти: що, коли, де, що взяти й до коли відповісти.",
+            "ideas": [
+              "<b>Привітання</b>: <i>Hi Marta, / Dear Marta,</i>",
+              "<b>Що й чому</b>: <i>I'm having a party for my birthday. I'd love you to come! Would you like to come to…?</i>",
+              "<b>Коли й де</b>: <i>It's on Saturday 31 May, from 3 to 7 p.m., at my house (12 Sadova Street).</i>",
+              "<b>Додаткове</b>: тема, що взяти, що вдягнути: <i>It's a fancy dress party. Please bring…</i>",
+              "<b>Попроси відповісти</b>: <i>Can you let me know by Wednesday? Please reply by Friday.</i>",
+              "<b>Прощання</b>: <i>Hope to see you there! See you soon! Love, …</i> і ім'я.",
+              "Прийменники часу: <i>on</i> + день / дата, <i>at</i> + година, <i>from … to …</i> — з … до …"
+            ],
+            "rules": [
+              {
+                "f": "<i>I'm having a party… I'd love you to come!</i>",
+                "means": "Запрошуємо."
+              },
+              {
+                "f": "<i>on Saturday, at 4 p.m., at my house</i>",
+                "means": "Коли й де."
+              },
+              {
+                "f": "<i>Can you let me know by…?</i>",
+                "means": "Просимо відповісти до певного дня."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Read the model invitation (/ — new line). Find: what, when, where, extra information, reply. Hi Marta, / I'm having a party to celebrate the end of the school year, and I'd love you to come! It's on Saturday 31 May, from 3 to 7 p.m., at my house (12 Sadova Street). It's a picnic party, so we'll be in the garden. Please bring your swimsuit — we've got a paddling pool! / Can you let me know by Wednesday if you can come? / Hope to see you there! / Sofiia",
+                "steps": [
+                  {
+                    "do": "What: a party to celebrate the end of the school year.",
+                    "why": "Що й навіщо — у першому реченні."
+                  },
+                  {
+                    "do": "When / where: Saturday 31 May, from 3 to 7 p.m., at 12 Sadova Street.",
+                    "why": "Дата, час і адреса разом."
+                  },
+                  {
+                    "do": "Extra: a picnic party, bring a swimsuit.",
+                    "why": "Що чекати й що взяти."
+                  },
+                  {
+                    "do": "Reply: let me know by Wednesday.",
+                    "why": "До коли відповісти."
+                  }
+                ],
+                "answer": "All five parts are there: what, when, where, extra information and a request to reply."
+              },
+              {
+                "task": "Correct the prepositions: The party is in Sunday, on 4 p.m., at my house.",
+                "steps": [
+                  {
+                    "do": "in Sunday → on Sunday",
+                    "why": "День тижня — <i>on</i>."
+                  },
+                  {
+                    "do": "on 4 p.m. → at 4 p.m.",
+                    "why": "Година — <i>at</i>."
+                  },
+                  {
+                    "do": "at my house — правильно",
+                    "why": "Місце події — <i>at</i>: <i>at my house, at the café</i>."
+                  }
+                ],
+                "answer": "The party is on Sunday, at 4 p.m., at my house."
+              },
+              {
+                "task": "Write the first two sentences of an invitation to your birthday party.",
+                "steps": [
+                  {
+                    "do": "Hi Andrii, I'm having a birthday party next Saturday and I'd love you to come!",
+                    "why": "Що + запрошення."
+                  },
+                  {
+                    "do": "It's at my flat from 4 to 8 p.m.",
+                    "why": "Де й коли."
+                  }
+                ],
+                "answer": "For example: Hi Andrii, I'm having a birthday party next Saturday and I'd love you to come! It's at my flat from 4 to 8 p.m."
+              }
+            ],
+            "mistakes": [
+              "Забули головне: дату, час або адресу. Перевір: <i>what, when, where</i>.",
+              "<i>I invite you on my party.</i> (калька). Правильно: <i>I'd like to invite you to my party</i> або <i>I'd love you to come to my party.</i>",
+              "<i>in Saturday</i>, <i>on 5 o'clock</i>. Правильно: <i>on Saturday</i>, <i>at 5 o'clock</i>.",
+              "Немає прохання відповісти — і ти не знаєш, скільки буде гостей. Додай <i>Can you let me know by…?</i>"
+            ],
+            "check": [
+              {
+                "q": "<i>Hi Ben, Come to my birthday party on Friday at 5! Bring your favourite board game. See you, Ira.</i> Що забула написати Іра?",
+                "options": [
+                  "the place (where?)",
+                  "the date",
+                  "the time"
+                ],
+                "correct": 0,
+                "a": "Є день (<i>on Friday</i>) і година (<i>at 5</i>), але немає місця: де буде вечірка?"
+              },
+              {
+                "q": "Пастка: The party is … Sunday … 4 p.m. (Обери)",
+                "options": [
+                  "in / on",
+                  "on / at",
+                  "at / in"
+                ],
+                "correct": 1,
+                "a": "День — <i>on Sunday</i>, година — <i>at 4 p.m.</i>"
+              },
+              {
+                "q": "Обери найкраще закінчення запрошення.",
+                "options": [
+                  "You must come.",
+                  "Bye.",
+                  "Please let me know by Friday if you can come. Hope to see you there!"
+                ],
+                "correct": 2,
+                "a": "Добре закінчення просить відповісти й звучить привітно. <i>You must come.</i> — надто різко."
+              }
+            ]
+          }
         },
         {
           "id": "E7.3.3",
           "name": "Intonation of question tags",
-          "status": "planned",
-          "programmeRef": "Intonation of question tags"
+          "status": "ready",
+          "programmeRef": "Intonation of question tags",
+          "lesson": {
+            "what": "У «хвостиках»-питаннях (<i>isn't it?</i>, <i>haven't you?</i>) голос може йти <b>вниз ↘</b> або <b>вгору ↗</b> — і від цього змінюється зміст.",
+            "ideas": [
+              "<b>Вниз ↘ (falling)</b> — ти впевнений і просто чекаєш, що співрозмовник погодиться. Так підтримують розмову: <i>Lovely day, ↘isn't it?</i>",
+              "<b>Вгору ↗ (rising)</b> — ти справді не знаєш і питаєш: <i>You haven't seen my keys, ↗have you?</i>",
+              "Схоже на українську: «Гарна погода, правда ж↘» (впевнено) і «Ти не бачив моїх ключів, ні↗?» (справжнє питання).",
+              "Наголос у «хвостику» падає на допоміжне дієслово: <i>ISn't it, HAVEN'T you, CAN he</i>.",
+              "Порада: якщо не впевнений, як сказати, — справжнє питання завжди з голосом угору."
+            ],
+            "rules": [
+              {
+                "f": "<i>…, ↘isn't it?</i>",
+                "means": "Голос униз: «я впевнений, погодься»."
+              },
+              {
+                "f": "<i>…, ↗isn't it?</i>",
+                "means": "Голос угору: «я не впевнений, скажи мені»."
+              }
+            ],
+            "examples": [
+              {
+                "task": "The sun is shining. You say to your friend: <i>It's hot today, isn't it?</i> Falling or rising?",
+                "steps": [
+                  {
+                    "do": "Ти бачиш, що жарко.",
+                    "why": "Ти впевнений, просто починаєш розмову."
+                  },
+                  {
+                    "do": "It's hot today, ↘isn't it?",
+                    "why": "Голос униз."
+                  }
+                ],
+                "answer": "Falling ↘."
+              },
+              {
+                "task": "You think the boy is Ira's brother, but you're not sure. <i>You're Ira's brother, aren't you?</i> Falling or rising?",
+                "steps": [
+                  {
+                    "do": "Ти не впевнений.",
+                    "why": "Тобі справді потрібна відповідь «так» чи «ні»."
+                  },
+                  {
+                    "do": "You're Ira's brother, ↗aren't you?",
+                    "why": "Голос угору."
+                  }
+                ],
+                "answer": "Rising ↗."
+              },
+              {
+                "task": "Read aloud with the arrows: 1) <i>Great match, ↘wasn't it?</i> 2) <i>The shop's open on Sundays, ↗isn't it?</i>",
+                "steps": [
+                  {
+                    "do": "1) WASn't it ↘",
+                    "why": "Усі бачили матч — ти впевнений, що він був чудовий."
+                  },
+                  {
+                    "do": "2) ISn't it ↗",
+                    "why": "Не знаєш, чи працює магазин, — справжнє питання."
+                  }
+                ],
+                "answer": "1) falling — sure; 2) rising — a real question."
+              }
+            ],
+            "mistakes": [
+              "Усі «хвостики» вгору, як у справжньому питанні. Коли ти впевнений (<i>Nice weather, isn't it?</i>), голос іде вниз.",
+              "Рівний голос без руху — звучить як помилка. Дай голосу піти виразно вниз або вгору.",
+              "Наголос на займеннику: <i>isn't IT</i>. Правильно: <i>ISn't it</i>."
+            ],
+            "check": [
+              {
+                "q": "You see blue sky and sun. You say: <i>Lovely weather, isn't it?</i> Як іде голос у «хвостику»?",
+                "options": [
+                  "down ↘ (falling)",
+                  "up ↗ (rising)"
+                ],
+                "correct": 0,
+                "a": "Ти бачиш погоду й упевнений — голос униз ↘. Ти просто чекаєш згоди."
+              },
+              {
+                "q": "Пастка: you're not sure the swimming pool is open today. <i>The pool's open today, isn't it?</i> Як іде голос?",
+                "options": [
+                  "down ↘ (falling)",
+                  "up ↗ (rising)"
+                ],
+                "correct": 1,
+                "a": "Ти не впевнений і чекаєш відповіді — справжнє питання, голос угору ↗."
+              },
+              {
+                "q": "Which speaker really doesn't know the answer?",
+                "options": [
+                  "A: <i>It's Monday today, ↘isn't it?</i>",
+                  "B: <i>Great film, ↘wasn't it?</i>",
+                  "C: <i>You've got a spare pen, ↗haven't you?</i>"
+                ],
+                "correct": 2,
+                "a": "Лише в C голос угору ↗ — людина справді питає, чи є в тебе ручка. В A і B голос униз: вони впевнені."
+              }
+            ]
+          }
         }
       ]
     }

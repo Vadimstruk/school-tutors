@@ -12,26 +12,463 @@
         {
           "id": "E4.1.1",
           "name": "Indefinite pronouns",
-          "status": "planned",
-          "programmeRef": "Indefinite pronouns (everyone, no one, someone, etc.)"
+          "status": "ready",
+          "programmeRef": "Indefinite pronouns (everyone, no one, someone, etc.)",
+          "lesson": {
+            "what": "<b>Неозначені займенники</b> — це слова на кшталт <i>someone</i> (хтось), <i>anything</i> (щось, будь-що), <i>no one</i> (ніхто), <i>everywhere</i> (скрізь). Вони потрібні, коли ми не знаємо або не хочемо називати, хто, що чи де саме.",
+            "ideas": [
+              "Вони складаються з двох частин: <i>some- / any- / no- / every-</i> + <i>-one / -body</i> (люди), <i>-thing</i> (речі), <i>-where</i> (місця). <i>-one</i> і <i>-body</i> означають те саме: <i>someone = somebody</i>.",
+              "<i>some-</i> — у стверджувальних реченнях: <i>Someone called you.</i> А ще в проханнях і пропозиціях: <i>Would you like something to drink?</i>",
+              "<i>any-</i> — у запитаннях і після <i>not</i>: <i>Is anyone online?</i> <i>I can't find my phone anywhere.</i>",
+              "<i>no-</i> уже означає «ні»: <i>Nobody answered.</i> — «Ніхто не відповів». Друге заперечення не додаємо: в англійському реченні лише <b>одне</b> заперечення.",
+              "Після <i>everyone, someone, nobody, everything</i> дієслово в однині, як після <i>he / she / it</i>: <i>Everyone <b>has</b> a phone.</i>",
+              "<i>no one</i> пишемо окремо, двома словами; <i>nobody, nothing, nowhere</i> — разом."
+            ],
+            "rules": [
+              {
+                "f": "<i>someone / something / somewhere</i>",
+                "means": "Стверджувальні речення, прохання, пропозиції: <i>I've got something for you.</i>"
+              },
+              {
+                "f": "<i>anyone / anything / anywhere</i>",
+                "means": "Запитання й заперечення з <i>not</i>: <i>Did you buy anything?</i> <i>I didn't see anyone.</i>"
+              },
+              {
+                "f": "<i>no one (nobody) / nothing / nowhere</i>",
+                "means": "Заперечення без <i>not</i>: <i>There's nothing in my bag.</i>"
+              },
+              {
+                "f": "<i>everyone (everybody) / everything / everywhere</i>",
+                "means": "Усі, усе, скрізь; дієслово в однині: <i>Everything is ready.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose the correct word (обери слово): <i>Is there … to eat? I'm hungry.</i> (something / anything / nothing)",
+                "steps": [
+                  {
+                    "do": "<i>Is there …?</i> — це запитання.",
+                    "why": "У запитаннях зазвичай уживаємо <i>any-</i>."
+                  },
+                  {
+                    "do": "<i>Is there anything to eat?</i>",
+                    "why": "Ідеться про речі (їжу), тому <i>-thing</i>."
+                  }
+                ],
+                "answer": "<i>anything</i>"
+              },
+              {
+                "task": "Correct the mistake (виправ помилку): <i>Nobody don't know the Wi-Fi password.</i>",
+                "steps": [
+                  {
+                    "do": "<i>Nobody don't know</i>",
+                    "why": "Тут два заперечення: <i>nobody</i> і <i>don't</i>. Українською кажемо «Ніхто не знає», а англійською так не можна."
+                  },
+                  {
+                    "do": "<i>Nobody knows the Wi-Fi password.</i>",
+                    "why": "Прибираємо <i>don't</i>. <i>Nobody</i> — як <i>he</i>, тому <i>knows</i> із закінченням -s."
+                  },
+                  {
+                    "do": "<i>No one knows the Wi-Fi password.</i>",
+                    "why": "Теж правильно: <i>no one</i> = <i>nobody</i>."
+                  }
+                ],
+                "answer": "<i>Nobody knows the Wi-Fi password.</i>"
+              },
+              {
+                "task": "Write about your weekend with three indefinite pronouns (напиши про свої вихідні, ужий три неозначені займенники).",
+                "steps": [
+                  {
+                    "do": "<i>On Saturday I didn't go anywhere.</i>",
+                    "why": "Заперечення з <i>didn't</i> → <i>anywhere</i>."
+                  },
+                  {
+                    "do": "<i>I played an online game with someone from Poland.</i>",
+                    "why": "Стверджувальне речення → <i>someone</i>."
+                  },
+                  {
+                    "do": "<i>Everyone in my family was at home on Sunday.</i>",
+                    "why": "<i>Everyone</i> + <i>was</i> — дієслово в однині."
+                  }
+                ],
+                "answer": "Наприклад: <i>On Saturday I didn't go anywhere. I played an online game with someone from Poland. Everyone in my family was at home on Sunday.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>Nobody don't like it.</i> — подвійне заперечення, калька з «Ніхто не любить». Правильно: <i>Nobody likes it.</i>",
+              "<i>I didn't see nobody.</i> Правильно: <i>I didn't see anybody.</i> або <i>I saw nobody.</i>",
+              "<i>Everyone have a tablet.</i> Правильно: <i>Everyone <b>has</b> a tablet.</i> — після <i>everyone</i> дієслово в однині.",
+              "Пишуть <i>noone</i> разом. Правильно: <i>no one</i> (два слова) або <i>nobody</i>."
+            ],
+            "check": [
+              {
+                "q": "Our class chat is never quiet. … always has something to say! (Обери слово)",
+                "options": [
+                  "Everyone",
+                  "Anyone",
+                  "No one"
+                ],
+                "correct": 0,
+                "a": "<i>Everyone</i> — «усі, кожен». <i>Anyone</i> вживаємо в запитаннях і запереченнях, а <i>no one</i> (ніхто) суперечить думці, що чат ніколи не мовчить."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>I didn't tell … about the surprise party.</i> (людина)",
+                "accept": [
+                  "anyone",
+                  "anybody"
+                ],
+                "a": "<i>anyone</i> або <i>anybody</i>: у реченні вже є <i>didn't</i>, тож <i>no one</i> чи <i>nobody</i> було б другим запереченням."
+              },
+              {
+                "q": "A message to your class group (повідомлення в групу класу): «Has … seen my charger? I left it … in the computer room.»",
+                "options": [
+                  "someone … anywhere",
+                  "no one … nowhere",
+                  "anyone … somewhere"
+                ],
+                "correct": 2,
+                "a": "Перше — запитання, тому <i>anyone</i>; друге — стверджувальне речення, тому <i>somewhere</i> (десь). <i>I left it anywhere</i> чи <i>nowhere</i> так не кажуть."
+              }
+            ]
+          }
         },
         {
           "id": "E4.1.2",
           "name": "all / some / none / any of them",
-          "status": "planned",
-          "programmeRef": "all / some / none / any of them"
+          "status": "ready",
+          "programmeRef": "all / some / none / any of them",
+          "lesson": {
+            "what": "Коли говоримо про частину групи людей чи речей, кажемо <i>all of them</i> (усі вони), <i>some of them</i> (деякі з них), <i>none of them</i> (жоден з них), <i>any of them</i> (хтось / будь-хто з них).",
+            "ideas": [
+              "Будова: слово кількості + <i>of</i> + <i>them / us / you</i> або + <i>the / my</i> + іменник: <i>some of my friends</i>, <i>all of us</i>, <i>none of the games</i>.",
+              "<i>all of them</i> — 100 %; <i>some of them</i> — частина; <i>none of them</i> — 0 %, нікого чи нічого.",
+              "<i>none</i> вже має заперечення всередині: <i>None of them <b>replied</b>.</i> — «Жоден з них не відповів». <i>didn't</i> не додаємо.",
+              "<i>any of them</i> — у запитаннях і після <i>not</i>: <i>Do any of you play chess?</i> <i>I didn't like any of them.</i>",
+              "Перед займенником <i>of</i> обов'язкове: <i>all of them</i>, а не <i>all them</i>. Після <i>of</i> — <i>them, us, you</i>, а не <i>they, we</i>.",
+              "Після <i>none of them</i> дієслово може бути в однині чи множині: <i>None of them has / have played it.</i> Обидва варіанти правильні."
+            ],
+            "rules": [
+              {
+                "f": "<i>all / some / none / any + of + them / us / you</i>",
+                "means": "Уся група, частина або ніхто з групи."
+              },
+              {
+                "f": "<i>None of them + дієслово без not</i>",
+                "means": "<i>None of them knew the answer.</i> — Жоден з них не знав відповіді."
+              },
+              {
+                "f": "<i>not … any of them</i> = <i>none of them</i>",
+                "means": "<i>I didn't buy any of them.</i> = <i>I bought none of them.</i> Перший варіант у розмові звучить природніше."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose (обери): <i>I asked five friends about the new game. … of them have played it.</i> (0 out of 5) (All / Some / None)",
+                "steps": [
+                  {
+                    "do": "0 out of 5 — нуль людей.",
+                    "why": "Нуль, ніхто → <i>none</i>."
+                  },
+                  {
+                    "do": "<i>None of them have played it.</i>",
+                    "why": "<i>None</i> уже заперечує, тому дієслово стверджувальне: <i>have played</i>, а не <i>haven't played</i>."
+                  }
+                ],
+                "answer": "<i>None of them have played it.</i> (можна й <i>has played</i>)"
+              },
+              {
+                "task": "Make one sentence (склади речення): <i>my cousins / 3 out of 6 / live in Kyiv</i>",
+                "steps": [
+                  {
+                    "do": "3 out of 6 — частина групи.",
+                    "why": "Частина → <i>some</i>."
+                  },
+                  {
+                    "do": "<i>Some of my cousins live in Kyiv.</i>",
+                    "why": "Після <i>some of my cousins</i> дієслово в множині: <i>live</i>."
+                  }
+                ],
+                "answer": "<i>Some of my cousins live in Kyiv.</i>"
+              },
+              {
+                "task": "Correct the mistake (виправ помилку): <i>I tried three apps, but I didn't like none of them.</i>",
+                "steps": [
+                  {
+                    "do": "<i>didn't … none</i>",
+                    "why": "Два заперечення в одному реченні — в англійській так не можна."
+                  },
+                  {
+                    "do": "<i>I didn't like any of them.</i>",
+                    "why": "Після <i>not</i> уживаємо <i>any</i>."
+                  },
+                  {
+                    "do": "<i>I liked none of them.</i>",
+                    "why": "Теж правильно: залишаємо <i>none</i> і прибираємо <i>didn't</i>. Але в розмові так кажуть рідше."
+                  }
+                ],
+                "answer": "<i>I tried three apps, but I didn't like any of them.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>all them</i>, <i>some them</i> → <i>all of them</i>, <i>some of them</i>.",
+              "<i>None of them didn't come.</i> → <i>None of them came.</i> — одне заперечення.",
+              "Калька з «ніхто з них»: <i>nobody of them</i>. Правильно: <i>none of them</i>.",
+              "<i>some of they</i>, <i>all of we</i> → <i>some of them</i>, <i>all of us</i>."
+            ],
+            "check": [
+              {
+                "q": "We have four tablets at home, and … of them work — 4 out of 4! (Обери)",
+                "options": [
+                  "some",
+                  "none",
+                  "all"
+                ],
+                "correct": 2,
+                "a": "4 з 4 — це всі: <i>all of them</i>. <i>Some</i> — лише частина, <i>none</i> — жоден."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>I invited ten classmates, but … of them answered.</i> (жоден)",
+                "accept": [
+                  "none"
+                ],
+                "a": "<i>none</i>: «жоден з них не відповів» — <i>none of them answered</i>, без <i>didn't</i>. <i>Nobody of them</i> — помилка."
+              },
+              {
+                "q": "A post in a gaming group (допис у групі гравців): «I've got three spare game codes. Do … of you want one?»",
+                "options": [
+                  "none",
+                  "any",
+                  "every"
+                ],
+                "correct": 1,
+                "a": "Це запитання, тому <i>any of you</i> — «хтось із вас». <i>Every of you</i> не кажуть: лише <i>every one of you</i> або <i>all of you</i>."
+              }
+            ]
+          }
         },
         {
           "id": "E4.1.3",
           "name": "should(n't), had better, ought to",
-          "status": "planned",
-          "programmeRef": "should(n't), had better, ought to"
+          "status": "ready",
+          "programmeRef": "should(n't), had better, ought to",
+          "lesson": {
+            "what": "Щоб дати пораду, кажемо <i>should</i> (варто, слід), <i>ought to</i> (те саме, але трохи офіційніше) і <i>had better</i> (краще б…, бо інакше буде погано).",
+            "ideas": [
+              "<i>should</i> — найчастіша порада: <i>You should update your apps.</i> Заперечення — <i>shouldn't</i>: <i>You shouldn't share your password.</i>",
+              "<i>ought to</i> означає те саме, що <i>should</i>, але вживається рідше: <i>You ought to tell your parents.</i>",
+              "<i>had better</i> (скорочено <i>'d better</i>) — сильніша порада для конкретної ситуації зараз, часто з попередженням: <i>You'd better charge your phone, or it will die.</i>",
+              "Хоч там є <i>had</i>, <i>had better</i> говорить про <b>теперішнє чи майбутнє</b>, а не про минуле.",
+              "Після <i>should</i> і <i>had better</i> — дієслово в початковій формі без <i>to</i>: <i>should go</i>, <i>'d better go</i>. Лише в <i>ought</i> є своє <i>to</i>: <i>ought to go</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>should / shouldn't + V</i>",
+                "means": "Порада: <i>You shouldn't open that link.</i> Питання: <i>Should I tell my teacher?</i>"
+              },
+              {
+                "f": "<i>ought to + V</i>",
+                "means": "Те саме, що <i>should</i>: <i>We ought to leave now.</i>"
+              },
+              {
+                "f": "<i>had better ('d better) + V</i>; <i>had better not + V</i>",
+                "means": "Сильна порада-попередження: <i>You'd better not be late.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Complete with <i>should</i> or <i>shouldn't</i>: <i>You … click on links from people you don't know.</i>",
+                "steps": [
+                  {
+                    "do": "Чи добра це ідея — натискати на посилання від незнайомців?",
+                    "why": "Ні, це небезпечно, тож порада «не роби»."
+                  },
+                  {
+                    "do": "<i>You shouldn't click on links from people you don't know.</i>",
+                    "why": "<i>shouldn't</i> + дієслово без <i>to</i>."
+                  }
+                ],
+                "answer": "<i>shouldn't</i>"
+              },
+              {
+                "task": "Correct the mistake (виправ помилку): <i>You had better to save your work now.</i>",
+                "steps": [
+                  {
+                    "do": "<i>had better to save</i>",
+                    "why": "Після <i>had better</i> частку <i>to</i> не ставимо."
+                  },
+                  {
+                    "do": "<i>You had better save your work now.</i> = <i>You'd better save your work now.</i>",
+                    "why": "<i>'d better</i> — розмовне скорочення."
+                  }
+                ],
+                "answer": "<i>You'd better save your work now.</i>"
+              },
+              {
+                "task": "Your friend's phone battery is at 2%, and he's going on a long bus trip. Give him advice in three ways (дай пораду трьома способами).",
+                "steps": [
+                  {
+                    "do": "<i>You should charge your phone before you go.</i>",
+                    "why": "Звичайна порада."
+                  },
+                  {
+                    "do": "<i>You ought to take a power bank.</i>",
+                    "why": "Те саме значення, трохи офіційніше."
+                  },
+                  {
+                    "do": "<i>You'd better charge it now, or you won't be able to call your mum.</i>",
+                    "why": "Ситуація термінова і є попередження — <i>'d better</i>."
+                  }
+                ],
+                "answer": "<i>You should charge your phone before you go. You ought to take a power bank. You'd better charge it now, or you won't be able to call your mum.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>You should to go.</i> → <i>You should go.</i>",
+              "<i>You'd better not to tell anyone.</i> → <i>You'd better not tell anyone.</i>",
+              "<i>You hadn't better…</i> → <i>You'd better not…</i> — <i>not</i> стоїть після <i>better</i>.",
+              "Думають, що <i>had better</i> — про минуле. Ні: <i>You'd better go now.</i> — «Тобі краще піти зараз».",
+              "<i>ought</i> без <i>to</i>: <i>You ought tell him.</i> → <i>You ought to tell him.</i>"
+            ],
+            "check": [
+              {
+                "q": "It's 10 p.m., and you have a test tomorrow. Your mum says: «You … go to bed now.» (Обери правильний варіант)",
+                "options": [
+                  "should to",
+                  "'d better",
+                  "ought"
+                ],
+                "correct": 1,
+                "a": "<i>You'd better go to bed now</i> — сильна порада саме для цієї ситуації. <i>Should to</i> — помилка, а після <i>ought</i> потрібне <i>to</i>."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>You ought … back up your photos.</i>",
+                "accept": [
+                  "to"
+                ],
+                "a": "<i>to</i>: <i>ought to back up</i>. З трьох виразів лише після <i>ought</i> стоїть <i>to</i>."
+              },
+              {
+                "q": "Your friend texts (друг пише): «A stranger in a game chat asked for my password.» Which reply is correct? (Яка відповідь правильна?)",
+                "options": [
+                  "You'd better not give it to him!",
+                  "You'd better not to give it to him!",
+                  "You hadn't better give it to him!"
+                ],
+                "correct": 0,
+                "a": "<i>'d better not + дієслово без to</i>: <i>You'd better not give it to him!</i>"
+              }
+            ]
+          }
         },
         {
           "id": "E4.1.4",
           "name": "Modal verbs in the past",
-          "status": "planned",
-          "programmeRef": "modal verbs in the past tense"
+          "status": "ready",
+          "programmeRef": "modal verbs in the past tense",
+          "lesson": {
+            "what": "Деякі модальні дієслова мають особливу форму минулого: <i>can</i> → <i>could</i> (міг, умів), <i>must / have to</i> → <i>had to</i> (мусив, довелося), <i>don't have to</i> → <i>didn't have to</i> (не треба було).",
+            "ideas": [
+              "<i>could / couldn't</i> + дієслово — уміння або можливість у минулому: <i>I could swim when I was five.</i> <i>I couldn't log in yesterday.</i>",
+              "<i>must</i> не має форми минулого. Про обов'язок у минулому кажемо <i>had to</i>: <i>I had to change my password.</i>",
+              "<i>didn't have to</i> — «не треба було» (можна було, але не обов'язково): <i>We didn't have to wear uniform on Friday.</i>",
+              "Запитання: <i>Could you…?</i>, а з <i>had to</i> — через <i>did</i>: <i>Did you have to wait?</i>",
+              "Після <i>could</i> і <i>had to</i> дієслово в початковій формі: <i>could <b>go</b></i>, а не <i>could went</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>could / couldn't + V</i>",
+                "means": "Умів / міг (не вмів / не міг) у минулому."
+              },
+              {
+                "f": "<i>had to / didn't have to + V</i>",
+                "means": "Мусив / не мусив, не треба було."
+              },
+              {
+                "f": "<i>Did … have to + V?</i>",
+                "means": "Чи треба було…? <i>Did you have to pay for the app?</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Put into the past (перенеси в минуле): <i>I can't open the file.</i>",
+                "steps": [
+                  {
+                    "do": "<i>can't</i> → <i>couldn't</i>",
+                    "why": "Минула форма <i>can</i> — <i>could</i>."
+                  },
+                  {
+                    "do": "<i>I couldn't open the file.</i>",
+                    "why": "Дієслово <i>open</i> не змінюється."
+                  }
+                ],
+                "answer": "<i>I couldn't open the file.</i>"
+              },
+              {
+                "task": "Put into the past: <i>We must turn off our phones in class.</i>",
+                "steps": [
+                  {
+                    "do": "<i>must</i> → <i>had to</i>",
+                    "why": "<i>must</i> не має минулої форми, тому беремо <i>had to</i>."
+                  },
+                  {
+                    "do": "<i>We had to turn off our phones in class.</i>",
+                    "why": "<i>turn off</i> — у початковій формі."
+                  }
+                ],
+                "answer": "<i>We had to turn off our phones in class.</i>"
+              },
+              {
+                "task": "Answer about yourself (відповідай про себе): <i>What could you do when you were six? What did you have to do last weekend?</i>",
+                "steps": [
+                  {
+                    "do": "<i>When I was six, I could ride a bike, but I couldn't read well.</i>",
+                    "why": "Уміння в минулому — <i>could / couldn't</i>."
+                  },
+                  {
+                    "do": "<i>Last weekend I had to clean my room, but I didn't have to get up early.</i>",
+                    "why": "Обов'язок — <i>had to</i>; його відсутність — <i>didn't have to</i>."
+                  }
+                ],
+                "answer": "Наприклад: <i>When I was six, I could ride a bike, but I couldn't read well. Last weekend I had to clean my room, but I didn't have to get up early.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>I musted</i> або <i>I must went</i> → <i>I had to go.</i>",
+              "<i>I didn't had to</i> → <i>I didn't have to</i>: після <i>didn't</i> — <i>have</i>.",
+              "<i>I could went</i> → <i>I could go.</i>",
+              "Плутають <i>didn't have to</i> і <i>couldn't</i>. <i>I didn't have to pay</i> — «платити не треба було», а <i>I couldn't pay</i> — «я не зміг заплатити»."
+            ],
+            "check": [
+              {
+                "q": "Yesterday the Wi-Fi was down, so I … watch the stream. (Обери)",
+                "options": [
+                  "can't",
+                  "didn't could",
+                  "couldn't"
+                ],
+                "correct": 2,
+                "a": "Ідеться про минуле (<i>yesterday</i>), тому <i>couldn't</i>. <i>Didn't could</i> не буває."
+              },
+              {
+                "q": "Пастка. Впиши три слова: <i>The school concert was free, so we … pay.</i> (не треба було)",
+                "accept": [
+                  "didn't have to",
+                  "did not have to"
+                ],
+                "a": "<i>didn't have to</i> (<i>did not have to</i>): платити не треба було. <i>Mustn't</i> — це заборона, і про минуле так не кажуть."
+              },
+              {
+                "q": "A message to your teacher (повідомлення вчительці): «Sorry I missed the online lesson yesterday. I … go to the dentist.»",
+                "options": [
+                  "had to",
+                  "must",
+                  "have to"
+                ],
+                "correct": 0,
+                "a": "Ідеться про минуле (<i>missed</i>, <i>yesterday</i>), тому <i>had to</i>."
+              }
+            ]
+          }
         }
       ]
     },
@@ -43,14 +480,244 @@
         {
           "id": "E4.2.1",
           "name": "IT terms",
-          "status": "planned",
-          "programmeRef": "IT terms"
+          "status": "ready",
+          "programmeRef": "IT terms",
+          "lesson": {
+            "what": "Слова, без яких не обійтися онлайн: як завантажити файл, увійти в акаунт, викласти фото чи прикріпити документ.",
+            "ideas": [
+              "<i>download</i> — завантажити собі на пристрій: <i>I downloaded a new app.</i> <i>upload</i> — завантажити в інтернет: <i>She uploaded a video to her channel.</i>",
+              "<i>log in (to)</i> — увійти в акаунт; <i>log out</i> — вийти: <i>Log in to your school account and check your marks.</i>",
+              "<i>password</i> — пароль: <i>Never share your password.</i> <i>username</i> — ім'я користувача.",
+              "<i>post</i> — викласти допис чи фото; також іменник «допис»: <i>He posted a photo of his cat.</i> <i>I liked your post.</i>",
+              "<i>attach</i> — прикріпити: <i>I attached the file to the email.</i> <i>attachment</i> — вкладення.",
+              "<i>delete</i> — видалити: <i>Delete that message!</i> <i>update</i> — оновити, а також «оновлення»: <i>My phone needs an update.</i>",
+              "<i>take a screenshot</i> — зробити знімок екрана. <i>charger</i> — зарядний пристрій: <i>Can I borrow your charger?</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>log in <b>to</b> an account</i>, <i>click <b>on</b> a link</i>, <i>post <b>on</b> social media</i>",
+                "means": "Прийменники, які треба запам'ятати."
+              },
+              {
+                "f": "<i>download</i> ↔ <i>upload</i>",
+                "means": "<i>down</i> — «вниз», до себе на пристрій; <i>up</i> — «вгору», від себе в інтернет."
+              },
+              {
+                "f": "<i>log in</i> (дієслово) — <i>login</i> (іменник)",
+                "means": "<i>I can't log in.</i> Але: <i>Enter your login details.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose (обери): <i>I can't watch the film offline because I didn't … it.</i> (download / upload)",
+                "steps": [
+                  {
+                    "do": "Фільм має бути на моєму пристрої.",
+                    "why": "До себе — <i>download</i>."
+                  },
+                  {
+                    "do": "<i>I didn't download it.</i>",
+                    "why": "Після <i>didn't</i> — початкова форма дієслова."
+                  }
+                ],
+                "answer": "<i>download</i>"
+              },
+              {
+                "task": "Complete the instructions with <i>log in, password, attach, click</i>: <i>First, … to your account. Enter your …. Then … on «New message», … your homework and send it.</i>",
+                "steps": [
+                  {
+                    "do": "<i>First, log in to your account.</i>",
+                    "why": "<i>log in to</i> — увійти в акаунт."
+                  },
+                  {
+                    "do": "<i>Enter your password.</i>",
+                    "why": "Вводимо пароль."
+                  },
+                  {
+                    "do": "<i>Then click on «New message»,</i>",
+                    "why": "<i>click on</i> — натиснути."
+                  },
+                  {
+                    "do": "<i>attach your homework and send it.</i>",
+                    "why": "Файл прикріплюємо — <i>attach</i>."
+                  }
+                ],
+                "answer": "<i>log in, password, click, attach</i>"
+              },
+              {
+                "task": "Write two sentences about how you use your phone (два речення про себе).",
+                "steps": [
+                  {
+                    "do": "<i>I often take screenshots of funny messages.</i>",
+                    "why": "<i>take a screenshot</i> — стала сполука."
+                  },
+                  {
+                    "do": "<i>I never post photos that show where I live.</i>",
+                    "why": "<i>post</i> — викладати в інтернет."
+                  }
+                ],
+                "answer": "Наприклад: <i>I often take screenshots of funny messages. I never post photos that show where I live.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>make a screenshot</i> — калька з «зробити скріншот». Правильно: <i>take a screenshot</i>.",
+              "Плутають <i>download</i> і <i>upload</i>: українське «завантажити» буває і тим, і тим.",
+              "<i>log in my account</i> → <i>log in <b>to</b> my account</i>.",
+              "<i>I forgot my charging.</i> → <i>I forgot my charger.</i>"
+            ],
+            "check": [
+              {
+                "q": "I'm going to … a photo of our project to the class website. (Обери)",
+                "options": [
+                  "download",
+                  "delete",
+                  "upload"
+                ],
+                "correct": 2,
+                "a": "На сайт, в інтернет — <i>upload</i>. <i>Download</i> — до себе на пристрій."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>Can you … a screenshot of the chat and send it to me?</i> (зробити)",
+                "accept": [
+                  "take"
+                ],
+                "a": "<i>take</i>: <i>take a screenshot</i> — «зробити скріншот». <i>Make a screenshot</i> — калька з української."
+              },
+              {
+                "q": "A sign in the school computer room (табличка в комп'ютерному класі): «Please … before you leave.»",
+                "options": [
+                  "log out",
+                  "log in",
+                  "download"
+                ],
+                "correct": 0,
+                "a": "Перед тим як піти, треба вийти з акаунта: <i>log out</i>."
+              }
+            ]
+          }
         },
         {
           "id": "E4.2.2",
           "name": "Language for giving advice",
-          "status": "planned",
-          "programmeRef": "Language for giving advice"
+          "status": "ready",
+          "programmeRef": "Language for giving advice",
+          "lesson": {
+            "what": "Порада англійською — це не лише <i>should</i>. Є багато фраз, щоб порадити ввічливо, м'яко або наполегливо, і щоб самому попросити поради.",
+            "ideas": [
+              "<i>Why don't you + V?</i> — м'яка порада: <i>Why don't you ask your teacher?</i>",
+              "<i>If I were you, I'd + V</i> — «На твоєму місці я б…»: <i>If I were you, I'd turn off notifications.</i>",
+              "<i>It's a good idea to + V</i> / <i>It isn't a good idea to + V</i>: <i>It's a good idea to use different passwords.</i>",
+              "<i>Make sure (that) you…</i> — «Обов'язково…»: <i>Make sure you log out.</i>",
+              "<i>Don't forget to + V</i> / <i>Remember to + V</i>: <i>Remember to back up your photos.</i>",
+              "Попросити поради: <i>What should I do?</i> <i>Can you give me some advice?</i>",
+              "<i>advice</i> — незлічуване: <i>some advice</i>, <i>a piece of advice</i>, але ніколи <i>an advice</i> чи <i>advices</i>. Дієслово «радити» — <i>advise</i> (з <i>s</i>): <i>What do you advise?</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>Why don't you + V?</i>",
+                "means": "М'яка порада; дієслово без <i>to</i>."
+              },
+              {
+                "f": "<i>If I were you, I'd + V</i>",
+                "means": "«На твоєму місці я б…»."
+              },
+              {
+                "f": "<i>It's a good idea to + V</i>; <i>Make sure you + V</i>; <i>Don't forget to + V</i>",
+                "means": "Порада або нагадування."
+              },
+              {
+                "f": "<i>advice</i> /ədˈvaɪs/ (іменник) — <i>advise</i> /ədˈvaɪz/ (дієслово)",
+                "means": "<i>Can you give me some advice?</i> — <i>What do you advise me to do?</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose (обери): <i>Can you give me …?</i> (an advice / some advice / advices)",
+                "steps": [
+                  {
+                    "do": "<i>advice</i> — незлічуване.",
+                    "why": "З ним не вживаємо <i>a / an</i> і закінчення <i>-s</i>."
+                  },
+                  {
+                    "do": "<i>Can you give me some advice?</i>",
+                    "why": "<i>some advice</i> — «якусь пораду»."
+                  }
+                ],
+                "answer": "<i>some advice</i>"
+              },
+              {
+                "task": "Your friend plays games for six hours a day and gets bad marks. Give advice with three different phrases (дай пораду трьома різними фразами).",
+                "steps": [
+                  {
+                    "do": "<i>Why don't you set a time limit on your phone?</i>",
+                    "why": "М'яка порада."
+                  },
+                  {
+                    "do": "<i>If I were you, I'd do my homework first and play later.</i>",
+                    "why": "«На твоєму місці я б…»."
+                  },
+                  {
+                    "do": "<i>Make sure you go to bed before eleven.</i>",
+                    "why": "Наголошуємо на важливому."
+                  }
+                ],
+                "answer": "Наприклад: <i>Why don't you set a time limit on your phone? If I were you, I'd do my homework first and play later. Make sure you go to bed before eleven.</i>"
+              },
+              {
+                "task": "Correct the mistakes (виправ помилки): <i>Why don't you to ask your mum? It's good idea.</i>",
+                "steps": [
+                  {
+                    "do": "<i>Why don't you to ask</i>",
+                    "why": "Після <i>Why don't you</i> — дієслово без <i>to</i>."
+                  },
+                  {
+                    "do": "<i>Why don't you ask your mum?</i>",
+                    "why": "Прибрали <i>to</i>."
+                  },
+                  {
+                    "do": "<i>It's good idea</i> → <i>It's a good idea.</i>",
+                    "why": "Перед <i>good idea</i> потрібен артикль <i>a</i>."
+                  }
+                ],
+                "answer": "<i>Why don't you ask your mum? It's a good idea.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>an advice</i>, <i>advices</i> → <i>some advice</i>, <i>a piece of advice</i>.",
+              "<i>Why don't you to call him?</i> → <i>Why don't you call him?</i>",
+              "Плутають <i>advice</i> (порада, звук /s/) і <i>advise</i> (радити, звук /z/).",
+              "<i>It's good idea.</i> → <i>It's a good idea.</i>"
+            ],
+            "check": [
+              {
+                "q": "Which sentence is correct? (Яке речення правильне?)",
+                "options": [
+                  "My dad gave me a good advice.",
+                  "My dad gave me good advices.",
+                  "My dad gave me some good advice."
+                ],
+                "correct": 2,
+                "a": "<i>advice</i> незлічуване: <i>some good advice</i>. Без <i>a</i> і без <i>-s</i>."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>Why don't you … your brother for help?</i> (попросити)",
+                "accept": [
+                  "ask"
+                ],
+                "a": "<i>ask</i>: після <i>Why don't you</i> — дієслово без <i>to</i> і без закінчень."
+              },
+              {
+                "q": "Your friend texts (друг пише): «I've lost my bus card. What should I do?» Which reply gives advice? (Яка відповідь — порада?)",
+                "options": [
+                  "Why don't you call the bus company?",
+                  "I lost mine last year too.",
+                  "What a pity!"
+                ],
+                "correct": 0,
+                "a": "Порада — <i>Why don't you call the bus company?</i> Інші відповіді лише співчувають, але не радять."
+              }
+            ]
+          }
         }
       ]
     },
@@ -62,20 +729,342 @@
         {
           "id": "E4.3.1",
           "name": "Giving advice",
-          "status": "planned",
-          "programmeRef": "Giving advice, talking about technology and ways of communicating and socialising"
+          "status": "ready",
+          "programmeRef": "Giving advice, talking about technology and ways of communicating and socialising",
+          "lesson": {
+            "what": "Учимося просити поради, давати її і відповідати на неї — наприклад, коли в друга проблема з телефоном, грою чи акаунтом.",
+            "ideas": [
+              "Попросити поради: <i>I've got a problem. What should I do?</i> <i>Can I ask your advice about something?</i>",
+              "Спершу покажи, що розумієш: <i>Oh no!</i> <i>That sounds annoying.</i> — і лише потім радь.",
+              "Порадити: <i>You should…</i> <i>Why don't you…?</i> <i>If I were you, I'd…</i> <i>Have you tried + V-ing?</i> <i>Maybe you could…</i>",
+              "Прийняти пораду: <i>That's a good idea. Thanks!</i> <i>I'll try that.</i> Ввічливо не погодитися: <i>Hmm, I'm not sure that will work.</i> <i>I've already tried that.</i>",
+              "Якщо не знаєш, що сказати, виграй час: <i>Hmm, let me think…</i> <i>That's a difficult one.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>Have you tried + V-ing?</i>",
+                "means": "«А ти пробував…?»: <i>Have you tried restarting it?</i>"
+              },
+              {
+                "f": "<i>Maybe you could + V</i>",
+                "means": "Дуже м'яка порада: <i>Maybe you could ask your sister.</i>"
+              },
+              {
+                "f": "<i>What should I do?</i>",
+                "means": "Питання: <i>should</i> стоїть перед <i>I</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Read the mini-dialogue and find the phrases for giving and accepting advice (знайди фрази поради й відповіді на неї). <i>A: I think someone has got my password. My account is posting strange messages! B: Oh no, that sounds awful. Have you tried changing your password? A: I can't log in. B: Then you'd better tell an adult and contact the support team. A: That's a good idea. Thanks!</i>",
+                "steps": [
+                  {
+                    "do": "<i>Oh no, that sounds awful.</i>",
+                    "why": "Спершу співчуття — так розмова звучить по-дружньому."
+                  },
+                  {
+                    "do": "<i>Have you tried changing your password?</i>",
+                    "why": "Порада у формі запитання: <i>Have you tried + V-ing</i>."
+                  },
+                  {
+                    "do": "<i>you'd better tell an adult</i>",
+                    "why": "Ситуація серйозна, тому сильна порада <i>'d better</i>."
+                  },
+                  {
+                    "do": "<i>That's a good idea. Thanks!</i>",
+                    "why": "Так приймають пораду."
+                  }
+                ],
+                "answer": "<i>Have you tried changing…?</i>, <i>you'd better tell…</i>, <i>That's a good idea. Thanks!</i>"
+              },
+              {
+                "task": "Your friend says: «I always forget my homework.» Give advice, and when he says «I've already tried that», give one more (дай пораду, а потім ще одну).",
+                "steps": [
+                  {
+                    "do": "<i>That's annoying!</i>",
+                    "why": "Спершу співчуття."
+                  },
+                  {
+                    "do": "<i>Why don't you write a reminder on your phone?</i>",
+                    "why": "Перша порада."
+                  },
+                  {
+                    "do": "Friend: <i>I've already tried that.</i>",
+                    "why": "Друг ввічливо не погодився — потрібна інша ідея."
+                  },
+                  {
+                    "do": "<i>Then maybe you could put your homework in your bag the night before.</i>",
+                    "why": "Ще одна м'яка порада з <i>maybe you could</i>."
+                  }
+                ],
+                "answer": "Наприклад: <i>That's annoying! Why don't you write a reminder on your phone? … Then maybe you could put your homework in your bag the night before.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>What I should do?</i> → <i>What should I do?</i> — у питанні <i>should</i> стоїть перед <i>I</i>.",
+              "Порада одразу, без співчуття, звучить різко. Спершу: <i>Oh no!</i> / <i>That sounds annoying.</i>",
+              "<i>You must…</i> у пораді звучить як наказ. М'якше: <i>You should…</i> / <i>Why don't you…?</i>",
+              "На пораду відповідають лише «OK» — звучить байдуже. Краще: <i>That's a good idea, thanks!</i>"
+            ],
+            "check": [
+              {
+                "q": "Your friend: «My laptop is really slow.» Which reply is the most helpful and polite? (Обери найкращу відповідь)",
+                "options": [
+                  "You must buy a new one.",
+                  "That's annoying. Have you tried deleting some old files?",
+                  "Your laptop is bad."
+                ],
+                "correct": 1,
+                "a": "Спершу співчуття (<i>That's annoying</i>), потім м'яка порада (<i>Have you tried deleting…?</i>). <i>You must…</i> звучить як наказ."
+              },
+              {
+                "q": "Пастка. Which question is correct? (Яке питання правильне?)",
+                "options": [
+                  "What I should do?",
+                  "What do I should do?",
+                  "What should I do?"
+                ],
+                "correct": 2,
+                "a": "У питанні <i>should</i> стоїть перед підметом: <i>What should I do?</i> Допоміжне <i>do</i> тут не потрібне."
+              },
+              {
+                "q": "Your friend's advice (порада друга): «Why don't you turn off notifications while you do your homework?» You like the idea. What do you say?",
+                "options": [
+                  "I've already tried that.",
+                  "That's a good idea. I'll try that!",
+                  "Hmm, let me think."
+                ],
+                "correct": 1,
+                "a": "Ідея подобається — приймаємо пораду: <i>That's a good idea. I'll try that!</i>"
+              }
+            ]
+          }
         },
         {
           "id": "E4.3.2",
           "name": "A web page giving advice",
-          "status": "planned",
-          "programmeRef": "A web page giving advice"
+          "status": "ready",
+          "programmeRef": "A web page giving advice",
+          "lesson": {
+            "what": "Вебсторінка з порадами — короткий текст для багатьох читачів: заголовок, вступ, кілька порад (часто пунктами) і завершення.",
+            "ideas": [
+              "Заголовок — короткий і зрозумілий: <i>Five tips for staying safe online</i>.",
+              "Вступ — 1–2 речення: навіщо ці поради. <i>We all love the internet, but…</i>",
+              "Поради — по одній у пункті. Кожна: що робити + чому. Наказовий спосіб: <i>Use…</i>, <i>Don't…</i>, <i>Think before…</i>, а також <i>You should…</i>, <i>It's a good idea to…</i>",
+              "Слова-зв'язки: <i>because</i> (бо), <i>so</i> (тому), <i>otherwise</i> (інакше), <i>also</i> (також), <i>finally</i> (нарешті).",
+              "Завершення — коротке й дружнє: <i>Have fun and stay safe!</i>",
+              "Пиши до читача (<i>you</i>), коротко й просто.",
+              "Перевір себе: є заголовок? вступ? 3–5 порад з поясненнями? завершення? кожен пункт з великої літери?"
+            ],
+            "rules": [
+              {
+                "f": "Title → Introduction → Tips 1, 2, 3… → Closing",
+                "means": "Будова вебсторінки з порадами."
+              },
+              {
+                "f": "<i>Don't + V, otherwise…</i>",
+                "means": "Порада з попередженням: <i>Don't use your birthday as a password, otherwise it's easy to guess.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Read the model web page (прочитай зразок) and find its parts. <b>Online safety: four tips for teens</b>. <i>The internet is great for chatting, learning and games, but it can be risky. Here's how to stay safe. 1. Use strong passwords. Mix letters, numbers and symbols, and don't use your name. 2. Think before you post. Photos can stay online for years. 3. Don't chat with strangers in private messages, because they might not be who they say they are. 4. Tell an adult if something online worries you. Have fun and stay safe!</i>",
+                "steps": [
+                  {
+                    "do": "<i>Online safety: four tips for teens</i>",
+                    "why": "Заголовок — одразу видно, про що сторінка."
+                  },
+                  {
+                    "do": "<i>The internet is great… Here's how to stay safe.</i>",
+                    "why": "Вступ: навіщо читати далі."
+                  },
+                  {
+                    "do": "<i>1. Use strong passwords. … 4. Tell an adult…</i>",
+                    "why": "Поради пунктами: наказовий спосіб + пояснення (<i>because…</i>)."
+                  },
+                  {
+                    "do": "<i>Have fun and stay safe!</i>",
+                    "why": "Дружнє завершення."
+                  }
+                ],
+                "answer": "Заголовок, вступ, чотири поради з поясненнями, завершення."
+              },
+              {
+                "task": "Write tip 5 for the same page about screen time (напиши ще одну пораду — про час перед екраном).",
+                "steps": [
+                  {
+                    "do": "<i>5. Take breaks.</i>",
+                    "why": "Коротка порада в наказовому способі."
+                  },
+                  {
+                    "do": "<i>Look away from the screen every 30 minutes, otherwise your eyes will get tired.</i>",
+                    "why": "Пояснення з <i>otherwise</i> — «інакше»."
+                  }
+                ],
+                "answer": "<i>5. Take breaks. Look away from the screen every 30 minutes, otherwise your eyes will get tired.</i>"
+              }
+            ],
+            "mistakes": [
+              "Немає заголовка чи вступу — читач не розуміє, про що сторінка.",
+              "Поради без пояснень. Додай <i>because…</i> або <i>otherwise…</i>",
+              "<i>Don't to share your address.</i> → <i>Don't share your address.</i>",
+              "Довгі заплутані речення. На вебсторінці краще короткі пункти."
+            ],
+            "check": [
+              {
+                "q": "Which is the best title for a web page with advice? (Обери найкращий заголовок)",
+                "options": [
+                  "My phone",
+                  "How to save your phone battery: five easy tips",
+                  "I think that phones are very interesting and useful"
+                ],
+                "correct": 1,
+                "a": "Добрий заголовок короткий і показує, які поради будуть: <i>How to save your phone battery: five easy tips</i>."
+              },
+              {
+                "q": "Пастка. Choose the linker (обери слово-зв'язку): <i>Don't click on strange links, … you might get a virus.</i>",
+                "options": [
+                  "otherwise",
+                  "because",
+                  "so"
+                ],
+                "correct": 0,
+                "a": "<i>otherwise</i> — «інакше»: не натискай, інакше можеш підхопити вірус. <i>because</i> і <i>so</i> тут дають неправильний зміст."
+              },
+              {
+                "q": "A page on the school website (сторінка на шкільному сайті): «<i>Tips for new students. 1. Get to school ten minutes early. 2. Write your timetable in your diary. 3. Ask older students for help. Good luck!</i>» What is missing? (Чого бракує?)",
+                "options": [
+                  "a title",
+                  "a closing sentence",
+                  "an introduction"
+                ],
+                "correct": 2,
+                "a": "Заголовок (<i>Tips for new students</i>) і завершення (<i>Good luck!</i>) є, а вступу — 1–2 речень про те, навіщо ці поради, — немає."
+              }
+            ]
+          }
         },
         {
           "id": "E4.3.3",
           "name": "The short /ʌ/ vowel sound",
-          "status": "planned",
-          "programmeRef": "The short /ʌ/ vowel sound"
+          "status": "ready",
+          "programmeRef": "The short /ʌ/ vowel sound",
+          "lesson": {
+            "what": "Звук /ʌ/ — короткий голосний, як у словах <i>fun</i>, <i>bus</i>, <i>love</i>. Він схожий на український «а», але коротший і не такий відкритий: рот відкритий трохи, язик посередині, губи розслаблені.",
+            "ideas": [
+              "Найчастіше /ʌ/ пишеться буквою <i>u</i>: <i>bus, fun, cup, button, update</i>.",
+              "Часто — буквою <i>o</i>: <i>son, come, love, Monday, money, nothing, someone, other, mother</i>.",
+              "Іноді — <i>ou</i>: <i>young, touch, country, enough</i>; рідко <i>oo</i>: <i>blood, flood</i>.",
+              "Не плутай /ʌ/ з /æ/ (<i>cap</i> — рот ширше, звук між «е» та «а») і з /ɑː/ (<i>car</i> — довгий глибокий «а»): <i>cup – cap</i>, <i>hut – hat</i>, <i>cut – cart</i>.",
+              "Пастка: <i>put, push, full, pull</i> пишуться з <i>u</i>, але мають інший звук — /ʊ/, короткий «у»."
+            ],
+            "rules": [
+              {
+                "f": "/ʌ/: <i>u</i> (bus), <i>o</i> (love), <i>ou</i> (young)",
+                "means": "Основні написання звука /ʌ/."
+              },
+              {
+                "f": "<i>cup</i> /kʌp/ — <i>cap</i> /kæp/ — <i>carp</i> /kɑːp/",
+                "means": "Мінімальні пари: змінюється лише голосний — і змінюється значення."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Which words have /ʌ/? (Які слова мають /ʌ/?) <i>mum, home, money, phone, other</i>",
+                "steps": [
+                  {
+                    "do": "<i>mum</i> /mʌm/",
+                    "why": "<i>u</i> → /ʌ/."
+                  },
+                  {
+                    "do": "<i>money</i> /ˈmʌni/, <i>other</i> /ˈʌðə/",
+                    "why": "Тут /ʌ/ пишеться буквою <i>o</i>."
+                  },
+                  {
+                    "do": "<i>home</i>, <i>phone</i>",
+                    "why": "Тут інший звук — /əʊ/, схожий на «оу»."
+                  }
+                ],
+                "answer": "<i>mum, money, other</i>"
+              },
+              {
+                "task": "Say the minimal pairs (вимов пари): <i>cup – cap</i>, <i>luck – lack</i>, <i>run – ran</i>.",
+                "steps": [
+                  {
+                    "do": "<i>cup</i> /kʌp/ – <i>cap</i> /kæp/",
+                    "why": "/ʌ/ — короткий, рот відкритий трохи; /æ/ — рот ширше, щось між «е» та «а»."
+                  },
+                  {
+                    "do": "<i>luck</i> /lʌk/ – <i>lack</i> /læk/",
+                    "why": "Та сама різниця."
+                  },
+                  {
+                    "do": "<i>run</i> /rʌn/ – <i>ran</i> /ræn/",
+                    "why": "Тут різниця навіть граматична: <i>run</i> — теперішній час, <i>ran</i> — минулий."
+                  }
+                ],
+                "answer": "Різниця лише в голосному, а значення різне: <i>cup</i> — чашка, <i>cap</i> — кепка; <i>luck</i> — удача, <i>lack</i> — нестача; <i>run</i> — бігти, <i>ran</i> — бігав (минулий час)."
+              },
+              {
+                "task": "Find all /ʌ/ sounds (знайди всі звуки /ʌ/): <i>My brother uploaded something funny on Sunday.</i>",
+                "steps": [
+                  {
+                    "do": "<i>brother</i> /ˈbrʌðə/, <i>something</i> /ˈsʌmθɪŋ/",
+                    "why": "/ʌ/ на місці букви <i>o</i>."
+                  },
+                  {
+                    "do": "<i>uploaded</i> /ˌʌpˈləʊdɪd/, <i>funny</i> /ˈfʌni/, <i>Sunday</i> /ˈsʌndeɪ/",
+                    "why": "/ʌ/ на місці букви <i>u</i>."
+                  },
+                  {
+                    "do": "<i>on</i> /ɒn/",
+                    "why": "Тут інший звук — короткий «о»."
+                  }
+                ],
+                "answer": "<i>brother, uploaded, something, funny, Sunday</i> — п'ять разів."
+              }
+            ],
+            "mistakes": [
+              "Читають <i>o</i> в <i>Monday, money, love</i> як український «о». Правильно — /ʌ/: /ˈmʌndeɪ/, /ˈmʌni/, /lʌv/.",
+              "Читають <i>cup, bus</i> як «куп», «бус». Буква <i>u</i> тут звучить як /ʌ/, а не «у».",
+              "Вимовляють <i>put</i> так само, як <i>but</i>. Правильно: <i>put</i> /pʊt/, <i>but</i> /bʌt/.",
+              "Тягнуть /ʌ/, як «а-а». Він короткий."
+            ],
+            "check": [
+              {
+                "q": "Which word has the /ʌ/ sound? (Обери слово зі звуком /ʌ/)",
+                "options": [
+                  "phone",
+                  "home",
+                  "note",
+                  "come"
+                ],
+                "correct": 3,
+                "a": "<i>come</i> /kʌm/. В інших словах — /əʊ/: <i>phone, home, note</i>."
+              },
+              {
+                "q": "Пастка. In which word is <i>u</i> NOT pronounced /ʌ/? (У якому слові <i>u</i> — не /ʌ/?)",
+                "options": [
+                  "put",
+                  "but",
+                  "cut",
+                  "shut"
+                ],
+                "correct": 0,
+                "a": "<i>put</i> /pʊt/ — короткий «у». А <i>but, cut, shut</i> — з /ʌ/."
+              },
+              {
+                "q": "Your friend's message (повідомлення друга): «I'm so hungry! Let's get lunch.» How many /ʌ/ sounds are there in <i>hungry</i> and <i>lunch</i> together?",
+                "options": [
+                  "one",
+                  "two",
+                  "three"
+                ],
+                "correct": 1,
+                "a": "Два: <i>hungry</i> /ˈhʌŋɡri/ і <i>lunch</i> /lʌntʃ/ — по одному /ʌ/ у кожному."
+              }
+            ]
+          }
         }
       ]
     }

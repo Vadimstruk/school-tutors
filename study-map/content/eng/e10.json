@@ -12,20 +12,353 @@
         {
           "id": "E10.1.1",
           "name": "Past perfect simple",
-          "status": "planned",
-          "programmeRef": "Past perfect simple"
+          "status": "ready",
+          "programmeRef": "Past perfect simple",
+          "lesson": {
+            "what": "<b>Past Perfect Simple</b> (<i>had + V3</i>) — це «минуле перед минулим». Ми вживаємо його, коли розповідаємо про минуле й хочемо показати, що одна дія сталася <b>ще раніше</b> за іншу минулу дію.",
+            "ideas": [
+              "Уяви лінію часу: <i>I got to the stadium</i> (момент у минулому). Якщо матч почався ще до цього, кажемо: <i>The match <b>had</b> already <b>started</b>.</i> Раніша дія — Past Perfect, пізніша — Past Simple.",
+              "Форма однакова для всіх осіб: <i>I / you / he / she / we / they <b>had</b> + V3</i>. V3 — третя форма дієслова: <i>finish → finished</i>, <i>go → gone</i>, <i>eat → eaten</i>.",
+              "Заперечення: <i>hadn't + V3</i> (<i>had not</i>). Питання: <i>Had + хто + V3…?</i> Коротка відповідь: <i>Yes, I had. / No, I hadn't.</i>",
+              "Слова-підказки: <i>before, after, when, by the time</i> (на той час, коли), <i>already, just, never… before</i>.",
+              "У розмові <i>had</i> часто скорочують до <i>'d</i>: <i>She'd left.</i> = <i>She had left.</i>",
+              "Якщо дії йдуть по черзі, як у фільмі (встав → поснідав → пішов), досить Past Simple. Past Perfect потрібен, коли ми «повертаємося назад» у розповіді."
+            ],
+            "rules": [
+              {
+                "f": "<i>subject + had + V3</i>",
+                "means": "Стверджувальне речення: <i>We had finished our homework.</i>"
+              },
+              {
+                "f": "<i>subject + hadn't + V3</i>",
+                "means": "Заперечення: <i>I hadn't seen the film before.</i>"
+              },
+              {
+                "f": "<i>Had + subject + V3…? — Yes, … had. / No, … hadn't.</i>",
+                "means": "Питання й коротка відповідь: <i>Had you met her before? — No, I hadn't.</i>"
+              },
+              {
+                "f": "<i>When / By the time + Past Simple, … had + V3</i>",
+                "means": "Пізніша дія — Past Simple, раніша — Past Perfect: <i>By the time we arrived, the shop had closed.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "When we got to the cinema, the film … (already / start).",
+                "steps": [
+                  {
+                    "do": "Яка дія сталася раніше? Фільм почався до того, як ми прийшли.",
+                    "why": "Раніша з двох минулих дій — у Past Perfect."
+                  },
+                  {
+                    "do": "had + already + started",
+                    "why": "<i>already</i> стоїть між <i>had</i> і V3; <i>start → started</i>."
+                  }
+                ],
+                "answer": "<i>had already started</i>"
+              },
+              {
+                "task": "Join the sentences with <i>after</i>: <i>I did my homework. Then I went out with my friends.</i>",
+                "steps": [
+                  {
+                    "do": "Спершу — домашнє завдання, потім — прогулянка.",
+                    "why": "Визначаємо, яка дія раніша."
+                  },
+                  {
+                    "do": "After I had done my homework, …",
+                    "why": "Раніша дія — <i>had done</i> (<i>do → did → done</i>)."
+                  },
+                  {
+                    "do": "… I went out with my friends.",
+                    "why": "Пізніша дія — Past Simple."
+                  }
+                ],
+                "answer": "<i>After I had done my homework, I went out with my friends.</i>"
+              },
+              {
+                "task": "Complete: <i>Mila … (not / see) snow before she visited the Carpathians.</i> Then ask: <i>… you ever … (try) sushi before last weekend?</i>",
+                "steps": [
+                  {
+                    "do": "hadn't seen",
+                    "why": "Заперечення: <i>hadn't + V3</i>; <i>see → saw → seen</i>. До поїздки снігу вона не бачила."
+                  },
+                  {
+                    "do": "Had you ever tried …?",
+                    "why": "Питання: <i>Had</i> на початку, далі <i>you</i>, <i>ever</i> і V3."
+                  },
+                  {
+                    "do": "Твоє речення: <i>Before I was ten, I had never … .</i>",
+                    "why": "Спробуй сказати про себе, наприклад <i>I had never flown on a plane.</i>"
+                  }
+                ],
+                "answer": "<i>hadn't seen</i>; <i>Had you ever tried sushi before last weekend?</i>"
+              }
+            ],
+            "mistakes": [
+              "Past Simple замість Past Perfect для ранішої дії: <i>When I came, she already went.</i> Правильно: <i>When I came, she <b>had</b> already <b>gone</b>.</i>",
+              "Друга форма замість третьої: <i>had went</i>, <i>had ate</i>. Правильно: <i>had gone</i>, <i>had eaten</i>.",
+              "Past Perfect у кожному реченні розповіді: <i>I had got up, had had breakfast and had gone to school.</i> Якщо дії йдуть по черзі, досить Past Simple: <i>I got up, had breakfast and went to school.</i>",
+              "Плутають <i>'d</i>: це може бути <i>had</i> або <i>would</i>. Після <i>'d</i> + V3 — це <i>had</i>: <i>I'd forgotten</i> = <i>I had forgotten</i>."
+            ],
+            "check": [
+              {
+                "q": "By the time Dad got home, we … (eat) all the pizza. (Впиши форму дієслова.)",
+                "accept": [
+                  "had eaten",
+                  "'d eaten"
+                ],
+                "a": "<i>had eaten</i> (або скорочено <i>'d eaten</i>). Спершу ми з'їли піцу, а потім тато прийшов — раніша дія в Past Perfect: <i>eat → ate → eaten</i>."
+              },
+              {
+                "q": "Пастка. <i>When I got to the bus stop, the bus … , so I had to walk.</i>",
+                "options": [
+                  "already left",
+                  "had already left",
+                  "has already left"
+                ],
+                "correct": 1,
+                "a": "<i>had already left</i>: автобус поїхав <b>раніше</b>, ніж я прийшов. <i>The bus already left</i> — типова калька з української («автобус уже поїхав»); у розповіді про минуле для ранішої дії потрібен Past Perfect. <i>Has already left</i> — Present Perfect, він не пасує до минулого."
+              },
+              {
+                "q": "Повідомлення другові: <i>Sorry I didn't answer your call. I … my phone at school, so I didn't have it with me.</i>",
+                "options": [
+                  "have left",
+                  "had leave",
+                  "had left"
+                ],
+                "correct": 2,
+                "a": "<i>had left</i>: телефон залишився в школі раніше, ніж ти дзвонив. <i>Had leave</i> — немає третьої форми (<i>leave → left → left</i>), <i>have left</i> не пасує до розповіді в минулому."
+              }
+            ]
+          }
         },
         {
           "id": "E10.1.2",
           "name": "Past perfect continuous",
-          "status": "planned",
-          "programmeRef": "Past perfect continuous"
+          "status": "ready",
+          "programmeRef": "Past perfect continuous",
+          "lesson": {
+            "what": "<b>Past Perfect Continuous</b> (<i>had been + V-ing</i>) показує, що дія <b>тривала якийсь час</b> до певного моменту в минулому. Часто він пояснює, чому щось було так: <i>I was tired because I had been running.</i>",
+            "ideas": [
+              "Є момент у минулому (<i>when the bus came</i>), а до нього довго тривала інша дія: <i>We <b>had been waiting</b> for an hour when the bus came.</i>",
+              "Часто вказуємо, як довго: <i>for an hour</i> (протягом години), <i>since 8 o'clock</i> (з восьмої), <i>all day</i>, <i>How long…?</i>",
+              "Ще одне вживання — пояснити «слід» тривалої дії: мокре волосся, червоні очі, втома. <i>Her hair was wet. She had been swimming.</i>",
+              "Форма однакова для всіх осіб: <i>had been + V-ing</i>. Заперечення: <i>hadn't been + V-ing</i>. Питання: <i>Had you been waiting long? How long had you been waiting?</i>",
+              "Дієслова стану (<i>know, like, love, want, believe, understand</i>, <i>have</i> у значенні «мати») у Continuous не вживаємо. Замість них — Past Perfect Simple: <i>I had known her for years.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>subject + had been + V-ing</i>",
+                "means": "Дія тривала до моменту в минулому: <i>They had been playing for two hours.</i>"
+              },
+              {
+                "f": "<i>subject + hadn't been + V-ing</i>",
+                "means": "Заперечення: <i>He hadn't been sleeping well.</i>"
+              },
+              {
+                "f": "<i>How long had + subject + been + V-ing…?</i>",
+                "means": "Питання про тривалість: <i>How long had you been learning English?</i>"
+              },
+              {
+                "f": "<i>… because + had been + V-ing</i>",
+                "means": "Причина того, що ми бачили в минулому: <i>His shoes were muddy because he had been playing football.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "We … (wait) for an hour when the bus finally came.",
+                "steps": [
+                  {
+                    "do": "Момент у минулому — <i>the bus came</i>. До нього ми годину чекали.",
+                    "why": "Тривала дія до моменту в минулому — Past Perfect Continuous."
+                  },
+                  {
+                    "do": "had been + waiting",
+                    "why": "<i>had been</i> не змінюється, до дієслова додаємо <i>-ing</i>."
+                  }
+                ],
+                "answer": "<i>had been waiting</i>"
+              },
+              {
+                "task": "Why were Danylo's shoes so muddy? Complete: <i>He … (play) football in the rain.</i>",
+                "steps": [
+                  {
+                    "do": "Ми бачимо слід — брудні черевики.",
+                    "why": "Past Perfect Continuous пояснює, звідки взявся цей слід."
+                  },
+                  {
+                    "do": "had been playing",
+                    "why": "<i>play + -ing = playing</i>."
+                  }
+                ],
+                "answer": "<i>He had been playing football in the rain.</i>"
+              },
+              {
+                "task": "Make a question: <i>You were very tired yesterday evening. (how long / you / study)?</i> Then answer about yourself.",
+                "steps": [
+                  {
+                    "do": "How long had …",
+                    "why": "Питальне слово, потім <i>had</i>."
+                  },
+                  {
+                    "do": "… you been studying?",
+                    "why": "Після підмета — <i>been</i> і дієслово з <i>-ing</i>."
+                  },
+                  {
+                    "do": "I had been studying since four o'clock.",
+                    "why": "Відповідь — повне речення з <i>since</i> або <i>for</i>. Склади своє!"
+                  }
+                ],
+                "answer": "<i>How long had you been studying?</i> — наприклад, <i>I had been studying since four o'clock.</i>"
+              }
+            ],
+            "mistakes": [
+              "Калька з української: <i>I waited for her for an hour when she came.</i> Краще: <i>I <b>had been waiting</b> for her for an hour when she came.</i>",
+              "Пропускають <i>been</i>: <i>We had waiting.</i> Правильно: <i>We had <b>been</b> waiting.</i>",
+              "Ставлять у Continuous дієслова стану: <i>I had been knowing him for years.</i> Правильно: <i>I <b>had known</b> him for years.</i>",
+              "Плутають <i>for</i> і <i>since</i>: <i>for</i> + скільки часу (<i>for two hours</i>), <i>since</i> + з якого моменту (<i>since Monday</i>)."
+            ],
+            "check": [
+              {
+                "q": "My eyes were red because I … (play) computer games all night. (Впиши форму дієслова.)",
+                "accept": [
+                  "had been playing",
+                  "'d been playing"
+                ],
+                "a": "<i>had been playing</i> (або <i>'d been playing</i>): червоні очі — слід тривалої дії, що тривала до моменту в минулому."
+              },
+              {
+                "q": "Пастка. <i>I … Olena for five years when we went to the same summer camp.</i>",
+                "options": [
+                  "had been knowing",
+                  "was knowing",
+                  "had known"
+                ],
+                "correct": 2,
+                "a": "<i>had known</i>: <i>know</i> — дієслово стану, у Continuous його не вживаємо. Тому навіть з <i>for five years</i> — Past Perfect Simple."
+              },
+              {
+                "q": "Повідомлення тренерові: <i>Sorry I was so sleepy at practice. I … for a test since six in the morning.</i>",
+                "options": [
+                  "had been studying",
+                  "have been studying",
+                  "had studying"
+                ],
+                "correct": 0,
+                "a": "<i>had been studying</i>: навчання тривало від шостої ранку до тренування (момент у минулому). <i>Have been studying</i> — для теперішнього, а в <i>had studying</i> бракує <i>been</i>."
+              }
+            ]
+          }
         },
         {
           "id": "E10.1.3",
           "name": "Past perfect simple vs. continuous",
-          "status": "planned",
-          "programmeRef": "Past perfect simple vs. past perfect continuous"
+          "status": "ready",
+          "programmeRef": "Past perfect simple vs. past perfect continuous",
+          "lesson": {
+            "what": "Обидва часи — про «минуле перед минулим». <b>Past Perfect Simple</b> (<i>had + V3</i>) показує <b>результат</b>: що вже зроблено і скільки. <b>Past Perfect Continuous</b> (<i>had been + V-ing</i>) показує <b>процес</b>: як довго тривало.",
+            "ideas": [
+              "Є число чи кількість (<i>three goals, five pages, twice</i>) або питання <i>How many / How much</i> — беремо Simple: <i>She had written three emails.</i>",
+              "Важливо, скільки часу тривало (<i>for hours, all day, How long</i>) — частіше Continuous: <i>She had been writing emails all morning.</i>",
+              "Simple — дія завершена: <i>Mum had baked a cake, so we ate it.</i> Continuous — дія тривала, можливо, ще не закінчилася, але лишила слід: <i>The kitchen smelled great because Mum had been baking.</i>",
+              "Дуже короткі дії (<i>break, lose, find, arrive</i>) зазвичай не бувають «тривалими»: <i>I had lost my key</i>, а не <i>had been losing</i>.",
+              "Дієслова стану (<i>know, like, want</i>) — лише Simple: <i>We had known each other since school.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>had + V3</i> + скільки / що зроблено",
+                "means": "Результат, кількість, завершена дія: <i>By 9 p.m. I had read 50 pages.</i>"
+              },
+              {
+                "f": "<i>had been + V-ing</i> + як довго",
+                "means": "Тривалість, процес, слід дії: <i>I had been reading for two hours.</i>"
+              },
+              {
+                "f": "<i>How many…? → had + V3; How long…? → had been + V-ing</i>",
+                "means": "Питання підказує час: про кількість — Simple, про тривалість — Continuous."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Complete: <i>By the end of the day, Ira … (run) 10 km.</i> / <i>Ira was hot and out of breath. She … (run) for an hour.</i>",
+                "steps": [
+                  {
+                    "do": "10 km → had run",
+                    "why": "Є кількість, тобто результат — Simple: <i>run → ran → run</i>."
+                  },
+                  {
+                    "do": "for an hour, out of breath → had been running",
+                    "why": "Важлива тривалість і слід (їй жарко, вона задихається) — Continuous."
+                  }
+                ],
+                "answer": "<i>had run</i>; <i>had been running</i>"
+              },
+              {
+                "task": "By nine o'clock I … (write) three pages of my essay.",
+                "steps": [
+                  {
+                    "do": "three pages",
+                    "why": "Число — це результат."
+                  },
+                  {
+                    "do": "had written",
+                    "why": "Past Perfect Simple: <i>write → wrote → written</i>."
+                  }
+                ],
+                "answer": "<i>had written</i>"
+              },
+              {
+                "task": "Complete both: <i>The kitchen smelled wonderful because Mum … (bake) all morning.</i> / <i>Mum … (bake) a cake, so we had it for dessert.</i>",
+                "steps": [
+                  {
+                    "do": "all morning, smelled → had been baking",
+                    "why": "Процес, що тривав, і його слід (запах) — Continuous."
+                  },
+                  {
+                    "do": "a cake, we had it → had baked",
+                    "why": "Готовий результат — торт уже спечений — Simple."
+                  }
+                ],
+                "answer": "<i>had been baking</i>; <i>had baked</i>"
+              }
+            ],
+            "mistakes": [
+              "Continuous з кількістю: <i>He had been scoring two goals.</i> Правильно: <i>He <b>had scored</b> two goals.</i>",
+              "Continuous з дієсловами стану: <i>She had been wanting a dog.</i> На рівні B1 кажи: <i>She <b>had wanted</b> a dog.</i>",
+              "Друга форма замість третьої в Simple: <i>had wrote, had drank</i>. Правильно: <i>had written, had drunk</i>.",
+              "Порядок слів у питанні: <i>How many episodes you had watched?</i> Правильно: <i>How many episodes <b>had you</b> watched?</i>"
+            ],
+            "check": [
+              {
+                "q": "Пастка. <i>By ten o'clock, Max … four glasses of water.</i>",
+                "options": [
+                  "had drunk",
+                  "had been drinking",
+                  "had drank"
+                ],
+                "correct": 0,
+                "a": "<i>had drunk</i>: є кількість (<i>four glasses</i>) — отже, результат і Past Perfect Simple. <i>Drank</i> — друга форма, після <i>had</i> потрібна третя: <i>drink → drank → drunk</i>."
+              },
+              {
+                "q": "Повідомлення другові: <i>Sorry, I couldn't come to the park. I … (do) my project all day, and it still wasn't finished!</i> (Впиши форму дієслова.)",
+                "accept": [
+                  "had been doing",
+                  "'d been doing"
+                ],
+                "a": "<i>had been doing</i> (або <i>'d been doing</i>): дія тривала весь день і ще не закінчилася (<i>still wasn't finished</i>) — це процес, тому Continuous. <i>Had done</i> означало б, що проєкт уже готовий."
+              },
+              {
+                "q": "Choose the correct question: (Обери правильне питання.)",
+                "options": [
+                  "How many episodes had you watched by midnight?",
+                  "How many episodes had you been watching by midnight?",
+                  "How many episodes you had watched by midnight?"
+                ],
+                "correct": 0,
+                "a": "<i>How many episodes had you watched…?</i> — питання про кількість, тому Simple. У третьому варіанті неправильний порядок слів: <i>had</i> має стояти перед <i>you</i>."
+              }
+            ]
+          }
         }
       ]
     },
@@ -37,14 +370,235 @@
         {
           "id": "E10.2.1",
           "name": "Time linkers",
-          "status": "planned",
-          "programmeRef": "Time linkers"
+          "status": "ready",
+          "programmeRef": "Time linkers",
+          "lesson": {
+            "what": "<b>Time linkers</b> — слова-зв'язки, які показують, у якому порядку відбувалися події: <i>when, while, as soon as, before, after, until, by the time, at first, then, in the end</i>. Без них розповідь — просто список речень.",
+            "ideas": [
+              "<i><b>as soon as</b></i> — щойно, одразу як: <i>As soon as I got home, I called Oksana.</i>",
+              "<i><b>while</b></i> + речення (хто + що робив) і <i><b>during</b></i> + іменник: <i>while I was sleeping</i>, але <i>during the night</i>.",
+              "<i><b>until</b></i> (розмовне <i>till</i>) — аж доки, до (якогось моменту): <i>We stayed in the park until it got dark.</i>",
+              "<i><b>by the time</b></i> — на той час, коли; часто з Past Perfect: <i>By the time we arrived, the concert had started.</i>",
+              "<i><b>before / after</b></i> + речення або + V-ing: <i>after I had eaten</i> = <i>after eating</i>.",
+              "Для розповіді: <i><b>at first</b></i> (спочатку), <i><b>then / after that</b></i> (потім), <i><b>in the end / finally / eventually</b></i> (зрештою, нарешті)."
+            ],
+            "rules": [
+              {
+                "f": "<i>while + subject + verb</i> / <i>during + noun</i>",
+                "means": "Обидва — «під час», але після <i>during</i> немає дієслова: <i>during the lesson</i>, <i>while we were having lunch</i>."
+              },
+              {
+                "f": "<i>As soon as + Past Simple, …</i>",
+                "means": "Друга дія сталася одразу після першої."
+              },
+              {
+                "f": "<i>By the time + Past Simple, … had + V3</i>",
+                "means": "До того моменту щось уже сталося."
+              },
+              {
+                "f": "<i>in the end</i> ≠ <i>at the end of …</i>",
+                "means": "<i>In the end</i> — зрештою (результат історії); <i>at the end of the film</i> — наприкінці фільму (місце в часі)."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose <i>while</i> or <i>during</i>: <i>I fell asleep … the film.</i> / <i>I fell asleep … I was watching the film.</i>",
+                "steps": [
+                  {
+                    "do": "the film → during",
+                    "why": "Після пропуску — лише іменник."
+                  },
+                  {
+                    "do": "I was watching → while",
+                    "why": "Після пропуску — ціле речення з підметом і дієсловом."
+                  }
+                ],
+                "answer": "<i>during</i>; <i>while</i>"
+              },
+              {
+                "task": "Join the sentences with <i>as soon as</i>: <i>I got home. I immediately called my friend.</i>",
+                "steps": [
+                  {
+                    "do": "As soon as I got home, …",
+                    "why": "<i>As soon as</i> ставимо перед першою дією."
+                  },
+                  {
+                    "do": "… I called my friend.",
+                    "why": "Слово <i>immediately</i> вже не потрібне — <i>as soon as</i> і так означає «одразу»."
+                  }
+                ],
+                "answer": "<i>As soon as I got home, I called my friend.</i>"
+              },
+              {
+                "task": "Put in <i>At first, Then, In the end</i>: <i>… I didn't like volleyball. … my cousin taught me to serve. … I joined the school team.</i>",
+                "steps": [
+                  {
+                    "do": "At first I didn't like volleyball.",
+                    "why": "Початок історії, «спочатку»."
+                  },
+                  {
+                    "do": "Then my cousin taught me to serve.",
+                    "why": "Наступна подія."
+                  },
+                  {
+                    "do": "In the end I joined the school team.",
+                    "why": "Результат історії, «зрештою»."
+                  }
+                ],
+                "answer": "<i>At first … Then … In the end …</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>During I was sleeping…</i> Після <i>during</i> не буває речення. Правильно: <i><b>While</b> I was sleeping…</i> або <i>During the night…</i>",
+              "Плутають <i>in the end</i> і <i>at the end</i>: <i>At the end we won.</i> Якщо мова про результат — <i><b>In the end</b> we won.</i>",
+              "Калька «до того, як» → <i>before that I came</i>. Правильно просто: <i><b>before</b> I came</i>.",
+              "Подвійний зв'язок: <i>After when we ate…</i> Правильно: <i><b>After</b> we ate…</i>"
+            ],
+            "check": [
+              {
+                "q": "We waited at the bus stop … the rain stopped, and then we walked home. (Впиши одне слово.)",
+                "accept": [
+                  "until",
+                  "till"
+                ],
+                "a": "<i>until</i> (або розмовне <i>till</i>) — «аж доки»: ми чекали, і чекання закінчилося, коли дощ припинився."
+              },
+              {
+                "q": "Пастка. <i>… the lesson, my phone rang, and the teacher wasn't happy.</i>",
+                "options": [
+                  "While",
+                  "During",
+                  "As soon as"
+                ],
+                "correct": 1,
+                "a": "<i>During</i>: після пропуску стоїть іменник <i>the lesson</i>, а не речення. <i>While</i> і <i>as soon as</i> потребують підмета й дієслова (<i>while we were having the lesson</i>)."
+              },
+              {
+                "q": "Повідомлення другові: <i>… I got to the station, the train had already left. Can your dad pick me up?</i>",
+                "options": [
+                  "During",
+                  "Until",
+                  "By the time"
+                ],
+                "correct": 2,
+                "a": "<i>By the time</i> — «на той час, коли»: поки я дійшов, потяг уже поїхав (<i>had already left</i>). <i>Until</i> означає «аж доки», а <i>during</i> не ставиться перед реченням."
+              }
+            ]
+          }
         },
         {
           "id": "E10.2.2",
           "name": "Illness: collocations. Lifestyle",
-          "status": "planned",
-          "programmeRef": "Illness: collocations; Lifestyle"
+          "status": "ready",
+          "programmeRef": "Illness: collocations; Lifestyle",
+          "lesson": {
+            "what": "Як англійською сказати, що ти захворів і що болить, і як говорити про <b>спосіб життя</b> (<i>lifestyle</i>). Головне — правильні пари слів (колокації): <i>catch a cold</i>, <i>take medicine</i>, <i>keep fit</i>.",
+            "ideas": [
+              "Хвороби й симптоми з <i>have / have got</i>: <i>I've got a cold / a cough / a headache / a sore throat / a temperature.</i> Не забувай артикль <i>a</i>!",
+              "Захворіти: <i><b>catch</b> a cold / the flu</i>. Почуватися: <i>feel sick</i> (нудить), <i>feel dizzy</i> (паморочиться голова), <i>feel ill</i> або <i>feel unwell</i>.",
+              "Травми: <i><b>break</b> your arm</i>, <i><b>hurt</b> your knee</i>, <i><b>sprain</b> your ankle</i> (підвернути щиколотку). Біль: <i>My back <b>hurts</b>.</i>",
+              "Лікування: <i><b>take</b> medicine / a pill</i>, <i>go to the doctor / see a doctor</i>, <i>stay in bed</i>, <i>get better</i> (одужати), <i>be allergic to</i> (мати алергію на).",
+              "Спосіб життя: <i>a healthy / an unhealthy lifestyle</i>, <i>a balanced diet</i>, <i>junk food</i>, <i>get enough sleep</i>, <i>keep fit</i> (тримати форму), <i>do exercise</i>, <i>do sport</i>, <i>spend too much time on screens</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>have (got) a + headache / cold / cough / temperature / sore throat</i>",
+                "means": "Що зі мною: <i>She's got a sore throat.</i>"
+              },
+              {
+                "f": "<i>catch a cold</i>, <i>take medicine</i>, <i>see a doctor</i>",
+                "means": "Сталі пари: їх треба запам'ятати цілими."
+              },
+              {
+                "f": "<i>keep fit</i>, <i>do exercise / sport</i>, <i>get enough sleep</i>, <i>eat a balanced diet</i>",
+                "means": "Про здоровий спосіб життя."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose the verb: <i>I … a cold last week.</i> (catch / take / make)",
+                "steps": [
+                  {
+                    "do": "catch a cold → caught",
+                    "why": "Захворіти на застуду — <i>catch a cold</i>; у минулому <i>catch → caught</i>."
+                  }
+                ],
+                "answer": "<i>caught</i>"
+              },
+              {
+                "task": "Write a short message to your coach: you are ill and can't come to training. Use: <i>sore throat, temperature, see a doctor</i>.",
+                "steps": [
+                  {
+                    "do": "Hi! I'm sorry, but I can't come to training today.",
+                    "why": "Починаємо з головного."
+                  },
+                  {
+                    "do": "I've got a sore throat and a high temperature.",
+                    "why": "Симптоми з <i>have got a…</i>."
+                  },
+                  {
+                    "do": "Mum says I need to see a doctor. I hope I'll get better soon!",
+                    "why": "Що робитимеш і коли повернешся."
+                  }
+                ],
+                "answer": "<i>Hi! I'm sorry, but I can't come to training today. I've got a sore throat and a high temperature. Mum says I need to see a doctor. I hope I'll get better soon!</i>"
+              },
+              {
+                "task": "Give advice to a friend who feels tired all the time. Use two lifestyle phrases.",
+                "steps": [
+                  {
+                    "do": "You should get enough sleep.",
+                    "why": "<i>get enough sleep</i> — висипатися."
+                  },
+                  {
+                    "do": "And try to eat less junk food and do more exercise.",
+                    "why": "<i>junk food</i> — шкідлива їжа; <i>do exercise</i> — робити вправи, рухатися."
+                  },
+                  {
+                    "do": "А тепер про себе: <i>To keep fit, I…</i>",
+                    "why": "Склади своє речення: <i>To keep fit, I ride my bike every day.</i>"
+                  }
+                ],
+                "answer": "Наприклад: <i>You should get enough sleep. And try to eat less junk food and do more exercise.</i>"
+              }
+            ],
+            "mistakes": [
+              "Калька «пити ліки» → <i>drink medicine</i>. Правильно: <i><b>take</b> medicine</i>.",
+              "Без артикля: <i>I have temperature, I have headache.</i> Правильно: <i>I have <b>a</b> temperature, I have <b>a</b> headache.</i>",
+              "Калька «займатися спортом» → <i>make sport</i>. Правильно: <i><b>do</b> sport</i>, <i>do exercise</i>.",
+              "<i>I am ill on flu.</i> Правильно: <i>I've got (the) flu.</i> або <i>I'm ill with (the) flu.</i>",
+              "Плутають <i>feel sick</i> і <i>be sick</i>: <i>feel sick</i> — нудить, а <i>be sick</i> у британській англійській часто означає «блювати»."
+            ],
+            "check": [
+              {
+                "q": "I can't sing in the concert today — I've got a sore … (Впиши одне слово.)",
+                "accept": [
+                  "throat"
+                ],
+                "a": "<i>a sore throat</i> — болить горло. <i>Sore</i> — болючий, <i>throat</i> — горло."
+              },
+              {
+                "q": "Пастка. Як сказати «Я п'ю ліки три рази на день»?",
+                "options": [
+                  "I drink medicine three times a day.",
+                  "I eat medicine three times a day.",
+                  "I take medicine three times a day."
+                ],
+                "correct": 2,
+                "a": "<i>take medicine</i>: в англійській ліки «беруть», а не «п'ють». <i>Drink medicine</i> — калька з української."
+              },
+              {
+                "q": "Записка для вчительки: <i>Dear Ms Brown, Taras missed school yesterday because he had a high …, but he is better now.</i>",
+                "options": [
+                  "temperature",
+                  "heat",
+                  "warm"
+                ],
+                "correct": 0,
+                "a": "<i>a high temperature</i> — висока температура (гарячка). <i>Heat</i> — спека, тепло; <i>warm</i> — прикметник «теплий»."
+              }
+            ]
+          }
         }
       ]
     },
@@ -56,20 +610,370 @@
         {
           "id": "E10.3.1",
           "name": "Talking about your health and lifestyles",
-          "status": "planned",
-          "programmeRef": "Talking about your health"
+          "status": "ready",
+          "programmeRef": "Talking about your health",
+          "lesson": {
+            "what": "Як <b>спитати</b>, що з людиною, <b>розповісти</b> про своє самопочуття, <b>порадити</b> й поговорити про спосіб життя (<i>lifestyle</i>): що ти їси, як спиш, як рухаєшся.",
+            "ideas": [
+              "Спитати: <i>Are you OK? What's the matter? What's wrong? You don't look very well. How are you feeling?</i>",
+              "Розповісти: <i>I don't feel very well. I've got a headache. My stomach hurts. I feel a bit dizzy.</i>",
+              "Порадити: <i>You should… / You shouldn't… / Why don't you…? / Have you tried…? / If I were you, I'd…</i>",
+              "Поспівчувати й побажати: <i>Oh no, poor you! I hope you feel better soon. Get well soon!</i>",
+              "Про спосіб життя: <i>How often do you…? I try to… I'm trying to eat less sugar. I don't get enough sleep. I'd like to be more active.</i>",
+              "Якщо забракло слова — опиши: <i>It hurts here</i> (показуючи), <i>I don't know the word, but…</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>What's the matter? / What's wrong?</i>",
+                "means": "«Що сталося? Що з тобою?» — дружнє питання про самопочуття."
+              },
+              {
+                "f": "<i>You should + V / Why don't you + V…?</i>",
+                "means": "Порада. Після <i>should</i> — дієслово без <i>to</i>: <i>You should rest.</i>"
+              },
+              {
+                "f": "<i>I hope you feel better soon. / Get well soon!</i>",
+                "means": "Побажання одужання наприкінці розмови."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Read and continue the mini-dialogue: <i>A: You look pale. What's the matter? B: I've got a terrible headache. A: …</i>",
+                "steps": [
+                  {
+                    "do": "Oh no! Why don't you go and lie down for a bit?",
+                    "why": "Спершу співчуття, потім порада з <i>Why don't you…?</i>"
+                  },
+                  {
+                    "do": "B: Good idea. I think I've been looking at my screen for too long.",
+                    "why": "Співрозмовник погоджується й називає причину."
+                  },
+                  {
+                    "do": "A: Have a glass of water too. I hope you feel better soon!",
+                    "why": "Ще одна порада й побажання."
+                  }
+                ],
+                "answer": "<i>Oh no! Why don't you go and lie down for a bit?</i>"
+              },
+              {
+                "task": "Your friend says: <i>I'm always tired in the morning.</i> Give two pieces of advice.",
+                "steps": [
+                  {
+                    "do": "You should go to bed earlier.",
+                    "why": "<i>should</i> + дієслово без <i>to</i>."
+                  },
+                  {
+                    "do": "And why don't you leave your phone in another room at night?",
+                    "why": "<i>Why don't you…?</i> — м'яка порада."
+                  }
+                ],
+                "answer": "<i>You should go to bed earlier. And why don't you leave your phone in another room at night?</i>"
+              },
+              {
+                "task": "Answer about your lifestyle (3 sentences): <i>How healthy is your lifestyle?</i>",
+                "steps": [
+                  {
+                    "do": "I think my lifestyle is quite healthy.",
+                    "why": "Загальна думка."
+                  },
+                  {
+                    "do": "I ride my bike to school and I play basketball twice a week.",
+                    "why": "Конкретні приклади з <i>twice a week</i>, <i>every day</i>."
+                  },
+                  {
+                    "do": "But I don't get enough sleep, so I'm trying to go to bed earlier.",
+                    "why": "Що хочеш змінити — <i>I'm trying to…</i>"
+                  }
+                ],
+                "answer": "Наприклад: <i>I think my lifestyle is quite healthy. I ride my bike to school and I play basketball twice a week. But I don't get enough sleep, so I'm trying to go to bed earlier.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>You should to rest.</i> Після <i>should</i> немає <i>to</i>: <i>You should rest.</i>",
+              "<i>What is with you?</i> — калька «Що з тобою?». Кажи: <i>What's the matter?</i> або <i>What's wrong?</i>",
+              "<i>I have pain in head.</i> Природніше: <i>I've got a headache.</i> або <i>My head hurts.</i>",
+              "На <i>How are you?</i> від друга, який бачить, що тобі погано, відповідай чесно: <i>Not great, actually. I've got a cold.</i>"
+            ],
+            "check": [
+              {
+                "q": "Your friend says: <i>I've hurt my ankle playing football.</i> What's the best reply? (Обери найкращу відповідь.)",
+                "options": [
+                  "Good for you!",
+                  "Oh no! You should put some ice on it.",
+                  "I don't like football."
+                ],
+                "correct": 1,
+                "a": "<i>Oh no! You should put some ice on it.</i> — співчуття й порада. <i>Good for you!</i> означає «Молодець!» — тут це звучить дивно й навіть грубо."
+              },
+              {
+                "q": "Пастка. Що означає <i>What's the matter?</i>",
+                "options": [
+                  "Яка тут речовина?",
+                  "Яка тема уроку?",
+                  "Що сталося? Що з тобою?"
+                ],
+                "correct": 2,
+                "a": "<i>What's the matter?</i> — «Що сталося? Що з тобою?». Хоча <i>matter</i> буває «речовина», у цьому питанні значення інше."
+              },
+              {
+                "q": "Повідомлення однокласникові, який захворів: <i>Sorry you're ill! Get well …! See you at school.</i> (Впиши одне слово.)",
+                "accept": [
+                  "soon"
+                ],
+                "a": "<i>Get well soon!</i> — «Одужуй швидше!». Стале побажання, його пишуть і в листівках."
+              }
+            ]
+          }
         },
         {
           "id": "E10.3.2",
           "name": "A story",
-          "status": "planned",
-          "programmeRef": "A story"
+          "status": "ready",
+          "programmeRef": "A story",
+          "lesson": {
+            "what": "<b>Story</b> — коротка розповідь (на рівні B1 — близько 100 слів). Часто завдання дає перше речення історії. Добра історія цікаво починається, має проблему чи несподіванку й чітке завершення.",
+            "ideas": [
+              "Будова: <b>початок</b> (хто, де, коли) → <b>подія</b> чи проблема → <b>кульмінація</b> (найнапруженіший момент) → <b>кінець</b> (як усе закінчилося, що герой відчув).",
+              "Часи розповіді: Past Simple — головні події; Past Continuous — тло (<i>It was raining…</i>); Past Perfect — що сталося ще раніше (<i>He had left the map…</i>).",
+              "Зв'язки часу: <i>at first, then, suddenly, as soon as, while, by the time, in the end</i>.",
+              "Цікаві прикметники й прислівники замість «нудних»: <i>huge, freezing, terrified, suddenly, carefully</i>. Кілька слів прямої мови оживлять текст.",
+              "Якщо дано перше речення — не змінюй його і пиши далі тих самих героїв."
+            ],
+            "rules": [
+              {
+                "f": "<i>It was a … morning, and …</i>",
+                "means": "Початок, що одразу малює картинку (коли, де, хто)."
+              },
+              {
+                "f": "<i>Suddenly, … / All of a sudden, …</i>",
+                "means": "Поворот: з'являється проблема чи несподіванка."
+              },
+              {
+                "f": "<i>In the end, … / Finally, …</i>",
+                "means": "Завершення: як розв'язалася проблема."
+              },
+              {
+                "f": "<i>He felt … / It was the best day ever.</i>",
+                "means": "Останнє речення — почуття героя чи висновок."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Make this boring sentence more interesting: <i>The dog was big. It ran to us.</i>",
+                "steps": [
+                  {
+                    "do": "A huge black dog …",
+                    "why": "Цікаві прикметники замість <i>big</i>."
+                  },
+                  {
+                    "do": "… suddenly ran towards us.",
+                    "why": "Прислівник <i>suddenly</i> додає напруги; <i>towards us</i> — у наш бік."
+                  },
+                  {
+                    "do": "A huge black dog suddenly ran towards us, barking loudly.",
+                    "why": "Ще одна деталь — <i>barking loudly</i> (гучно гавкаючи)."
+                  }
+                ],
+                "answer": "<i>A huge black dog suddenly ran towards us, barking loudly.</i>"
+              },
+              {
+                "task": "Put the parts of a story in order: (a) <i>In the end, we found the cat under the bed.</i> (b) <i>One evening, our cat Murchyk disappeared.</i> (c) <i>At first, we looked for him in the garden.</i>",
+                "steps": [
+                  {
+                    "do": "(b) One evening, our cat Murchyk disappeared.",
+                    "why": "Початок: коли й що сталося."
+                  },
+                  {
+                    "do": "(c) At first, we looked for him in the garden.",
+                    "why": "Розвиток: <i>at first</i> — спочатку."
+                  },
+                  {
+                    "do": "(a) In the end, we found the cat under the bed.",
+                    "why": "Кінець: <i>in the end</i> — зрештою."
+                  }
+                ],
+                "answer": "b – c – a"
+              },
+              {
+                "task": "Read a model story (about 85 words). Find the beginning, the problem and the ending. <b>The Lost Map.</b> <i>It was a cold Saturday morning, and Dan and his sister were hiking in the Carpathians. They had been walking for three hours when Dan suddenly stopped. “Where's the map?” he asked. He had left it at their picnic spot! At first, they panicked. Then his sister remembered the red marks on the trees along the path. They followed them carefully, and as soon as they saw the village, they started laughing. In the end, they got home before dark. Dan never forgot the map again.</i>",
+                "steps": [
+                  {
+                    "do": "Beginning: <i>It was a cold Saturday morning… hiking in the Carpathians.</i>",
+                    "why": "Коли, де, хто — читач одразу бачить картинку."
+                  },
+                  {
+                    "do": "Problem: <i>“Where's the map?” … He had left it at their picnic spot!</i>",
+                    "why": "Несподіванка; Past Perfect показує, що мапу залишили раніше."
+                  },
+                  {
+                    "do": "Ending: <i>In the end, they got home before dark. Dan never forgot the map again.</i>",
+                    "why": "Проблему розв'язано, є висновок."
+                  },
+                  {
+                    "do": "Checklist: зв'язки <i>suddenly, at first, then, as soon as, in the end</i>; пряма мова; різні минулі часи.",
+                    "why": "За цим списком перевіряй і свою історію."
+                  }
+                ],
+                "answer": "Початок — перше речення; проблема — загублена мапа; кінець — <i>In the end, they got home before dark…</i>"
+              }
+            ],
+            "mistakes": [
+              "Перескакують між часами: <i>We walk in the forest and suddenly we saw…</i> Тримай історію в минулому: <i>We <b>were walking</b> … and suddenly we <b>saw</b>…</i>",
+              "Немає кінця — історія обривається. Додай речення з <i>In the end…</i> і почуттями героя.",
+              "Змінюють або пропускають перше речення, яке дало завдання. Його треба переписати точно.",
+              "Пряма мова без лапок і великої літери: <i>he asked where is the map.</i> Правильно: <i>“Where's the map?” he asked.</i>"
+            ],
+            "check": [
+              {
+                "q": "Which is the best opening for a story? (Який початок найкращий?)",
+                "options": [
+                  "It was a stormy night, and Sofiia was alone at home when she heard a strange noise.",
+                  "This story is about a dog.",
+                  "I am going to write a story."
+                ],
+                "correct": 0,
+                "a": "Перший варіант одразу каже, коли, де й хто, і створює напругу (<i>a strange noise</i>). Інші лише оголошують, що буде історія."
+              },
+              {
+                "q": "Пастка. Choose the best linker: <i>We had been waiting for ages. …, the bus arrived and we jumped on.</i>",
+                "options": [
+                  "At the end",
+                  "In the end",
+                  "During"
+                ],
+                "correct": 1,
+                "a": "<i>In the end</i> — «зрештою, нарешті» (після довгого чекання). <i>At the end</i> вимагає продовження: <i>at the end of the day</i>. <i>During</i> — лише перед іменником."
+              },
+              {
+                "q": "Повідомлення в класний чат: «Перевірте мою історію!» <i>Last summer I went camping with my family. We put up our tent near a lake. Suddenly, a storm started and the wind blew our tent away.</i> What is missing?",
+                "options": [
+                  "The beginning (who, where, when)",
+                  "A problem or surprise",
+                  "The ending"
+                ],
+                "correct": 2,
+                "a": "Бракує <b>кінця</b>: що зробила родина, як усе закінчилося. Початок є (<i>Last summer… camping…</i>), проблема теж (<i>a storm… blew our tent away</i>)."
+              }
+            ]
+          }
         },
         {
           "id": "E10.3.3",
           "name": "/tʃ/ and /ʃ/ consonant sounds",
-          "status": "planned",
-          "programmeRef": "/tʃ/ and /ʃ/ consonant sounds"
+          "status": "ready",
+          "programmeRef": "/tʃ/ and /ʃ/ consonant sounds",
+          "lesson": {
+            "what": "Два схожі звуки: <b>/tʃ/</b> — як українське «ч» (<i>chair, watch</i>), і <b>/ʃ/</b> — схожий на «ш», але м'якший (<i>shop, wash</i>). Якщо їх переплутати, вийде інше слово: <i>chip</i> (чипс) і <i>ship</i> (корабель).",
+            "ideas": [
+              "<b>/tʃ/</b> — це «т» + «ш», вимовлені разом, коротко, як «ч» у слові «чай»: <i>cheese, kitchen, lunch, teacher</i>.",
+              "<b>/ʃ/</b> — довгий тихий «шум», губи трохи витягнуті вперед і округлені. Англійський /ʃ/ м'якший за українське «ш»: <i>sheep, fish, shoulder</i>.",
+              "Як пишеться /tʃ/: <i>ch</i> (<i>cheap</i>), <i>tch</i> (<i>watch</i>), <i>-ture</i> (<i>picture</i> /ˈpɪktʃə/), <i>-stion</i> (<i>question</i> /ˈkwestʃən/).",
+              "Як пишеться /ʃ/: <i>sh</i> (<i>shower</i>), <i>-tion</i> (<i>station</i>), <i>-cial</i> (<i>special</i>), а також <i>sure, sugar, machine, ocean</i>.",
+              "Пари, де звук змінює значення: <i>chip – ship, cheap – sheep, chair – share, watch – wash, catch – cash, choose – shoes</i>."
+            ],
+            "rules": [
+              {
+                "f": "/tʃ/: <i>ch, tch, -ture, -stion</i>",
+                "means": "Звук «ч»: <i>chest, match, adventure, question</i>."
+              },
+              {
+                "f": "/ʃ/: <i>sh, -tion, -cial, s(ure), s(ugar), ch</i> у <i>machine, chef</i>",
+                "means": "Звук «ш»: <i>shoulder, operation, special, sure, sugar, machine</i>."
+              },
+              {
+                "f": "<i>ch</i> = /k/: <i>stomach, headache, school, chemist</i>",
+                "means": "Пастка: інколи <i>ch</i> читається як «к» — <i>STOMach, HEADache</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Sort the words: <i>chest, shoulder, kitchen, shower, picture, station</i>.",
+                "steps": [
+                  {
+                    "do": "/tʃ/: chest, kitchen, picture",
+                    "why": "<i>ch</i>, <i>tch</i> і <i>-ture</i> дають «ч»."
+                  },
+                  {
+                    "do": "/ʃ/: shoulder, shower, station",
+                    "why": "<i>sh</i> і <i>-tion</i> дають «ш»."
+                  }
+                ],
+                "answer": "/tʃ/ — <i>chest, kitchen, picture</i>; /ʃ/ — <i>shoulder, shower, station</i>"
+              },
+              {
+                "task": "Say the pairs and translate: <i>watch – wash</i>, <i>cheap – sheep</i>.",
+                "steps": [
+                  {
+                    "do": "watch /wɒtʃ/ — дивитися, годинник; wash /wɒʃ/ — мити",
+                    "why": "Відрізняє лише останній звук: «ч» чи «ш»."
+                  },
+                  {
+                    "do": "cheap /tʃiːp/ — дешевий; sheep /ʃiːp/ — вівця",
+                    "why": "Почни зі «т»-поштовху для /tʃ/; для /ʃ/ — просто довгий шум."
+                  }
+                ],
+                "answer": "<i>watch</i> — дивитися / годинник, <i>wash</i> — мити; <i>cheap</i> — дешевий, <i>sheep</i> — вівця"
+              },
+              {
+                "task": "Read aloud slowly, then faster: <i>The chef washed the cherries and put some sugar on the cheesecake.</i>",
+                "steps": [
+                  {
+                    "do": "chef /ʃ/ — washed /ʃ/ — sugar /ʃ/",
+                    "why": "<i>chef</i> — французьке слово, тому <i>ch</i> = /ʃ/; у <i>sugar</i> літера <i>s</i> звучить як /ʃ/."
+                  },
+                  {
+                    "do": "cherries /tʃ/ — cheesecake /tʃ/",
+                    "why": "Звичайне <i>ch</i> = «ч»."
+                  },
+                  {
+                    "do": "Повтори 3 рази, стежачи за губами.",
+                    "why": "Для /ʃ/ губи округлені й трохи витягнуті, для /tʃ/ спершу легкий поштовх язиком."
+                  }
+                ],
+                "answer": "/ʃ/ — <i>chef, washed, sugar</i>; /tʃ/ — <i>cherries, cheesecake</i>"
+              }
+            ],
+            "mistakes": [
+              "Вимовляють <i>stomach</i> і <i>headache</i> з «ч». Правильно з «к»: /ˈstʌmək/, /ˈhedeɪk/.",
+              "Читають <i>-tion</i> як «-тіон»: <i>station</i> — /ˈsteɪʃn/, «стейшн».",
+              "Плутають <i>question</i> із <i>-tion</i>: тут перед <i>-tion</i> стоїть <i>s</i>, тому звук /tʃ/: /ˈkwestʃən/.",
+              "Вимовляють /ʃ/ надто твердо, як українське «ш». Округли губи й зроби звук м'якшим."
+            ],
+            "check": [
+              {
+                "q": "Which word has the sound /ʃ/? (У якому слові є звук /ʃ/?)",
+                "options": [
+                  "chips",
+                  "watch",
+                  "cheese",
+                  "sugar"
+                ],
+                "correct": 3,
+                "a": "<i>sugar</i> /ˈʃʊɡə/: тут <i>s</i> звучить як /ʃ/. У <i>chips, watch, cheese</i> — звук /tʃ/."
+              },
+              {
+                "q": "Пастка. Which word has the sound /tʃ/?",
+                "options": [
+                  "question",
+                  "station",
+                  "special",
+                  "machine"
+                ],
+                "correct": 0,
+                "a": "<i>question</i> /ˈkwestʃən/: після <i>s</i> закінчення <i>-tion</i> звучить як /tʃən/. У <i>station, special, machine</i> — звук /ʃ/."
+              },
+              {
+                "q": "Ти в аптеці в Лондоні, на вивісці написано <i>Chemist</i>. Як вимовити <i>ch</i> у цьому слові?",
+                "options": [
+                  "/k/",
+                  "/tʃ/",
+                  "/ʃ/"
+                ],
+                "correct": 0,
+                "a": "/k/: <i>chemist</i> /ˈkemɪst/ — аптека. Як і в <i>stomach, headache, school</i>, тут <i>ch</i> читається як «к»."
+              }
+            ]
+          }
         }
       ]
     }

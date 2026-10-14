@@ -12,14 +12,233 @@
         {
           "id": "E11.1.1",
           "name": "Reported statements",
-          "status": "planned",
-          "programmeRef": "Reported statements"
+          "status": "ready",
+          "programmeRef": "Reported statements",
+          "lesson": {
+            "what": "<b>Непряма мова</b> (<i>reported speech</i>) — коли ми переказуємо чужі слова: <i>“I'm tired,” Olha said.</i> → <i>Olha said (that) she was tired.</i> Зазвичай час дієслова «зсувається» на крок у минуле.",
+            "ideas": [
+              "Дієслова <i>say</i> і <i>tell</i>: <i>say (that)…</i>, але <i>tell <b>someone</b> (that)…</i>. <i>He said that…</i> / <i>He told <b>me</b> that…</i> Слово <i>that</i> можна пропустити.",
+              "Час зсувається: <i>am/is/are → was/were</i>; Present Simple → Past Simple; Present Continuous → Past Continuous; Present Perfect → Past Perfect; Past Simple → Past Perfect.",
+              "Модальні: <i>will → would</i>, <i>can → could</i>, <i>am going to → was going to</i>, <i>must → had to</i>.",
+              "Змінюються займенники: <i>“I love <b>my</b> dog,” said Ivan.</i> → <i>Ivan said <b>he</b> loved <b>his</b> dog.</i>",
+              "Змінюються слова часу й місця: <i>today → that day</i>, <i>tomorrow → the next day</i>, <i>yesterday → the day before</i>, <i>now → then</i>, <i>here → there</i>, <i>next week → the following week</i>.",
+              "Якщо сказане й досі правда, час можна не зсувати: <i>She said she <b>is</b> from Lviv.</i> Але зсунути — завжди правильно."
+            ],
+            "rules": [
+              {
+                "f": "<i>say (that) + речення</i> / <i>tell + someone + (that) + речення</i>",
+                "means": "Після <i>tell</i> обов'язково кому: <i>told me, told us, told Ivan</i>."
+              },
+              {
+                "f": "<i>is / are → was / were; do → did; have done → had done; did → had done</i>",
+                "means": "Зсув часу на крок назад."
+              },
+              {
+                "f": "<i>will → would; can → could</i>",
+                "means": "<i>“I'll help,” he said.</i> → <i>He said he would help.</i>"
+              },
+              {
+                "f": "<i>tomorrow → the next day; yesterday → the day before</i>",
+                "means": "Слова часу теж «переїжджають» у минуле."
+              }
+            ],
+            "examples": [
+              {
+                "task": "<i>“I'm tired,” Olha said.</i> → <i>Olha said …</i>",
+                "steps": [
+                  {
+                    "do": "I → she",
+                    "why": "Олю переказуємо в третій особі."
+                  },
+                  {
+                    "do": "am → was",
+                    "why": "Present Simple дієслова <i>be</i> зсувається в Past Simple."
+                  }
+                ],
+                "answer": "<i>Olha said (that) she was tired.</i>"
+              },
+              {
+                "task": "<i>“I've lost my phone,” Max told me.</i> → <i>Max told me …</i>",
+                "steps": [
+                  {
+                    "do": "I → he, my → his",
+                    "why": "Змінюємо займенники."
+                  },
+                  {
+                    "do": "have lost → had lost",
+                    "why": "Present Perfect → Past Perfect."
+                  }
+                ],
+                "answer": "<i>Max told me (that) he had lost his phone.</i>"
+              },
+              {
+                "task": "<i>“I'll call you tomorrow,” Sofiia said to me.</i> → Report with <i>told</i>.",
+                "steps": [
+                  {
+                    "do": "Sofiia told me …",
+                    "why": "<i>said to me</i> = <i>told me</i>."
+                  },
+                  {
+                    "do": "I → she, you → me",
+                    "why": "Вона говорила мені, тому <i>you</i> стає <i>me</i>."
+                  },
+                  {
+                    "do": "will → would, tomorrow → the next day",
+                    "why": "Зсув модального дієслова й слова часу."
+                  }
+                ],
+                "answer": "<i>Sofiia told me (that) she would call me the next day.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>He said me that…</i> Після <i>say</i> не ставимо «кому» без <i>to</i>. Правильно: <i>He <b>told</b> me that…</i> або <i>He said <b>to</b> me that…</i>",
+              "<i>She told that she was busy.</i> Після <i>tell</i> потрібно «кому». Правильно: <i>She told <b>me</b> that…</i> або <i>She <b>said</b> that…</i>",
+              "Забувають змінити займенник: <i>Ivan said I loved my dog.</i> Правильно: <i>Ivan said <b>he</b> loved <b>his</b> dog.</i>",
+              "Залишають <i>tomorrow</i> чи <i>here</i>, коли переказують через кілька днів в іншому місці. Правильно: <i>the next day</i>, <i>there</i>.",
+              "Залишають лапки: <i>She said that “I am tired”.</i> У непрямій мові лапок немає: <i>She said that she was tired.</i>"
+            ],
+            "check": [
+              {
+                "q": "<i>“We're watching a film,” Dad said.</i> → <i>Dad said they … a film.</i>",
+                "options": [
+                  "are watching",
+                  "watched",
+                  "were watching"
+                ],
+                "correct": 2,
+                "a": "<i>were watching</i>: Present Continuous (<i>are watching</i>) зсувається в Past Continuous (<i>were watching</i>)."
+              },
+              {
+                "q": "Пастка. <i>Anna … me that she was busy on Saturday.</i>",
+                "options": [
+                  "said",
+                  "told",
+                  "spoke"
+                ],
+                "correct": 1,
+                "a": "<i>told</i>: після пропуску стоїть <i>me</i> — кому сказали. <i>Said me</i> — помилка (можна лише <i>said to me</i>), <i>spoke</i> тут не підходить."
+              },
+              {
+                "q": "Учителька сказала: <i>“The test will be on Friday.”</i> Ти пишеш другові: <i>Ms Kovalenko said the test … be on Friday.</i> (Впиши одне слово.)",
+                "accept": [
+                  "would"
+                ],
+                "a": "<i>would</i>: <i>will</i> у непрямій мові стає <i>would</i>. (Якщо п'ятниця ще попереду, люди інколи кажуть і <i>will</i>, але за правилом зсуву — <i>would</i>.)"
+              }
+            ]
+          }
         },
         {
           "id": "E11.1.2",
           "name": "Verb patterns: object + infinitive",
-          "status": "planned",
-          "programmeRef": "Verb patterns: object + infinitive"
+          "status": "ready",
+          "programmeRef": "Verb patterns: object + infinitive",
+          "lesson": {
+            "what": "Після деяких дієслів іде <b>хтось + to + дієслово</b>: <i>I want <b>you to help</b> me.</i> Так кажуть, коли хочуть, просять, радять чи дозволяють комусь щось зробити. Українське «хочу, <b>щоб</b> ти…» англійською — без «щоб»!",
+            "ideas": [
+              "Схема: <i>verb + object + to + V</i>: <i>Mum asked <b>me to tidy</b> my room.</i>",
+              "Такі дієслова: <i>want, would like, ask, tell, allow, expect, encourage</i> (заохочувати), <i>persuade</i> (переконати), <i>remind</i> (нагадати), <i>warn</i> (попередити), <i>invite</i> (запросити), <i>advise</i> (порадити), <i>teach</i> (навчити).",
+              "Об'єкт — іменник або займенник в об'єктній формі: <i>me, you, him, her, us, them</i>. Не <i>want he to</i>, а <i>want <b>him</b> to</i>.",
+              "Заперечення — <i>not</i> перед <i>to</i>: <i>The coach told us <b>not to be</b> late.</i>",
+              "Так зручно переказувати прохання й накази: <i>“Please close the window.”</i> → <i>She <b>asked</b> us <b>to close</b> the window.</i>",
+              "Винятки: <i>make</i> і <i>let</i> — без <i>to</i>: <i>Mum <b>made</b> me <b>tidy</b> my room. Dad <b>let</b> me <b>stay</b> up late.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>want / ask / tell / allow / remind + object + to + V</i>",
+                "means": "Хтось хоче, просить, каже, дозволяє, нагадує комусь щось зробити."
+              },
+              {
+                "f": "<i>tell / ask + object + not to + V</i>",
+                "means": "Заборона або прохання не робити: <i>He asked me not to tell anyone.</i>"
+              },
+              {
+                "f": "<i>make / let + object + V</i> (без <i>to</i>)",
+                "means": "Змусити / дозволити: <i>The film made me cry.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Translate: «Я хочу, щоб ти мені допоміг».",
+                "steps": [
+                  {
+                    "do": "I want …",
+                    "why": "Початок той самий."
+                  },
+                  {
+                    "do": "… you to help me.",
+                    "why": "Замість «щоб ти» — <i>you to</i> + дієслово. Ніякого <i>that</i>."
+                  }
+                ],
+                "answer": "<i>I want you to help me.</i>"
+              },
+              {
+                "task": "Report: <i>“Please close the window,” the teacher said to us.</i> / <i>“Don't be late,” Mum said to me.</i>",
+                "steps": [
+                  {
+                    "do": "The teacher asked us to close the window.",
+                    "why": "Прохання → <i>ask + object + to + V</i>; <i>please</i> зникає."
+                  },
+                  {
+                    "do": "Mum told me not to be late.",
+                    "why": "Наказ із <i>don't</i> → <i>tell + object + not to + V</i>."
+                  }
+                ],
+                "answer": "<i>The teacher asked us to close the window. Mum told me not to be late.</i>"
+              },
+              {
+                "task": "Finish about yourself: <i>My parents encourage me …</i> / <i>My friends often ask me …</i>",
+                "steps": [
+                  {
+                    "do": "My parents encourage me to read more.",
+                    "why": "<i>encourage + me + to + V</i>."
+                  },
+                  {
+                    "do": "My friends often ask me to help them with maths.",
+                    "why": "<i>ask + me + to + V</i>. Тепер склади свої речення!"
+                  }
+                ],
+                "answer": "Наприклад: <i>My parents encourage me to read more. My friends often ask me to help them with maths.</i>"
+              }
+            ],
+            "mistakes": [
+              "Калька «хочу, щоб…»: <i>I want that you come.</i> Правильно: <i>I want <b>you to come</b>.</i>",
+              "<i>She asked me that I clean the board.</i> Правильно: <i>She asked <b>me to clean</b> the board.</i>",
+              "Займенник у неправильній формі: <i>I'd like he to stay.</i> Правильно: <i>I'd like <b>him</b> to stay.</i>",
+              "<i>to</i> після <i>make / let</i>: <i>She let me to go.</i> Правильно: <i>She let me <b>go</b>.</i>",
+              "Заперечення не там: <i>He told me to not touch it.</i> Краще: <i>He told me <b>not to</b> touch it.</i>"
+            ],
+            "check": [
+              {
+                "q": "Пастка. <i>My parents want … a doctor.</i>",
+                "options": [
+                  "that I become",
+                  "me become",
+                  "I to become",
+                  "me to become"
+                ],
+                "correct": 3,
+                "a": "<i>me to become</i>: <i>want + object + to + V</i>. «Хочуть, щоб я став» — без <i>that</i>; займенник — <i>me</i>, не <i>I</i>."
+              },
+              {
+                "q": "<i>“Don't touch the paintings,” the guide said to us.</i> → <i>The guide told us … touch the paintings.</i> (Впиши два слова.)",
+                "accept": [
+                  "not to"
+                ],
+                "a": "<i>not to</i>: заборону переказуємо як <i>tell + object + not to + V</i>."
+              },
+              {
+                "q": "Записка від мами на холодильнику: <i>Please remind your brother … his PE kit tomorrow!</i>",
+                "options": [
+                  "to take",
+                  "take",
+                  "taking"
+                ],
+                "correct": 0,
+                "a": "<i>to take</i>: <i>remind + object + to + V</i> — нагадати комусь щось зробити."
+              }
+            ]
+          }
         }
       ]
     },
@@ -31,14 +250,227 @@
         {
           "id": "E11.2.1",
           "name": "Fun",
-          "status": "planned",
-          "programmeRef": "Fun"
+          "status": "ready",
+          "programmeRef": "Fun",
+          "lesson": {
+            "what": "Слова про <b>веселощі й жарти</b>: як сказати, що було весело, що хтось смішний, як пожартувати чи розіграти друга — і не переплутати <i>fun</i> та <i>funny</i>.",
+            "ideas": [
+              "<i><b>fun</b></i> — приємно, весело (те, від чого ти отримуєш задоволення): <i>The trip was great fun. We had fun.</i>",
+              "<i><b>funny</b></i> — смішний (те, з чого сміються): <i>a funny video, a funny story, Taras is really funny.</i>",
+              "<i><b>tell</b> a joke</i> — розповісти жарт; <i><b>get</b> a joke</i> — зрозуміти жарт; <i><b>play</b> a joke / a trick <b>on</b> someone</i> — пожартувати з когось, розіграти.",
+              "<i>a prank</i> — розіграш (наприклад, на 1 квітня, <i>April Fool's Day</i>); <i>hilarious</i> — дуже смішний; <i>a sense of humour</i> — почуття гумору.",
+              "<i>laugh <b>at</b> something</i> — сміятися з чогось; <i>make fun of someone</i> — насміхатися з когось (це неприємно!).",
+              "<i>enjoy yourself</i> = <i>have fun</i>: <i>Did you enjoy yourself at the party?</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>have fun</i>, <i>be (great) fun</i>",
+                "means": "Весело провести час; щось приємне: <i>Skating is fun.</i>"
+              },
+              {
+                "f": "<i>funny</i> = смішний",
+                "means": "<i>The film was so funny that I cried.</i>"
+              },
+              {
+                "f": "<i>play a joke / trick on + someone</i>",
+                "means": "Розіграти когось: <i>We played a trick on our teacher.</i>"
+              },
+              {
+                "f": "<i>laugh at</i>, <i>make fun of</i>",
+                "means": "Сміятися з чогось; насміхатися з когось."
+              }
+            ],
+            "examples": [
+              {
+                "task": "<i>fun</i> or <i>funny</i>? <i>The party was really … / Dmytro told a really … joke.</i>",
+                "steps": [
+                  {
+                    "do": "The party was really fun.",
+                    "why": "Вечірка — приємна, нам було добре."
+                  },
+                  {
+                    "do": "Dmytro told a really funny joke.",
+                    "why": "Жарт — смішний, з нього сміються."
+                  }
+                ],
+                "answer": "<i>fun</i>; <i>funny</i>"
+              },
+              {
+                "task": "Complete: <i>On 1 April my sister … a trick … me: she put salt in my tea!</i>",
+                "steps": [
+                  {
+                    "do": "played",
+                    "why": "<i>play a trick</i> — сталий вираз; у минулому <i>played</i>."
+                  },
+                  {
+                    "do": "on",
+                    "why": "Розіграти <b>когось</b> — <i>on someone</i>."
+                  }
+                ],
+                "answer": "<i>played … on</i>"
+              },
+              {
+                "task": "Say about yourself: <i>Who has the best sense of humour in your family? What do you do to have fun?</i>",
+                "steps": [
+                  {
+                    "do": "My dad has the best sense of humour. He always tells hilarious jokes.",
+                    "why": "<i>a sense of humour</i>, <i>tell jokes</i>, <i>hilarious</i>."
+                  },
+                  {
+                    "do": "To have fun, my friends and I play board games and make funny videos.",
+                    "why": "<i>have fun</i> і <i>funny</i> в одному реченні — кожне на своєму місці."
+                  }
+                ],
+                "answer": "Наприклад: <i>My dad has the best sense of humour. He always tells hilarious jokes. To have fun, my friends and I play board games and make funny videos.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>It was a very funny party.</i> — так звучить, ніби вечірка була кумедна. Якщо було весело: <i>It was a really <b>fun</b> party.</i>",
+              "<i>We had a fun.</i> <i>Fun</i> не має артикля: <i>We had (great) fun.</i>",
+              "<i>Make a joke on him.</i> Правильно: <i><b>play</b> a joke <b>on</b> him</i> (розіграти). А <i>make a joke about something</i> — пожартувати про щось.",
+              "Плутають <i>laugh at</i> і <i>laugh with</i>: <i>laugh at someone</i> — сміятися з людини, <i>laugh with someone</i> — сміятися разом."
+            ],
+            "check": [
+              {
+                "q": "Пастка. <i>The day at the water park was great …!</i>",
+                "options": [
+                  "fun",
+                  "funny",
+                  "funnily"
+                ],
+                "correct": 0,
+                "a": "<i>great fun</i> — дуже весело, приємно. <i>Funny</i> означає «смішний», а день в аквапарку був не кумедний, а приємний."
+              },
+              {
+                "q": "On April Fool's Day people like to … jokes on their friends. (Впиши одне слово.)",
+                "accept": [
+                  "play"
+                ],
+                "a": "<i>play jokes on someone</i> — розігрувати когось. (<i>Tell a joke</i> — розповісти жарт, але без <i>on</i>.)"
+              },
+              {
+                "q": "Повідомлення після дня народження друга: <i>Thanks for inviting me! I … so much fun!</i>",
+                "options": [
+                  "made",
+                  "did",
+                  "had"
+                ],
+                "correct": 2,
+                "a": "<i>had fun</i> — весело провести час. <i>Make fun</i> існує лише як <i>make fun of</i> (насміхатися), а <i>do fun</i> так не кажуть."
+              }
+            ]
+          }
         },
         {
           "id": "E11.2.2",
           "name": "Expressions with make",
-          "status": "planned",
-          "programmeRef": "WordWise: Expressions with make"
+          "status": "ready",
+          "programmeRef": "WordWise: Expressions with make",
+          "lesson": {
+            "what": "Багато сталих виразів в англійській мають дієслово <b>make</b>: <i>make a mistake</i>, <i>make friends</i>, <i>make sure</i>. Українське «робити» часто перекладається то як <i>make</i>, то як <i>do</i>, тому ці вирази треба просто запам'ятати.",
+            "ideas": [
+              "<i>make a mistake</i> — зробити помилку; <i>make a decision</i> — ухвалити рішення; <i>make up your mind</i> — вирішити, визначитися.",
+              "<i>make friends (with)</i> — подружитися; <i>make someone laugh</i> — розсмішити; <i>make fun of</i> — насміхатися.",
+              "<i>make a noise</i> — шуміти; <i>make a mess</i> — набрудити, зробити безлад; <i>make a phone call</i> — зателефонувати.",
+              "<i>make sure</i> — переконатися, обов'язково простежити; <i>make sense</i> — мати сенс, бути зрозумілим: <i>It doesn't make sense.</i>",
+              "<i>make money</i> — заробляти гроші; <i>make an effort</i> — докласти зусиль; <i>make a promise</i> — пообіцяти.",
+              "А з <i>do</i>: <i>do homework, do sport, do the shopping, do the washing-up, do your best, do someone a favour</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>make + a mistake / a decision / a noise / a mess / a phone call / a promise</i>",
+                "means": "Створюємо щось нове (звук, безлад, рішення)."
+              },
+              {
+                "f": "<i>make sure (that) …</i>, <i>make sense</i>",
+                "means": "Переконатися; бути логічним."
+              },
+              {
+                "f": "<i>do + homework / sport / the shopping / your best</i>",
+                "means": "Виконуємо дію, роботу — тут <i>do</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "<i>make</i> or <i>do</i>? <i>… a mistake, … your homework, … friends, … the shopping</i>.",
+                "steps": [
+                  {
+                    "do": "make a mistake, make friends",
+                    "why": "Сталі вирази з <i>make</i>."
+                  },
+                  {
+                    "do": "do your homework, do the shopping",
+                    "why": "Робота, обов'язки — <i>do</i>."
+                  }
+                ],
+                "answer": "<i>make a mistake, do your homework, make friends, do the shopping</i>"
+              },
+              {
+                "task": "What do they mean? <i>Make sure you have your ticket.</i> / <i>This sentence doesn't make sense.</i>",
+                "steps": [
+                  {
+                    "do": "make sure — переконайся, обов'язково перевір",
+                    "why": "Перевір, що квиток у тебе."
+                  },
+                  {
+                    "do": "make sense — мати сенс",
+                    "why": "Речення незрозуміле, нелогічне."
+                  }
+                ],
+                "answer": "«Переконайся, що квиток у тебе»; «Це речення не має сенсу»"
+              },
+              {
+                "task": "Answer about yourself: <i>Is it easy for you to make friends? Who can always make you laugh?</i>",
+                "steps": [
+                  {
+                    "do": "Yes, I make friends quite easily, especially at summer camp.",
+                    "why": "<i>make friends</i> — без артикля."
+                  },
+                  {
+                    "do": "My little brother can always make me laugh.",
+                    "why": "<i>make + me + laugh</i> — без <i>to</i>."
+                  }
+                ],
+                "answer": "Наприклад: <i>Yes, I make friends quite easily. My little brother can always make me laugh.</i>"
+              }
+            ],
+            "mistakes": [
+              "Калька «робити помилку»: <i>do a mistake</i>. Правильно: <i><b>make</b> a mistake</i>.",
+              "<i>make homework</i>. Правильно: <i><b>do</b> homework</i>.",
+              "<i>make a photo</i> — калька. Правильно: <i><b>take</b> a photo</i>.",
+              "<i>It doesn't have sense.</i> Правильно: <i>It doesn't <b>make</b> sense.</i>",
+              "<i>make me to laugh</i>. Після <i>make</i> + хтось — дієслово без <i>to</i>: <i>make me laugh</i>."
+            ],
+            "check": [
+              {
+                "q": "Shh! The baby's asleep. Please don't … so much noise. (Впиши одне слово.)",
+                "accept": [
+                  "make"
+                ],
+                "a": "<i>make a noise</i> — шуміти."
+              },
+              {
+                "q": "Пастка. <i>I … only one mistake in my English test!</i>",
+                "options": [
+                  "did",
+                  "made",
+                  "took"
+                ],
+                "correct": 1,
+                "a": "<i>made</i>: <i>make a mistake</i>. <i>Did a mistake</i> — калька з української «зробив помилку»."
+              },
+              {
+                "q": "Повідомлення другові: <i>Text me when you get home. I want to … sure you're OK.</i>",
+                "options": [
+                  "take",
+                  "do",
+                  "make"
+                ],
+                "correct": 2,
+                "a": "<i>make sure</i> — переконатися."
+              }
+            ]
+          }
         }
       ]
     },
@@ -50,20 +482,358 @@
         {
           "id": "E11.3.1",
           "name": "Reporting what someone said. Expressing anger",
-          "status": "planned",
-          "programmeRef": "Developing Speaking: Expressing feelings: anger"
+          "status": "ready",
+          "programmeRef": "Developing Speaking: Expressing feelings: anger",
+          "lesson": {
+            "what": "Як <b>переказати</b>, що хтось сказав (<i>She said that…, Apparently…</i>), і як <b>висловити злість</b> або роздратування так, щоб не образити людей, — а також як заспокоїти друга, який сердиться.",
+            "ideas": [
+              "Переказ: <i>She said (that)… / He told me (that)… / Apparently, … </i>(кажуть, нібито) <i>/ I heard that… / Did you hear what Olia said?</i>",
+              "Злість і роздратування: <i>I can't believe it! That's so annoying! I'm really fed up with…</i> (мені набридло) <i>It drives me crazy when… How could he do that?</i>",
+              "Сила почуття: <i>annoyed</i> (роздратований) → <i>angry</i> (сердитий) → <i>furious</i> (розлючений).",
+              "Ввічливо сказати про свою злість: <i>I feel upset when you… / I'm a bit annoyed because…</i> — кажи про свої почуття, а не ображай людину.",
+              "Заспокоїти друга: <i>I know how you feel. / I understand why you're upset. / Try not to worry about it. / It's not worth getting upset about.</i>",
+              "Обережно: <i>Calm down!</i> сказане різко, звучить грубо й може розсердити ще більше."
+            ],
+            "rules": [
+              {
+                "f": "<i>She said (that)… / Apparently, …</i>",
+                "means": "Переказ чужих слів чи чуток."
+              },
+              {
+                "f": "<i>I'm (really) fed up with + noun / -ing</i>",
+                "means": "Мені набридло: <i>I'm fed up with waiting.</i>"
+              },
+              {
+                "f": "<i>It drives me crazy when…</i>",
+                "means": "Мене дуже дратує, коли…"
+              },
+              {
+                "f": "<i>I understand why you're upset.</i>",
+                "means": "Спокійна, співчутлива відповідь на чужу злість."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Read and continue the mini-dialogue: <i>A: You look angry. What's wrong? B: Nazar told everyone my secret! A: …</i>",
+                "steps": [
+                  {
+                    "do": "Oh no! I understand why you're upset.",
+                    "why": "Спершу співчуття."
+                  },
+                  {
+                    "do": "B: I'm really fed up with him. He said he wouldn't tell anyone!",
+                    "why": "Злість + переказ: <i>He said he wouldn't…</i>"
+                  },
+                  {
+                    "do": "A: Why don't you talk to him tomorrow, when you feel calmer?",
+                    "why": "Порада без осуду."
+                  }
+                ],
+                "answer": "<i>Oh no! I understand why you're upset.</i>"
+              },
+              {
+                "task": "Report what you heard: <i>Your classmate said, “The school trip is cancelled.”</i> Start with <i>Apparently</i> and with <i>Kira said</i>.",
+                "steps": [
+                  {
+                    "do": "Apparently, the school trip is cancelled.",
+                    "why": "<i>Apparently</i> — «кажуть, нібито»; час не змінюємо."
+                  },
+                  {
+                    "do": "Kira said (that) the school trip was cancelled.",
+                    "why": "Після <i>said</i> — зсув часу: <i>is → was</i>."
+                  }
+                ],
+                "answer": "<i>Apparently, the school trip is cancelled.</i> / <i>Kira said (that) the school trip was cancelled.</i>"
+              },
+              {
+                "task": "Say politely that something makes you angry: your brother takes your headphones without asking.",
+                "steps": [
+                  {
+                    "do": "I feel annoyed when you take my headphones without asking.",
+                    "why": "Говоримо про своє почуття: <i>I feel annoyed when…</i>"
+                  },
+                  {
+                    "do": "Could you ask me first next time, please?",
+                    "why": "Ввічливе прохання замість крику."
+                  }
+                ],
+                "answer": "<i>I feel annoyed when you take my headphones without asking. Could you ask me first next time, please?</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>I'm fed up of…</i> трапляється в розмові, але в навчальних текстах краще <i>fed up <b>with</b></i>.",
+              "<i>I am angry on you.</i> Правильно: <i>I'm angry <b>with</b> you</i> (на людину) або <i>angry <b>about</b> something</i> (через щось).",
+              "Кажуть <i>Calm down!</i> різко. Краще почни зі співчуття: <i>I know how you feel.</i>",
+              "Після <i>Apparently</i> не треба <i>said</i>: <i>Apparently, said the trip…</i> Правильно: <i>Apparently, the trip is cancelled.</i>"
+            ],
+            "check": [
+              {
+                "q": "Your friend says: <i>Someone broke my new bike! I'm so angry!</i> What's the best reply? (Обери найкращу відповідь.)",
+                "options": [
+                  "Oh no, that's awful! I'd be furious too.",
+                  "So what? It's only a bike.",
+                  "Calm down! Stop shouting!"
+                ],
+                "correct": 0,
+                "a": "<i>Oh no, that's awful! I'd be furious too.</i> — співчуття й розуміння. Інші відповіді звучать байдуже або грубо."
+              },
+              {
+                "q": "Пастка. Що означає <i>I'm fed up with this game</i>?",
+                "options": [
+                  "Я наївся, граючи в цю гру.",
+                  "Ця гра мене вже дістала, набридла.",
+                  "Я дуже люблю цю гру."
+                ],
+                "correct": 1,
+                "a": "<i>fed up with</i> — «мені набридло, дістало». Хоча <i>feed</i> — годувати, у цьому виразі про їжу не йдеться."
+              },
+              {
+                "q": "Повідомлення подрузі: <i>My little brother read my diary! I can't … it!</i> (Впиши одне слово.)",
+                "accept": [
+                  "believe"
+                ],
+                "a": "<i>I can't believe it!</i> — «Не можу повірити!» — вигук, коли щось обурює чи дуже дивує."
+              }
+            ]
+          }
         },
         {
           "id": "E11.3.2",
           "name": "A news report",
-          "status": "planned",
-          "programmeRef": "A news report"
+          "status": "ready",
+          "programmeRef": "A news report",
+          "lesson": {
+            "what": "<b>News report</b> — коротка новина для шкільної газети чи сайту. Вона має заголовок і одразу відповідає на головні питання: хто, що, де, коли, чому.",
+            "ideas": [
+              "<b>Заголовок</b> (<i>headline</i>): короткий, часто в Present Simple і без артиклів: <i>Students Clean Up River Park</i>.",
+              "<b>Перший абзац</b> відповідає на «5 W»: <i>Who? What? Where? When? Why?</i> Читач має зрозуміти суть уже з двох речень.",
+              "<b>Далі</b> — деталі: як це сталося, цифри, факти.",
+              "<b>Цитати</b>: пряма мова (<i>“We wanted to help,” she said.</i>) і непряма (<i>The head teacher said the school would…</i>).",
+              "<b>Кінець</b>: що буде далі або короткий підсумок.",
+              "Часи: події — Past Simple; що сталося раніше — Past Perfect; стиль нейтральний, без «я думаю»."
+            ],
+            "rules": [
+              {
+                "f": "Headline: <i>Local Girl Finds Lost Dog</i>",
+                "means": "Коротко, Present Simple, без <i>the / a</i>."
+              },
+              {
+                "f": "<i>On + day, + who + did what + where.</i>",
+                "means": "Типовий перший рядок: <i>On Friday, students from School No. 5 raised money for…</i>"
+              },
+              {
+                "f": "<i>“…,” said + name. / Name told reporters (that)…</i>",
+                "means": "Цитата з указівкою, хто це сказав."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Find the 5 Ws in this opening: <i>On Saturday morning, more than fifty students from School No. 12 in Poltava cleaned up the park next to the river.</i>",
+                "steps": [
+                  {
+                    "do": "Who: more than fifty students; What: cleaned up the park",
+                    "why": "Хто й що зробили."
+                  },
+                  {
+                    "do": "Where: in Poltava, next to the river; When: on Saturday morning",
+                    "why": "Де й коли."
+                  },
+                  {
+                    "do": "Why — далі в тексті.",
+                    "why": "Не все мусить бути в першому реченні, але в першому абзаці — так."
+                  }
+                ],
+                "answer": "Who — students; What — cleaned up the park; Where — Poltava, by the river; When — Saturday morning"
+              },
+              {
+                "task": "Write a headline for this news: <i>A 12-year-old boy from Odesa found a lost dog and returned it to its owner.</i>",
+                "steps": [
+                  {
+                    "do": "Boy Finds Lost Dog",
+                    "why": "Коротко, Present Simple, без артиклів."
+                  },
+                  {
+                    "do": "Odesa Boy Finds Lost Dog",
+                    "why": "Можна додати, звідки він."
+                  }
+                ],
+                "answer": "<i>Odesa Boy Finds Lost Dog</i>"
+              },
+              {
+                "task": "Read a model news report (about 80 words) and name its parts. <b>Students Clean Up River Park.</b> <i>On Saturday morning, more than fifty students from School No. 12 in Poltava cleaned up the park next to the river. They collected over 200 bags of rubbish in just four hours. The idea came from Kateryna, 13, who had seen a video about plastic in rivers. “We wanted to do something useful for our town,” she said. Local people brought the volunteers sandwiches and tea. The head teacher told reporters that the school would organise another clean-up in the spring.</i>",
+                "steps": [
+                  {
+                    "do": "Headline: <i>Students Clean Up River Park</i>",
+                    "why": "Коротко й без артиклів."
+                  },
+                  {
+                    "do": "Opening: перше речення — who, what, where, when.",
+                    "why": "Суть новини одразу."
+                  },
+                  {
+                    "do": "Details and quotes: <i>200 bags…, “We wanted to do something useful…,” she said.</i>",
+                    "why": "Цифри й пряма мова роблять новину живою; <i>had seen</i> — Past Perfect для ранішої події."
+                  },
+                  {
+                    "do": "Ending: <i>The head teacher told reporters that the school would…</i>",
+                    "why": "Що буде далі; непряма мова."
+                  }
+                ],
+                "answer": "Заголовок → перший абзац (5 W) → деталі й цитати → що буде далі"
+              }
+            ],
+            "mistakes": [
+              "Починають з власної думки: <i>I think this is very good news.</i> Новина подає факти, думку краще передати через цитату.",
+              "Довгий заголовок з артиклями: <i>The students of the school cleaned the park on Saturday.</i> Краще: <i>Students Clean Up River Park</i>.",
+              "У першому абзаці немає «коли» чи «де». Перевір усі 5 W.",
+              "Цитата без указівки, хто говорить. Додай <i>she said</i> / <i>said the coach</i>."
+            ],
+            "check": [
+              {
+                "q": "Which is the best headline for a school news website? (Який заголовок найкращий?)",
+                "options": [
+                  "Yesterday the students of our school were very happy because they won",
+                  "I want to tell you about our choir",
+                  "Our choir is really good",
+                  "School Choir Wins National Contest"
+                ],
+                "correct": 3,
+                "a": "<i>School Choir Wins National Contest</i> — коротко, Present Simple, без артиклів. Інші варіанти — звичайні речення, а не заголовки."
+              },
+              {
+                "q": "Пастка. <i>Last Friday, Year 7 students raised 8,000 hryvnias for an animal shelter.</i> Which of the 5 Ws is NOT in this opening?",
+                "options": [
+                  "When",
+                  "Where",
+                  "What"
+                ],
+                "correct": 1,
+                "a": "Бракує <b>Where</b> — де це відбулося (наприклад, <i>at a school fair in Vinnytsia</i>). <i>When</i> — <i>last Friday</i>, <i>What</i> — <i>raised 8,000 hryvnias</i>."
+              },
+              {
+                "q": "Повідомлення для шкільного сайту: <i>“We trained every day for this match,” … the team captain, Andrii.</i>",
+                "options": [
+                  "said",
+                  "told",
+                  "talked"
+                ],
+                "correct": 0,
+                "a": "<i>said</i>: після цитати пишемо <i>said + хто</i>. <i>Told</i> потребує «кому» (<i>told reporters</i>), а <i>talked</i> не вводить цитату."
+              }
+            ]
+          }
         },
         {
           "id": "E11.3.3",
           "name": "Intonation: rude or polite?",
-          "status": "planned",
-          "programmeRef": "Intonation: rude or polite?"
+          "status": "ready",
+          "programmeRef": "Intonation: rude or polite?",
+          "lesson": {
+            "what": "В англійській <b>інтонація</b> (як голос іде вгору й униз) показує, чи ти ввічливий. Ті самі слова можуть звучати ввічливо або грубо — залежно від того, <b>як</b> їх сказати.",
+            "ideas": [
+              "<b>Ввічливо</b>: голос «живий», іде вгору-вниз у широкому діапазоні, починає вище й плавно знижується: <i>Could you HELP me, please?</i> ↗↘",
+              "<b>Грубо чи байдуже</b>: голос рівний, низький, різкий, без руху: <i>Help me.</i> → (пласко). Так звучить як наказ або роздратування.",
+              "Українською ми часто говоримо рівніше, тому англійською варто «додати мелодії», інакше людям може здатися, що ти сердишся.",
+              "Ввічливі слова допомагають: <i>Could you…? Would you mind…? Sorry, could you say that again? Excuse me…</i> Але навіть <i>please</i>, сказане пласко й різко, звучить грубо.",
+              "Наголос — на головному слові: <i>Could I have some WAter, please?</i> (наголошений склад пишемо великими літерами)."
+            ],
+            "rules": [
+              {
+                "f": "<i>Could you… / Would you mind… / Sorry, …</i> + «живий» голос",
+                "means": "Ввічливе прохання."
+              },
+              {
+                "f": "Короткий наказ рівним низьким голосом",
+                "means": "Звучить грубо: <i>Give me that.</i>"
+              },
+              {
+                "f": "<i>What?</i> ↘ (різко) → <i>Sorry? / Pardon?</i> ↗",
+                "means": "Перепитати ввічливо — з підйомом голосу наприкінці."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Make the request polite: <i>Open the window.</i>",
+                "steps": [
+                  {
+                    "do": "Could you open the window, please?",
+                    "why": "Додаємо <i>Could you…</i> і <i>please</i>."
+                  },
+                  {
+                    "do": "Could you OPen the WINdow, please? ↗↘",
+                    "why": "Голос «танцює»: вище на <i>OPen</i> і <i>WINdow</i>, плавно вниз, легкий підйом на <i>please</i>."
+                  }
+                ],
+                "answer": "<i>Could you open the window, please?</i> — сказано живим, мелодійним голосом"
+              },
+              {
+                "task": "You didn't hear what the teacher said. Compare: <i>What?</i> / <i>Sorry, could you say that again?</i>",
+                "steps": [
+                  {
+                    "do": "What? — різко, вниз",
+                    "why": "Звучить грубо, навіть якщо ти не хотів."
+                  },
+                  {
+                    "do": "Sorry, could you say that again? — голос іде вгору наприкінці",
+                    "why": "Ввічливо: <i>Sorry</i> + питання з підйомом. Коротко можна <i>Sorry?</i> ↗ або <i>Pardon?</i> ↗"
+                  }
+                ],
+                "answer": "<i>Sorry, could you say that again?</i>"
+              },
+              {
+                "task": "Say <i>Thank you</i> in two ways and describe the difference.",
+                "steps": [
+                  {
+                    "do": "THANK you ↘ (високо на THANK, потім униз)",
+                    "why": "Тепло й щиро."
+                  },
+                  {
+                    "do": "thank you → (пласко, тихо, низько)",
+                    "why": "Байдуже або навіть з образою — так кажуть, коли незадоволені."
+                  }
+                ],
+                "answer": "Щиро — з високим початком на <i>THANK</i> і плавним спадом; пласко — звучить байдуже"
+              }
+            ],
+            "mistakes": [
+              "Думають, що <i>please</i> саме по собі робить фразу ввічливою. Якщо сказати <i>Please sit down</i> різко й пласко, це звучить як наказ.",
+              "Перепитують <i>What?</i> — у розмові з учителем чи незнайомцем це грубо. Кажи <i>Sorry?</i> або <i>Pardon?</i> з підйомом голосу.",
+              "Говорять англійською монотонно, як диктор. Додай руху голосу на важливих словах.",
+              "Наказ замість прохання: <i>Give me water.</i> Краще: <i>Could I have some water, please?</i>"
+            ],
+            "check": [
+              {
+                "q": "Which sounds the most polite? (Що звучить найввічливіше?)",
+                "options": [
+                  "Give me your pen.",
+                  "Pen. Now.",
+                  "Excuse me, could I borrow your pen, please?"
+                ],
+                "correct": 2,
+                "a": "<i>Excuse me, could I borrow your pen, please?</i> — ввічливий початок, питання з <i>could</i> і <i>please</i>. Перші два — накази."
+              },
+              {
+                "q": "Пастка. Ти кажеш <i>Please be quiet</i> рівним, низьким і різким голосом. Як це звучить?",
+                "options": [
+                  "Ввічливо, бо є please",
+                  "Грубо або сердито",
+                  "Весело й дружньо"
+                ],
+                "correct": 1,
+                "a": "Грубо або сердито: інтонація важить не менше, ніж слова. Без руху голосу навіть <i>please</i> звучить як наказ."
+              },
+              {
+                "q": "У кафе ти не почув, що сказав офіціант. Ввічливо перепитай одним словом із підйомом голосу: <i>…?</i> (Впиши одне слово.)",
+                "accept": [
+                  "Sorry",
+                  "Pardon",
+                  "Sorry?",
+                  "Pardon?"
+                ],
+                "a": "<i>Sorry?</i> ↗ або <i>Pardon?</i> ↗ — ввічливо перепитати. <i>What?</i> звучить грубо."
+              }
+            ]
+          }
         }
       ]
     }

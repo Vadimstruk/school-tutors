@@ -12,14 +12,224 @@
         {
           "id": "E5.1.1",
           "name": "Present perfect continuous",
-          "status": "planned",
-          "programmeRef": "Present perfect continuous"
+          "status": "ready",
+          "programmeRef": "Present perfect continuous",
+          "lesson": {
+            "what": "<b>Present Perfect Continuous</b> (<i>have / has been + V-ing</i>) показує дію, яка почалася в минулому й <b>триває досі</b> або щойно закінчилася і видно її наслідок. Українською часто перекладаємо теперішнім часом: <i>I've been learning the guitar for two years.</i> — «Я вчуся грати на гітарі два роки».",
+            "ideas": [
+              "Головне питання — <i>How long…?</i> (Як довго…?): <i>How long have you been playing the drums?</i>",
+              "<i>for</i> + проміжок часу: <i>for two hours, for a year</i>. <i>since</i> + момент початку: <i>since 2023, since Monday, since I was eight</i>.",
+              "Щойно закінчена дія з видимим наслідком: <i>Your fingers are red. — I've been practising the violin.</i>",
+              "Українською кажемо теперішнім часом: «Я чекаю з п'ятої». Англійською — <i>I've been waiting since five</i>, а не <i>I wait since five</i>.",
+              "Дієслова стану (<i>know, like, love, want</i>, <i>have</i> у значенні «мати») у цьому часі зазвичай не вживаємо: <i>I've known her for years</i>, а не <i>I've been knowing</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>I / you / we / they <b>have</b> ('ve) been + V-ing</i>; <i>he / she / it <b>has</b> ('s) been + V-ing</i>",
+                "means": "Стверджувальне речення: <i>She's been singing since 10 a.m.</i>"
+              },
+              {
+                "f": "<i>haven't / hasn't been + V-ing</i>",
+                "means": "Заперечення: <i>He hasn't been sleeping well.</i>"
+              },
+              {
+                "f": "<i>Have / Has … been + V-ing?</i> — <i>Yes, I have. / No, she hasn't.</i>",
+                "means": "Запитання й короткі відповіді."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Put the verb in the correct form (постав дієслово в правильну форму): <i>She … (play) the piano since she was six.</i>",
+                "steps": [
+                  {
+                    "do": "<i>since she was six</i> — від минулого до тепер.",
+                    "why": "Дія почалася тоді й триває — Present Perfect Continuous."
+                  },
+                  {
+                    "do": "<i>she</i> → <i>has</i>",
+                    "why": "Третя особа однини."
+                  },
+                  {
+                    "do": "<i>She has been playing the piano since she was six.</i>",
+                    "why": "<i>has been + playing</i>."
+                  }
+                ],
+                "answer": "<i>has been playing</i>"
+              },
+              {
+                "task": "Make a question (склади запитання): <i>how long / you / wait / for the band?</i>",
+                "steps": [
+                  {
+                    "do": "<i>How long</i> + <i>have</i> + <i>you</i> + <i>been</i> + <i>waiting</i>",
+                    "why": "Порядок слів: питальне слово → <i>have</i> → підмет → <i>been</i> → V-ing."
+                  },
+                  {
+                    "do": "<i>How long have you been waiting for the band?</i>",
+                    "why": "Відповідь могла б бути: <i>For an hour!</i>"
+                  }
+                ],
+                "answer": "<i>How long have you been waiting for the band?</i>"
+              },
+              {
+                "task": "Write two true sentences about yourself with <i>for</i> and <i>since</i> (два речення про себе).",
+                "steps": [
+                  {
+                    "do": "<i>I've been learning English since I was six.</i>",
+                    "why": "<i>since</i> + момент початку."
+                  },
+                  {
+                    "do": "<i>I've been going to swimming lessons for two years.</i>",
+                    "why": "<i>for</i> + проміжок часу."
+                  }
+                ],
+                "answer": "Наприклад: <i>I've been learning English since I was six. I've been going to swimming lessons for two years.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>I play the guitar for two years.</i> → <i>I've been playing the guitar for two years.</i> — калька з українського теперішнього часу.",
+              "<i>How long do you learn English?</i> → <i>How long have you been learning English?</i>",
+              "Пропускають <i>been</i>: <i>I have playing</i> → <i>I have been playing</i>.",
+              "Плутають <i>for</i> і <i>since</i>: <i>since two hours</i> → <i>for two hours</i>.",
+              "<i>I've been knowing him for ages.</i> → <i>I've known him for ages.</i>"
+            ],
+            "check": [
+              {
+                "q": "My brother … the drums all morning. I've got a headache! (Обери)",
+                "options": [
+                  "has been playing",
+                  "have been playing",
+                  "is playing since"
+                ],
+                "correct": 0,
+                "a": "Дія триває весь ранок до тепер, і є наслідок (болить голова): <i>has been playing</i>. <i>He</i> → <i>has</i>."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>We've been rehearsing … three o'clock.</i> (з)",
+                "accept": [
+                  "since"
+                ],
+                "a": "<i>since</i>, бо <i>three o'clock</i> — момент початку. Про проміжок (<i>three hours</i>) сказали б <i>for</i>."
+              },
+              {
+                "q": "A message from a friend (повідомлення від друга): «Where are you? … for you outside the cinema for twenty minutes!» (Впиши: I + wait)",
+                "accept": [
+                  "I've been waiting",
+                  "I have been waiting"
+                ],
+                "a": "<i>I've been waiting</i> (<i>I have been waiting</i>): почав чекати 20 хвилин тому й досі чекаю."
+              }
+            ]
+          }
         },
         {
           "id": "E5.1.2",
           "name": "Present perfect simple vs. continuous",
-          "status": "planned",
-          "programmeRef": "Present perfect simple vs. present perfect continuous"
+          "status": "ready",
+          "programmeRef": "Present perfect simple vs. present perfect continuous",
+          "lesson": {
+            "what": "Обидва часи пов'язують минуле з теперішнім. <b>Present Perfect Simple</b> (<i>have + V3</i>) — про <b>результат</b>: що зроблено, скільки. <b>Present Perfect Continuous</b> (<i>have been + V-ing</i>) — про <b>процес</b>: як довго, чим займалися.",
+            "ideas": [
+              "Скільки? → Simple: <i>I've written three songs.</i> Як довго? → Continuous: <i>I've been writing songs all day.</i>",
+              "Simple — дію завершено: <i>I've read the book</i> (дочитав). Continuous — дія може ще тривати: <i>I've been reading the book</i> (ще читаю).",
+              "Continuous пояснює видимий наслідок: <i>You're wet! — I've been walking in the rain.</i>",
+              "Дієслова стану (<i>know, like, love, believe, be</i>) — лише Simple: <i>I've known Max since primary school.</i>",
+              "З <i>live, work, study, learn</i> + <i>for / since</i> обидва часи майже однакові: <i>I've lived / I've been living here for five years.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>have / has + V3</i> + скільки / що зроблено",
+                "means": "Результат: <i>She's recorded two albums.</i>"
+              },
+              {
+                "f": "<i>have / has been + V-ing</i> + як довго",
+                "means": "Процес, тривалість: <i>She's been recording all week.</i>"
+              },
+              {
+                "f": "<i>know, like, want, be…</i> → лише Simple",
+                "means": "<i>We've been friends for years</i>, а не <i>We've been being friends</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose (обери): <i>I … four new chords this week.</i> (have learned / have been learning)",
+                "steps": [
+                  {
+                    "do": "<i>four new chords</i> — скільки?",
+                    "why": "Кількість, результат → Simple."
+                  },
+                  {
+                    "do": "<i>I've learned four new chords this week.</i>",
+                    "why": "<i>have + learned</i> (V3). Британці пишуть і <i>learnt</i>."
+                  }
+                ],
+                "answer": "<i>have learned</i> (або <i>have learnt</i>)"
+              },
+              {
+                "task": "Complete both sentences with <i>practise</i> (доповни обидва речення): <i>a) I … the song for hours. b) I … the song ten times.</i>",
+                "steps": [
+                  {
+                    "do": "a) <i>for hours</i> — тривалість.",
+                    "why": "Як довго → Continuous: <i>have been practising</i>."
+                  },
+                  {
+                    "do": "b) <i>ten times</i> — скільки разів.",
+                    "why": "Кількість → Simple: <i>have practised</i>."
+                  }
+                ],
+                "answer": "a) <i>have been practising</i>; b) <i>have practised</i>"
+              },
+              {
+                "task": "Correct the mistake (виправ помилку): <i>I've been knowing my best friend since I was five.</i>",
+                "steps": [
+                  {
+                    "do": "<i>know</i> — дієслово стану.",
+                    "why": "Його не вживаємо в Continuous."
+                  },
+                  {
+                    "do": "<i>I've known my best friend since I was five.</i>",
+                    "why": "Present Perfect Simple: <i>have + known</i>."
+                  }
+                ],
+                "answer": "<i>I've known my best friend since I was five.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>I've been writing three songs.</i> → <i>I've written three songs.</i> — кількість → Simple.",
+              "<i>I've been knowing</i>, <i>I've been liking</i> → <i>I've known</i>, <i>I've liked</i>.",
+              "Для видимого наслідку обирають Simple: <i>Why are you so tired? — I've run.</i> → <i>I've been running.</i>",
+              "Неправильна V3: <i>I've wrote</i> → <i>I've written</i>; <i>I've sang</i> → <i>I've sung</i>."
+            ],
+            "check": [
+              {
+                "q": "She's tired because she … in the choir all afternoon. (Обери)",
+                "options": [
+                  "has sung",
+                  "has been singing",
+                  "sings"
+                ],
+                "correct": 1,
+                "a": "Наслідок (вона втомлена) і тривалість (<i>all afternoon</i>) → <i>has been singing</i>."
+              },
+              {
+                "q": "Пастка. <i>I … this band since I was ten!</i> (Обери)",
+                "options": [
+                  "have been liking",
+                  "like",
+                  "have liked"
+                ],
+                "correct": 2,
+                "a": "<i>like</i> — дієслово стану, тому лише Simple: <i>I've liked this band since I was ten.</i> <i>I like… since</i> — калька з української."
+              },
+              {
+                "q": "A message to your music teacher (повідомлення вчителю музики): «… the new song! Can I play it for you tomorrow?» (Впиши: I + finish)",
+                "accept": [
+                  "I've finished",
+                  "I have finished"
+                ],
+                "a": "Пісня готова — результат → Simple: <i>I've finished</i> (<i>I have finished</i>)."
+              }
+            ]
+          }
         }
       ]
     },
@@ -31,14 +241,228 @@
         {
           "id": "E5.2.1",
           "name": "Making music. Musical instruments",
-          "status": "planned",
-          "programmeRef": "Making music; Musical instruments"
+          "status": "ready",
+          "programmeRef": "Making music; Musical instruments",
+          "lesson": {
+            "what": "Назви музичних інструментів і музикантів, а ще вирази про те, як створюють музику: пишуть пісні, записують альбом, виступають наживо.",
+            "ideas": [
+              "Інструменти: <i>guitar, drums, keyboard, violin, trumpet, saxophone, cello, flute</i>. Кажемо <i>play <b>the</b> guitar</i> — з артиклем <i>the</i>.",
+              "Музиканти: <i>guitarist, drummer, violinist, pianist, singer</i>. Гурт — <i>band</i>, хор — <i>choir</i> /ˈkwaɪə/.",
+              "<i>write a song</i> — написати пісню; <i>record a song / an album</i> — записати; <i>release an album</i> — випустити альбом.",
+              "<i>play live</i> або <i>perform</i> — виступати наживо; <i>give a concert</i> — дати концерт; <i>go on tour</i> — поїхати в тур.",
+              "<i>practise</i> (дієслово) — тренуватися, репетирувати; <i>practice</i> (іменник) у британській англійській: <i>I practise every day. Practice makes perfect.</i>",
+              "<i>have music lessons</i>; <i>sing in a choir</i>; <i>play in a band</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>play <b>the</b> + інструмент</i>",
+                "means": "<i>She plays the violin.</i> А спорт — без артикля: <i>play football</i>."
+              },
+              {
+                "f": "<i>record / release an album</i>; <i>give a concert</i>; <i>go on tour</i>; <i>play live</i>",
+                "means": "Сталі сполучення, які варто запам'ятати разом."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Who plays what? (Хто на чому грає?) <i>a drummer, a violinist, a guitarist</i>",
+                "steps": [
+                  {
+                    "do": "<i>A drummer plays the drums.</i>",
+                    "why": "<i>drum</i> + <i>-er</i>."
+                  },
+                  {
+                    "do": "<i>A violinist plays the violin.</i>",
+                    "why": "<i>violin</i> + <i>-ist</i>."
+                  },
+                  {
+                    "do": "<i>A guitarist plays the guitar.</i>",
+                    "why": "Наголос: <i>guiTARist</i>."
+                  }
+                ],
+                "answer": "<i>the drums, the violin, the guitar</i>"
+              },
+              {
+                "task": "Complete the story with <i>released, went on tour, recorded, wrote</i>: <i>The band … ten new songs, … them in a studio, … the album in May and then … around Europe.</i>",
+                "steps": [
+                  {
+                    "do": "<i>The band wrote ten new songs,</i>",
+                    "why": "Спершу пісні пишуть."
+                  },
+                  {
+                    "do": "<i>recorded them in a studio,</i>",
+                    "why": "Потім записують у студії."
+                  },
+                  {
+                    "do": "<i>released the album in May</i>",
+                    "why": "Потім альбом випускають."
+                  },
+                  {
+                    "do": "<i>and then went on tour around Europe.</i>",
+                    "why": "А тоді їдуть у тур."
+                  }
+                ],
+                "answer": "<i>wrote, recorded, released, went on tour</i>"
+              },
+              {
+                "task": "Write two sentences about you and music (два речення про тебе й музику).",
+                "steps": [
+                  {
+                    "do": "<i>I've been playing the keyboard for three years.</i>",
+                    "why": "<i>play the keyboard</i> + Present Perfect Continuous."
+                  },
+                  {
+                    "do": "<i>I'd love to sing in a band one day.</i>",
+                    "why": "<i>I'd love to</i> — мрія; <i>sing in a band</i>."
+                  }
+                ],
+                "answer": "Наприклад: <i>I've been playing the keyboard for three years. I'd love to sing in a band one day.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>play on the piano</i> — калька з «грати на піаніно». Правильно: <i>play the piano</i>.",
+              "<i>do a concert</i> → <i>give a concert</i>.",
+              "Вимовляють <i>choir</i> як «чоір». Правильно: /ˈkwaɪə/, приблизно «квайє».",
+              "Плутають <i>practise</i> (дієслово) і <i>practice</i> (іменник) у британському написанні."
+            ],
+            "check": [
+              {
+                "q": "Our band is going to … its first album next month. (Обери)",
+                "options": [
+                  "release",
+                  "do",
+                  "play"
+                ],
+                "correct": 0,
+                "a": "<i>release an album</i> — випустити альбом."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>My sister plays … violin in the school orchestra.</i>",
+                "accept": [
+                  "the"
+                ],
+                "a": "<i>the</i>: <i>play the violin</i>. Не <i>play on the violin</i>."
+              },
+              {
+                "q": "A poster at school (оголошення в школі): «Do you play an instrument? Join our school …! Rehearsals every Friday.»",
+                "options": [
+                  "drummer",
+                  "concert",
+                  "band"
+                ],
+                "correct": 2,
+                "a": "<i>Join our school band</i> — приєднуйся до шкільного гурту. <i>drummer</i> — людина, а <i>concert</i> — подія, до них не «приєднуються»."
+              }
+            ]
+          }
         },
         {
           "id": "E5.2.2",
           "name": "Phrasal verbs with out",
-          "status": "planned",
-          "programmeRef": "WordWise: Phrasal verbs with out"
+          "status": "ready",
+          "programmeRef": "WordWise: Phrasal verbs with out",
+          "lesson": {
+            "what": "Фразові дієслова з <i>out</i> — це дієслово + <i>out</i>, які разом мають нове значення: <i>find out</i> — дізнатися, <i>run out</i> — закінчитися.",
+            "ideas": [
+              "<i>find out</i> — дізнатися: <i>I found out that the concert was cancelled.</i>",
+              "<i>work out</i> — зрозуміти, розгадати: <i>I can't work out this puzzle.</i> (А ще — тренуватися: <i>He works out at the gym.</i>)",
+              "<i>sort out</i> — розв'язати проблему, навести лад: <i>Let's sort out the problem with the speakers.</i>",
+              "<i>run out (of)</i> — закінчитися: <i>We've run out of milk.</i> <i>Time is running out!</i>",
+              "<i>come out</i> — вийти (про альбом, фільм, гру): <i>Their new album comes out on Friday.</i>",
+              "<i>hang out (with)</i> — проводити час, гуляти разом: <i>I hang out with my friends in the park.</i>",
+              "<i>check out</i> — подивитися щось цікаве: <i>Check out this video!</i> <i>give out</i> — роздавати: <i>The teacher gave out the tests.</i>",
+              "Якщо додаток — займенник (<i>it, them</i>), він стоїть посередині: <i>sort <b>it</b> out</i>, <i>check <b>it</b> out</i>, <i>give <b>them</b> out</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>run out <b>of</b> + іменник</i>; <i>hang out <b>with</b> + людина</i>",
+                "means": "Прийменники після фразового дієслова."
+              },
+              {
+                "f": "<i>check it out</i>, а не <i>check out it</i>",
+                "means": "Займенник — між дієсловом і <i>out</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose (обери): <i>I need to … what time the concert starts.</i> (find out / run out / come out)",
+                "steps": [
+                  {
+                    "do": "Мені треба дізнатися час.",
+                    "why": "«Дізнатися» — <i>find out</i>."
+                  },
+                  {
+                    "do": "<i>I need to find out what time the concert starts.</i>",
+                    "why": "Після <i>need to</i> — початкова форма."
+                  }
+                ],
+                "answer": "<i>find out</i>"
+              },
+              {
+                "task": "Say it with a phrasal verb (скажи фразовим дієсловом): <i>We have no more paper for the printer.</i>",
+                "steps": [
+                  {
+                    "do": "<i>no more paper</i> — папір закінчився.",
+                    "why": "«Закінчитися» — <i>run out of</i>."
+                  },
+                  {
+                    "do": "<i>We've run out of paper for the printer.</i>",
+                    "why": "<i>run – ran – run</i>; тут Present Perfect: <i>have run out</i>."
+                  }
+                ],
+                "answer": "<i>We've run out of paper for the printer.</i>"
+              },
+              {
+                "task": "Correct the mistake (виправ помилку): <i>This song is amazing — check out it!</i>",
+                "steps": [
+                  {
+                    "do": "<i>check out it</i>",
+                    "why": "Займенник <i>it</i> не ставимо після <i>out</i>."
+                  },
+                  {
+                    "do": "<i>Check it out!</i>",
+                    "why": "Займенник — посередині."
+                  }
+                ],
+                "answer": "<i>This song is amazing — check it out!</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>sort out it</i> → <i>sort it out</i>.",
+              "<i>We ran out the milk.</i> → <i>We ran out <b>of</b> milk.</i>",
+              "<i>The album went out last year.</i> — калька з «альбом вийшов». Правильно: <i>The album came out last year.</i>",
+              "<i>hang out to friends</i> → <i>hang out <b>with</b> friends</i>."
+            ],
+            "check": [
+              {
+                "q": "When does the new game …? I want to buy it on the first day. (Обери)",
+                "options": [
+                  "give out",
+                  "work out",
+                  "come out"
+                ],
+                "correct": 2,
+                "a": "<i>come out</i> — вийти, з'явитися в продажу."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>We've run out … snacks. Can you buy some?</i>",
+                "accept": [
+                  "of"
+                ],
+                "a": "<i>of</i>: <i>run out of something</i> — «у нас закінчилося щось»."
+              },
+              {
+                "q": "A message from a friend (повідомлення від друга): «The Wi-Fi isn't working, and our band practice is online!» Which reply is correct? (Яка відповідь правильна?)",
+                "options": [
+                  "Don't worry, my dad can sort out it.",
+                  "Don't worry, my dad can sort it out.",
+                  "Don't worry, my dad can sort it."
+                ],
+                "correct": 1,
+                "a": "Займенник <i>it</i> — посередині: <i>sort it out</i>. Без <i>out</i> значення інше."
+              }
+            ]
+          }
         }
       ]
     },
@@ -50,20 +474,313 @@
         {
           "id": "E5.3.1",
           "name": "Making suggestions. Asking about feelings",
-          "status": "planned",
-          "programmeRef": "Developing Speaking: Asking about feelings"
+          "status": "ready",
+          "programmeRef": "Developing Speaking: Asking about feelings",
+          "lesson": {
+            "what": "Як запропонувати щось зробити разом (<i>Let's…</i>, <i>How about…?</i>) і як дбайливо спитати, що з людиною (<i>Are you OK?</i>, <i>What's wrong?</i>).",
+            "ideas": [
+              "Пропозиції: <i>Let's + V</i>; <i>Why don't we + V?</i>; <i>Shall we + V?</i>; <i>We could + V</i>; <i>How about / What about + V-ing?</i>",
+              "Відповісти «так»: <i>Good idea!</i> <i>Sounds great!</i> М'яко «ні»: <i>I'm not sure.</i> <i>I'd rather not.</i> <i>Maybe another time?</i>",
+              "Спитати про почуття: <i>Are you OK?</i> <i>You look a bit worried. What's wrong?</i> <i>Is everything all right?</i> <i>How are you feeling about the concert?</i>",
+              "Відповісти: <i>I'm fine, thanks.</i> або чесно: <i>Not really. I'm a bit nervous about…</i>",
+              "Підтримати: <i>Oh, I'm sorry to hear that.</i> <i>Don't worry, you'll be great!</i>",
+              "<i>What's wrong with you?</i> може прозвучати грубо — як «Що з тобою не так?». Краще: <i>What's wrong?</i> або <i>Is something wrong?</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>Let's / Shall we / Why don't we / We could + V</i>",
+                "means": "Пропозиція; дієслово в початковій формі без <i>to</i>."
+              },
+              {
+                "f": "<i>How about / What about + V-ing?</i>",
+                "means": "Після <i>about</i> — форма на <i>-ing</i>: <i>How about going to the concert?</i>"
+              },
+              {
+                "f": "<i>You look + прикметник. Is everything OK?</i>",
+                "means": "Спитати про почуття: <i>You look tired. Is everything OK?</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Make a suggestion in three ways (запропонуй трьома способами): <i>go to the school concert</i>",
+                "steps": [
+                  {
+                    "do": "<i>Let's go to the school concert.</i>",
+                    "why": "<i>Let's</i> + дієслово без <i>to</i>."
+                  },
+                  {
+                    "do": "<i>How about going to the school concert?</i>",
+                    "why": "Після <i>How about</i> — <i>going</i>."
+                  },
+                  {
+                    "do": "<i>Why don't we go to the school concert?</i>",
+                    "why": "<i>Why don't we</i> + дієслово."
+                  }
+                ],
+                "answer": "<i>Let's go to the school concert. How about going to the school concert? Why don't we go to the school concert?</i>"
+              },
+              {
+                "task": "Read the mini-dialogue and name each step (назви кожен крок). <i>A: You look a bit worried. Is everything OK? B: Not really. I've got a guitar solo at the concert tomorrow. A: Oh, don't worry, you'll be great! How about practising together tonight? B: Sounds good. Thanks!</i>",
+                "steps": [
+                  {
+                    "do": "<i>You look a bit worried. Is everything OK?</i>",
+                    "why": "Помічаємо настрій і питаємо про почуття."
+                  },
+                  {
+                    "do": "<i>Not really. I've got a guitar solo…</i>",
+                    "why": "Чесна відповідь і причина."
+                  },
+                  {
+                    "do": "<i>Oh, don't worry, you'll be great!</i>",
+                    "why": "Підтримка."
+                  },
+                  {
+                    "do": "<i>How about practising together tonight?</i>",
+                    "why": "Пропозиція: <i>How about + V-ing</i>."
+                  },
+                  {
+                    "do": "<i>Sounds good. Thanks!</i>",
+                    "why": "Пропозицію прийнято."
+                  }
+                ],
+                "answer": "Питання про почуття → відповідь → підтримка → пропозиція → згода."
+              }
+            ],
+            "mistakes": [
+              "<i>How about go?</i> → <i>How about going?</i>",
+              "<i>Let's to go.</i> → <i>Let's go.</i>",
+              "<i>What's wrong with you?</i> звучить грубо. Краще: <i>What's wrong?</i> / <i>Is everything OK?</i>",
+              "Відмова одним словом <i>No.</i> звучить різко. М'якше: <i>I'd love to, but I can't. Maybe another time?</i>"
+            ],
+            "check": [
+              {
+                "q": "Your friend looks sad after the music lesson. What do you say? (Обери найкращий варіант)",
+                "options": [
+                  "Why are you sad? Stop it.",
+                  "What's wrong with you?",
+                  "Are you OK? You look a bit upset."
+                ],
+                "correct": 2,
+                "a": "<i>Are you OK? You look a bit upset.</i> — дбайливо й ввічливо. <i>What's wrong with you?</i> може прозвучати грубо."
+              },
+              {
+                "q": "Пастка. Впиши одне слово: <i>How about … a band together?</i> (start)",
+                "accept": [
+                  "starting"
+                ],
+                "a": "<i>starting</i>: після <i>How about</i> — форма на <i>-ing</i>."
+              },
+              {
+                "q": "A message from a friend (повідомлення від друга): «Shall we watch a film tonight?» You'd like to, but you can't. Which reply is the most polite?",
+                "options": [
+                  "I'd love to, but I can't tonight. How about tomorrow?",
+                  "No.",
+                  "No, I don't want."
+                ],
+                "correct": 0,
+                "a": "Ввічлива відмова: <i>I'd love to, but…</i> + інша пропозиція (<i>How about tomorrow?</i>)."
+              }
+            ]
+          }
         },
         {
           "id": "E5.3.2",
           "name": "The story of your favourite band",
-          "status": "planned",
-          "programmeRef": "The story of your favourite band"
+          "status": "ready",
+          "programmeRef": "The story of your favourite band",
+          "lesson": {
+            "what": "Розповідь про улюблений гурт — коротка історія: як музиканти починали, чого досягли, що роблять зараз і чому вони тобі подобаються.",
+            "ideas": [
+              "Абзац 1 — початок: хто, де і коли. <i>The band started in 2018 in Lviv.</i>",
+              "Абзац 2 — успіх: перший альбом, хіти, концерти. <i>Their first album came out in 2020.</i>",
+              "Абзац 3 — зараз: Present Perfect і Present Perfect Continuous. <i>Since then, they've released three albums. They've been touring Europe this year.</i>",
+              "Абзац 4 — твоя думка: <i>I love them because…</i> <i>My favourite song is…</i>",
+              "Слова часу: <i>at first, then, after that, a year later, in 2021, since then, now</i>.",
+              "Про минуле з датою — Past Simple (<i>In 2020 they won…</i>); «відтоді й досі» — Present Perfect (<i>Since then they've played…</i>).",
+              "Перевір себе: є 3–4 абзаци? слова часу? Past Simple з датами? чому тобі подобається гурт?"
+            ],
+            "rules": [
+              {
+                "f": "<i>In 2019 they <b>formed</b>…</i> — <i>Since then they <b>have played</b>…</i>",
+                "means": "Дата в минулому → Past Simple; від минулого до тепер → Present Perfect."
+              },
+              {
+                "f": "<i>At first… Then… A year later… Since then… Now…</i>",
+                "means": "Слова-зв'язки часу, що ведуть розповідь."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Read the model about an imaginary band (зразок про вигаданий гурт) and find its parts. <b>My favourite band: The Paper Rockets</b>. <i>The Paper Rockets started in 2019, when four school friends from Odesa formed a band. At first, they only played at school parties. Then they uploaded a song online, and it got a million views in a week! Their first album came out in 2021. Since then, they've released two more albums and played concerts all over Europe. Now they've been working on a new album for six months. I love them because their songs are full of energy and their lyrics are clever. My favourite song is «Run to the Sea».</i>",
+                "steps": [
+                  {
+                    "do": "<i>…started in 2019, when four school friends from Odesa formed a band.</i>",
+                    "why": "Початок: хто, де, коли — Past Simple з датою."
+                  },
+                  {
+                    "do": "<i>At first… Then… Their first album came out in 2021.</i>",
+                    "why": "Успіх; слова часу ведуть розповідь."
+                  },
+                  {
+                    "do": "<i>Since then, they've released… Now they've been working…</i>",
+                    "why": "Від минулого до тепер — Present Perfect і Present Perfect Continuous."
+                  },
+                  {
+                    "do": "<i>I love them because…</i>",
+                    "why": "Власна думка з причиною."
+                  }
+                ],
+                "answer": "Початок → успіх → що зараз → чому подобається."
+              },
+              {
+                "task": "Correct the tenses (виправ часи): <i>In 2020 they have won a music prize. Since then they played in ten countries.</i>",
+                "steps": [
+                  {
+                    "do": "<i>In 2020</i> — точна дата в минулому.",
+                    "why": "Past Simple: <i>they won</i>."
+                  },
+                  {
+                    "do": "<i>Since then</i> — від минулого до тепер.",
+                    "why": "Present Perfect: <i>they have played</i>."
+                  }
+                ],
+                "answer": "<i>In 2020 they won a music prize. Since then they have played in ten countries.</i>"
+              }
+            ],
+            "mistakes": [
+              "<i>In 2020 they have released…</i> → <i>In 2020 they released…</i> — з датою в минулому Present Perfect не вживаємо.",
+              "Немає власної думки. Додай: <i>I love them because…</i>",
+              "Усе в одному абзаці. Поділи текст на 3–4 абзаци.",
+              "<i>Their album went out.</i> → <i>Their album came out.</i>"
+            ],
+            "check": [
+              {
+                "q": "Which is the best first sentence for the story of a band? (Обери найкраще перше речення)",
+                "options": [
+                  "They are good.",
+                  "I like music very much and I listen to it every day.",
+                  "The Silver Foxes started in 2017, when three friends from Dnipro met at a music school."
+                ],
+                "correct": 2,
+                "a": "Перше речення одразу каже, хто, коли й де почав: <i>The Silver Foxes started in 2017…</i>"
+              },
+              {
+                "q": "Пастка. Choose the correct tense (обери час): <i>Their first album … in 2022.</i>",
+                "options": [
+                  "has come out",
+                  "came out",
+                  "has been coming out"
+                ],
+                "correct": 1,
+                "a": "Є точна дата в минулому (<i>in 2022</i>), тому Past Simple: <i>came out</i>."
+              },
+              {
+                "q": "A classmate's story for the school blog has three paragraphs: how the band started, their first hits, what they're doing now. What should she add? (Що їй варто додати?)",
+                "options": [
+                  "The names of all their songs",
+                  "Why she likes the band",
+                  "Her phone number"
+                ],
+                "correct": 1,
+                "a": "Бракує останньої частини — власної думки: <i>I love them because…</i>"
+              }
+            ]
+          }
         },
         {
           "id": "E5.3.3",
           "name": "been: strong and weak forms",
-          "status": "planned",
-          "programmeRef": "been: strong /biːn/ and weak /bɪn/"
+          "status": "ready",
+          "programmeRef": "been: strong /biːn/ and weak /bɪn/",
+          "lesson": {
+            "what": "Слово <i>been</i> вимовляють двома способами. <b>Сильна форма</b> /biːn/ — з довгим звуком /iː/. <b>Слабка форма</b> /bɪn/ — коротка, звучить як слово <i>bin</i>. У швидкому мовленні найчастіше чуємо слабку.",
+            "ideas": [
+              "Слабка /bɪn/ — коли <i>been</i> без наголосу, посеред фрази: <i>I've been PRACtising.</i> <i>She's been to LONdon.</i> Наголос падає на головні слова, а <i>been</i> проговорюємо швидко.",
+              "Сильна /biːn/ — коли <i>been</i> під наголосом: у кінці речення (<i>Where have you BEEN?</i>) або коли його спеціально виділяємо.",
+              "/iː/ — довгий звук, як протяжне українське «і»: <i>see, three</i>. /ɪ/ — короткий, щось між «і» та «и»: <i>sit, bin</i>.",
+              "Так само мають сильну й слабку форми й інші службові слова: <i>have, was, can</i>. Слабка форма — це нормальна вимова, а не помилка."
+            ],
+            "rules": [
+              {
+                "f": "<i>been</i> /bɪn/ — слабка",
+                "means": "У середині фрази, без наголосу: <i>I've been waiting for ages.</i>"
+              },
+              {
+                "f": "<i>been</i> /biːn/ — сильна",
+                "means": "У кінці речення або під наголосом: <i>Where have you been?</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Strong or weak? (Сильна чи слабка?) <i>a) How long have you been playing? b) Have you ever been to a concert? c) I don't know where she's been.</i>",
+                "steps": [
+                  {
+                    "do": "a) <i>…been PLAYing</i>",
+                    "why": "<i>been</i> посеред фрази, наголос на <i>playing</i> → слабка /bɪn/."
+                  },
+                  {
+                    "do": "b) <i>…been to a CONcert</i>",
+                    "why": "Теж посеред фрази → слабка /bɪn/."
+                  },
+                  {
+                    "do": "c) <i>…where she's BEEN.</i>",
+                    "why": "<i>been</i> у кінці речення → сильна /biːn/."
+                  }
+                ],
+                "answer": "a) слабка /bɪn/; b) слабка /bɪn/; c) сильна /biːn/"
+              },
+              {
+                "task": "Say it fast (вимов швидко): <i>I've been learning the drums since May.</i>",
+                "steps": [
+                  {
+                    "do": "Наголошені слова: <i>LEARNing, DRUMS, MAY</i>.",
+                    "why": "Це головні за змістом слова."
+                  },
+                  {
+                    "do": "<i>I've been</i> → /aɪv bɪn/",
+                    "why": "<i>been</i> без наголосу — коротке /bɪn/, як <i>bin</i>."
+                  }
+                ],
+                "answer": "<i>been</i> тут слабке /bɪn/; наголос на <i>LEARNing</i>, <i>DRUMS</i>, <i>MAY</i>."
+              }
+            ],
+            "mistakes": [
+              "Вимовляють <i>been</i> у кожному реченні довго й чітко /biːn/ — звучить неприродно. Посеред фрази — /bɪn/.",
+              "Ставлять слабку форму в кінці речення: <i>Where have you /bɪn/?</i> Тут потрібна сильна /biːn/.",
+              "Читають <i>ee</i> як «е» — «бен». Правильно: /biːn/ або /bɪn/."
+            ],
+            "check": [
+              {
+                "q": "In which sentence is <i>been</i> strong /biːn/? (У якому реченні <i>been</i> сильне?)",
+                "options": [
+                  "I've been reading all day.",
+                  "She's been to Kyiv twice.",
+                  "You're late! Where have you been?"
+                ],
+                "correct": 2,
+                "a": "У <i>Where have you been?</i> слово <i>been</i> стоїть у кінці й має наголос → /biːn/. В інших реченнях воно посеред фрази → /bɪn/."
+              },
+              {
+                "q": "Пастка. The weak form of <i>been</i> sounds like which word? (Слабка форма <i>been</i> звучить як…)",
+                "options": [
+                  "bean",
+                  "bin",
+                  "Ben"
+                ],
+                "correct": 1,
+                "a": "Слабка /bɪn/ звучить як <i>bin</i>. А <i>bean</i> /biːn/ звучить як сильна форма."
+              },
+              {
+                "q": "Your friend is late for the rehearsal, and you say: «We've been waiting for you!» How do you say <i>been</i> here? (Як вимовити <i>been</i>?)",
+                "options": [
+                  "weak /bɪn/, because it is in the middle of the sentence",
+                  "strong /biːn/, because it is always strong"
+                ],
+                "correct": 0,
+                "a": "<i>been</i> посеред фрази, наголос на <i>WAITing</i> → слабка /bɪn/."
+              }
+            ]
+          }
         }
       ]
     }

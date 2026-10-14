@@ -12,32 +12,600 @@
         {
           "id": "E3.1.1",
           "name": "Comparative and superlative adjectives",
-          "status": "planned",
-          "programmeRef": "Comparative and superlative adjectives (review)"
+          "status": "ready",
+          "programmeRef": "Comparative and superlative adjectives (review)",
+          "lesson": {
+            "what": "<b>Вищий ступінь</b> (comparative) порівнює дві речі: <i>bigger than</i> — більший ніж. <b>Найвищий</b> (superlative) показує, що щось найбільше з усіх: <i>the biggest</i> — найбільший.",
+            "ideas": [
+              "Короткі слова (1 склад): <i>+er / +est</i>: <i>fast → faster → the fastest</i>. Якщо закінчується на <i>-e</i>, додаємо лише <i>-r / -st</i>: <i>nice → nicer → the nicest</i>.",
+              "Один голосний + один приголосний у кінці — подвоюємо приголосний: <i>big → bigger, hot → the hottest, sad → sadder</i>.",
+              "Закінчення <i>-y</i> → <i>-ier / -iest</i>: <i>funny → funnier → the funniest, scary → scarier</i>.",
+              "Довгі слова (2+ склади, крім тих, що на -y): <i>more / the most</i>: <i>exciting → more exciting → the most exciting</i>.",
+              "Неправильні: <i>good → better → the best; bad → worse → the worst; far → further → the furthest</i>.",
+              "Після вищого ступеня — <i>than</i>; перед найвищим — <i>the</i>, а після нього часто <i>in</i> (місце, група) або <i>of</i>: <i>the tallest boy in our class, the best day of the year</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>adj-er + than</i> / <i>more + adj + than</i>",
+                "means": "Порівнюємо дві речі: <i>Cats are quieter than dogs. This film is more exciting than that one.</i>"
+              },
+              {
+                "f": "<i>the + adj-est</i> / <i>the most + adj</i>",
+                "means": "Найбільший з усіх: <i>the scariest film, the most popular show</i>."
+              },
+              {
+                "f": "<i>good – better – the best; bad – worse – the worst</i>",
+                "means": "Неправильні форми треба запам'ятати."
+              },
+              {
+                "f": "<i>the best … I've ever seen</i>",
+                "means": "Після найвищого ступеня часто Present Perfect з <i>ever</i>: найкращий з усього, що я бачив."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Write the comparative and superlative: <i>scary, big, popular, bad</i>",
+                "steps": [
+                  {
+                    "do": "scary → scarier → the scariest",
+                    "why": "-y змінюється на -ier / -iest."
+                  },
+                  {
+                    "do": "big → bigger → the biggest",
+                    "why": "Голосний + приголосний у кінці — подвоюємо g."
+                  },
+                  {
+                    "do": "popular → more popular → the most popular",
+                    "why": "Довге слово (3 склади) — <i>more / the most</i>."
+                  },
+                  {
+                    "do": "bad → worse → the worst",
+                    "why": "Неправильний прикметник."
+                  }
+                ],
+                "answer": "scarier – the scariest; bigger – the biggest; more popular – the most popular; worse – the worst"
+              },
+              {
+                "task": "Complete: This cartoon is … (funny) than the one we watched yesterday.",
+                "steps": [
+                  {
+                    "do": "…than the one…",
+                    "why": "Є <i>than</i> — порівнюємо дві речі, потрібен вищий ступінь."
+                  },
+                  {
+                    "do": "funny → funnier",
+                    "why": "Закінчення -y → -ier."
+                  }
+                ],
+                "answer": "funnier"
+              },
+              {
+                "task": "Say it in English: «Це найкращий фільм, який я колись бачив».",
+                "steps": [
+                  {
+                    "do": "It's the best film…",
+                    "why": "Найвищий ступінь від <i>good</i> — <i>the best</i>."
+                  },
+                  {
+                    "do": "…I've ever seen.",
+                    "why": "«Колись у житті» — Present Perfect з <i>ever</i>; <i>see – saw – seen</i>."
+                  }
+                ],
+                "answer": "It's the best film I've ever seen."
+              }
+            ],
+            "mistakes": [
+              "Подвійне порівняння: <i>more better, more easier, the most funniest</i>. Правильно: <i>better, easier, the funniest</i>.",
+              "Плутають <i>than</i> і <i>then</i>: <i>bigger then me</i>. Правильно: <i>bigger than me</i>.",
+              "Калька «найвищий з класу»: <i>the tallest from our class</i>. Правильно: <i>the tallest in our class</i>.",
+              "Забувають <i>the</i>: <i>It's best film.</i> Правильно: <i>It's the best film.</i>"
+            ],
+            "check": [
+              {
+                "q": "Choose: Horror films are … than comedies, I think.",
+                "options": [
+                  "more scarier",
+                  "scarier",
+                  "scaryer"
+                ],
+                "correct": 1,
+                "a": "<i>scarier</i>: <i>scary</i> закінчується на -y → -ier, і без <i>more</i>."
+              },
+              {
+                "q": "Пастка. Write the superlative of <i>bad</i>: «It was the … day of my holiday.» (Впиши одне слово)",
+                "accept": [
+                  "worst"
+                ],
+                "a": "<i>the worst</i>: <i>bad – worse – the worst</i> — неправильний прикметник, не <i>baddest</i>."
+              },
+              {
+                "q": "Message to a friend: «Have you seen the new cartoon about dragons? It's the … film I've ever seen!»",
+                "options": [
+                  "goodest",
+                  "better",
+                  "best"
+                ],
+                "correct": 2,
+                "a": "<i>the best</i> — найвищий ступінь від <i>good</i>. <i>Better</i> — вищий (порівняння двох)."
+              }
+            ]
+          }
         },
         {
           "id": "E3.1.2",
           "name": "(not) as … as",
-          "status": "planned",
-          "programmeRef": "(not) as … as comparatives"
+          "status": "ready",
+          "programmeRef": "(not) as … as comparatives",
+          "lesson": {
+            "what": "<i>as … as</i> показує, що дві речі <b>однакові</b>: <i>as tall as</i> — такий самий високий, як. <i>not as … as</i> — що одна річ <b>менш</b> …, ніж інша.",
+            "ideas": [
+              "<i>Ira is <b>as tall as</b> her mum.</i> — Іра така ж висока, як мама (зріст однаковий).",
+              "<i>The book <b>isn't as exciting as</b> the film.</i> — Книжка не така захоплива, як фільм (тобто фільм захопливіший).",
+              "Між двома <i>as</i> стоїть <b>звичайна</b> форма прикметника, без <i>-er</i> і <i>more</i>: <i>as big as</i>, а не <i>as bigger as</i>.",
+              "У запереченні замість першого <i>as</i> можна сказати <i>so</i>: <i>not so good as</i> = <i>not as good as</i>.",
+              "Після другого <i>as</i> — <i>me / you / him</i> або <i>I am / he is</i>: <i>He's as old as me. = He's as old as I am.</i>",
+              "<i>not as … as</i> — ввічливий спосіб сказати щось негативне: <i>The second season isn't as good as the first.</i> м'якше, ніж <i>It's worse</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>as + adj + as</i>",
+                "means": "Однаково: <i>My phone is as old as yours.</i>"
+              },
+              {
+                "f": "<i>not as (so) + adj + as</i>",
+                "means": "Менше: <i>Chess isn't as popular as football.</i> = <i>Football is more popular than chess.</i>"
+              },
+              {
+                "f": "<i>as + adverb + as</i>",
+                "means": "Те саме з прислівниками: <i>I can't run as fast as my brother.</i>"
+              },
+              {
+                "f": "<i>as … as + me / as I am</i>",
+                "means": "Після <i>as</i> — займенник-додаток або підмет із дієсловом."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Complete: My phone is … (old) … yours — we bought them on the same day.",
+                "steps": [
+                  {
+                    "do": "same day → однаково старі",
+                    "why": "Однакові речі — <i>as … as</i>."
+                  },
+                  {
+                    "do": "as old as",
+                    "why": "Між <i>as</i> — звичайна форма <i>old</i>, без <i>-er</i>."
+                  }
+                ],
+                "answer": "My phone is <i>as old as</i> yours."
+              },
+              {
+                "task": "Rewrite with <i>not as … as</i>: «The film is more exciting than the book.»",
+                "steps": [
+                  {
+                    "do": "film > book",
+                    "why": "Фільм захопливіший, отже книжка — менш захоплива."
+                  },
+                  {
+                    "do": "The book isn't as exciting as…",
+                    "why": "Підмет тепер <i>the book</i>; <i>not as + exciting + as</i>."
+                  },
+                  {
+                    "do": "…the film.",
+                    "why": "Сенс не змінився."
+                  }
+                ],
+                "answer": "The book isn't as exciting as the film."
+              },
+              {
+                "task": "Compare two seasons of a series you know. Use <i>as … as</i> and <i>not as … as</i>.",
+                "steps": [
+                  {
+                    "do": "The new season is as funny as the first one…",
+                    "why": "Однаково смішні — <i>as funny as</i>."
+                  },
+                  {
+                    "do": "…but it isn't as long.",
+                    "why": "Друге <i>as</i> можна не повторювати, якщо зрозуміло, з чим порівнюємо."
+                  }
+                ],
+                "answer": "The new season is as funny as the first one, but it isn't as long."
+              }
+            ],
+            "mistakes": [
+              "Вищий ступінь між <i>as</i>: <i>as taller as</i>. Правильно: <i>as tall as</i>.",
+              "Змішують конструкції: <i>as good than, not as good like</i>. Правильно: <i>as good as</i>.",
+              "Неправильно розуміють заперечення: <i>The test wasn't as hard as I thought</i> означає, що тест був <b>легший</b>, ніж ти думав."
+            ],
+            "check": [
+              {
+                "q": "Choose: My sister is … me now — we're both 160 cm.",
+                "options": [
+                  "as tall as",
+                  "as taller as",
+                  "taller as"
+                ],
+                "correct": 0,
+                "a": "<i>as tall as</i>: зріст однаковий, а між <i>as … as</i> — звичайна форма прикметника."
+              },
+              {
+                "q": "Пастка. «Football isn't as popular as basketball in my class.» What does it mean?",
+                "options": [
+                  "Football is more popular.",
+                  "Basketball is more popular.",
+                  "They are equally popular."
+                ],
+                "correct": 1,
+                "a": "Баскетбол популярніший: <i>not as popular as</i> = менш популярний, ніж."
+              },
+              {
+                "q": "Message to a friend: «The new game isn't … good as the old one. Don't buy it!» (Одне слово)",
+                "accept": [
+                  "as",
+                  "so"
+                ],
+                "a": "<i>as</i> (у запереченні можна й <i>so</i>): <i>not as good as</i> = <i>not so good as</i>."
+              }
+            ]
+          }
         },
         {
           "id": "E3.1.3",
           "name": "Making a comparison stronger or weaker",
-          "status": "planned",
-          "programmeRef": "Making a comparison stronger or weaker"
+          "status": "ready",
+          "programmeRef": "Making a comparison stronger or weaker",
+          "lesson": {
+            "what": "Як показати, що різниця <b>велика</b> («набагато кращий») чи <b>маленька</b> («трохи кращий»): слова <i>much, a lot, far, a bit, a little, slightly, even</i> перед вищим ступенем.",
+            "ideas": [
+              "Велика різниця: <i>much / a lot / far</i> + вищий ступінь: <i>The book is <b>much</b> better than the film.</i>",
+              "Маленька різниця: <i>a bit / a little / slightly</i>: <i>My tablet is <b>a bit</b> heavier than yours.</i>",
+              "<i>even</i> = «ще (більш)»: <i>My brother is tall, but my dad is <b>even</b> taller.</i>",
+              "З <i>as … as</i>: <i>not nearly as … as</i> — «зовсім не такий»; <i>just as … as</i> — «точно такий самий»: <i>The sequel isn't nearly as good as the first film.</i>",
+              "Можна підсилити й повтором: <i>It's getting colder and colder.</i> — стає дедалі холодніше.",
+              "<i>very</i> з вищим ступенем <b>не вживаємо</b>: не <i>very bigger</i>, а <i>much bigger</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>much / a lot / far + comparative</i>",
+                "means": "Набагато: <i>far more interesting, a lot cheaper</i>."
+              },
+              {
+                "f": "<i>a bit / a little / slightly + comparative</i>",
+                "means": "Трохи: <i>slightly longer, a bit more expensive</i>."
+              },
+              {
+                "f": "<i>even + comparative</i>",
+                "means": "Ще: <i>Yesterday was hot, but today is even hotter.</i>"
+              },
+              {
+                "f": "<i>not nearly as … as / just as … as</i>",
+                "means": "Зовсім не такий / такий самий."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Make the difference bigger (use <i>much</i>): «The film is good. The book is better.»",
+                "steps": [
+                  {
+                    "do": "The book is better than the film.",
+                    "why": "Спершу звичайне порівняння."
+                  },
+                  {
+                    "do": "much better",
+                    "why": "<i>much</i> ставимо перед <i>better</i> — набагато краща."
+                  }
+                ],
+                "answer": "The book is much better than the film."
+              },
+              {
+                "task": "Choose: The new episode is (a bit / very) longer than the last one — only five minutes more.",
+                "steps": [
+                  {
+                    "do": "only five minutes more",
+                    "why": "Різниця маленька."
+                  },
+                  {
+                    "do": "a bit longer",
+                    "why": "<i>very</i> з вищим ступенем не вживається."
+                  }
+                ],
+                "answer": "a bit"
+              },
+              {
+                "task": "Compare the cinema tickets: A — 150 UAH, B — 155 UAH, C — 400 UAH.",
+                "steps": [
+                  {
+                    "do": "Ticket B is slightly more expensive than ticket A.",
+                    "why": "Різниця лише 5 гривень — <i>slightly / a bit</i>."
+                  },
+                  {
+                    "do": "Ticket C is much more expensive than ticket B.",
+                    "why": "Різниця велика — <i>much / far / a lot</i>."
+                  }
+                ],
+                "answer": "Ticket B is slightly (a bit) more expensive than ticket A, but ticket C is much (far) more expensive than both."
+              }
+            ],
+            "mistakes": [
+              "<i>very</i> з вищим ступенем: <i>This test is very easier.</i> Правильно: <i>much easier</i>.",
+              "Подвійне порівняння: <i>much more better, a little more cheaper</i>. Правильно: <i>much better, a little cheaper</i>.",
+              "«Ще краще» — не <i>even more good</i>, а <i>even better</i>.",
+              "<i>many</i> замість <i>much</i>: <i>many faster</i>. Правильно: <i>much faster</i>."
+            ],
+            "check": [
+              {
+                "q": "Choose: The new version of the game is … more exciting than the old one. I love it!",
+                "options": [
+                  "very",
+                  "much",
+                  "many"
+                ],
+                "correct": 1,
+                "a": "<i>much more exciting</i> — набагато захопливіша. <i>very</i> і <i>many</i> перед вищим ступенем не вживаємо."
+              },
+              {
+                "q": "Пастка. Which sentence is correct?",
+                "options": [
+                  "My laptop is very slower than yours.",
+                  "My laptop is a bit more slower than yours.",
+                  "My laptop is a bit slower than yours."
+                ],
+                "correct": 2,
+                "a": "<i>a bit slower</i>: <i>slow</i> — короткий прикметник, тому <i>slower</i> без <i>more</i>; <i>very</i> з вищим ступенем не вживаємо."
+              },
+              {
+                "q": "Message to a friend: «I thought yesterday's episode was scary, but today's was … scarier!» (Одне слово: «ще»)",
+                "accept": [
+                  "even"
+                ],
+                "a": "<i>even scarier</i> — ще страшніша. <i>even</i> підсилює вищий ступінь."
+              }
+            ]
+          }
         },
         {
           "id": "E3.1.4",
           "name": "Adverbs and comparative adverbs",
-          "status": "planned",
-          "programmeRef": "Adverbs and comparative adverbs"
+          "status": "ready",
+          "programmeRef": "Adverbs and comparative adverbs",
+          "lesson": {
+            "what": "<b>Прикметник</b> описує предмет чи людину (<i>a quick runner</i> — швидкий бігун), а <b>прислівник</b> — дію (<i>she runs quickly</i> — вона бігає швидко). Прислівники теж мають вищий ступінь: <i>more quickly, faster, better</i>.",
+            "ideas": [
+              "Більшість прислівників: прикметник + <i>-ly</i>: <i>slow → slowly, careful → carefully, quiet → quietly</i>.",
+              "Правопис: <i>-y → -ily</i> (<i>easy → easily, happy → happily</i>); <i>-le → -ly</i> (<i>terrible → terribly, gentle → gently</i>).",
+              "Неправильні: <i>good → well; fast → fast; hard → hard; early → early; late → late</i>.",
+              "Увага: <i>hardly</i> — це не «важко», а «майже не»: <i>I hardly slept.</i> — Я майже не спав.",
+              "Вищий ступінь: прислівники на <i>-ly</i> — з <i>more</i> (<i>more carefully</i>); короткі — <i>-er</i> (<i>faster, harder, earlier</i>); неправильні: <i>well → better → best, badly → worse → worst</i>.",
+              "Прислівник стоїть після дієслова й додатка, а не між ними: <i>She speaks English well</i>, а не <i>speaks well English</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>adj + -ly</i>: <i>quick → quickly</i>",
+                "means": "Як відбувається дія."
+              },
+              {
+                "f": "<i>good → well, fast → fast, hard → hard</i>",
+                "means": "Неправильні прислівники."
+              },
+              {
+                "f": "<i>more + adverb-ly + than</i>",
+                "means": "<i>Speak more slowly, please.</i>"
+              },
+              {
+                "f": "<i>faster / harder / earlier / better / worse + than</i>",
+                "means": "Короткі й неправильні: <i>She plays better than me.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Make adverbs: <i>careful, happy, good, fast, gentle</i>",
+                "steps": [
+                  {
+                    "do": "careful → carefully",
+                    "why": "Додаємо -ly (дві l)."
+                  },
+                  {
+                    "do": "happy → happily",
+                    "why": "-y → -ily."
+                  },
+                  {
+                    "do": "good → well",
+                    "why": "Неправильний прислівник."
+                  },
+                  {
+                    "do": "fast → fast",
+                    "why": "Форма не змінюється."
+                  },
+                  {
+                    "do": "gentle → gently",
+                    "why": "-le → -ly."
+                  }
+                ],
+                "answer": "carefully, happily, well, fast, gently"
+              },
+              {
+                "task": "Complete: Oksana runs … (fast) than me, but I swim … (good) than her.",
+                "steps": [
+                  {
+                    "do": "runs faster",
+                    "why": "<i>fast</i> — короткий прислівник: <i>faster</i>."
+                  },
+                  {
+                    "do": "swim better",
+                    "why": "Від <i>good</i> прислівник <i>well</i>, його вищий ступінь — <i>better</i>."
+                  }
+                ],
+                "answer": "faster, better"
+              },
+              {
+                "task": "Correct the mistakes: «Speak more slow, please. I don't understand English very good.»",
+                "steps": [
+                  {
+                    "do": "more slowly",
+                    "why": "Описуємо дію (<i>speak</i>) — потрібен прислівник <i>slowly</i>."
+                  },
+                  {
+                    "do": "very well",
+                    "why": "<i>understand</i> — дія, тому <i>well</i>, а не прикметник <i>good</i>."
+                  }
+                ],
+                "answer": "Speak more slowly, please. I don't understand English very well."
+              }
+            ],
+            "mistakes": [
+              "Прикметник замість прислівника: <i>She sings very good.</i> Правильно: <i>She sings very well.</i>",
+              "<i>He works hardly.</i> означає «він майже не працює»! «Він багато працює» — <i>He works hard.</i>",
+              "<i>more fast, more faster.</i> Правильно: <i>faster</i>.",
+              "Порядок слів: <i>I speak well English.</i> Правильно: <i>I speak English well.</i>"
+            ],
+            "check": [
+              {
+                "q": "Choose: Dan plays the piano really ….",
+                "options": [
+                  "good",
+                  "well",
+                  "goodly"
+                ],
+                "correct": 1,
+                "a": "<i>well</i>: описуємо, як він грає (дію), тому прислівник. <i>goodly</i> не існує."
+              },
+              {
+                "q": "Пастка. «He hardly studied for the test.» What does it mean?",
+                "options": [
+                  "He almost didn't study.",
+                  "He studied a lot.",
+                  "He studied very hard."
+                ],
+                "correct": 0,
+                "a": "<i>hardly</i> = майже не. Він майже не вчився. «Старанно вчився» — <i>studied hard</i>."
+              },
+              {
+                "q": "Message from your coach: «Great game! But next time you need to run … (fast) in the second half.» (Впиши одне слово)",
+                "accept": [
+                  "faster"
+                ],
+                "a": "<i>faster</i> — вищий ступінь короткого прислівника <i>fast</i> (не <i>more fast</i>)."
+              }
+            ]
+          }
         },
         {
           "id": "E3.1.5",
           "name": "Order of adjectives. Adverbs of degree",
-          "status": "planned",
-          "programmeRef": "Order of adjectives; adverbs of degree"
+          "status": "ready",
+          "programmeRef": "Order of adjectives; adverbs of degree",
+          "lesson": {
+            "what": "Коли перед іменником кілька прикметників, в англійській вони стоять у <b>певному порядку</b>: <i>a great new Ukrainian film</i>. А <b>прислівники міри</b> (<i>a bit, quite, very, really, extremely, too</i>) показують, наскільки сильна ознака.",
+            "ideas": [
+              "Порядок прикметників: <b>думка</b> (<i>great, scary</i>) → <b>розмір</b> (<i>big, little</i>) → <b>вік</b> (<i>new, old</i>) → <b>колір</b> (<i>red</i>) → <b>походження</b> (<i>Ukrainian, Japanese</i>) → <b>матеріал</b> (<i>leather, wooden</i>) → іменник.",
+              "Приклади: <i>a funny old cartoon; a big black leather bag; a beautiful little wooden house</i>.",
+              "Шкала від слабкого до сильного: <i>a bit / slightly → quite / pretty → very / really → extremely / incredibly</i>.",
+              "<i>a bit</i> зазвичай вживаємо з негативними словами: <i>a bit boring, a bit cold</i>.",
+              "<i>too</i> = <b>занадто</b>, більше, ніж треба (це проблема): <i>The soup is too hot — I can't eat it.</i> <i>very</i> — просто «дуже».",
+              "<i>enough</i> (досить) стоїть <b>після</b> прикметника: <i>old enough, tall enough</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>opinion → size → age → colour → origin → material + noun</i>",
+                "means": "<i>a scary old black-and-white American film</i>."
+              },
+              {
+                "f": "<i>a bit / quite / very / really / extremely + adj</i>",
+                "means": "Від «трохи» до «надзвичайно»."
+              },
+              {
+                "f": "<i>too + adj</i> ≠ <i>very + adj</i>",
+                "means": "<i>too</i> — занадто (погано, заважає), <i>very</i> — дуже."
+              },
+              {
+                "f": "<i>adj + enough (to + V)</i>",
+                "means": "<i>He isn't old enough to drive.</i> — Він ще недостатньо дорослий, щоб водити."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Put the adjectives in order: a (Ukrainian / new / brilliant) cartoon",
+                "steps": [
+                  {
+                    "do": "brilliant",
+                    "why": "Думка — першою."
+                  },
+                  {
+                    "do": "new",
+                    "why": "Вік — після думки."
+                  },
+                  {
+                    "do": "Ukrainian",
+                    "why": "Походження — найближче до іменника з цих трьох."
+                  }
+                ],
+                "answer": "a brilliant new Ukrainian cartoon"
+              },
+              {
+                "task": "Choose: The film is 16+. My brother is 12, so he isn't (enough old / old enough) to watch it.",
+                "steps": [
+                  {
+                    "do": "old enough",
+                    "why": "<i>enough</i> стоїть після прикметника."
+                  },
+                  {
+                    "do": "…to watch it",
+                    "why": "Далі — <i>to</i> + дієслово: для чого недостатньо дорослий."
+                  }
+                ],
+                "answer": "old enough"
+              },
+              {
+                "task": "Use <i>very</i> or <i>too</i>: a) The popcorn was … salty — I couldn't eat it. b) The film was … good — I loved it.",
+                "steps": [
+                  {
+                    "do": "a) too salty",
+                    "why": "Не зміг з'їсти — солі більше, ніж треба, це проблема."
+                  },
+                  {
+                    "do": "b) very good",
+                    "why": "Похвала — просто «дуже добрий»."
+                  }
+                ],
+                "answer": "a) too, b) very"
+              }
+            ],
+            "mistakes": [
+              "Довільний порядок, як в українській: <i>a red big bag</i>. Правильно: <i>a big red bag</i>.",
+              "<i>too</i> у похвалі: <i>The film was too good.</i> звучить так, ніби «аж надто» — це погано. Правильно: <i>very good / really good</i>.",
+              "<i>enough</i> перед прикметником: <i>enough old</i>. Правильно: <i>old enough</i>.",
+              "<i>very</i> із «сильними» прикметниками: <i>very amazing</i>. Краще: <i>absolutely amazing, really amazing</i>."
+            ],
+            "check": [
+              {
+                "q": "Choose the correct order:",
+                "options": [
+                  "a black big leather jacket",
+                  "a big black leather jacket",
+                  "a leather big black jacket"
+                ],
+                "correct": 1,
+                "a": "<i>a big black leather jacket</i>: розмір → колір → матеріал."
+              },
+              {
+                "q": "Пастка. You loved the show. Which sentence says this?",
+                "options": [
+                  "The show was too funny.",
+                  "The show was enough funny.",
+                  "The show was really funny."
+                ],
+                "correct": 2,
+                "a": "<i>really funny</i> — дуже смішне. <i>too funny</i> звучить як «занадто» (проблема), а <i>enough</i> ставиться після прикметника."
+              },
+              {
+                "q": "A sign at the cinema: «Sorry! Children under 12 are not old … to see this film.» (Одне слово)",
+                "accept": [
+                  "enough"
+                ],
+                "a": "<i>old enough</i> — достатньо дорослий; <i>enough</i> стоїть після прикметника."
+              }
+            ]
+          }
         }
       ]
     },
@@ -49,20 +617,368 @@
         {
           "id": "E3.2.1",
           "name": "Types of films",
-          "status": "planned",
-          "programmeRef": "Types of films"
+          "status": "ready",
+          "programmeRef": "Types of films",
+          "lesson": {
+            "what": "Назви <b>жанрів фільмів</b> англійською і як розповісти, яке кіно тобі подобається.",
+            "ideas": [
+              "<i>An <b>action film</b> has car chases, fights and explosions.</i> — бойовик. <i>A <b>comedy</b> makes you laugh.</i> — комедія.",
+              "<i>A <b>horror film</b> is about ghosts or monsters.</i> — фільм жахів. <i>A <b>thriller</b> is exciting and keeps you nervous until the end.</i> — трилер.",
+              "<i>A <b>science fiction</b> (<b>sci-fi</b>) <b>film</b> is about the future, space or robots.</i> — наукова фантастика. <i>A <b>fantasy film</b> has magic and dragons.</i> — фентезі.",
+              "<i>An <b>animated film</b> (<b>cartoon</b>) is made with drawings or computers.</i> — мультфільм. <i>A <b>documentary</b> shows real facts about real life.</i> — документальний фільм.",
+              "<i>In a <b>musical</b> the characters sing and dance.</i> — мюзикл. <i>A <b>romantic comedy</b> is a funny love story.</i> — романтична комедія.",
+              "Корисні вирази: <i>watch a film, go to the cinema, a film about…, It's based on a book, my favourite kind of film</i>. Британці кажуть <i>film</i>, американці — <i>movie</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>a / an + type + film</i>",
+                "means": "<i>an action film, a horror film, a fantasy film</i>; але <i>a comedy, a thriller, a documentary, a musical</i> — без слова film."
+              },
+              {
+                "f": "<i>a film about + noun</i>",
+                "means": "Про що фільм: <i>a documentary about sharks</i>."
+              },
+              {
+                "f": "<i>be based on + book / true story</i>",
+                "means": "Знятий за книжкою / реальною історією."
+              },
+              {
+                "f": "<i>go to the cinema / watch a film</i>",
+                "means": "Дивимося фільм — <i>watch</i>, а не <i>look</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "What type of film is it? a) Real facts about whales in the ocean. b) Superheroes, car chases and explosions. c) The characters sing and dance to tell the story. d) Ghosts and monsters — you can't sleep afterwards.",
+                "steps": [
+                  {
+                    "do": "a) a documentary",
+                    "why": "Реальні факти — документальний фільм."
+                  },
+                  {
+                    "do": "b) an action film",
+                    "why": "Погоні й вибухи — бойовик."
+                  },
+                  {
+                    "do": "c) a musical",
+                    "why": "Співають і танцюють — мюзикл."
+                  },
+                  {
+                    "do": "d) a horror film",
+                    "why": "Привиди й монстри — фільм жахів."
+                  }
+                ],
+                "answer": "a) documentary, b) action film, c) musical, d) horror film"
+              },
+              {
+                "task": "Complete: I love … films about space travel and robots in the future.",
+                "steps": [
+                  {
+                    "do": "space, robots, the future",
+                    "why": "Це ознаки наукової фантастики."
+                  },
+                  {
+                    "do": "science fiction / sci-fi",
+                    "why": "Не <i>fantastic</i> і не <i>fantasy</i>."
+                  }
+                ],
+                "answer": "science fiction (sci-fi)"
+              },
+              {
+                "task": "Tell a friend about a film you like: the type, what it's about and why you like it.",
+                "steps": [
+                  {
+                    "do": "My favourite film is an animated film…",
+                    "why": "Називаємо жанр (<i>an</i> перед голосним звуком)."
+                  },
+                  {
+                    "do": "…about a lost dragon.",
+                    "why": "Про що — <i>a film about…</i>"
+                  },
+                  {
+                    "do": "It's funny and exciting, and the music is great.",
+                    "why": "Чому подобається."
+                  }
+                ],
+                "answer": "My favourite film is an animated film about a lost dragon. It's funny and exciting, and the music is great."
+              }
+            ],
+            "mistakes": [
+              "«Хибний друг»: <i>fantastic</i> = чудовий, а не «фантастичний фільм». Наукова фантастика — <i>science fiction</i>, фентезі — <i>fantasy</i>.",
+              "Калька «дивитися»: <i>I looked a film.</i> Правильно: <i>I watched a film.</i>",
+              "<i>go to cinema</i>. Правильно: <i>go to the cinema</i>.",
+              "Плутають <i>horror film</i> і <i>horrible film</i>: <i>a horrible film</i> — «жахливо поганий фільм», а жанр — <i>a horror film</i>."
+            ],
+            "check": [
+              {
+                "q": "What is «наукова фантастика» in English?",
+                "options": [
+                  "fantastic",
+                  "science fiction",
+                  "fantasy"
+                ],
+                "correct": 1,
+                "a": "<i>science fiction</i> (<i>sci-fi</i>). <i>Fantastic</i> — чудовий, <i>fantasy</i> — фентезі (магія, дракони)."
+              },
+              {
+                "q": "Пастка. «It was a fantastic film!» What does it mean?",
+                "options": [
+                  "It was a fantasy film.",
+                  "It was a science fiction film.",
+                  "It was a really good film."
+                ],
+                "correct": 2,
+                "a": "<i>fantastic</i> = дуже добрий, чудовий. Про жанр це нічого не каже."
+              },
+              {
+                "q": "Message to a friend: «Let's watch a … tonight! I really need to laugh after this week.» (Одне слово — жанр)",
+                "accept": [
+                  "comedy",
+                  "romcom",
+                  "rom-com",
+                  "cartoon"
+                ],
+                "a": "<i>comedy</i> — комедія, щоб посміятися. Підійде й <i>romcom</i> (<i>rom-com</i>, романтична комедія) або <i>cartoon</i> (мультфільм)."
+              }
+            ]
+          }
         },
         {
           "id": "E3.2.2",
           "name": "Types of TV programmes",
-          "status": "planned",
-          "programmeRef": "Types of TV programmes"
+          "status": "ready",
+          "programmeRef": "Types of TV programmes",
+          "lesson": {
+            "what": "Назви <b>телепрограм</b> англійською: новини, ток-шоу, вікторини, ситкоми й інші — і як говорити про те, що дивишся.",
+            "ideas": [
+              "<i>My dad watches <b>the news</b> every evening.</i> — новини. <i><b>The weather forecast</b> says it will rain tomorrow.</i> — прогноз погоди.",
+              "<i>On a <b>quiz show</b> (<b>game show</b>) people answer questions and win prizes.</i> — вікторина, телегра. <i>On a <b>talent show</b> people sing or dance for the judges.</i> — шоу талантів.",
+              "<i>On a <b>chat show</b> a presenter talks to famous guests.</i> — ток-шоу. <i>On a <b>reality show</b> cameras film ordinary people all the time.</i> — реаліті-шоу.",
+              "<i>A <b>sitcom</b> is a funny series about the same characters.</i> — ситком. <i>A <b>soap opera</b> (<b>soap</b>) shows the everyday lives of people in one place, often for many years.</i> — мильна опера.",
+              "<i>A <b>cookery show</b> teaches you how to cook.</i> <i>A <b>sports programme</b> shows matches and results.</i> <i>A <b>documentary</b> is about real life.</i>",
+              "Корисне: <i>What's on TV tonight? on TV, on channel 1, a series, an episode, a presenter</i>. Британці пишуть <i>programme</i>, американці — <i>program</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>the news + is</i>",
+                "means": "<i>news</i> — незлічуване й однина: <i>The news is at nine.</i>"
+              },
+              {
+                "f": "<i>on TV / on channel …</i>",
+                "means": "«По телевізору» — <i>on TV</i> (не <i>in TV</i>)."
+              },
+              {
+                "f": "<i>What's on (TV) tonight?</i>",
+                "means": "Що сьогодні показують?"
+              },
+              {
+                "f": "<i>a series (одн. і мн.), an episode</i>",
+                "means": "<i>one series, two series</i>; серія — <i>an episode</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "What type of programme is it? a) People answer questions and can win money. b) A presenter talks to famous guests on a sofa. c) Funny stories about the same family every week. d) Cameras film ordinary people in a house all the time.",
+                "steps": [
+                  {
+                    "do": "a) a quiz show / game show",
+                    "why": "Питання й призи."
+                  },
+                  {
+                    "do": "b) a chat show",
+                    "why": "Розмова з гостями."
+                  },
+                  {
+                    "do": "c) a sitcom",
+                    "why": "Смішний серіал з тими самими героями."
+                  },
+                  {
+                    "do": "d) a reality show",
+                    "why": "Звичайні люди перед камерами."
+                  }
+                ],
+                "answer": "a) quiz show (game show), b) chat show, c) sitcom, d) reality show"
+              },
+              {
+                "task": "Choose: The news (is / are) on at nine o'clock.",
+                "steps": [
+                  {
+                    "do": "news → однина",
+                    "why": "Хоч і закінчується на -s, <i>news</i> — незлічуване слово в однині."
+                  },
+                  {
+                    "do": "is",
+                    "why": "Однина — <i>is</i>."
+                  }
+                ],
+                "answer": "is"
+              },
+              {
+                "task": "Complete: My gran watches the same … every evening — it's about the lives of people in one street, and it has been on TV for twenty years.",
+                "steps": [
+                  {
+                    "do": "the lives of people in one street",
+                    "why": "Повсякденне життя тих самих людей."
+                  },
+                  {
+                    "do": "has been on TV for twenty years",
+                    "why": "Іде дуже довго — типова ознака мильної опери."
+                  }
+                ],
+                "answer": "soap opera (soap)"
+              }
+            ],
+            "mistakes": [
+              "<i>The news are…</i> Правильно: <i>The news is…</i>",
+              "«По телевізору» — не <i>in TV / on the TV programme</i>, а <i>on TV</i>.",
+              "<i>programm</i>. Правильно: <i>programme</i> (британська) або <i>program</i> (американська).",
+              "Плутають <i>chat show</i> і <i>chat</i> в інтернеті: <i>chat show</i> — це ток-шоу на ТБ."
+            ],
+            "check": [
+              {
+                "q": "Which programme tells you if it will rain tomorrow?",
+                "options": [
+                  "the weather forecast",
+                  "a soap opera",
+                  "a chat show"
+                ],
+                "correct": 0,
+                "a": "<i>the weather forecast</i> — прогноз погоди."
+              },
+              {
+                "q": "Пастка. Choose the correct sentence:",
+                "options": [
+                  "The news are very interesting today.",
+                  "The news is very interesting today."
+                ],
+                "correct": 1,
+                "a": "<i>The news is…</i> — <i>news</i> завжди в однині, хоч і закінчується на -s."
+              },
+              {
+                "q": "TV guide: «7:30 — Max shows you how to make easy pizza at home.» What type of programme is it? A … show. (Одне слово)",
+                "accept": [
+                  "cookery",
+                  "cooking"
+                ],
+                "a": "<i>cookery</i> show (американці кажуть <i>cooking show</i>) — кулінарне шоу."
+              }
+            ]
+          }
         },
         {
           "id": "E3.2.3",
           "name": "Expressions with get",
-          "status": "planned",
-          "programmeRef": "WordWise: Expressions with get"
+          "status": "ready",
+          "programmeRef": "WordWise: Expressions with get",
+          "lesson": {
+            "what": "<i>get</i> — одне з найуживаніших англійських дієслів. Залежно від слова після нього воно означає «отримати», «купити», «стати», «дістатися» та інше.",
+            "ideas": [
+              "<i>get</i> + річ = отримати / купити / взяти: <i>I got a message from Ira. Can you get some bread on the way home?</i>",
+              "<i>get</i> + прикметник = стати, ставати: <i>get bored</i> (знудитися), <i>get angry</i> (розсердитися), <i>get tired</i> (втомитися), <i>get better</i> (покращитися, одужати), <i>It's getting dark.</i> (темніє).",
+              "<i>get</i> + місце = дістатися, прийти: <i>get to school, get there, get home</i> (без <i>to</i> перед <i>home, there</i>).",
+              "Сталі вирази: <i>get ready</i> (приготуватися), <i>get lost</i> (заблукати), <i>get up</i> (вставати), <i>get on / off the bus</i> (сісти / вийти), <i>get on well with</i> (ладнати з кимось).",
+              "Форми: <i>get – got – got</i> (у британській англійській): <i>I've got</i>, <i>I got bored</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>get + noun</i>",
+                "means": "Отримати, купити: <i>get a present, get tickets</i>."
+              },
+              {
+                "f": "<i>get + adjective</i>",
+                "means": "Стати: <i>get bored, get angry, get lost, get ready</i>."
+              },
+              {
+                "f": "<i>get to + place / get home</i>",
+                "means": "Дістатися: <i>What time do you get to school?</i>"
+              },
+              {
+                "f": "<i>get on well with + person</i>",
+                "means": "Добре ладнати: <i>I get on well with my cousin.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "What does <i>get</i> mean? a) I got a text from Ira. b) It's getting dark. c) We got home at ten.",
+                "steps": [
+                  {
+                    "do": "a) got a text = received",
+                    "why": "<i>get</i> + річ — отримати."
+                  },
+                  {
+                    "do": "b) getting dark = becoming",
+                    "why": "<i>get</i> + прикметник — ставати."
+                  },
+                  {
+                    "do": "c) got home = arrived",
+                    "why": "<i>get</i> + місце — дістатися."
+                  }
+                ],
+                "answer": "a) received (отримав), b) becoming (стає), c) arrived (дісталися)"
+              },
+              {
+                "task": "Use <i>get</i> instead of the words in italics: «I usually <i>arrive at</i> school at 8:15. I <i>became</i> really bored during the long film.»",
+                "steps": [
+                  {
+                    "do": "arrive at school → get to school",
+                    "why": "Дістатися місця — <i>get to</i>."
+                  },
+                  {
+                    "do": "became bored → got bored",
+                    "why": "Стати якимось — <i>get</i> + прикметник; минулий час — <i>got</i>."
+                  }
+                ],
+                "answer": "I usually get to school at 8:15. I got really bored during the long film."
+              },
+              {
+                "task": "Complete: a) Hurry up and get …! The film starts in ten minutes. b) I get … well with my cousin — we never argue.",
+                "steps": [
+                  {
+                    "do": "a) get ready",
+                    "why": "Приготуватися — <i>get ready</i>."
+                  },
+                  {
+                    "do": "b) get on well with",
+                    "why": "Ладнати з кимось — <i>get on well with</i>."
+                  }
+                ],
+                "answer": "a) ready, b) on"
+              }
+            ],
+            "mistakes": [
+              "<i>get to home</i>. Правильно: <i>get home</i> (і <i>get there</i>) — без <i>to</i>.",
+              "<i>I got boring.</i> означає «я став нудним»! Якщо тобі було нудно: <i>I got bored.</i>",
+              "<i>getted</i>. Правильно: <i>got</i> (неправильне дієслово)."
+            ],
+            "check": [
+              {
+                "q": "Choose: What time did you … home last night?",
+                "options": [
+                  "get to",
+                  "get",
+                  "get at"
+                ],
+                "correct": 1,
+                "a": "<i>get home</i> — без прийменника, як і <i>go home</i>."
+              },
+              {
+                "q": "Пастка. The film wasn't interesting at all. Which sentence is right?",
+                "options": [
+                  "I got bored.",
+                  "I got boring."
+                ],
+                "correct": 0,
+                "a": "<i>I got bored.</i> — мені стало нудно. <i>I got boring</i> означало б, що ти сам став нудною людиною."
+              },
+              {
+                "q": "Message to a friend: «Sorry, I'll be late. I got … in the new shopping centre — it's huge!» (Одне слово: «заблукав»)",
+                "accept": [
+                  "lost"
+                ],
+                "a": "<i>get lost</i> — заблукати: <i>I got lost.</i>"
+              }
+            ]
+          }
         }
       ]
     },
@@ -74,20 +990,368 @@
         {
           "id": "E3.3.1",
           "name": "Comparing. Asking for and offering help",
-          "status": "planned",
-          "programmeRef": "Developing Speaking: Asking for and offering help"
+          "status": "ready",
+          "programmeRef": "Developing Speaking: Asking for and offering help",
+          "lesson": {
+            "what": "Як <b>попросити про допомогу</b> й <b>запропонувати</b> її англійською, а також як погодитися чи ввічливо відмовитися. Під час розмови часто ще й порівнюємо: <i>This one is heavier — let me take it.</i>",
+            "ideas": [
+              "Запропонувати допомогу: <i>Can I help you? / Do you need a hand? / Shall I carry that? / Let me help you. / Would you like me to explain?</i>",
+              "Попросити допомоги: <i>Could you help me with…? / Can you give me a hand? / Would you mind holding this?</i>",
+              "Погодитися: <i>Yes, please. Thanks, that would be great. / That's really kind of you.</i> Відмовитися: <i>No, thanks, I'm OK. / Thanks, but I can do it.</i>",
+              "На подяку відповідаємо: <i>You're welcome. / No problem. / Any time!</i> — а не <i>Please</i>.",
+              "Приклад розмови. — <i>You look busy. Do you need a hand?</i> — <i>Yes, please! Could you help me carry these boxes? They're much heavier than I thought.</i> — <i>Sure, no problem. Shall I take the big one?</i> — <i>Thanks, that's really kind of you.</i>",
+              "Застряг? Скажи просто <i>Can I help?</i> — це завжди доречно."
+            ],
+            "rules": [
+              {
+                "f": "<i>Shall I + V? / Would you like me to + V?</i>",
+                "means": "Пропонуємо щось зробити: <i>Shall I open the door?</i>"
+              },
+              {
+                "f": "<i>Could you help me with + noun? / Can you give me a hand?</i>",
+                "means": "Просимо допомоги."
+              },
+              {
+                "f": "<i>Would you mind + V-ing?</i>",
+                "means": "Дуже ввічливе прохання: <i>Would you mind holding my bag?</i> Згода: <i>No, of course not.</i>"
+              },
+              {
+                "f": "<i>Thanks, that would be great. / No, thanks, I'm OK.</i>",
+                "means": "Приймаємо чи ввічливо відхиляємо допомогу."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Your teacher is carrying a lot of books. Offer to help.",
+                "steps": [
+                  {
+                    "do": "Shall I…",
+                    "why": "Пропонуємо зробити щось самі — <i>Shall I + V</i>."
+                  },
+                  {
+                    "do": "…carry some of those books for you?",
+                    "why": "Дієслово без <i>to</i>; <i>for you</i> — для вас."
+                  }
+                ],
+                "answer": "Shall I carry some of those books for you?"
+              },
+              {
+                "task": "You don't understand the maths homework. Ask a classmate for help.",
+                "steps": [
+                  {
+                    "do": "Could you help me with the maths homework, please?",
+                    "why": "<i>Could you help me with + noun</i> — ввічливе прохання."
+                  },
+                  {
+                    "do": "I don't get question 3.",
+                    "why": "Поясни, що саме незрозуміло (<i>get</i> = розуміти, розмовне)."
+                  }
+                ],
+                "answer": "Could you help me with the maths homework, please? I don't get question 3."
+              },
+              {
+                "task": "Someone asks you: «Would you like me to explain it again?» Accept. Then refuse politely.",
+                "steps": [
+                  {
+                    "do": "Yes, please. That would be great, thanks.",
+                    "why": "Погоджуємося й дякуємо."
+                  },
+                  {
+                    "do": "No, thanks. I'm OK now — I think I've got it.",
+                    "why": "Відмовляємо ввічливо й пояснюємо чому."
+                  }
+                ],
+                "answer": "Accept: Yes, please. That would be great, thanks. Refuse: No, thanks. I'm OK now — I think I've got it."
+              }
+            ],
+            "mistakes": [
+              "<i>Shall I to help you?</i> Правильно: <i>Shall I help you?</i>",
+              "<i>Would you mind to help me?</i> Правильно: <i>Would you mind helping me?</i>",
+              "Калька «будь ласка» у відповідь на подяку: <i>— Thank you! — Please.</i> Правильно: <i>You're welcome. / No problem.</i>",
+              "<i>Help me!</i> звучить як крик про допомогу в небезпеці. У звичайній ситуації: <i>Could you help me, please?</i>"
+            ],
+            "check": [
+              {
+                "q": "Your friend says: «Thanks for helping me!» Choose the best reply:",
+                "options": [
+                  "Please.",
+                  "No problem!",
+                  "Yes, I helped."
+                ],
+                "correct": 1,
+                "a": "<i>No problem!</i> (або <i>You're welcome.</i>). <i>Please</i> у відповідь на подяку англійською не кажуть."
+              },
+              {
+                "q": "Пастка. Which offer is correct?",
+                "options": [
+                  "Shall I open the window?",
+                  "Shall I to open the window?",
+                  "Shall I opening the window?"
+                ],
+                "correct": 0,
+                "a": "<i>Shall I open…?</i> — після <i>shall</i> дієслово без <i>to</i> і без <i>-ing</i>."
+              },
+              {
+                "q": "A tourist in Kyiv is looking at a map and seems lost. What's the best thing to say?",
+                "options": [
+                  "What do you want?",
+                  "Help me, please.",
+                  "Excuse me, can I help you? Are you looking for something?"
+                ],
+                "correct": 2,
+                "a": "<i>Excuse me, can I help you?</i> — ввічлива пропозиція допомоги. <i>What do you want?</i> звучить грубо."
+              }
+            ]
+          }
         },
         {
           "id": "E3.3.2",
           "name": "A paragraph about your TV habits",
-          "status": "planned",
-          "programmeRef": "A paragraph about your TV habits"
+          "status": "ready",
+          "programmeRef": "A paragraph about your TV habits",
+          "lesson": {
+            "what": "Як написати <b>абзац про свої звички щодо телебачення</b>: що, коли, як часто й з ким ти дивишся і чому тобі це подобається.",
+            "ideas": [
+              "Абзац починається з <b>головного речення</b> (topic sentence), яке коротко каже, про що мова: <i>I don't watch much TV, but I watch a lot of videos online.</i>",
+              "Далі — <b>деталі</b>: як часто (<i>every day, twice a week, hardly ever</i>), коли (<i>after school, at the weekend</i>), що (<i>cartoons, quiz shows, the news</i>), з ким і <b>чому</b> (<i>because…</i>).",
+              "Наприкінці — <b>завершальне речення</b>: висновок чи порівняння: <i>I think I watch less TV than most of my friends.</i>",
+              "Зв'язки: <i>but, because, so, also, and</i>. Звички — у Present Simple.",
+              "Можна використати порівняння з цього юніту: <i>Online videos are more interesting than TV for me. I don't watch TV as often as my parents.</i>",
+              "Обсяг — 60–100 слів, один абзац, без списків."
+            ],
+            "rules": [
+              {
+                "f": "topic sentence → details → concluding sentence",
+                "means": "Головне речення → подробиці з причинами → висновок."
+              },
+              {
+                "f": "<i>every day / once a week / twice a week</i>; <i>usually / often / hardly ever</i>",
+                "means": "Як часто. Перші зазвичай стоять у кінці речення, а <i>usually, often, hardly ever</i> — перед дієсловом."
+              },
+              {
+                "f": "<i>…, so … / …, but … / … because …</i>",
+                "means": "Зв'язуємо думки, а не перелічуємо."
+              },
+              {
+                "f": "<i>watch TV / on TV</i>",
+                "means": "Дивитися телевізор; показують по телевізору."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Join with <i>so</i>, <i>but</i> or <i>because</i>: a) I love sport. I watch football every weekend. b) I like reality shows. I don't watch them very often.",
+                "steps": [
+                  {
+                    "do": "a) I love sport, so I watch football every weekend.",
+                    "why": "Друге речення — наслідок першого: <i>so</i>."
+                  },
+                  {
+                    "do": "b) I like reality shows, but I don't watch them very often.",
+                    "why": "Протиставлення: <i>but</i>."
+                  }
+                ],
+                "answer": "a) I love sport, so I watch football every weekend. b) I like reality shows, but I don't watch them very often."
+              },
+              {
+                "task": "Put the word in brackets in the right place: «I watch the news with my dad.» (sometimes)",
+                "steps": [
+                  {
+                    "do": "sometimes + watch",
+                    "why": "Прислівник частоти — перед основним дієсловом."
+                  }
+                ],
+                "answer": "I sometimes watch the news with my dad."
+              },
+              {
+                "task": "Write a paragraph (60–100 words) about your TV habits.",
+                "steps": [
+                  {
+                    "do": "I don't watch much traditional TV, but I watch a lot of videos online.",
+                    "why": "Головне речення."
+                  },
+                  {
+                    "do": "On weekdays I usually watch for about an hour after I finish my homework. My favourite programmes are science documentaries because I like learning about space. At the weekend I watch cartoons or a sitcom with my little sister.",
+                    "why": "Деталі: коли, що, чому, з ким."
+                  },
+                  {
+                    "do": "My parents watch the news every evening, so I sometimes watch it with them.",
+                    "why": "Ще деталь зі зв'язкою <i>so</i>."
+                  },
+                  {
+                    "do": "I think I watch less TV than most of my friends.",
+                    "why": "Завершальне речення з порівнянням."
+                  }
+                ],
+                "answer": "I don't watch much traditional TV, but I watch a lot of videos online. On weekdays I usually watch for about an hour after I finish my homework. My favourite programmes are science documentaries because I like learning about space. At the weekend I watch cartoons or a sitcom with my little sister. My parents watch the news every evening, so I sometimes watch it with them. I think I watch less TV than most of my friends."
+              }
+            ],
+            "mistakes": [
+              "Немає головного речення — абзац починається з дрібної деталі (<i>Cartoons.</i>), і незрозуміло, про що він.",
+              "<i>every days</i>. Правильно: <i>every day</i>. Замість <i>two times a week</i> краще <i>twice a week</i>.",
+              "Калька «дивитися»: <i>I look TV.</i> Правильно: <i>I watch TV.</i> І <i>on TV</i>, не <i>in TV</i>.",
+              "Перелік без зв'язок і причин: <i>I like cartoons. I like comedies. I like quiz shows.</i> Краще: <i>I like cartoons and comedies because…</i>"
+            ],
+            "check": [
+              {
+                "q": "Which is the best topic sentence for a paragraph about your TV habits?",
+                "options": [
+                  "Cartoons.",
+                  "TV is a thing that shows programmes.",
+                  "I watch TV most evenings, but only for about an hour."
+                ],
+                "correct": 2,
+                "a": "<i>I watch TV most evenings, but only for about an hour.</i> — одразу видно, про що абзац: твої звички."
+              },
+              {
+                "q": "Пастка. Choose the correct sentence:",
+                "options": [
+                  "I watch TV usually after dinner.",
+                  "I usually watch TV after dinner.",
+                  "Usually I am watching TV after dinner."
+                ],
+                "correct": 1,
+                "a": "<i>I usually watch TV after dinner.</i> <i>usually</i> — перед дієсловом; звичка — Present Simple, а не Continuous."
+              },
+              {
+                "q": "Your friend wrote: «I watch TV a lot. I like cartoons. I like comedies. I like quiz shows.» What would improve it most?",
+                "options": [
+                  "Add reasons (because…) and linkers (and, but, so).",
+                  "Write it all in capital letters.",
+                  "Make it shorter."
+                ],
+                "correct": 0,
+                "a": "Додати причини (<i>because…</i>) і зв'язки (<i>and, but, so</i>) — тоді це буде справжній абзац, а не список."
+              }
+            ]
+          }
         },
         {
           "id": "E3.3.3",
           "name": "Words ending in /ə/",
-          "status": "planned",
-          "programmeRef": "Words ending in /ə/"
+          "status": "ready",
+          "programmeRef": "Words ending in /ə/",
+          "lesson": {
+            "what": "Багато англійських слів закінчуються на звук <b>/ə/</b> (шва) — короткий, слабкий, ненаголошений звук, щось середнє між українськими «е» і «а». Букви в кінці різні (<i>-er, -or, -our, -ure, -a, -ar</i>), а звук той самий.",
+            "ideas": [
+              "/ə/ — найчастіший звук англійської мови. Він ніколи не буває під наголосом. Розслаб губи й язик і коротко скажи «е» — вийде майже /ə/.",
+              "<i>-er, -or</i>: <i>teacher</i> /ˈtiːtʃə/, <i>actor</i> /ˈæktə/, <i>doctor</i> /ˈdɒktə/, <i>computer</i> /kəmˈpjuːtə/.",
+              "<i>-our, -ure</i>: <i>colour</i> /ˈkʌlə/, <i>picture</i> /ˈpɪktʃə/, <i>adventure</i> /ədˈventʃə/.",
+              "<i>-a, -ar</i>: <i>cinema</i> /ˈsɪnəmə/, <i>camera</i> /ˈkæmrə/, <i>drama</i> /ˈdrɑːmə/, <i>popular</i> /ˈpɒpjələ/.",
+              "У британській вимові <b>r</b> у кінці слова не вимовляється: <i>actor</i> звучить як «ЕКте», а не «актор». (Якщо наступне слово починається з голосного, r може з'явитися: <i>teacher of English</i>.)",
+              "Якщо закінчення під наголосом, це вже не /ə/: <i>car</i> /kɑː/, <i>more</i> /mɔː/."
+            ],
+            "rules": [
+              {
+                "f": "<i>-er, -or</i> → /ə/",
+                "means": "<i>teacher, actor, director, computer</i>."
+              },
+              {
+                "f": "<i>-our, -ure</i> → /ə/",
+                "means": "<i>colour, picture, future</i>."
+              },
+              {
+                "f": "<i>-a, -ar</i> → /ə/",
+                "means": "<i>cinema, camera, popular</i>."
+              },
+              {
+                "f": "наголошений склад ≠ /ə/",
+                "means": "<i>car, star, more</i> — довгий наголошений голосний, не шва."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Which words end in /ə/? <i>actor, film, cinema, play, picture</i>",
+                "steps": [
+                  {
+                    "do": "ACtor /ˈæktə/",
+                    "why": "-or без наголосу — /ə/."
+                  },
+                  {
+                    "do": "CINema /ˈsɪnəmə/",
+                    "why": "-a в кінці без наголосу — /ə/."
+                  },
+                  {
+                    "do": "PICture /ˈpɪktʃə/",
+                    "why": "-ure без наголосу — /ə/."
+                  },
+                  {
+                    "do": "film, play",
+                    "why": "Односкладові наголошені слова: /fɪlm/, /pleɪ/ — без /ə/."
+                  }
+                ],
+                "answer": "actor, cinema, picture"
+              },
+              {
+                "task": "Find the odd one out: <i>teacher, car, colour, camera</i>",
+                "steps": [
+                  {
+                    "do": "TEACHer, COLour, CAMera",
+                    "why": "Закінчення ненаголошені — звук /ə/."
+                  },
+                  {
+                    "do": "car /kɑː/",
+                    "why": "Один наголошений склад — довгий звук /ɑː/, не шва."
+                  }
+                ],
+                "answer": "car"
+              },
+              {
+                "task": "Say: «My favourite actor is in a popular drama about a doctor.»",
+                "steps": [
+                  {
+                    "do": "ACtor /ˈæktə/",
+                    "why": "Наголос на першому складі, кінець — коротке /ə/, без «р»."
+                  },
+                  {
+                    "do": "POPular /ˈpɒpjələ/",
+                    "why": "Два звуки /ə/ поспіль у ненаголошених складах."
+                  },
+                  {
+                    "do": "DRAma /ˈdrɑːmə/, DOCtor /ˈdɒktə/",
+                    "why": "Кінцеве /ə/ — коротко й слабко."
+                  }
+                ],
+                "answer": "My favourite ACtor /ə/ is in a POPular /ə/ DRAma /ə/ about a DOCtor /ə/."
+              }
+            ],
+            "mistakes": [
+              "Вимовляють повне «о» і «р» на кінці: «акТОР», «докТОР». Правильно: /ˈæktə/, /ˈdɒktə/ — наголос на першому складі, кінець слабкий.",
+              "Наголошують закінчення: <i>compuTER</i>. Правильно: <i>comPUter</i> /kəmˈpjuːtə/.",
+              "Читають <i>-ure</i> як «юр»: «пікт-ЮР». Правильно: <i>picture</i> /ˈpɪktʃə/."
+            ],
+            "check": [
+              {
+                "q": "Which word ends in /ə/?",
+                "options": [
+                  "actor",
+                  "star",
+                  "more"
+                ],
+                "correct": 0,
+                "a": "<i>actor</i> /ˈæktə/. <i>star</i> /stɑː/ і <i>more</i> /mɔː/ — наголошені довгі звуки."
+              },
+              {
+                "q": "Пастка. All these words end in -er or -ar. In which one is the ending NOT /ə/?",
+                "options": [
+                  "teacher",
+                  "popular",
+                  "car"
+                ],
+                "correct": 2,
+                "a": "<i>car</i> /kɑː/ — один наголошений склад, тому не шва. <i>teacher</i> /ˈtiːtʃə/ і <i>popular</i> /ˈpɒpjələ/ — /ə/."
+              },
+              {
+                "q": "You tell your English friend: «My favourite colour is blue.» How does <i>colour</i> end?",
+                "options": [
+                  "«ор» — with a clear r",
+                  "/ə/ — a short weak sound, no r",
+                  "«ур» — like «тур»"
+                ],
+                "correct": 1,
+                "a": "<i>colour</i> /ˈkʌlə/ — кінець слабкий /ə/, британці не вимовляють r."
+              }
+            ]
+          }
         }
       ]
     }

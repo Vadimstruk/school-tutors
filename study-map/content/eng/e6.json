@@ -12,20 +12,333 @@
         {
           "id": "E6.1.1",
           "name": "will, may, might for prediction",
-          "status": "planned",
-          "programmeRef": "will (not), may (not), might (not) for prediction"
+          "status": "ready",
+          "programmeRef": "will (not), may (not), might (not) for prediction",
+          "lesson": {
+            "what": "Коли ми говоримо, що станеться в майбутньому (робимо <b>прогноз</b>), ми показуємо, наскільки впевнені. <i>will</i> — «точно буде», <i>may</i> / <i>might</i> — «можливо, буде», <i>won't</i> — «точно не буде».",
+            "ideas": [
+              "<i>will</i> / <i>won't</i> (= <i>will not</i>) — ти впевнений: <i>It will be hot in July. Robots won't do our homework.</i>",
+              "<i>may</i> і <i>might</i> — «можливо» (десь 50 на 50): <i>We might go to the lake on Sunday.</i> Значення майже однакове; <i>might</i> звучить трохи менш упевнено.",
+              "Після <i>will</i>, <i>may</i>, <i>might</i> — дієслово без <i>to</i> і без <i>-s</i>, для всіх осіб однаково: <i>she might come</i>, а не <i>she might comes</i>.",
+              "Заперечення: <i>won't</i>, <i>may not</i>, <i>might not</i>. <i>may not</i> не скорочують; <i>mightn't</i> буває, але рідко.",
+              "Щоб показати свою думку, кажуть <i>I think … will …</i> або <i>I don't think … will …</i>: <i>I don't think it will snow tomorrow.</i>",
+              "Слово <i>probably</i> (мабуть) стоїть <b>після</b> <i>will</i>, але <b>перед</b> <i>won't</i>: <i>He'll probably win. He probably won't win.</i>",
+              "Питання про прогноз зазвичай ставлять з <i>will</i>: <i>Will it be cold tomorrow? Do you think we'll win?</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>will / won't + V</i>",
+                "means": "Упевнений прогноз: «точно буде» / «точно не буде»."
+              },
+              {
+                "f": "<i>may / might (not) + V</i>",
+                "means": "Можливо так / можливо ні — ти не впевнений."
+              },
+              {
+                "f": "<i>will probably + V</i>; <i>probably won't + V</i>",
+                "means": "<i>probably</i> після <i>will</i>, але перед <i>won't</i>."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose <i>will</i> or <i>might</i>. 1) The sun … rise at 6:30 tomorrow. 2) I'm not sure yet, but I … go to the cinema with Dan.",
+                "steps": [
+                  {
+                    "do": "1) The sun <i>will</i> rise at 6:30 tomorrow.",
+                    "why": "Схід сонця — це точно, сумнівів немає, тому <i>will</i>."
+                  },
+                  {
+                    "do": "2) I <i>might</i> go to the cinema with Dan.",
+                    "why": "«I'm not sure yet» — ще не знаєш, тому «можливо»: <i>might</i>."
+                  }
+                ],
+                "answer": "1) will rise; 2) might go."
+              },
+              {
+                "task": "Make these sentences negative. 1) Ira might come to the party. 2) In 2050 people will use paper books.",
+                "steps": [
+                  {
+                    "do": "1) Ira <i>might not</i> come to the party.",
+                    "why": "<i>not</i> просто ставимо після <i>might</i>. Ніяких <i>don't</i>!"
+                  },
+                  {
+                    "do": "2) In 2050 people <i>won't</i> use paper books.",
+                    "why": "<i>will not</i> = <i>won't</i>. Дієслово <i>use</i> не змінюється."
+                  }
+                ],
+                "answer": "1) Ira might not come to the party. 2) In 2050 people won't use paper books."
+              },
+              {
+                "task": "Write three predictions about your life in 2040: one sure, one possible, one negative.",
+                "steps": [
+                  {
+                    "do": "I think I'll be a vet.",
+                    "why": "Упевнений прогноз: <i>I think + will</i> (<i>I'll</i> = <i>I will</i>)."
+                  },
+                  {
+                    "do": "I might live by the sea.",
+                    "why": "Лише можливість — <i>might</i>."
+                  },
+                  {
+                    "do": "I probably won't have a car.",
+                    "why": "<i>probably</i> стоїть перед <i>won't</i>."
+                  }
+                ],
+                "answer": "For example: I think I'll be a vet. I might live by the sea. I probably won't have a car."
+              }
+            ],
+            "mistakes": [
+              "<i>She will comes.</i> / <i>She wills come.</i> Правильно: <i>She will come.</i> Після <i>will</i> — дієслово без <i>-s</i>, і сам <i>will</i> не змінюється.",
+              "<i>It might to rain.</i> Правильно: <i>It might rain.</i> Після <i>might</i>, <i>may</i>, <i>will</i> частки <i>to</i> немає.",
+              "<i>I don't might go.</i> Правильно: <i>I might not go.</i> <i>not</i> стоїть після <i>might</i>.",
+              "<i>He won't probably win.</i> Правильно: <i>He probably won't win.</i>"
+            ],
+            "check": [
+              {
+                "q": "I'm not sure about Saturday. We … visit Grandma. (Обери)",
+                "options": [
+                  "will",
+                  "might",
+                  "are"
+                ],
+                "correct": 1,
+                "a": "«I'm not sure» — ти не впевнений, тож <i>might</i> (можливо). <i>will</i> означало б, що це точно."
+              },
+              {
+                "q": "Пастка: обери правильне речення.",
+                "options": [
+                  "She mights come later.",
+                  "She might comes later.",
+                  "She might come later."
+                ],
+                "correct": 2,
+                "a": "<i>might</i> ніколи не змінюється, а дієслово після нього — без <i>-s</i>: <i>She might come later.</i>"
+              },
+              {
+                "q": "Message to a friend: <i>Sorry, I've got a cold. I … come to football tomorrow. I'll text you in the morning.</i> (Впиши 2 слова: «можливо, не»)",
+                "accept": [
+                  "might not",
+                  "may not",
+                  "mightn't"
+                ],
+                "a": "Ти ще не знаєш точно, тому <i>might not</i> або <i>may not</i> (рідше — <i>mightn't</i>). <i>won't</i> тут не підходить: воно означає «точно не прийду»."
+              }
+            ]
+          }
         },
         {
           "id": "E6.1.2",
           "name": "First conditional",
-          "status": "planned",
-          "programmeRef": "First conditional"
+          "status": "ready",
+          "programmeRef": "First conditional",
+          "lesson": {
+            "what": "<b>First conditional</b> (умовне речення першого типу) — речення «якщо …, то …» про <b>реальну</b> ситуацію в майбутньому і її наслідок: <i>If it rains, we'll stay at home.</i>",
+            "ideas": [
+              "Речення має дві частини: <b>умову</b> з <i>if</i> і <b>результат</b>.",
+              "В умові — Present Simple, хоча мова про майбутнє: <i>If you <b>help</b> me…</i> В результаті — <i>will</i> + дієслово: <i>…I'll help you.</i>",
+              "Головна пастка: українською кажемо «якщо ти <b>допоможеш</b>» (майбутній час), а англійською після <i>if</i> <i>will</i> не ставимо.",
+              "Частини можна міняти місцями. Якщо <i>if</i> на початку — після умови кома: <i>If you're late, I'll wait.</i> Якщо <i>if</i> у середині — коми немає: <i>I'll wait if you're late.</i>",
+              "У результаті замість <i>will</i> можуть бути <i>may</i>, <i>might</i>, <i>can</i> або наказ: <i>If you see Max, tell him to call me.</i>",
+              "Не забувай <i>-s</i> у третій особі в умові: <i>If Olia <b>calls</b>…</i>, <i>If he <b>doesn't</b> come…</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>If + Present Simple, will / won't + V</i>",
+                "means": "Якщо станеться умова, буде такий результат. Кома після умови."
+              },
+              {
+                "f": "<i>will / won't + V + if + Present Simple</i>",
+                "means": "Той самий зміст, але результат спочатку — без коми."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Put the verbs in the correct form: If we … (recycle) more, there … (be) less rubbish.",
+                "steps": [
+                  {
+                    "do": "If we <i>recycle</i> more,",
+                    "why": "Після <i>if</i> — Present Simple, а не <i>will recycle</i>."
+                  },
+                  {
+                    "do": "there <i>will be</i> less rubbish.",
+                    "why": "Це результат — <i>will</i> + дієслово."
+                  }
+                ],
+                "answer": "If we recycle more, there will be less rubbish."
+              },
+              {
+                "task": "Put the verbs in the correct form: She … (miss) the bus if she … (not hurry).",
+                "steps": [
+                  {
+                    "do": "She <i>will miss</i> the bus",
+                    "why": "Результат стоїть першим: <i>will</i> + дієслово."
+                  },
+                  {
+                    "do": "if she <i>doesn't hurry</i>.",
+                    "why": "Умова в Present Simple; <i>she</i> — третя особа, тому <i>doesn't</i>."
+                  },
+                  {
+                    "do": "Коми немає.",
+                    "why": "<i>if</i> стоїть у середині речення."
+                  }
+                ],
+                "answer": "She will miss the bus if she doesn't hurry."
+              },
+              {
+                "task": "Finish the sentences about you: 1) If I get a good mark in English, … 2) I'll be really happy if …",
+                "steps": [
+                  {
+                    "do": "1) If I get a good mark in English, my mum will be proud of me.",
+                    "why": "Умова вже є (Present Simple), додаємо результат з <i>will</i>."
+                  },
+                  {
+                    "do": "2) I'll be really happy if my friends come to my birthday party.",
+                    "why": "Тут треба умова — Present Simple; <i>friends</i> — множина, тому <i>come</i> без <i>-s</i>."
+                  }
+                ],
+                "answer": "For example: 1) If I get a good mark in English, my mum will be proud of me. 2) I'll be really happy if my friends come to my birthday party."
+              }
+            ],
+            "mistakes": [
+              "<i>If it will rain, we will stay at home.</i> Правильно: <i>If it rains, we will stay at home.</i> Після <i>if</i> — Present Simple.",
+              "<i>If he don't come…</i> Правильно: <i>If he doesn't come…</i>",
+              "<i>If Olia call me…</i> Правильно: <i>If Olia calls me…</i> — <i>-s</i> у третій особі.",
+              "<i>We'll be late, if we don't go now.</i> Правильно без коми: <i>We'll be late if we don't go now.</i>"
+            ],
+            "check": [
+              {
+                "q": "If you … the lights off, you'll save energy. (Впиши дієслово <i>turn</i> у правильній формі)",
+                "accept": [
+                  "turn"
+                ],
+                "a": "Після <i>if</i> — Present Simple: <i>If you turn the lights off…</i> Не <i>will turn</i>."
+              },
+              {
+                "q": "Пастка: обери правильне речення.",
+                "options": [
+                  "If it will be sunny, we'll go to the park.",
+                  "If it is sunny, we'll go to the park.",
+                  "If it is sunny, we will going to the park."
+                ],
+                "correct": 1,
+                "a": "Умова — Present Simple (<i>is</i>), результат — <i>will</i> + дієслово (<i>we'll go</i>)."
+              },
+              {
+                "q": "A poster at school: <i>Bring your old batteries to Room 12! If we collect 500 batteries, our class … a prize.</i> (Обери)",
+                "options": [
+                  "wins",
+                  "will win",
+                  "won"
+                ],
+                "correct": 1,
+                "a": "Це результат умови, тому <i>will win</i>. Present Simple (<i>collect</i>) — лише в частині з <i>if</i>."
+              }
+            ]
+          }
         },
         {
           "id": "E6.1.3",
           "name": "unless in first conditional sentences",
-          "status": "planned",
-          "programmeRef": "unless in first conditional sentences"
+          "status": "ready",
+          "programmeRef": "unless in first conditional sentences",
+          "lesson": {
+            "what": "<i>unless</i> означає «якщо не»: <i>Unless you hurry, you'll be late</i> = <i>If you don't hurry, you'll be late.</i>",
+            "ideas": [
+              "<i>unless</i> = <i>if … not</i>. Заперечення вже «сховане» всередині слова <i>unless</i>.",
+              "Тому після <i>unless</i> дієслово <b>стверджувальне</b>: <i>unless you hurry</i>, а не <i>unless you don't hurry</i>.",
+              "Як і після <i>if</i>, після <i>unless</i> ставимо Present Simple, а не <i>will</i>: <i>Unless it snows…</i>",
+              "Кома — як в інших умовних реченнях: є, коли <i>unless</i> на початку; немає, коли <i>unless</i> у середині.",
+              "<i>unless</i> часто буває в попередженнях і правилах: <i>You can't go out unless you finish your homework.</i> (= лише якщо закінчиш)"
+            ],
+            "rules": [
+              {
+                "f": "<i>unless = if … not</i>",
+                "means": "«Якщо не»: <i>unless you water it = if you don't water it</i>."
+              },
+              {
+                "f": "<i>Unless + Present Simple (+), will / won't + V</i>",
+                "means": "Після <i>unless</i> — стверджувальна форма в Present Simple."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Rewrite with <i>unless</i>: If you don't water the plants, they'll die.",
+                "steps": [
+                  {
+                    "do": "If you don't water → Unless you water",
+                    "why": "<i>if … not</i> міняємо на <i>unless</i>, а <i>don't</i> прибираємо."
+                  },
+                  {
+                    "do": "Unless you water the plants, they'll die.",
+                    "why": "Друга частина не змінюється; кома, бо <i>unless</i> на початку."
+                  }
+                ],
+                "answer": "Unless you water the plants, they'll die."
+              },
+              {
+                "task": "Rewrite with <i>if</i>: We won't go swimming unless the water is warm.",
+                "steps": [
+                  {
+                    "do": "unless the water is warm → if the water isn't warm",
+                    "why": "<i>unless</i> = <i>if … not</i>, тому з'являється заперечення <i>isn't</i>."
+                  },
+                  {
+                    "do": "We won't go swimming if the water isn't warm.",
+                    "why": "Коми немає: умова в середині речення."
+                  }
+                ],
+                "answer": "We won't go swimming if the water isn't warm."
+              },
+              {
+                "task": "Complete the farm sign: Unless you … (close) the gate, the goats … (get) out!",
+                "steps": [
+                  {
+                    "do": "Unless you <i>close</i> the gate,",
+                    "why": "Після <i>unless</i> — Present Simple, стверджувальне."
+                  },
+                  {
+                    "do": "the goats <i>will get</i> out!",
+                    "why": "Результат — <i>will</i> + дієслово."
+                  }
+                ],
+                "answer": "Unless you close the gate, the goats will get out!"
+              }
+            ],
+            "mistakes": [
+              "<i>Unless you don't hurry, you'll be late.</i> Правильно: <i>Unless you hurry, you'll be late.</i> Подвійне заперечення змінює зміст.",
+              "<i>Unless it will snow, we'll go.</i> Правильно: <i>Unless it snows, we'll go.</i>",
+              "Калька «якщо не»: <i>If not you study, you'll fail.</i> Правильно: <i>If you don't study…</i> або <i>Unless you study…</i>"
+            ],
+            "check": [
+              {
+                "q": "Unless you … a helmet, you can't ride the scooter. (Впиши дієслово <i>wear</i> у правильній формі)",
+                "accept": [
+                  "wear"
+                ],
+                "a": "Після <i>unless</i> — стверджувальний Present Simple: <i>unless you wear</i> (= <i>if you don't wear</i>)."
+              },
+              {
+                "q": "Пастка: що означає <i>I'll come unless I'm busy</i>?",
+                "options": [
+                  "I'll come if I'm busy.",
+                  "I won't come if I'm not busy.",
+                  "I'll come if I'm not busy."
+                ],
+                "correct": 2,
+                "a": "<i>unless I'm busy</i> = <i>if I'm not busy</i>. Тож: прийду, якщо не буду зайнятий."
+              },
+              {
+                "q": "A sign at the swimming pool: <i>No entry unless you are wearing a swimming cap.</i> What does it mean?",
+                "options": [
+                  "You can go in only with a swimming cap.",
+                  "You can't wear a swimming cap here.",
+                  "Swimming caps are on sale here."
+                ],
+                "correct": 0,
+                "a": "«Не можна заходити, якщо ти не в шапочці» — тобто заходити можна лише в шапочці."
+              }
+            ]
+          }
         }
       ]
     },
@@ -37,14 +350,241 @@
         {
           "id": "E6.2.1",
           "name": "The environment",
-          "status": "planned",
-          "programmeRef": "The environment"
+          "status": "ready",
+          "programmeRef": "The environment",
+          "lesson": {
+            "what": "Слова, щоб говорити про довкілля: що йому шкодить і як його берегти.",
+            "ideas": [
+              "<b>the environment</b> — довкілля: <i>We must protect the environment.</i>",
+              "<b>pollution</b> — забруднення: <i>Cars cause a lot of air pollution.</i>",
+              "<b>rubbish</b> — сміття (вдома, у смітнику); <b>litter</b> — сміття, кинуте на вулиці: <i>Don't drop litter in the park.</i> Обидва слова незлічувані — без <i>a</i> і без <i>-s</i>.",
+              "<b>recycle</b> — переробляти, здавати на переробку: <i>We recycle paper and glass at school.</i>",
+              "<b>waste</b> — марнувати; також відходи: <i>Don't waste water!</i>",
+              "<b>climate change</b> — зміна клімату; <b>global warming</b> — глобальне потепління.",
+              "<b>endangered</b> — під загрозою зникнення: <i>Many sea turtles are endangered.</i>",
+              "<b>cut down</b> (trees) — вирубувати; <b>rainforest</b> — тропічний ліс: <i>People cut down rainforests for wood.</i>"
+            ],
+            "rules": [
+              {
+                "f": "<i>protect the environment</i>",
+                "means": "Берегти довкілля — з <i>the</i>."
+              },
+              {
+                "f": "<i>drop litter</i>; <i>throw away rubbish</i>",
+                "means": "Кидати сміття на землю; викидати сміття."
+              },
+              {
+                "f": "<i>cause pollution</i>; <i>cut down trees</i>",
+                "means": "Спричиняти забруднення; вирубувати дерева."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose the right verb for each phrase: … litter / … paper / … trees (recycle, drop, cut down).",
+                "steps": [
+                  {
+                    "do": "drop litter",
+                    "why": "Сміття, яке <b>кидають</b> на землю, — <i>drop litter</i>."
+                  },
+                  {
+                    "do": "recycle paper",
+                    "why": "Папір <b>здають на переробку</b> — <i>recycle</i>."
+                  },
+                  {
+                    "do": "cut down trees",
+                    "why": "Дерева <b>вирубують</b> — <i>cut down</i>."
+                  }
+                ],
+                "answer": "drop litter, recycle paper, cut down trees."
+              },
+              {
+                "task": "Complete the text with <i>pollution, endangered, recycle</i>: Our town has a problem with air … . At school we … bottles, and our eco-club raises money to help … animals.",
+                "steps": [
+                  {
+                    "do": "air <i>pollution</i>",
+                    "why": "Проблема з повітрям — забруднення."
+                  },
+                  {
+                    "do": "we <i>recycle</i> bottles",
+                    "why": "Що робимо з пляшками — здаємо на переробку."
+                  },
+                  {
+                    "do": "help <i>endangered</i> animals",
+                    "why": "Прикметник перед <i>animals</i>: тварини під загрозою."
+                  }
+                ],
+                "answer": "pollution, recycle, endangered."
+              },
+              {
+                "task": "Write three things you do to protect the environment.",
+                "steps": [
+                  {
+                    "do": "I never drop litter.",
+                    "why": "Колокація <i>drop litter</i>."
+                  },
+                  {
+                    "do": "I turn off the tap when I brush my teeth, so I don't waste water.",
+                    "why": "<i>waste water</i> — марнувати воду."
+                  },
+                  {
+                    "do": "My family recycles plastic and glass.",
+                    "why": "<i>family</i> — він/вона, тому <i>recycles</i> з <i>-s</i>."
+                  }
+                ],
+                "answer": "For example: I never drop litter. I turn off the tap when I brush my teeth, so I don't waste water. My family recycles plastic and glass."
+              }
+            ],
+            "mistakes": [
+              "<i>We must protect the nature.</i> Правильно: <i>We must protect nature.</i> Слово <i>nature</i> (природа) — без <i>the</i>.",
+              "«Екологія міста погана» — не <i>The ecology is bad</i>. <i>ecology</i> — це наука. Кажи: <i>The environment in our town is polluted</i> або <i>There's a lot of pollution.</i>",
+              "<i>a rubbish</i>, <i>rubbishes</i>, <i>litters</i>. Правильно: <i>rubbish</i>, <i>litter</i>, <i>a lot of rubbish</i>, <i>a piece of litter</i>."
+            ],
+            "check": [
+              {
+                "q": "Mountain gorillas are … animals — there are very few of them left. (Впиши одне слово)",
+                "accept": [
+                  "endangered"
+                ],
+                "a": "<i>endangered</i> — під загрозою зникнення."
+              },
+              {
+                "q": "Пастка: обери правильне речення.",
+                "options": [
+                  "We must protect the nature.",
+                  "We must protect nature.",
+                  "We must protect a nature."
+                ],
+                "correct": 1,
+                "a": "<i>nature</i> у значенні «природа» вживаємо без артикля: <i>protect nature</i>. А от <i>the environment</i> — з <i>the</i>."
+              },
+              {
+                "q": "A sign next to three bins: <i>Plastic, glass and paper go here. … helps our planet!</i> (Обери)",
+                "options": [
+                  "Polluting",
+                  "Wasting",
+                  "Recycling"
+                ],
+                "correct": 2,
+                "a": "Здавати пластик, скло й папір на переробку — <i>recycling</i>. Це допомагає планеті, а <i>polluting</i> і <i>wasting</i> — шкодять."
+              }
+            ]
+          }
         },
         {
           "id": "E6.2.2",
           "name": "Verbs to talk about energy",
-          "status": "planned",
-          "programmeRef": "Verbs to talk about energy"
+          "status": "ready",
+          "programmeRef": "Verbs to talk about energy",
+          "lesson": {
+            "what": "Дієслова, щоб говорити про енергію: вмикати й вимикати, заряджати, економити й марнувати.",
+            "ideas": [
+              "<b>switch on / switch off</b> = <b>turn on / turn off</b> — вмикати / вимикати: <i>Turn off the light when you leave.</i>",
+              "<b>leave on</b> — залишати ввімкненим: <i>Don't leave your computer on all night.</i>",
+              "<b>plug in / unplug</b> — вмикати в розетку / витягати з розетки: <i>Unplug the charger when your phone is full.</i>",
+              "<b>charge</b> — заряджати: <i>I charge my phone at night.</i>",
+              "<b>save</b> — заощаджувати; <b>waste</b> — марнувати: <i>LED bulbs save energy. Old fridges waste a lot of electricity.</i>",
+              "<b>use up</b> — витратити все; <b>run out of</b> — закінчитися (у когось): <i>We've run out of batteries.</i>",
+              "<b>reduce</b> — зменшувати: <i>We can reduce the energy we use at home.</i>",
+              "Займенник (<i>it, them</i>) ставимо <b>між</b> дієсловом і <i>on/off</i>: <i>switch it off</i>, а не <i>switch off it</i>."
+            ],
+            "rules": [
+              {
+                "f": "<i>switch / turn + the light + off</i> = <i>switch / turn off + the light</i>",
+                "means": "З іменником обидва порядки правильні."
+              },
+              {
+                "f": "<i>switch it off</i>; <i>turn them on</i>",
+                "means": "З займенником — лише посередині."
+              },
+              {
+                "f": "<i>run out of + noun</i>",
+                "means": "«У нас закінчився/закінчилося …»: <i>We've run out of milk.</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Choose the verb: 1) Don't … the TV on when nobody is watching. 2) My tablet is dead. I need to … it. (charge, leave)",
+                "steps": [
+                  {
+                    "do": "1) Don't <i>leave</i> the TV on…",
+                    "why": "<i>leave on</i> — залишати ввімкненим."
+                  },
+                  {
+                    "do": "2) I need to <i>charge</i> it.",
+                    "why": "Пристрій розрядився — його заряджають."
+                  }
+                ],
+                "answer": "1) leave; 2) charge."
+              },
+              {
+                "task": "Answer with a pronoun: Is the computer still on? — Yes, sorry! I'll switch … .",
+                "steps": [
+                  {
+                    "do": "the computer → it",
+                    "why": "Замість іменника — займенник <i>it</i>."
+                  },
+                  {
+                    "do": "I'll switch it off.",
+                    "why": "Займенник стоїть між <i>switch</i> і <i>off</i>."
+                  }
+                ],
+                "answer": "I'll switch it off."
+              },
+              {
+                "task": "Write three tips for saving energy at home.",
+                "steps": [
+                  {
+                    "do": "Turn off the lights when you leave a room.",
+                    "why": "Наказовий спосіб — зручно для порад."
+                  },
+                  {
+                    "do": "Unplug your charger when your phone is full.",
+                    "why": "<i>unplug</i> — витягти з розетки."
+                  },
+                  {
+                    "do": "Don't leave the TV on all night.",
+                    "why": "Заперечна порада — <i>Don't</i> + дієслово."
+                  }
+                ],
+                "answer": "For example: Turn off the lights when you leave a room. Unplug your charger when your phone is full. Don't leave the TV on all night."
+              }
+            ],
+            "mistakes": [
+              "<i>Switch off it.</i> Правильно: <i>Switch it off.</i>",
+              "Не <i>close the light</i> чи <i>open the TV</i>. Англійською: <i>turn off the light</i>, <i>turn on the TV</i> (або <i>switch off / on</i>).",
+              "<i>The milk has run out of.</i> Правильно: <i>We've run out of milk</i> або <i>The milk has run out.</i> <i>of</i> — лише перед тим, що закінчилося."
+            ],
+            "check": [
+              {
+                "q": "My phone is at 3%. I need to … it. (Впиши одне слово)",
+                "accept": [
+                  "charge",
+                  "recharge"
+                ],
+                "a": "<i>charge</i> (або <i>recharge</i>) — заряджати."
+              },
+              {
+                "q": "Пастка: the radio is on and nobody is listening. Обери правильне речення.",
+                "options": [
+                  "Switch off it.",
+                  "Switch it off.",
+                  "Switch it of."
+                ],
+                "correct": 1,
+                "a": "Займенник <i>it</i> стоїть між <i>switch</i> і <i>off</i>: <i>Switch it off.</i> І <i>off</i> пишемо з двома <i>f</i>."
+              },
+              {
+                "q": "A note from Dad: <i>We've … milk. Can you buy some on the way home?</i> (Обери)",
+                "options": [
+                  "run out of",
+                  "saved",
+                  "plugged in"
+                ],
+                "correct": 0,
+                "a": "<i>run out of</i> — закінчитися: молоко скінчилося, тому тато просить купити."
+              }
+            ]
+          }
         }
       ]
     },
@@ -56,20 +596,365 @@
         {
           "id": "E6.3.1",
           "name": "Expressing surprise and enthusiasm",
-          "status": "planned",
-          "programmeRef": "Expressing surprise and enthusiasm"
+          "status": "ready",
+          "programmeRef": "Expressing surprise and enthusiasm",
+          "lesson": {
+            "what": "Як показати, що ти здивований і радієш новині: <i>Really? No way! That's brilliant!</i>",
+            "ideas": [
+              "Здивування: <i>Really? No way! You're joking! Seriously? I can't believe it!</i>",
+              "Захоплення: <i>Wow! That's brilliant / amazing / fantastic! Cool! How exciting! What a great idea!</i>",
+              "Після реакції добре спитати ще щось: <i>Tell me more! When did that happen?</i> — так розмова не обривається.",
+              "Голос: в окличних реченнях голос іде високо вгору, потім униз. Якщо сказати <i>Really.</i> рівним голосом, звучить, ніби тобі нудно.",
+              "Модель розмови: <i>A: Guess what? Our class is going to plant a hundred trees in the park! B: No way! That's brilliant! A: And every pair gets their own tree. B: Really? How cool!</i>",
+              "Застряг — скажи просто <i>Wow, really?</i> і постав одне запитання."
+            ],
+            "rules": [
+              {
+                "f": "<i>What a / an + adjective + noun!</i>",
+                "means": "З одниною злічуваних іменників: <i>What a great idea!</i>"
+              },
+              {
+                "f": "<i>What + adjective + plural / uncountable noun!</i>",
+                "means": "Без <i>a</i>: <i>What lovely weather! What cute puppies!</i>"
+              },
+              {
+                "f": "<i>How + adjective!</i>",
+                "means": "Без іменника: <i>How exciting! How cool!</i>"
+              }
+            ],
+            "examples": [
+              {
+                "task": "Your friend says: <i>I won the school chess tournament!</i> React with surprise and enthusiasm.",
+                "steps": [
+                  {
+                    "do": "Really?",
+                    "why": "Спершу — здивування."
+                  },
+                  {
+                    "do": "That's fantastic! Well done!",
+                    "why": "Потім — захоплення й похвала."
+                  },
+                  {
+                    "do": "Who did you play in the final?",
+                    "why": "Запитання, щоб розмова тривала."
+                  }
+                ],
+                "answer": "Really? That's fantastic! Well done! Who did you play in the final?"
+              },
+              {
+                "task": "Make exclamations: 1) (an amazing idea) 2) (exciting) 3) (great weather)",
+                "steps": [
+                  {
+                    "do": "1) What an amazing idea!",
+                    "why": "Іменник в однині — <i>What an</i> (бо <i>amazing</i> починається з голосного звука)."
+                  },
+                  {
+                    "do": "2) How exciting!",
+                    "why": "Лише прикметник — <i>How</i>."
+                  },
+                  {
+                    "do": "3) What great weather!",
+                    "why": "<i>weather</i> незлічуване, тому без <i>a</i>."
+                  }
+                ],
+                "answer": "1) What an amazing idea! 2) How exciting! 3) What great weather!"
+              },
+              {
+                "task": "Complete the mini-dialogue: A: My uncle is taking me to a real football match on Saturday! B: … A: Yes, and we've got seats near the pitch! B: …",
+                "steps": [
+                  {
+                    "do": "B: No way! How exciting!",
+                    "why": "Здивування + захоплення."
+                  },
+                  {
+                    "do": "B: Wow, that's amazing! Take lots of photos!",
+                    "why": "Ще одна захоплена реакція й побажання."
+                  }
+                ],
+                "answer": "For example: B: No way! How exciting! … B: Wow, that's amazing! Take lots of photos!"
+              }
+            ],
+            "mistakes": [
+              "<i>What a beautiful weather!</i> Правильно: <i>What beautiful weather!</i> — <i>weather</i> незлічуване.",
+              "<i>How a nice day!</i> Правильно: <i>What a nice day!</i> — з іменником потрібне <i>What</i>.",
+              "«Клас!» — не <i>Class!</i>, а <i>Cool!</i> або <i>Great!</i>",
+              "Рівна, «сумна» інтонація: <i>Really. Cool.</i> Звучить байдуже. Говори з виразом."
+            ],
+            "check": [
+              {
+                "q": "Your friend says: <i>My cousin is taking me to a music festival!</i> Обери найбільш захоплену відповідь.",
+                "options": [
+                  "Oh. OK.",
+                  "Why?",
+                  "Really? How exciting!"
+                ],
+                "correct": 2,
+                "a": "<i>Really? How exciting!</i> — і здивування, і радість за друга. <i>Oh. OK.</i> звучить байдуже."
+              },
+              {
+                "q": "Пастка: обери правильний вигук.",
+                "options": [
+                  "What a lovely weather!",
+                  "What lovely weather!",
+                  "How lovely weather!"
+                ],
+                "correct": 1,
+                "a": "<i>weather</i> — незлічуване, тому <i>What</i> + прикметник + іменник без <i>a</i>: <i>What lovely weather!</i>"
+              },
+              {
+                "q": "A message from your friend: <i>We've got a new puppy!!!</i> Your reply: <i>No …! Send me a photo!</i> (Впиши одне слово)",
+                "accept": [
+                  "way"
+                ],
+                "a": "<i>No way!</i> — «Та ну! Не може бути!» — радісне здивування."
+              }
+            ]
+          }
         },
         {
           "id": "E6.3.2",
           "name": "An article for the school magazine",
-          "status": "planned",
-          "programmeRef": "An article for the school magazine"
+          "status": "ready",
+          "programmeRef": "An article for the school magazine",
+          "lesson": {
+            "what": "<b>Стаття в шкільний журнал</b> — короткий текст для однолітків. Мета — зацікавити читача й переконати щось зробити.",
+            "ideas": [
+              "<b>Заголовок</b> — короткий і цікавий: <i>Small Steps, Big Changes</i>.",
+              "<b>Початок</b> «чіпляє» читача: запитання або несподіваний факт: <i>Did you know that…? Have you ever thought about…?</i>",
+              "<b>Основна частина</b> — 1–2 абзаци з ідеями. Пиши так, ніби говориш з читачем: <i>you</i>, <i>we</i>, <i>let's</i>.",
+              "<b>Кінцівка</b> — заклик до дії: <i>So let's…! Remember: if we all…, …will…!</i>",
+              "Слова-зв'язки: <i>First of all, Also, What's more</i> (до того ж), <i>However</i> (проте), <i>So</i> (тож), <i>In conclusion / To sum up</i>.",
+              "Перевір себе: є заголовок? Цікавий початок? Абзаци? Заклик наприкінці? Немає <i>Dear…</i> чи підпису, як у листі?"
+            ],
+            "rules": [
+              {
+                "f": "<i>Did you know that…? / Have you ever thought about…?</i>",
+                "means": "Цікавий початок — запитання до читача."
+              },
+              {
+                "f": "<i>First of all… Also… What's more…</i>",
+                "means": "Ідеї по черзі."
+              },
+              {
+                "f": "<i>If we all…, it will…! / So let's…!</i>",
+                "means": "Заклик до дії наприкінці."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Which opening is better for an article about rubbish at school? A) <i>In this article I will write about rubbish.</i> B) <i>Have you ever counted how many crisp packets end up on our school field every week?</i>",
+                "steps": [
+                  {
+                    "do": "A звучить нудно.",
+                    "why": "Просто каже, про що текст, і не зацікавлює."
+                  },
+                  {
+                    "do": "B — запитання до читача.",
+                    "why": "Читач починає думати й хоче читати далі."
+                  }
+                ],
+                "answer": "B."
+              },
+              {
+                "task": "Look at the model article (/ — new paragraph). Find the four parts. <b>Small Steps, Big Changes</b> / Did you know that our school throws away about thirty plastic bottles every day? That's more than five thousand a year! / So what can we do? First of all, bring a reusable bottle from home. There's a water fountain on every floor. Also, use both sides of the paper in your notebooks. / What's more, the eco-club is starting a recycling project next month. If you join us, you'll make new friends and help the planet at the same time. / Remember: if we all do something small, it will make a big difference!",
+                "steps": [
+                  {
+                    "do": "Заголовок: <i>Small Steps, Big Changes</i>.",
+                    "why": "Короткий, з контрастом «малі — великі»."
+                  },
+                  {
+                    "do": "Початок: <i>Did you know…? That's more than five thousand a year!</i>",
+                    "why": "Несподіваний факт-запитання."
+                  },
+                  {
+                    "do": "Основна частина: <i>First of all… Also… What's more…</i>",
+                    "why": "Ідеї по черзі, зі словами-зв'язками."
+                  },
+                  {
+                    "do": "Кінцівка: <i>Remember: if we all do something small, it will make a big difference!</i>",
+                    "why": "Заклик до дії; тут ще й First conditional."
+                  }
+                ],
+                "answer": "Title, opening question, two paragraphs with ideas, conclusion with a call to action."
+              },
+              {
+                "task": "Write a conclusion (1–2 sentences) for an article about saving energy at school.",
+                "steps": [
+                  {
+                    "do": "So let's turn off the lights when we leave the classroom.",
+                    "why": "<i>So let's…</i> — заклик до всіх."
+                  },
+                  {
+                    "do": "If we all do it, our school will save a lot of energy!",
+                    "why": "First conditional показує результат."
+                  }
+                ],
+                "answer": "For example: So let's turn off the lights when we leave the classroom. If we all do it, our school will save a lot of energy!"
+              }
+            ],
+            "mistakes": [
+              "Починати статтю як лист: <i>Dear readers, my name is…</i> Краще одразу запитання або цікавий факт.",
+              "Один довгий абзац. Розбий текст на початок, 1–2 абзаци з ідеями й кінцівку.",
+              "Немає заклику наприкінці — стаття просто обривається. Додай <i>So let's…!</i>",
+              "<i>However</i> для додавання ідеї. <i>However</i> — це «проте» (протиставлення). Для «ще одна ідея» — <i>Also</i>, <i>What's more</i>."
+            ],
+            "check": [
+              {
+                "q": "Обери найкращий початок статті про енергію.",
+                "options": [
+                  "Have you ever wondered how much energy your phone charger wastes?",
+                  "My article is about energy.",
+                  "Energy. Energy is important."
+                ],
+                "correct": 0,
+                "a": "Запитання до читача одразу зацікавлює. Інші варіанти нудні й нічого не обіцяють."
+              },
+              {
+                "q": "Пастка: обери слово-зв'язку. <i>Plastic bags are cheap and useful. …, they are terrible for the sea.</i>",
+                "options": [
+                  "Also",
+                  "However",
+                  "First of all"
+                ],
+                "correct": 1,
+                "a": "Друга думка <b>протилежна</b> першій, тому <i>However</i> (проте). <i>Also</i> лише додає схожу ідею."
+              },
+              {
+                "q": "A plan for a school magazine article: <i>Title → Opening question → Ideas → ?</i> Що пропущено?",
+                "options": [
+                  "Dear Sir or Madam",
+                  "A conclusion that tells readers what to do",
+                  "Your address and the date"
+                ],
+                "correct": 1,
+                "a": "Стаття закінчується закликом до дії. Звертання, адреса й дата — це для листа, а не статті."
+              }
+            ]
+          }
         },
         {
           "id": "E6.3.3",
           "name": "/f/, /v/, /b/ consonant sounds",
-          "status": "planned",
-          "programmeRef": "/f/, /v/, /b/ consonant sounds"
+          "status": "ready",
+          "programmeRef": "/f/, /v/, /b/ consonant sounds",
+          "lesson": {
+            "what": "Три приголосні звуки: /f/ (як «ф»), /v/ (дзвінкий, як «в» перед голосним) і /b/ (як «б»). Важливо їх не плутати: <i>fan</i> — вентилятор, <i>van</i> — фургон, <i>ban</i> — заборона.",
+            "ideas": [
+              "<b>/f/</b> — верхні зуби легенько торкаються нижньої губи, дуєш повітря <b>без голосу</b>. Як українське «ф»: <i>fan, five, coffee</i>.",
+              "<b>/v/</b> — те саме положення (зуби на губі), але <b>з голосом</b> — відчуєш, як дзижчить губа. Перевір: доторкнися до горла — воно вібрує.",
+              "Пастка: українське «в» у кінці складу часто звучить як короткий «у» («вовк», «любов»). В англійській /v/ завжди справжнє, з зубами на губі, навіть у кінці слова: <i>love, five, have</i>.",
+              "<b>/b/</b> — обидві губи стулені, потім «вибух» з голосом. Як українське «б»: <i>big, best, job</i>.",
+              "Звук /f/ пишуть не лише буквою <i>f</i>: <i>ff</i> (<i>coffee</i>), <i>ph</i> (<i>phone</i>), іноді <i>gh</i> (<i>laugh, enough</i>). А <i>of</i> вимовляють з /v/: /ɒv/.",
+              "Пари слів, де змінюється лише один звук: <i>fan – van – ban</i>, <i>ferry – very – berry</i>, <i>leaf – leave</i>, <i>best – vest</i>."
+            ],
+            "rules": [
+              {
+                "f": "/f/ <i>fan</i> — /v/ <i>van</i>",
+                "means": "Однакове положення зубів і губи; /v/ — з голосом."
+              },
+              {
+                "f": "/v/ <i>very</i> — /b/ <i>berry</i>",
+                "means": "/v/ — зуби на губі; /b/ — дві губи разом."
+              },
+              {
+                "f": "<i>of</i> /ɒv/ — <i>off</i> /ɒf/",
+                "means": "Одна <i>f</i> — /v/, дві <i>f</i> — /f/."
+              }
+            ],
+            "examples": [
+              {
+                "task": "Say the pairs and feel the difference: <i>fan – van</i>, <i>very – berry</i>.",
+                "steps": [
+                  {
+                    "do": "fan /fæn/",
+                    "why": "Зуби на губі, дуєш без голосу."
+                  },
+                  {
+                    "do": "van /væn/",
+                    "why": "Те саме, але вмикаєш голос — губа дзижчить."
+                  },
+                  {
+                    "do": "very /ˈveri/ – berry /ˈberi/",
+                    "why": "/v/ — зуби на губі; /b/ — губи стулені й «вибухають»."
+                  }
+                ],
+                "answer": "fan /f/ — без голосу; van /v/ — з голосом; berry /b/ — дві губи."
+              },
+              {
+                "task": "Which words have /f/ and which have /v/? <i>photo, laugh, of, off</i>",
+                "steps": [
+                  {
+                    "do": "photo — /f/",
+                    "why": "<i>ph</i> читається як /f/."
+                  },
+                  {
+                    "do": "laugh — /f/",
+                    "why": "Тут <i>gh</i> читається як /f/."
+                  },
+                  {
+                    "do": "of — /v/, off — /f/",
+                    "why": "Маленьке слово <i>of</i> закінчується на /v/."
+                  }
+                ],
+                "answer": "/f/: photo, laugh, off. /v/: of."
+              },
+              {
+                "task": "Read the sentence slowly, then faster: <i>Vera found five very big boxes of fresh berries.</i>",
+                "steps": [
+                  {
+                    "do": "/v/: Vera, five, very, of",
+                    "why": "Зуби на губі з голосом — і в кінці <i>five</i> та <i>of</i>."
+                  },
+                  {
+                    "do": "/f/: found, fresh",
+                    "why": "Без голосу."
+                  },
+                  {
+                    "do": "/b/: big, boxes, berries",
+                    "why": "Губи стулені."
+                  }
+                ],
+                "answer": "/v/ — Vera, five, very, of; /f/ — found, fresh; /b/ — big, boxes, berries."
+              }
+            ],
+            "mistakes": [
+              "<i>five</i>, <i>love</i>, <i>have</i> з «у» в кінці (як «лаў»). Правильно: справжнє /v/ — зуби на нижній губі.",
+              "<i>of</i> вимовляють як <i>off</i>. Правильно: <i>of</i> /ɒv/, <i>off</i> /ɒf/.",
+              "Плутають /v/ і /w/: <i>wery</i> замість <i>very</i>. Для /v/ зуби торкаються губи, для /w/ губи округлені, як для «у»."
+            ],
+            "check": [
+              {
+                "q": "У якому слові є звук /v/?",
+                "options": [
+                  "phone",
+                  "off",
+                  "of"
+                ],
+                "correct": 2,
+                "a": "<i>of</i> /ɒv/ — з /v/. <i>off</i> /ɒf/ і <i>phone</i> /fəʊn/ — з /f/."
+              },
+              {
+                "q": "Пастка: у якому слові <b>немає</b> звука /f/?",
+                "options": [
+                  "enough",
+                  "through",
+                  "photo"
+                ],
+                "correct": 1,
+                "a": "У <i>through</i> /θruː/ букви <i>gh</i> не читаються. А <i>enough</i> /ɪˈnʌf/ і <i>photo</i> /ˈfəʊtəʊ/ мають /f/."
+              },
+              {
+                "q": "Your friend texts: <i>It's so hot in my room! Can you bring your …?</i> Something to cool the air. Яке слово потрібне?",
+                "options": [
+                  "van",
+                  "ban",
+                  "fan"
+                ],
+                "correct": 2,
+                "a": "<i>fan</i> /fæn/ — вентилятор. <i>van</i> /væn/ — фургон, <i>ban</i> /bæn/ — заборона. Один звук змінює все слово!"
+              }
+            ]
+          }
         }
       ]
     }
