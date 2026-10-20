@@ -44,11 +44,39 @@
                 "steps": [
                   {
                     "do": "I was reading a book …",
-                    "why": "Читання тривало якийсь час — це довга дія, «фон». Тому Past continuous."
+                    "why": "Читання тривало якийсь час — це довга дія, «фон». Тому Past continuous.",
+                    "q": "Яка форма <i>read</i>? Читання тривало — це «фон».",
+                    "options": [
+                      "<i>I was read a book …</i>",
+                      "<i>I was reading a book …</i>",
+                      "<i>I were reading a book …</i>",
+                      "<i>I am reading a book …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Past continuous = <i>was</i> + дієслово з <i>-ing</i>: <i>was reading</i>.",
+                      null,
+                      "З <i>I</i> вживаємо <i>was</i>, не <i>were</i>.",
+                      "Історія в минулому: <i>was reading</i>, не <i>am</i>."
+                    ]
                   },
                   {
                     "do": "… when the lights went out.",
-                    "why": "Світло згасло раптово, в одну мить — коротка подія. Після <i>when</i> — Past simple (<i>go → went</i>)."
+                    "why": "Світло згасло раптово, в одну мить — коротка подія. Після <i>when</i> — Past simple (<i>go → went</i>).",
+                    "q": "Яка форма <i>go</i>? Світло згасло в одну мить.",
+                    "options": [
+                      "<i>… when the lights goed out.</i>",
+                      "<i>… when the lights gone out.</i>",
+                      "<i>… when the lights went out.</i>",
+                      "<i>… when the lights go out.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>go</i> — неправильне дієслово: <i>go → went</i>.",
+                      "<i>gone</i> — це V3; у Past simple — <i>went</i>.",
+                      null,
+                      "Розповідь про минуле: потрібно <i>went</i>, а не <i>go</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>was reading; went</i>"
@@ -58,11 +86,39 @@
                 "steps": [
                   {
                     "do": "While we were waiting for the bus, …",
-                    "why": "Після <i>while</i> — довга дія. <i>We</i> — значить <i>were</i>, а не <i>was</i>."
+                    "why": "Після <i>while</i> — довга дія. <i>We</i> — значить <i>were</i>, а не <i>was</i>.",
+                    "q": "Яка форма <i>wait</i> після <i>while</i>?",
+                    "options": [
+                      "<i>While we was waiting …</i>",
+                      "<i>While we were wait …</i>",
+                      "<i>While we are waiting …</i>",
+                      "<i>While we were waiting …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "З <i>we</i> — <i>were</i>, не <i>was</i>.",
+                      "Після <i>were</i> — дієслово з <i>-ing</i>: <i>waiting</i>.",
+                      "Це минуле: <i>were waiting</i>, не <i>are</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "… we saw a huge rainbow.",
-                    "why": "Побачили веселку — подія на тлі очікування. <i>see → saw</i> (неправильне дієслово)."
+                    "why": "Побачили веселку — подія на тлі очікування. <i>see → saw</i> (неправильне дієслово).",
+                    "q": "Яка форма <i>see</i>?",
+                    "options": [
+                      "<i>… we saw a huge rainbow.</i>",
+                      "<i>… we seed a huge rainbow.</i>",
+                      "<i>… we seen a huge rainbow.</i>",
+                      "<i>… we were seeing a huge rainbow.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>see</i> — неправильне дієслово: <i>see → saw</i>.",
+                      "<i>seen</i> — V3, без <i>have</i> не вживається; Past simple — <i>saw</i>.",
+                      "Побачили — коротка подія на тлі очікування: Past simple <i>saw</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>were waiting; saw</i>"
@@ -72,11 +128,39 @@
                 "steps": [
                   {
                     "do": "At seven o'clock yesterday evening I was playing football with my friends.",
-                    "why": "Що відбувалося в конкретний момент — Past continuous."
+                    "why": "Що відбувалося в конкретний момент — Past continuous.",
+                    "q": "Що ти робив о сьомій? Яке речення правильне?",
+                    "options": [
+                      "<i>At seven I were playing football.</i>",
+                      "<i>At seven I was play football.</i>",
+                      "<i>At seven I was playing football.</i>",
+                      "<i>At seven I am playing football.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "З <i>I</i> — <i>was</i>, не <i>were</i>.",
+                      "Past continuous: <i>was</i> + <i>-ing</i>: <i>was playing</i>.",
+                      null,
+                      "Питають про вчора — минуле: <i>was playing</i>."
+                    ]
                   },
                   {
                     "do": "When I got home, my mum was making dinner.",
-                    "why": "Прийшов додому — коротка подія (Past simple), мама в цей час готувала — тривала дія (Past continuous)."
+                    "why": "Прийшов додому — коротка подія (Past simple), мама в цей час готувала — тривала дія (Past continuous).",
+                    "q": "Що сталося потім? Яке речення правильне?",
+                    "options": [
+                      "<i>When I get home, my mum was making dinner.</i>",
+                      "<i>When I got home, my mum was making dinner.</i>",
+                      "<i>When I got home, my mum was make dinner.</i>",
+                      "<i>When I got home, my mum were making dinner.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Прийшов додому вчора — Past simple <i>got</i>.",
+                      null,
+                      "Після <i>was</i> — <i>-ing</i>: <i>was making</i>.",
+                      "<i>my mum</i> — одна особа: <i>was</i>, не <i>were</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>At seven o'clock yesterday evening I was playing football with my friends. When I got home, my mum was making dinner.</i>"
@@ -153,11 +237,39 @@
                 "steps": [
                   {
                     "do": "I used to have …",
-                    "why": "Хом'як був колись, а тепер його немає — це стан у минулому."
+                    "why": "Хом'як був колись, а тепер його немає — це стан у минулому.",
+                    "q": "Як сказати про стан, що був колись, а тепер його немає?",
+                    "options": [
+                      "<i>I am used to have …</i>",
+                      "<i>I used to have …</i>",
+                      "<i>I usually have …</i>",
+                      "<i>I use to have …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>be used to</i> — «звик до»; тут просто <i>used to</i> + дієслово.",
+                      null,
+                      "<i>usually</i> — про теперішнє; хом'як був колись: <i>used to have</i>.",
+                      "У стверджувальному реченні — <i>used to</i> з <i>-d</i>."
+                    ]
                   },
                   {
                     "do": "I used to have a hamster when I was six.",
-                    "why": "Після <i>used to</i> — дієслово в початковій формі (<i>have</i>, а не <i>had</i>)."
+                    "why": "Після <i>used to</i> — дієслово в початковій формі (<i>have</i>, а не <i>had</i>).",
+                    "q": "Яке дієслово після <i>used to</i>?",
+                    "options": [
+                      "<i>… used to has a hamster …</i>",
+                      "<i>… used to have a hamster …</i>",
+                      "<i>… used to had a hamster …</i>",
+                      "<i>… used to having a hamster …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>has</i> — для he/she у теперішньому; після <i>used to</i> — <i>have</i>.",
+                      null,
+                      "Після <i>used to</i> — початкова форма: <i>have</i>, не <i>had</i>.",
+                      "Після <i>used to</i> — початкова форма без <i>-ing</i>: <i>have</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>I used to have a hamster when I was six.</i>"
@@ -167,11 +279,39 @@
                 "steps": [
                   {
                     "do": "My brother didn't use to like vegetables.",
-                    "why": "Заперечення через <i>didn't</i>. <i>Did</i> уже показує минуле, тому <i>use</i> — без <i>-d</i>."
+                    "why": "Заперечення через <i>didn't</i>. <i>Did</i> уже показує минуле, тому <i>use</i> — без <i>-d</i>.",
+                    "q": "Як утворити заперечення?",
+                    "options": [
+                      "<i>My brother didn't use to like …</i>",
+                      "<i>My brother not used to like …</i>",
+                      "<i>My brother doesn't use to like …</i>",
+                      "<i>My brother didn't use to liked …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Заперечення — через <i>didn't</i>: <i>didn't use to</i>.",
+                      "Мова про минуле: <i>didn't</i>, не <i>doesn't</i>.",
+                      "Після <i>use to</i> — початкова форма: <i>like</i>."
+                    ]
                   },
                   {
                     "do": "Did your brother use to like vegetables?",
-                    "why": "Питання: <i>Did</i> на початку, потім хто, потім <i>use to</i> + дієслово."
+                    "why": "Питання: <i>Did</i> на початку, потім хто, потім <i>use to</i> + дієслово.",
+                    "q": "Як побудувати питання?",
+                    "options": [
+                      "<i>Does your brother use to like …?</i>",
+                      "<i>Did your brother use to like …?</i>",
+                      "<i>Did use your brother to like …?</i>",
+                      "<i>Your brother did use to like …?</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Мова про минуле: <i>Did</i>, не <i>Does</i>.",
+                      null,
+                      "Порядок: <i>Did</i> + хто + <i>use to</i> + дієслово.",
+                      "У питанні <i>Did</i> стоїть на початку, перед підметом."
+                    ]
                   }
                 ],
                 "answer": "<i>My brother didn't use to like vegetables. Did your brother use to like vegetables?</i>"
@@ -181,11 +321,39 @@
                 "steps": [
                   {
                     "do": "I used to watch cartoons every morning before school.",
-                    "why": "Звичка в минулому — дія повторювалася."
+                    "why": "Звичка в минулому — дія повторювалася.",
+                    "q": "Звичка в минулому. Яке речення правильне?",
+                    "options": [
+                      "<i>I was used to watch cartoons every morning.</i>",
+                      "<i>I use to watch cartoons every morning.</i>",
+                      "<i>I used to watch cartoons every morning.</i>",
+                      "<i>I used to watching cartoons every morning.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>was used to</i> тут зайве; звичка в минулому — <i>used to watch</i>.",
+                      "У стверджувальному реченні — <i>used to</i> з <i>-d</i>.",
+                      null,
+                      "Після <i>used to</i> — <i>watch</i> без <i>-ing</i>."
+                    ]
                   },
                   {
                     "do": "I used to be afraid of the dark, but now I'm not.",
-                    "why": "Стан у минулому; <i>but now</i> показує, що тепер інакше."
+                    "why": "Стан у минулому; <i>but now</i> показує, що тепер інакше.",
+                    "q": "Як сказати, що тепер інакше?",
+                    "options": [
+                      "<i>I use to be afraid of the dark …</i>",
+                      "<i>I used to be afraid from the dark …</i>",
+                      "<i>I used to be afraid of the dark …</i>",
+                      "<i>I used to was afraid of the dark …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "У стверджувальному реченні — <i>used to</i> з <i>-d</i>.",
+                      "Боятися чогось — <i>afraid of</i>, не <i>from</i>.",
+                      null,
+                      "Після <i>used to</i> — <i>be</i>, не <i>was</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>I used to watch cartoons every morning before school. I used to be afraid of the dark, but now I'm not.</i>"
@@ -265,11 +433,39 @@
                 "steps": [
                   {
                     "do": "If I had a million hryvnias, …",
-                    "why": "Мільйона в мене немає — ситуація уявна. Після <i>if</i> — Past simple."
+                    "why": "Мільйона в мене немає — ситуація уявна. Після <i>if</i> — Past simple.",
+                    "q": "Мільйона немає — уявна ситуація. Що після <i>if</i>?",
+                    "options": [
+                      "<i>If I has a million hryvnias, …</i>",
+                      "<i>If I will have a million hryvnias, …</i>",
+                      "<i>If I would have a million hryvnias, …</i>",
+                      "<i>If I had a million hryvnias, …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "З <i>I</i> не буває <i>has</i>; уява — Past simple <i>had</i>.",
+                      "Після <i>if</i> не ставимо <i>will</i>: <i>If I had</i>.",
+                      "<i>would</i> не ставимо в <i>if</i>-частину: <i>If I had</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "… I would buy a house for my family.",
-                    "why": "Наслідок — <i>would + V</i>. Українське «б» стоїть саме тут, а не в <i>if</i>-частині."
+                    "why": "Наслідок — <i>would + V</i>. Українське «б» стоїть саме тут, а не в <i>if</i>-частині.",
+                    "q": "Який наслідок?",
+                    "options": [
+                      "<i>… I will buy a house …</i>",
+                      "<i>… I would buy a house …</i>",
+                      "<i>… I would bought a house …</i>",
+                      "<i>… I would to buy a house …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Уявна ситуація: наслідок — <i>would</i> + дієслово, не <i>will</i>.",
+                      null,
+                      "Після <i>would</i> — початкова форма: <i>buy</i>.",
+                      "Після <i>would</i> — без <i>to</i>: <i>would buy</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>had; would buy</i>"
@@ -279,11 +475,39 @@
                 "steps": [
                   {
                     "do": "a) If it is sunny tomorrow, we'll go to the beach.",
-                    "why": "Завтра справді може бути сонячно — реальна можливість. Це First conditional: Present simple + <i>will</i>."
+                    "why": "Завтра справді може бути сонячно — реальна можливість. Це First conditional: Present simple + <i>will</i>.",
+                    "q": "a) Завтра справді може бути сонячно. Яка форма?",
+                    "options": [
+                      "<i>If it were sunny tomorrow, …</i>",
+                      "<i>If it will be sunny tomorrow, …</i>",
+                      "<i>If it is sunny tomorrow, …</i>",
+                      "<i>If it are sunny tomorrow, …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Друга частина — <i>we'll go</i>: умова реальна, First conditional — <i>is</i>.",
+                      "Після <i>if</i> не ставимо <i>will</i> — Present simple <i>is</i>.",
+                      null,
+                      "З <i>it</i> — <i>is</i>, не <i>are</i>."
+                    ]
                   },
                   {
                     "do": "b) If I were a dolphin, I'd swim all day.",
-                    "why": "Стати дельфіном неможливо — уява. Second conditional: <i>were</i> + <i>would</i>."
+                    "why": "Стати дельфіном неможливо — уява. Second conditional: <i>were</i> + <i>would</i>.",
+                    "q": "b) Стати дельфіном неможливо. Яка форма?",
+                    "options": [
+                      "<i>If I were a dolphin, I'd swim all day.</i>",
+                      "<i>If I am a dolphin, I'd swim all day.</i>",
+                      "<i>If I would be a dolphin, I'd swim all day.</i>",
+                      "<i>If I will be a dolphin, I'd swim all day.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це уява (Second conditional): <i>If I were</i>.",
+                      "<i>would</i> — лише в частині-наслідку, не після <i>if</i>.",
+                      "Після <i>if</i> не ставимо <i>will</i>: <i>If I were</i>."
+                    ]
                   }
                 ],
                 "answer": "a) <i>is</i>; b) <i>were</i>"
@@ -293,11 +517,39 @@
                 "steps": [
                   {
                     "do": "If I could fly, …",
-                    "why": "<i>could</i> — це минула форма <i>can</i>, тож вона теж підходить для уявної ситуації."
+                    "why": "<i>could</i> — це минула форма <i>can</i>, тож вона теж підходить для уявної ситуації.",
+                    "q": "Як почати уявну ситуацію «якби я міг…»?",
+                    "options": [
+                      "<i>If I would fly, …</i>",
+                      "<i>If I could flew, …</i>",
+                      "<i>If I can fly, …</i>",
+                      "<i>If I could fly, …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>would</i> не ставимо після <i>if</i>: <i>If I could fly</i>.",
+                      "Після <i>could</i> — початкова форма: <i>fly</i>.",
+                      "Літати ти не можеш — це уява: минула форма <i>could</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "… I would visit my grandparents in Odesa every weekend.",
-                    "why": "Наслідок — <i>would + V</i>."
+                    "why": "Наслідок — <i>would + V</i>.",
+                    "q": "Який наслідок?",
+                    "options": [
+                      "<i>… I would visited my grandparents …</i>",
+                      "<i>… I will visit my grandparents …</i>",
+                      "<i>… I would to visit my grandparents …</i>",
+                      "<i>… I would visit my grandparents …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>would</i> — початкова форма: <i>visit</i>.",
+                      "Уявна ситуація — <i>would</i>, не <i>will</i>.",
+                      "Після <i>would</i> — без <i>to</i>: <i>would visit</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>If I could fly, I would visit my grandparents in Odesa every weekend.</i>"
@@ -375,11 +627,39 @@
                 "steps": [
                   {
                     "do": "don't have → had",
-                    "why": "Реальність заперечна, тож бажання — стверджувальне, і дієслово переходить у Past simple."
+                    "why": "Реальність заперечна, тож бажання — стверджувальне, і дієслово переходить у Past simple.",
+                    "q": "Як зміниться дієслово після <i>I wish</i>?",
+                    "options": [
+                      "<i>don't have → would have</i>",
+                      "<i>don't have → have</i>",
+                      "<i>don't have → didn't have</i>",
+                      "<i>don't have → had</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Про свій стан зараз — Past simple <i>had</i>, не <i>would have</i>.",
+                      "Після <i>I wish</i> про теперішнє — Past simple: <i>had</i>.",
+                      "Реальність заперечна — бажання стверджувальне: <i>had</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "I wish I had a phone with a good camera.",
-                    "why": "Шкода, що такого телефона немає зараз."
+                    "why": "Шкода, що такого телефона немає зараз.",
+                    "q": "Яке бажання правильне?",
+                    "options": [
+                      "<i>I wish I has a phone …</i>",
+                      "<i>I wish I didn't have a phone …</i>",
+                      "<i>I wish I have a phone …</i>",
+                      "<i>I wish I had a phone …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>has</i> — теперішній час, і не з <i>I</i>; потрібно <i>had</i>.",
+                      "Телефона немає, а ти його хочеш — стверджувальне: <i>had</i>.",
+                      "Після <i>I wish</i> про теперішнє — Past simple: <i>had</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>I wish I had a phone with a good camera.</i>"
@@ -389,11 +669,39 @@
                 "steps": [
                   {
                     "do": "a) I wish I could play the guitar.",
-                    "why": "<i>can't</i> → <i>could</i>."
+                    "why": "<i>can't</i> → <i>could</i>.",
+                    "q": "a) <i>I can't play the guitar.</i> Яке бажання?",
+                    "options": [
+                      "<i>I wish I can play the guitar.</i>",
+                      "<i>I wish I could play the guitar.</i>",
+                      "<i>I wish I could played the guitar.</i>",
+                      "<i>I wish I couldn't play the guitar.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>I wish</i>: <i>can</i> → <i>could</i>.",
+                      null,
+                      "Після <i>could</i> — початкова форма: <i>play</i>.",
+                      "Реальність заперечна — бажання стверджувальне: <i>could</i>."
+                    ]
                   },
                   {
                     "do": "b) I wish I didn't have to get up at 6.30.",
-                    "why": "Реальність стверджувальна (<i>have to</i>) — бажання заперечне: <i>didn't have to</i>."
+                    "why": "Реальність стверджувальна (<i>have to</i>) — бажання заперечне: <i>didn't have to</i>.",
+                    "q": "b) <i>I have to get up at 6.30.</i> Яке бажання?",
+                    "options": [
+                      "<i>I wish I had to get up …</i>",
+                      "<i>I wish I don't have to get up …</i>",
+                      "<i>I wish I didn't have to get up …</i>",
+                      "<i>I wish I hadn't to get up …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Реальність стверджувальна — бажання заперечне: <i>didn't have to</i>.",
+                      "Після <i>I wish</i> — Past simple: <i>didn't</i>, не <i>don't</i>.",
+                      null,
+                      "<i>have to</i> заперечуємо через <i>didn't</i>: <i>didn't have to</i>."
+                    ]
                   }
                 ],
                 "answer": "a) <i>I wish I could play the guitar.</i> b) <i>I wish I didn't have to get up at 6.30.</i>"
@@ -403,15 +711,57 @@
                 "steps": [
                   {
                     "do": "I wish I lived near the sea.",
-                    "why": "Живу далеко від моря — <i>live</i> → <i>lived</i>."
+                    "why": "Живу далеко від моря — <i>live</i> → <i>lived</i>.",
+                    "q": "Живу далеко від моря. Яке бажання?",
+                    "options": [
+                      "<i>I wish I live near the sea.</i>",
+                      "<i>I wish I didn't live near the sea.</i>",
+                      "<i>I wish I would live near the sea.</i>",
+                      "<i>I wish I lived near the sea.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>I wish</i> про теперішнє — Past simple: <i>lived</i>.",
+                      "Хочеш жити біля моря — стверджувальне: <i>lived</i>.",
+                      "Про свій стан зараз — <i>lived</i>, не <i>would live</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "I wish I were a bit older.",
-                    "why": "<i>am</i> → <i>were</i>."
+                    "why": "<i>am</i> → <i>were</i>.",
+                    "q": "<i>I am</i> → ? Яке бажання?",
+                    "options": [
+                      "<i>I wish I weren't a bit older.</i>",
+                      "<i>I wish I were a bit older.</i>",
+                      "<i>I wish I will be a bit older.</i>",
+                      "<i>I wish I am a bit older.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Хочеш бути старшим — бажання стверджувальне: <i>were</i>.",
+                      null,
+                      "Після <i>I wish</i> про теперішнє не ставимо <i>will</i>.",
+                      "Після <i>I wish</i>: <i>am</i> → <i>were</i>."
+                    ]
                   },
                   {
                     "do": "I wish we had more PE lessons at school.",
-                    "why": "Уроків фізкультури мало — <i>have</i> → <i>had</i>."
+                    "why": "Уроків фізкультури мало — <i>have</i> → <i>had</i>.",
+                    "q": "Уроків фізкультури мало. Яке бажання?",
+                    "options": [
+                      "<i>I wish we had more PE lessons.</i>",
+                      "<i>I wish we has more PE lessons.</i>",
+                      "<i>I wish we have more PE lessons.</i>",
+                      "<i>I wish we had more PE lesson.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>has</i> — теперішній час і не з <i>we</i>: <i>had</i>.",
+                      "Після <i>I wish</i> про теперішнє — Past simple: <i>had</i>.",
+                      "Уроків кілька — множина: <i>lessons</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>I wish I lived near the sea. I wish I were a bit older. I wish we had more PE lessons at school.</i>"
@@ -497,11 +847,39 @@
                 "steps": [
                   {
                     "do": "jumped over the fence",
-                    "why": "Паркан перестрибнули зверху — <i>over</i>."
+                    "why": "Паркан перестрибнули зверху — <i>over</i>.",
+                    "q": "Паркан перестрибнули зверху. Який прийменник?",
+                    "options": [
+                      "<i>jumped over the fence</i>",
+                      "<i>jumped over of the fence</i>",
+                      "<i>jumped through the fence</i>",
+                      "<i>jumped under the fence</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>over</i> не ставимо <i>of</i>.",
+                      "<i>through</i> — крізь (тунель, отвір); зверху — <i>over</i>.",
+                      "<i>under</i> — під чимось; перестрибнути зверху — <i>over</i>."
+                    ]
                   },
                   {
                     "do": "ran across the garden",
-                    "why": "Пробіг садом з одного боку на інший — <i>across</i>."
+                    "why": "Пробіг садом з одного боку на інший — <i>across</i>.",
+                    "q": "Пробіг садом з одного боку на інший. Який прийменник?",
+                    "options": [
+                      "<i>ran on the garden</i>",
+                      "<i>ran cross the garden</i>",
+                      "<i>ran across of the garden</i>",
+                      "<i>ran across the garden</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>on</i> не показує руху з боку на бік; тут — <i>across</i>.",
+                      "Прийменник — <i>across</i>; <i>cross</i> — це дієслово «перетинати».",
+                      "Після <i>across</i> не ставимо <i>of</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>over; across</i>"
@@ -511,15 +889,57 @@
                 "steps": [
                   {
                     "do": "walked along the river",
-                    "why": "Ішли вздовж річки — <i>along</i>."
+                    "why": "Ішли вздовж річки — <i>along</i>.",
+                    "q": "Ішли вздовж річки. Який прийменник?",
+                    "options": [
+                      "<i>walked out of the river</i>",
+                      "<i>walked along the river</i>",
+                      "<i>walked along of the river</i>",
+                      "<i>walked through the river</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>out of</i> — назовні з чогось; вздовж — <i>along</i>.",
+                      null,
+                      "Після <i>along</i> не ставимо <i>of</i>.",
+                      "<i>through</i> — крізь щось; вздовж річки — <i>along</i>."
+                    ]
                   },
                   {
                     "do": "went through a dark tunnel",
-                    "why": "Тунель має стіни й стелю — проходимо крізь нього: <i>through</i>."
+                    "why": "Тунель має стіни й стелю — проходимо крізь нього: <i>through</i>.",
+                    "q": "Тунель має стіни й стелю. Який прийменник?",
+                    "options": [
+                      "<i>went over a dark tunnel</i>",
+                      "<i>went across a dark tunnel</i>",
+                      "<i>went through a dark tunnel</i>",
+                      "<i>went out of a dark tunnel</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>over</i> — зверху над тунелем; крізь нього — <i>through</i>.",
+                      "<i>across</i> — по відкритій поверхні; крізь тунель — <i>through</i>.",
+                      null,
+                      "Ми ще тільки заходимо в тунель; виходимо — у наступній дії."
+                    ]
                   },
                   {
                     "do": "came out of it",
-                    "why": "Вийшли назовні — <i>out of</i>."
+                    "why": "Вийшли назовні — <i>out of</i>.",
+                    "q": "Вийшли з тунелю назовні. Який прийменник?",
+                    "options": [
+                      "<i>came into it</i>",
+                      "<i>came out it</i>",
+                      "<i>came out of it</i>",
+                      "<i>came across it</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>into</i> — всередину; вийти назовні — <i>out of</i>.",
+                      "Вийти з чогось — <i>out of</i>, з <i>of</i>.",
+                      null,
+                      "<i>come across</i> — випадково натрапити; вийти назовні — <i>out of</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>along; through; out of</i>"
@@ -529,11 +949,39 @@
                 "steps": [
                   {
                     "do": "I come out of my building and walk past a small supermarket.",
-                    "why": "<i>out of</i> — назовні, <i>past</i> — повз."
+                    "why": "<i>out of</i> — назовні, <i>past</i> — повз.",
+                    "q": "Вийти з будинку й пройти повз супермаркет. Які прийменники?",
+                    "options": [
+                      "<i>into</i> … <i>past</i>",
+                      "<i>out of</i> … <i>past</i>",
+                      "<i>out of</i> … <i>across</i>",
+                      "<i>out of</i> … <i>through</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Виходимо назовні — <i>out of</i>; <i>into</i> — всередину.",
+                      null,
+                      "<i>across</i> — через площу чи вулицю; повз магазин — <i>past</i>.",
+                      "Повз магазин, не заходячи, — <i>past</i>; <i>through</i> — крізь."
+                    ]
                   },
                   {
                     "do": "Then I go across the park and up the hill to my school.",
-                    "why": "<i>across</i> — через парк, <i>up</i> — угору."
+                    "why": "<i>across</i> — через парк, <i>up</i> — угору.",
+                    "q": "Через парк і вгору на пагорб. Які прийменники?",
+                    "options": [
+                      "<i>across</i> … <i>up</i>",
+                      "<i>across</i> … <i>down</i>",
+                      "<i>out of</i> … <i>up</i>",
+                      "<i>across</i> … <i>on</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Угору — <i>up</i>; <i>down</i> — униз.",
+                      "<i>out of</i> — назовні з чогось; через парк — <i>across</i>.",
+                      "Рух угору схилом — <i>up</i>: <i>up the hill</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>I come out of my building and walk past a small supermarket. Then I go across the park and up the hill to my school.</i>"
@@ -611,11 +1059,39 @@
                 "steps": [
                   {
                     "do": "a) Who invented the telephone?",
-                    "why": "Телефона раніше не було — його створили. Це <i>invent</i>."
+                    "why": "Телефона раніше не було — його створили. Це <i>invent</i>.",
+                    "q": "a) Телефона раніше не було. Яке речення правильне?",
+                    "options": [
+                      "<i>Who invents the telephone?</i>",
+                      "<i>Who invented the telephone?</i>",
+                      "<i>Who did invented the telephone?</i>",
+                      "<i>Who discovered the telephone?</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Це сталося в минулому — <i>invented</i>.",
+                      null,
+                      "Питання до підмета — без <i>did</i>: <i>Who invented…?</i>",
+                      "Телефон створили вперше — <i>invent</i>; <i>discover</i> — знайти наявне."
+                    ]
                   },
                   {
                     "do": "b) Scientists have discovered a new kind of frog.",
-                    "why": "Жаба вже жила в лісі, її лише знайшли. Це <i>discover</i>."
+                    "why": "Жаба вже жила в лісі, її лише знайшли. Це <i>discover</i>.",
+                    "q": "b) Жаба вже жила в лісі. Яке речення правильне?",
+                    "options": [
+                      "<i>Scientists have discover a new kind of frog.</i>",
+                      "<i>Scientists have invented a new kind of frog.</i>",
+                      "<i>Scientists has discovered a new kind of frog.</i>",
+                      "<i>Scientists have discovered a new kind of frog.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>have</i> — V3: <i>discovered</i>.",
+                      "Жабу не створили, а знайшли: <i>discover</i>.",
+                      "<i>Scientists</i> — множина: <i>have</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "a) <i>invented</i>; b) <i>discovered</i>"
@@ -625,11 +1101,39 @@
                 "steps": [
                   {
                     "do": "a) Our class did an experiment.",
-                    "why": "Стала пара слів: <i>do an experiment</i> (або <i>carry out</i>)."
+                    "why": "Стала пара слів: <i>do an experiment</i> (або <i>carry out</i>).",
+                    "q": "a) <i>made</i> чи <i>did</i>?",
+                    "options": [
+                      "<i>Our class did an experiment.</i>",
+                      "<i>Our class does an experiment.</i>",
+                      "<i>Our class did a experiment.</i>",
+                      "<i>Our class made an experiment.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "У завданні вибір <i>made / did</i> — минуле: <i>did</i>.",
+                      "Перед голосним звуком — <i>an</i>: <i>an experiment</i>.",
+                      "Стала пара слів: <i>do an experiment</i>, не <i>make</i>."
+                    ]
                   },
                   {
                     "do": "b) She wants to do research.",
-                    "why": "<i>do research</i> — і без <i>a</i>: <i>research</i> незлічуване."
+                    "why": "<i>do research</i> — і без <i>a</i>: <i>research</i> незлічуване.",
+                    "q": "b) <i>do</i> чи <i>make</i>?",
+                    "options": [
+                      "<i>She wants to do a research.</i>",
+                      "<i>She wants to make research.</i>",
+                      "<i>She wants to does research.</i>",
+                      "<i>She wants to do research.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>research</i> незлічуване — без <i>a</i>.",
+                      "Стала пара слів: <i>do research</i>.",
+                      "Після <i>to</i> — початкова форма: <i>do</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "a) <i>did</i>; b) <i>do</i>"
@@ -639,11 +1143,39 @@
                 "steps": [
                   {
                     "do": "I like chemistry best …",
-                    "why": "Назва науки — без артикля і з великої лише на початку речення."
+                    "why": "Назва науки — без артикля і з великої лише на початку речення.",
+                    "q": "Чи потрібен артикль перед назвою науки?",
+                    "options": [
+                      "<i>I like chemistry best …</i>",
+                      "<i>I like a chemistry best …</i>",
+                      "<i>I likes chemistry best …</i>",
+                      "<i>I like the chemistry best …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Назва науки — без артикля <i>a</i>.",
+                      "З <i>I</i> — <i>like</i> без <i>-s</i>.",
+                      "Назва науки як шкільного предмета — без артикля."
+                    ]
                   },
                   {
                     "do": "… because we do experiments in the lab, and sometimes the results are really surprising.",
-                    "why": "Використовуємо слова уроку: <i>do experiments, lab, results</i>."
+                    "why": "Використовуємо слова уроку: <i>do experiments, lab, results</i>.",
+                    "q": "Як сказати про досліди в лабораторії?",
+                    "options": [
+                      "<i>… we do experiments on the lab …</i>",
+                      "<i>… we make experiments in the lab …</i>",
+                      "<i>… we do experiment in the lab …</i>",
+                      "<i>… we do experiments in the lab …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "У лабораторії — <i>in the lab</i>.",
+                      "Стала пара слів: <i>do experiments</i>.",
+                      "Дослідів багато — множина: <i>experiments</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>I like chemistry best because we do experiments in the lab, and sometimes the results are really surprising.</i>"
@@ -726,15 +1258,57 @@
                 "steps": [
                   {
                     "do": "It used to wake everyone up at six!",
-                    "why": "Звичка в минулому — <i>used to</i>."
+                    "why": "Звичка в минулому — <i>used to</i>.",
+                    "q": "Яке речення — про звичку в минулому?",
+                    "options": [
+                      "<i>Because it's quiet …</i>",
+                      "<i>If I could have any pet, I'd get a tortoise.</i>",
+                      "<i>Hmm, let me think…</i>",
+                      "<i>It used to wake everyone up at six!</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Це Present simple — факт про черепаху, а не минула звичка.",
+                      "Це уявна ситуація (Second conditional), не звичка.",
+                      "Це фраза, щоб виграти час і подумати.",
+                      null
+                    ]
                   },
                   {
                     "do": "If I could have any pet, I'd get a tortoise.",
-                    "why": "Уявна ситуація — Second conditional: <i>if + could</i>, <i>'d + V</i>."
+                    "why": "Уявна ситуація — Second conditional: <i>if + could</i>, <i>'d + V</i>.",
+                    "q": "Яке речення — про уявну ситуацію?",
+                    "options": [
+                      "<i>Because it's quiet …</i>",
+                      "<i>If I could have any pet, I'd get a tortoise.</i>",
+                      "<i>We used to have a parrot.</i>",
+                      "<i>It used to wake everyone up at six!</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Це факт про черепаху (Present simple), не уява.",
+                      null,
+                      "<i>used to</i> — про те, що було насправді, не уява.",
+                      "Це минула звичка (<i>used to</i>), а не уява."
+                    ]
                   },
                   {
                     "do": "Hmm, let me think…",
-                    "why": "Так виграють час, щоб подумати, — природно й ввічливо."
+                    "why": "Так виграють час, щоб подумати, — природно й ввічливо.",
+                    "q": "Яка фраза допомагає виграти час, щоб подумати?",
+                    "options": [
+                      "<i>Hmm, let me think…</i>",
+                      "<i>A tortoise? Why?</i>",
+                      "<i>What about you?</i>",
+                      "<i>Yes, I did.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Так перепитують і просять пояснити.",
+                      "Так повертають питання співрозмовнику.",
+                      "Це коротка відповідь на питання, а не пауза на роздуми."
+                    ]
                   }
                 ],
                 "answer": "<i>It used to wake everyone up at six!</i> — минула звичка; <i>If I could have any pet, I'd get a tortoise.</i> — уявна ситуація."
@@ -744,11 +1318,39 @@
                 "steps": [
                   {
                     "do": "Hmm, good question! I think I'd take it to the police.",
-                    "why": "Фраза, щоб подумати, і відповідь з <i>I'd</i>."
+                    "why": "Фраза, щоб подумати, і відповідь з <i>I'd</i>.",
+                    "q": "Що б ти зробив? Яке речення правильне?",
+                    "options": [
+                      "<i>I think I'd takes it to the police.</i>",
+                      "<i>I think I'd take it to the police.</i>",
+                      "<i>I think I'd taking it to the police.</i>",
+                      "<i>I think I'd took it to the police.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>would</i> — <i>take</i> без <i>-s</i>.",
+                      null,
+                      "Після <i>would</i> — без <i>-ing</i>: <i>take</i>.",
+                      "Після <i>'d</i> (<i>would</i>) — початкова форма: <i>take</i>."
+                    ]
                   },
                   {
                     "do": "If I lost my money, I'd want someone to do the same for me.",
-                    "why": "Причина — теж уявна ситуація: <i>if</i> + Past simple, <i>'d</i> + V."
+                    "why": "Причина — теж уявна ситуація: <i>if</i> + Past simple, <i>'d</i> + V.",
+                    "q": "Причина — теж уявна ситуація. Яке речення правильне?",
+                    "options": [
+                      "<i>If I lost my money, I'd want …</i>",
+                      "<i>If I lost my money, I'll want …</i>",
+                      "<i>If I would lose my money, I'd want …</i>",
+                      "<i>If I lose my money, I'd want …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Уявна ситуація: <i>I'd</i> (<i>would</i>), не <i>I'll</i>.",
+                      "Після <i>if</i> не ставимо <i>would</i>: <i>If I lost</i>.",
+                      "Уявна ситуація: після <i>if</i> — Past simple <i>lost</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>Hmm, good question! I think I'd take it to the police. If I lost my money, I'd want someone to do the same for me.</i>"
@@ -824,15 +1426,57 @@
                 "steps": [
                   {
                     "do": "B",
-                    "why": "Привітання й тема — на початку."
+                    "why": "Привітання й тема — на початку.",
+                    "q": "Яка частина — на початку блогу?",
+                    "options": [
+                      "A — <i>What about you?…</i>",
+                      "C — <i>The best part is…</i>",
+                      "Будь-яка — порядок не важливий",
+                      "B — <i>Hi everyone! Today I want…</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Питання до читачів — наприкінці.",
+                      "Подробиці й думки — в основній частині, не на початку.",
+                      "Блог має сталий порядок: спершу привітання й тема.",
+                      null
+                    ]
                   },
                   {
                     "do": "C",
-                    "why": "Подробиці й думки — в основній частині."
+                    "why": "Подробиці й думки — в основній частині.",
+                    "q": "Яка частина — в основній частині?",
+                    "options": [
+                      "B — <i>Hi everyone!…</i>",
+                      "A — <i>What about you?…</i>",
+                      "Жодна — одразу кінець",
+                      "C — <i>The best part is…</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "B — привітання, воно вже стоїть на початку.",
+                      "Питання до читачів — у самому кінці.",
+                      "Без основної частини блог порожній: подробиці C — посередині.",
+                      null
+                    ]
                   },
                   {
                     "do": "A",
-                    "why": "Питання до читачів — наприкінці."
+                    "why": "Питання до читачів — наприкінці.",
+                    "q": "Яка частина — наприкінці?",
+                    "options": [
+                      "C — <i>The best part is…</i>",
+                      "Жодна — кінець не потрібен",
+                      "A — <i>What about you?…</i>",
+                      "B — <i>Hi everyone!…</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "C — подробиці, вони вже в основній частині.",
+                      "Блог закінчують питанням до читачів — це A.",
+                      null,
+                      "Привітання — лише на початку."
+                    ]
                   }
                 ],
                 "answer": "B → C → A"
@@ -842,11 +1486,39 @@
                 "steps": [
                   {
                     "do": "a) I love science. However, I'm not very good at maths.",
-                    "why": "Друга думка протилежна першій — <i>However</i> (однак), після нього кома."
+                    "why": "Друга думка протилежна першій — <i>However</i> (однак), після нього кома.",
+                    "q": "a) Друга думка протилежна першій. Який лінкер?",
+                    "options": [
+                      "<i>What's more, I'm not very good at maths.</i>",
+                      "<i>However, I'm not very good at maths.</i>",
+                      "<i>However, I'm not very good in maths.</i>",
+                      "<i>Because I'm not very good at maths.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>What's more</i> додає думку того ж напряму; протиставлення — <i>However</i>.",
+                      null,
+                      "Бути добрим у чомусь — <i>good at</i>.",
+                      "<i>because</i> — причина; тут протиставлення."
+                    ]
                   },
                   {
                     "do": "b) Robots are useful because they never get tired.",
-                    "why": "Друге речення — причина. <i>because</i> (тому що)."
+                    "why": "Друге речення — причина. <i>because</i> (тому що).",
+                    "q": "b) Друге речення — причина. Який лінкер?",
+                    "options": [
+                      "<i>… useful because they never gets tired.</i>",
+                      "<i>… useful because never they get tired.</i>",
+                      "<i>… useful because they never get tired.</i>",
+                      "<i>… useful. However, they never get tired.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>they</i> — <i>get</i> без <i>-s</i>.",
+                      "<i>never</i> стоїть перед дієсловом: <i>they never get</i>.",
+                      null,
+                      "<i>However</i> — протиставлення; тут причина: <i>because</i>."
+                    ]
                   }
                 ],
                 "answer": "a) <i>I love science. However, I'm not very good at maths.</i> b) <i>Robots are useful because they never get tired.</i>"
@@ -856,15 +1528,57 @@
                 "steps": [
                   {
                     "do": "Title: <i>My dream invention</i>. Hi everyone! Today I want to tell you about an invention I'd love to have.",
-                    "why": "Заголовок, привітання, тема."
+                    "why": "Заголовок, привітання, тема.",
+                    "q": "Який початок блогу правильний?",
+                    "options": [
+                      "<i>Hi everyone! Today I want to tell you…</i>",
+                      "<i>So my dream invention is a small robot…</i>",
+                      "<i>What about you? Leave a comment below!</i>",
+                      "<i>Dear Sir or Madam, …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це основна частина — сама ідея.",
+                      "Це кінцівка — питання до читачів.",
+                      "Так починають офіційний лист; у блозі — дружнє <i>Hi everyone!</i>"
+                    ]
                   },
                   {
                     "do": "When I was little, I used to leave my toys everywhere, and I still leave my things all over my room! So my dream invention is a small robot that tidies up. If I had one, I'd never argue with my mum about my messy room again. What's more, it would help busy parents too.",
-                    "why": "Основна частина: досвід (<i>used to</i>), ідея, уявна ситуація (<i>If I had…, I'd…</i>), ще одна причина (<i>What's more</i>)."
+                    "why": "Основна частина: досвід (<i>used to</i>), ідея, уявна ситуація (<i>If I had…, I'd…</i>), ще одна причина (<i>What's more</i>).",
+                    "q": "Уявна ситуація в основній частині. Як правильно?",
+                    "options": [
+                      "<i>If I had one, I'd never argue …</i>",
+                      "<i>If I would have one, I'd never argue …</i>",
+                      "<i>If I had one, I'll never argue …</i>",
+                      "<i>If I have one, I'd never argue …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>if</i> не ставимо <i>would</i>: <i>If I had</i>.",
+                      "Уявна ситуація: <i>I'd</i> (<i>would</i>), не <i>I'll</i>.",
+                      "Уявна ситуація: після <i>if</i> — Past simple <i>had</i>."
+                    ]
                   },
                   {
                     "do": "What about you? What would you invent? Leave a comment below!",
-                    "why": "Кінець: питання до читачів."
+                    "why": "Кінець: питання до читачів.",
+                    "q": "Яка кінцівка блогу?",
+                    "options": [
+                      "<i>What about you? Leave a comment below!</i>",
+                      "<i>Hi everyone! Today I want to tell you…</i>",
+                      "<i>What's more, it would help busy parents too.</i>",
+                      "<i>Title: My dream invention</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Привітання — на початку.",
+                      "Це ще одна причина в основній частині.",
+                      "Заголовок — над текстом, на самому початку."
+                    ]
                   }
                 ],
                 "answer": "Блог має заголовок, привітання, основну частину з причинами й питання до читачів наприкінці."
@@ -945,11 +1659,39 @@
                 "steps": [
                   {
                     "do": "/juː/: music, few, computer",
-                    "why": "Чути «ю»: «мьюзик», «фью», «компьютер»."
+                    "why": "Чути «ю»: «мьюзик», «фью», «компьютер».",
+                    "q": "Які слова зі звуком /juː/ («ю»)?",
+                    "options": [
+                      "<i>music, few, computer</i>",
+                      "<i>blue, few, music</i>",
+                      "<i>music, school, blue</i>",
+                      "<i>few, food, computer</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після /l/ у <i>blue</i> «й» немає: «блу».",
+                      "У <i>school</i> і <i>blue</i> — просто «у» /uː/.",
+                      "<i>food</i> — «фуд», без «й»."
+                    ]
                   },
                   {
                     "do": "/uː/: school, blue, food",
-                    "why": "Просто «у»: «скул», «блу», «фуд». Після /l/ у <i>blue</i> «й» немає."
+                    "why": "Просто «у»: «скул», «блу», «фуд». Після /l/ у <i>blue</i> «й» немає.",
+                    "q": "Які слова з /uː/ (просто «у»)?",
+                    "options": [
+                      "<i>school, few, food</i>",
+                      "<i>school, blue, computer</i>",
+                      "<i>school, blue, food</i>",
+                      "<i>music, blue, food</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>few</i> — «фью», там є «й».",
+                      "<i>computer</i> — «компьютер», це /juː/.",
+                      null,
+                      "<i>music</i> — «мьюзик», це /juː/."
+                    ]
                   }
                 ],
                 "answer": "/juː/ — <i>music, few, computer</i>; /uː/ — <i>school, blue, food</i>"
@@ -959,15 +1701,57 @@
                 "steps": [
                   {
                     "do": "fool /fuːl/ – fuel /ˈfjuːəl/",
-                    "why": "У <i>fuel</i> після /f/ є «й»: «фьюел»."
+                    "why": "У <i>fuel</i> після /f/ є «й»: «фьюел».",
+                    "q": "У якому слові пари <i>fool – fuel</i> чути «й»?",
+                    "options": [
+                      "в обох словах",
+                      "в жодному",
+                      "<i>fuel</i>",
+                      "<i>fool</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>fool</i> — «фул», без «й»; «й» лише в <i>fuel</i>.",
+                      "У <i>fuel</i> після /f/ є «й»: «фьюел».",
+                      null,
+                      "<i>fool</i> — просто «фул» /fuːl/, без «й»."
+                    ]
                   },
                   {
                     "do": "do /duː/ – dew /djuː/",
-                    "why": "<i>do</i> — «ду», <i>dew</i> (роса) — «дью»."
+                    "why": "<i>do</i> — «ду», <i>dew</i> (роса) — «дью».",
+                    "q": "У якому слові пари <i>do – dew</i> чути «й»?",
+                    "options": [
+                      "<i>do</i>",
+                      "в жодному",
+                      "<i>dew</i>",
+                      "в обох словах"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>do</i> — просто «ду» /duː/, без «й».",
+                      "У <i>dew</i> (роса) є «й»: «дью» /djuː/.",
+                      null,
+                      "<i>do</i> — «ду», без «й»; «й» лише в <i>dew</i>."
+                    ]
                   },
                   {
                     "do": "moo /muː/ – mew /mjuː/",
-                    "why": "Корова каже <i>moo</i> («му»), кошеня — <i>mew</i> («мью»)."
+                    "why": "Корова каже <i>moo</i> («му»), кошеня — <i>mew</i> («мью»).",
+                    "q": "У якому слові пари <i>moo – mew</i> чути «й»?",
+                    "options": [
+                      "<i>moo</i>",
+                      "<i>mew</i>",
+                      "в обох словах",
+                      "в жодному"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>moo</i> — просто «му» /muː/, без «й».",
+                      null,
+                      "<i>moo</i> — «му», без «й»; «й» лише в <i>mew</i>.",
+                      "У <i>mew</i> є «й»: «мью» /mjuː/."
+                    ]
                   }
                 ],
                 "answer": "У другому слові кожної пари є «й»: /juː/."
@@ -977,15 +1761,57 @@
                 "steps": [
                   {
                     "do": "a university",
-                    "why": "<i>university</i> починається зі звука /j/ («юні…») — це приголосний, тож <i>a</i>."
+                    "why": "<i>university</i> починається зі звука /j/ («юні…») — це приголосний, тож <i>a</i>.",
+                    "q": "… <i>university</i>: <i>a</i> чи <i>an</i>?",
+                    "options": [
+                      "<i>a university</i>",
+                      "<i>an university</i>",
+                      "<i>a</i> або <i>an</i> — обидва можна",
+                      "<i>a universities</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>university</i> починається зі звука /j/ — приголосний, тож <i>a</i>.",
+                      "Обираємо за першим звуком: /j/ — приголосний, тож лише <i>a</i>.",
+                      "<i>a</i> — лише з одниною: <i>a university</i>."
+                    ]
                   },
                   {
                     "do": "an umbrella",
-                    "why": "<i>umbrella</i> — /ʌmˈbrelə/, починається з голосного звука, тож <i>an</i>."
+                    "why": "<i>umbrella</i> — /ʌmˈbrelə/, починається з голосного звука, тож <i>an</i>.",
+                    "q": "… <i>umbrella</i>: <i>a</i> чи <i>an</i>?",
+                    "options": [
+                      "<i>a</i> або <i>an</i> — обидва можна",
+                      "<i>an umbrella</i>",
+                      "<i>a umbrella</i>",
+                      "<i>an umbrellas</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Перший звук /ʌ/ голосний — лише <i>an</i>.",
+                      null,
+                      "<i>umbrella</i> починається з голосного звука /ʌ/, тож <i>an</i>.",
+                      "<i>an</i> — лише з одниною: <i>an umbrella</i>."
+                    ]
                   },
                   {
                     "do": "a useful app",
-                    "why": "<i>useful</i> — /ˈjuːsfl/, знову /j/, тож <i>a</i>."
+                    "why": "<i>useful</i> — /ˈjuːsfl/, знову /j/, тож <i>a</i>.",
+                    "q": "… <i>useful app</i>: <i>a</i> чи <i>an</i>?",
+                    "options": [
+                      "<i>an useful app</i>",
+                      "<i>a useful apps</i>",
+                      "<i>a</i> або <i>an</i> — обидва можна",
+                      "<i>a useful app</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Артикль — за словом одразу після нього: <i>useful</i> /ˈjuːsfl/, тож <i>a</i>.",
+                      "<i>a</i> — лише з одниною: <i>app</i>.",
+                      "<i>useful</i> починається з /j/ — приголосний, тож лише <i>a</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>a university, an umbrella, a useful app</i>"

@@ -48,15 +48,57 @@
                 "steps": [
                   {
                     "do": "Coffee …",
-                    "why": "Головне — кава, тож вона стає на перше місце."
+                    "why": "Головне — кава, тож вона стає на перше місце.",
+                    "q": "Що стане підметом у пасиві?",
+                    "options": [
+                      "<i>Brazil …</i>",
+                      "<i>People …</i>",
+                      "<i>Coffee …</i>",
+                      "<i>By people …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Бразилія — місце; головне тут — кава: <i>Coffee …</i>",
+                      "З <i>People</i> речення лишиться активним; у пасиві спереду — <i>coffee</i>.",
+                      null,
+                      "<i>by people</i> взагалі не пишемо; підмет — <i>coffee</i>."
+                    ]
                   },
                   {
                     "do": "Coffee is grown …",
-                    "why": "Present simple → <i>is</i> + V3 (<i>grow – grew – grown</i>)."
+                    "why": "Present simple → <i>is</i> + V3 (<i>grow – grew – grown</i>).",
+                    "q": "Яка форма дієслова?",
+                    "options": [
+                      "<i>Coffee is grew …</i>",
+                      "<i>Coffee grown …</i>",
+                      "<i>Coffee is grown …</i>",
+                      "<i>Coffee was grown …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Пасив = <i>is</i> + V3: <i>grown</i>, а не V2 <i>grew</i>.",
+                      "Бракує <i>is</i>: пасив = <i>be</i> + V3.",
+                      null,
+                      "Вирощують і зараз — Present simple: <i>is</i>, не <i>was</i>."
+                    ]
                   },
                   {
                     "do": "Coffee is grown in Brazil.",
-                    "why": "<i>by people</i> не пишемо — це й так зрозуміло."
+                    "why": "<i>by people</i> не пишемо — це й так зрозуміло.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>Coffee is grown in Brazil.</i>",
+                      "<i>Coffee is grown on Brazil.</i>",
+                      "<i>In Brazil is grown coffee.</i>",
+                      "<i>Coffee is grown in the Brazil.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "У країні — <i>in</i>: <i>in Brazil</i>.",
+                      "Калька з української; підмет — на початку: <i>Coffee is grown…</i>",
+                      "Назва країни — без артикля: <i>in Brazil</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Coffee is grown in Brazil.</i>"
@@ -66,11 +108,39 @@
                 "steps": [
                   {
                     "do": "My bike was stolen …",
-                    "why": "Past simple → <i>was</i> (один велосипед) + V3 (<i>steal – stole – stolen</i>)."
+                    "why": "Past simple → <i>was</i> (один велосипед) + V3 (<i>steal – stole – stolen</i>).",
+                    "q": "Яка форма дієслова?",
+                    "options": [
+                      "<i>My bike were stolen …</i>",
+                      "<i>My bike was stolen …</i>",
+                      "<i>My bike is stolen …</i>",
+                      "<i>My bike was stole …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Велосипед один — <i>was</i>.",
+                      null,
+                      "Це сталося вчора — Past simple: <i>was</i>.",
+                      "Після <i>was</i> — V3: <i>stolen</i>, не V2 <i>stole</i>."
+                    ]
                   },
                   {
                     "do": "My bike was stolen yesterday.",
-                    "why": "Хто вкрав — невідомо, тому <i>by someone</i> не потрібно."
+                    "why": "Хто вкрав — невідомо, тому <i>by someone</i> не потрібно.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>My bike was stolen yesterday.</i>",
+                      "<i>My bike has stolen yesterday.</i>",
+                      "<i>Yesterday was stolen my bike.</i>",
+                      "<i>My bike was stolen at yesterday.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Велосипед не крав — його вкрали: <i>was stolen</i>.",
+                      "Калька з української; підмет <i>My bike</i> — на початку.",
+                      "<i>yesterday</i> вживаємо без прийменника."
+                    ]
                   }
                 ],
                 "answer": "<i>My bike was stolen yesterday.</i>"
@@ -80,11 +150,39 @@
                 "steps": [
                   {
                     "do": "When was The Forest Song written?",
-                    "why": "Питальне слово, потім <i>was</i>, потім предмет, потім V3 (<i>write – wrote – written</i>)."
+                    "why": "Питальне слово, потім <i>was</i>, потім предмет, потім V3 (<i>write – wrote – written</i>).",
+                    "q": "Яке питання правильне?",
+                    "options": [
+                      "<i>When The Forest Song was written?</i>",
+                      "<i>When was The Forest Song wrote?</i>",
+                      "<i>When did The Forest Song written?</i>",
+                      "<i>When was The Forest Song written?</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "У питанні <i>was</i> стоїть перед підметом.",
+                      "Після <i>was</i> — V3: <i>written</i>.",
+                      "Пасив — з <i>was</i>, не з <i>did</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "It was written in 1911 by Lesya Ukrainka.",
-                    "why": "Тут <i>by</i> потрібно: важливо, хто авторка."
+                    "why": "Тут <i>by</i> потрібно: важливо, хто авторка.",
+                    "q": "Яка відповідь правильна?",
+                    "options": [
+                      "<i>It was written in 1911 from Lesya Ukrainka.</i>",
+                      "<i>It was written on 1911 by Lesya Ukrainka.</i>",
+                      "<i>It wrote in 1911 by Lesya Ukrainka.</i>",
+                      "<i>It was written in 1911 by Lesya Ukrainka.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Хто виконав дію — <i>by</i>, не <i>from</i>.",
+                      "З роком — <i>in</i>: <i>in 1911</i>.",
+                      "Твір не писав — його написали: <i>was written</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>When was The Forest Song written? — It was written in 1911 by Lesya Ukrainka.</i>"
@@ -158,11 +256,39 @@
                 "steps": [
                   {
                     "do": "at the moment → зараз, процес",
-                    "why": "Сигнал Present continuous."
+                    "why": "Сигнал Present continuous.",
+                    "q": "Що означає <i>at the moment</i>?",
+                    "options": [
+                      "зараз, процес",
+                      "колись у минулому",
+                      "регулярно, щодня",
+                      "щойно, результат"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Про минуле кажуть <i>yesterday</i>, <i>ago</i>; <i>at the moment</i> — зараз.",
+                      "Регулярність — <i>every day</i>, <i>usually</i>; <i>at the moment</i> — зараз.",
+                      "«Щойно» — це <i>just</i> (Present perfect); <i>at the moment</i> — зараз."
+                    ]
                   },
                   {
                     "do": "It is being painted at the moment.",
-                    "why": "<i>is</i> + <i>being</i> + V3 <i>painted</i>: кімнату фарбують, а не вона фарбує."
+                    "why": "<i>is</i> + <i>being</i> + V3 <i>painted</i>: кімнату фарбують, а не вона фарбує.",
+                    "q": "Яка форма?",
+                    "options": [
+                      "<i>It is being painted …</i>",
+                      "<i>It is being paint …</i>",
+                      "<i>It is been painted …</i>",
+                      "<i>It is painting …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>being</i> — V3: <i>painted</i>.",
+                      "Процес — <i>being</i>, не <i>been</i>.",
+                      "Кімната не фарбує сама — її фарбують: <i>is being painted</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>is being painted</i>"
@@ -172,11 +298,39 @@
                 "steps": [
                   {
                     "do": "just → щойно, результат важливий зараз",
-                    "why": "Сигнал Present perfect."
+                    "why": "Сигнал Present perfect.",
+                    "q": "Що означає <i>just</i> у цьому реченні?",
+                    "options": [
+                      "щойно, результат важливий зараз",
+                      "колись давно",
+                      "регулярно, щодня",
+                      "зараз, процес"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>just</i> — щойно, а не давно.",
+                      "Регулярність — <i>every day</i>; <i>just</i> — щойно.",
+                      "Процес зараз — <i>at the moment</i>, <i>now</i>; <i>just</i> — щойно."
+                    ]
                   },
                   {
                     "do": "A new swimming pool has just been opened.",
-                    "why": "<i>has</i> (басейн — один) + <i>just</i> + <i>been</i> + V3 <i>opened</i>."
+                    "why": "<i>has</i> (басейн — один) + <i>just</i> + <i>been</i> + V3 <i>opened</i>.",
+                    "q": "Яка форма?",
+                    "options": [
+                      "<i>… have just been opened …</i>",
+                      "<i>… has just being opened …</i>",
+                      "<i>… has just been opened …</i>",
+                      "<i>… is just been opened …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Басейн один — <i>has</i>.",
+                      "Після <i>has</i> — <i>been</i>, не <i>being</i>.",
+                      null,
+                      "Present perfect — <i>has</i> + <i>been</i>; <i>is been</i> не буває."
+                    ]
                   }
                 ],
                 "answer": "<i>has just been opened</i>"
@@ -186,11 +340,39 @@
                 "steps": [
                   {
                     "do": "A new playground is being built behind our school.",
-                    "why": "Будують зараз, процес не закінчився — <i>is being built</i>."
+                    "why": "Будують зараз, процес не закінчився — <i>is being built</i>.",
+                    "q": "Будують зараз. Яке речення правильне?",
+                    "options": [
+                      "<i>A new playground is being builded.</i>",
+                      "<i>A new playground is building.</i>",
+                      "<i>A new playground is been built.</i>",
+                      "<i>A new playground is being built.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>build</i> — неправильне: <i>build – built – built</i>.",
+                      "Майданчик не будує — його будують: <i>is being built</i>.",
+                      "Процес — <i>being</i>, не <i>been</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "Our classroom has been painted blue.",
-                    "why": "Уже пофарбовано, ми бачимо результат — <i>has been painted</i>."
+                    "why": "Уже пофарбовано, ми бачимо результат — <i>has been painted</i>.",
+                    "q": "Уже пофарбовано. Яке речення правильне?",
+                    "options": [
+                      "<i>Our classroom has been painted blue.</i>",
+                      "<i>Our classroom has painted blue.</i>",
+                      "<i>Our classroom have been painted blue.</i>",
+                      "<i>Our classroom has being painted blue.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Клас не фарбував — його пофарбували: <i>has been painted</i>.",
+                      "Клас один — <i>has</i>.",
+                      "Після <i>has</i> — <i>been</i>, не <i>being</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>A new playground is being built behind our school. Our classroom has been painted blue.</i>"
@@ -277,15 +459,57 @@
                 "steps": [
                   {
                     "do": "works as a pilot",
-                    "why": "Після <i>as</i> — професія."
+                    "why": "Після <i>as</i> — професія.",
+                    "q": "Дядько — пілот. Який прийменник?",
+                    "options": [
+                      "<i>works like a pilot</i>",
+                      "<i>works as a pilot</i>",
+                      "<i>works for a pilot</i>",
+                      "<i>works in a pilot</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>like</i> — «подібно до»; професія — <i>as</i>.",
+                      null,
+                      "<i>for</i> — роботодавець; професія — <i>as</i>.",
+                      "<i>in</i> — місце роботи; професія — <i>as</i>."
+                    ]
                   },
                   {
                     "do": "works for a big airline",
-                    "why": "Авіакомпанія — його роботодавець: <i>for</i>."
+                    "why": "Авіакомпанія — його роботодавець: <i>for</i>.",
+                    "q": "Авіакомпанія — роботодавець. Який прийменник?",
+                    "options": [
+                      "<i>works on a big airline</i>",
+                      "<i>works as a big airline</i>",
+                      "<i>works to a big airline</i>",
+                      "<i>works for a big airline</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Роботодавець — <i>for</i>, не <i>on</i>.",
+                      "<i>as</i> — лише перед професією; роботодавець — <i>for</i>.",
+                      "Роботодавець — <i>for</i>, не <i>to</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "works in a bank",
-                    "why": "Банк тут — місце роботи: <i>in</i>."
+                    "why": "Банк тут — місце роботи: <i>in</i>.",
+                    "q": "Банк — місце роботи. Який прийменник?",
+                    "options": [
+                      "<i>works on a bank</i>",
+                      "<i>works as a bank</i>",
+                      "<i>works in bank</i>",
+                      "<i>works in a bank</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Місце роботи (установа) — <i>in</i>.",
+                      "<i>as</i> — лише перед професією.",
+                      "Злічуваний іменник в однині — з артиклем: <i>in a bank</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>as; for; in</i>"
@@ -295,11 +519,39 @@
                 "steps": [
                   {
                     "do": "a) a lot of work",
-                    "why": "Справи, праця — незлічуване <i>work</i>."
+                    "why": "Справи, праця — незлічуване <i>work</i>.",
+                    "q": "a) Справ багато. <i>work</i> чи <i>job</i>?",
+                    "options": [
+                      "<i>a lot of work</i>",
+                      "<i>a lot of job</i>",
+                      "<i>a lot of a work</i>",
+                      "<i>a lot of works</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Справи, праця — незлічуване <i>work</i>.",
+                      "Незлічуване — без <i>a</i>.",
+                      "<i>work</i> (праця) — незлічуване, без <i>-s</i>."
+                    ]
                   },
                   {
                     "do": "b) a new job",
-                    "why": "Нова посада — злічуване <i>job</i>, з <i>a</i>."
+                    "why": "Нова посада — злічуване <i>job</i>, з <i>a</i>.",
+                    "q": "b) Нова посада. <i>work</i> чи <i>job</i>?",
+                    "options": [
+                      "<i>a new job</i>",
+                      "<i>a new jobs</i>",
+                      "<i>new job</i>",
+                      "<i>a new work</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>a</i> — однина: <i>job</i>.",
+                      "Злічуваний іменник в однині — з артиклем: <i>a new job</i>.",
+                      "Посада — злічуване <i>job</i>; <i>work</i> з <i>a</i> не вживаємо."
+                    ]
                   }
                 ],
                 "answer": "a) <i>work</i>; b) <i>job</i>"
@@ -309,11 +561,39 @@
                 "steps": [
                   {
                     "do": "My mum works as a nurse. She works in a children's hospital.",
-                    "why": "<i>as</i> + професія, <i>in</i> + місце."
+                    "why": "<i>as</i> + професія, <i>in</i> + місце.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>My mum works as nurse.</i>",
+                      "<i>My mum works like a nurse.</i>",
+                      "<i>My mum works as a nurse.</i>",
+                      "<i>My mum work as a nurse.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Перед професією потрібен артикль: <i>as a nurse</i>.",
+                      "<i>like</i> — «подібно до»; професія — <i>as</i>.",
+                      null,
+                      "<i>My mum</i> = she: <i>works</i> з <i>-s</i>."
+                    ]
                   },
                   {
                     "do": "She loves her job, but she always has a lot of work.",
-                    "why": "<i>job</i> — посада, <i>work</i> — обсяг справ."
+                    "why": "<i>job</i> — посада, <i>work</i> — обсяг справ.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>She loves her work … a lot of job.</i>",
+                      "<i>She love her job … a lot of work.</i>",
+                      "<i>She loves her job … a lot of work.</i>",
+                      "<i>She loves her job … a lot of works.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Обсяг справ — незлічуване <i>work</i>: <i>a lot of work</i>.",
+                      "<i>She</i> — <i>loves</i> з <i>-s</i>.",
+                      null,
+                      "<i>work</i> (справи) — незлічуване, без <i>-s</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>My mum works as a nurse. She works in a children's hospital. She loves her job, but she always has a lot of work.</i>"
@@ -392,11 +672,39 @@
                 "steps": [
                   {
                     "do": "a) left on time",
-                    "why": "Точно за розкладом — <i>on time</i>."
+                    "why": "Точно за розкладом — <i>on time</i>.",
+                    "q": "a) Точно за розкладом. Який вираз?",
+                    "options": [
+                      "<i>left on time</i>",
+                      "<i>left on the time</i>",
+                      "<i>left at time</i>",
+                      "<i>left in time</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Без артикля: <i>on time</i>.",
+                      "Такого виразу немає: <i>on time</i>.",
+                      "<i>in time</i> — встигнути до чогось; точно за розкладом — <i>on time</i>."
+                    ]
                   },
                   {
                     "do": "b) just in time to buy popcorn",
-                    "why": "Встигли зробити щось ще до початку — <i>in time</i>."
+                    "why": "Встигли зробити щось ще до початку — <i>in time</i>.",
+                    "q": "b) Встигли ще й купити попкорн. Який вираз?",
+                    "options": [
+                      "<i>just at time to buy popcorn</i>",
+                      "<i>just on time to buy popcorn</i>",
+                      "<i>just in time to buy popcorn</i>",
+                      "<i>just in the time to buy popcorn</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Такого виразу немає: <i>in time</i>.",
+                      "Встигли щось зробити до початку — <i>in time</i>.",
+                      null,
+                      "Без артикля: <i>in time</i>."
+                    ]
                   }
                 ],
                 "answer": "a) <i>on</i>; b) <i>in</i>"
@@ -406,11 +714,39 @@
                 "steps": [
                   {
                     "do": "a) but in the end we agreed",
-                    "why": "Зрештою, після суперечки — <i>in the end</i>."
+                    "why": "Зрештою, після суперечки — <i>in the end</i>.",
+                    "q": "a) Зрештою, після суперечки. Який вираз?",
+                    "options": [
+                      "<i>but in the end we agreed</i>",
+                      "<i>but at the end we agreed</i>",
+                      "<i>but on the end we agreed</i>",
+                      "<i>but in end we agreed</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Зрештою — <i>in the end</i>; <i>at the end of</i> — у кінці чогось.",
+                      "Зрештою — <i>in the end</i>.",
+                      "Потрібен артикль: <i>in the end</i>."
+                    ]
                   },
                   {
                     "do": "b) At the end of the lesson …",
-                    "why": "У кінці уроку — <i>at the end of</i>."
+                    "why": "У кінці уроку — <i>at the end of</i>.",
+                    "q": "b) У кінці уроку. Який вираз?",
+                    "options": [
+                      "<i>At the end the lesson …</i>",
+                      "<i>In the end of the lesson …</i>",
+                      "<i>At the end of the lesson …</i>",
+                      "<i>On the end of the lesson …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>end</i> — <i>of</i>: <i>at the end of</i>.",
+                      "У кінці чогось — <i>at the end of</i>.",
+                      null,
+                      "У кінці чогось — <i>at the end of</i>."
+                    ]
                   }
                 ],
                 "answer": "a) <i>in the end</i>; b) <i>At the end</i>"
@@ -420,11 +756,39 @@
                 "steps": [
                   {
                     "do": "I'm nearly ready — I'll be at the park in ten minutes.",
-                    "why": "<i>in ten minutes</i> — через десять хвилин."
+                    "why": "<i>in ten minutes</i> — через десять хвилин.",
+                    "q": "«Через десять хвилин». Яке речення правильне?",
+                    "options": [
+                      "<i>I'll be at the park in ten minutes.</i>",
+                      "<i>I'll be at the park after ten minutes.</i>",
+                      "<i>I'll be at the park through ten minutes.</i>",
+                      "<i>I'll be at the park in ten minute.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "«Через десять хвилин» від зараз — <i>in ten minutes</i>; <i>after</i> тут не вживаємо.",
+                      "Калька з «через»: правильно <i>in ten minutes</i>.",
+                      "Хвилин десять — множина: <i>minutes</i>."
+                    ]
                   },
                   {
                     "do": "Can't wait — I haven't seen you in ages!",
-                    "why": "<i>in ages</i> — дуже давно."
+                    "why": "<i>in ages</i> — дуже давно.",
+                    "q": "«Дуже давно не бачилися». Яке речення правильне?",
+                    "options": [
+                      "<i>I didn't see you in ages!</i>",
+                      "<i>I haven't seen you in ages!</i>",
+                      "<i>I haven't saw you in ages!</i>",
+                      "<i>I haven't seen you on ages!</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Досі не бачилися — Present perfect: <i>haven't seen</i>.",
+                      null,
+                      "Після <i>haven't</i> — V3: <i>seen</i>.",
+                      "Дуже давно — <i>in ages</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>I'm nearly ready — I'll be at the park in ten minutes. Can't wait — I haven't seen you in ages!</i>"
@@ -510,11 +874,39 @@
                 "steps": [
                   {
                     "do": "Yes, I'd love to!",
-                    "why": "Стандартна радісна згода на <i>Would you like to…?</i>"
+                    "why": "Стандартна радісна згода на <i>Would you like to…?</i>",
+                    "q": "Як радісно погодитися?",
+                    "options": [
+                      "<i>Yes, I'd love to!</i>",
+                      "<i>Yes, I'd love!</i>",
+                      "<i>Yes, I would like!</i>",
+                      "<i>Yes, I love to!</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "У відповіді після <i>love</i> — <i>to</i>: <i>I'd love to</i>.",
+                      "Потрібно <i>to</i>: <i>I'd like to</i> або <i>I'd love to</i>.",
+                      "На <i>Would you like…?</i> відповідаємо з <i>'d</i>: <i>I'd love to</i>."
+                    ]
                   },
                   {
                     "do": "What time does it start?",
-                    "why": "Уточнювальне питання показує, що тобі цікаво."
+                    "why": "Уточнювальне питання показує, що тобі цікаво.",
+                    "q": "Яке уточнювальне питання правильне?",
+                    "options": [
+                      "<i>What time does it starts?</i>",
+                      "<i>What time do it start?</i>",
+                      "<i>What time does it start?</i>",
+                      "<i>What time it starts?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>does</i> — <i>start</i> без <i>-s</i>.",
+                      "З <i>it</i> — <i>does</i>, не <i>do</i>.",
+                      null,
+                      "У питанні потрібне допоміжне <i>does</i>: <i>does it start</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Yes, I'd love to! What time does it start?</i>"
@@ -524,15 +916,57 @@
                 "steps": [
                   {
                     "do": "I'd love to, but I can't.",
-                    "why": "Почни м'яко: «дуже хотів би, але…»."
+                    "why": "Почни м'яко: «дуже хотів би, але…».",
+                    "q": "Як м'яко відмовити?",
+                    "options": [
+                      "<i>I'd love to, but I can.</i>",
+                      "<i>I'd love to, but I can't.</i>",
+                      "<i>I'd love, but I can't.</i>",
+                      "<i>No, I don't want.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Ти відмовляєш — <i>can't</i>.",
+                      null,
+                      "Потрібно <i>to</i>: <i>I'd love to</i>.",
+                      "Звучить грубо, і бракує <i>to</i>; м'яко: <i>I'd love to, but…</i>"
+                    ]
                   },
                   {
                     "do": "I've got a swimming lesson.",
-                    "why": "Причина — щоб відмова не звучала грубо."
+                    "why": "Причина — щоб відмова не звучала грубо.",
+                    "q": "Як назвати причину?",
+                    "options": [
+                      "<i>I've got swimming lesson.</i>",
+                      "<i>I've get a swimming lesson.</i>",
+                      "<i>I've got a swimming lesson.</i>",
+                      "<i>I'm got a swimming lesson.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Злічуваний іменник в однині — з <i>a</i>.",
+                      "<i>have got</i> — з <i>got</i>, не <i>get</i>.",
+                      null,
+                      "<i>have got</i>, не <i>am got</i>: <i>I've got</i>."
+                    ]
                   },
                   {
                     "do": "How about Friday?",
-                    "why": "Пропозиція іншого часу показує, що ти справді хочеш піти."
+                    "why": "Пропозиція іншого часу показує, що ти справді хочеш піти.",
+                    "q": "Як запропонувати інший день?",
+                    "options": [
+                      "<i>How about at Friday?</i>",
+                      "<i>How about to Friday?</i>",
+                      "<i>How about Friday?</i>",
+                      "<i>What about in Friday?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "З днями тижня не вживаємо <i>at</i>.",
+                      "Після <i>How about</i> — одразу день: <i>How about Friday?</i>",
+                      null,
+                      "З днями тижня не вживаємо <i>in</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>I'd love to, but I can't. I've got a swimming lesson. How about Friday?</i>"
@@ -608,15 +1042,57 @@
                 "steps": [
                   {
                     "do": "B",
-                    "why": "Вступ — тема й питання."
+                    "why": "Вступ — тема й питання.",
+                    "q": "Яка частина — вступ?",
+                    "options": [
+                      "C — <i>Firstly, machines…</i>",
+                      "Будь-яка — порядок не важливий",
+                      "A — <i>In conclusion…</i>",
+                      "B — <i>Some people say robots…</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>Firstly</i> відкриває аргументи — це основна частина.",
+                      "Есе має сталий порядок: вступ, основна частина, висновок.",
+                      "<i>In conclusion</i> — висновок, у кінці.",
+                      null
+                    ]
                   },
                   {
                     "do": "C",
-                    "why": "Основна частина — аргументи з <i>Firstly</i> і <i>However</i>."
+                    "why": "Основна частина — аргументи з <i>Firstly</i> і <i>However</i>.",
+                    "q": "Яка частина — основна (аргументи)?",
+                    "options": [
+                      "A — <i>In conclusion…</i>",
+                      "Жодна — одразу висновок",
+                      "C — <i>Firstly, machines…</i>",
+                      "B — <i>Some people say…</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>In conclusion</i> — висновок, у самому кінці.",
+                      "Без аргументів есе не працює: основна частина — C.",
+                      null,
+                      "B — вступ, він уже стоїть на початку."
+                    ]
                   },
                   {
                     "do": "A",
-                    "why": "Висновок починається з <i>In conclusion</i>."
+                    "why": "Висновок починається з <i>In conclusion</i>.",
+                    "q": "Яка частина — висновок?",
+                    "options": [
+                      "Жодна — висновок не потрібен",
+                      "B — <i>Some people say…</i>",
+                      "C — <i>Firstly, machines…</i>",
+                      "A — <i>In conclusion…</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Есе закінчується висновком з <i>In conclusion</i> — це A.",
+                      "B — вступ, тема й питання.",
+                      "C — аргументи в основній частині.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "B → C → A"
@@ -626,11 +1102,39 @@
                 "steps": [
                   {
                     "do": "a) However, they can't understand people's feelings.",
-                    "why": "Протилежна думка — <i>However</i>."
+                    "why": "Протилежна думка — <i>However</i>.",
+                    "q": "a) Протилежна думка. Який лінкер?",
+                    "options": [
+                      "<i>In conclusion, they can't understand …</i>",
+                      "<i>Because they can't understand …</i>",
+                      "<i>For example, they can't understand …</i>",
+                      "<i>However, they can't understand …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>In conclusion</i> — для висновку в кінці.",
+                      "<i>Because</i> — причина; тут протиставлення.",
+                      "Це не приклад, а протилежна думка — <i>However</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "b) For example, we might not need taxi drivers.",
-                    "why": "Приклад до попередньої думки — <i>For example</i>."
+                    "why": "Приклад до попередньої думки — <i>For example</i>.",
+                    "q": "b) Приклад до попередньої думки. Який лінкер?",
+                    "options": [
+                      "<i>In conclusion, we might not need …</i>",
+                      "<i>However, we might not need …</i>",
+                      "<i>For example, we might not need …</i>",
+                      "<i>As example, we might not need …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>In conclusion</i> — для висновку в кінці.",
+                      "Це не протилежна думка, а приклад — <i>For example</i>.",
+                      null,
+                      "Правильний вираз — <i>For example</i>."
+                    ]
                   }
                 ],
                 "answer": "a) <i>However</i>; b) <i>For example</i>"
@@ -640,19 +1144,75 @@
                 "steps": [
                   {
                     "do": "In the future, many jobs will be done by robots and computers. But will people still need to work?",
-                    "why": "Вступ: тема й питання. Пасив <i>will be done</i>."
+                    "why": "Вступ: тема й питання. Пасив <i>will be done</i>.",
+                    "q": "Вступ: пасив у майбутньому. Як правильно?",
+                    "options": [
+                      "<i>… many jobs will be done by robots …</i>",
+                      "<i>… many jobs will be did by robots …</i>",
+                      "<i>… many jobs will be doing by robots …</i>",
+                      "<i>… many jobs will done by robots …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>be</i> — V3: <i>done</i>, не V2.",
+                      "Роботу виконують роботи — пасив: <i>will be done</i>.",
+                      "Пасив у майбутньому — <i>will be</i> + V3."
+                    ]
                   },
                   {
                     "do": "Firstly, machines are already used in factories and shops, and soon they might drive buses and taxis. This means that some jobs will disappear.",
-                    "why": "Перший аргумент із прикладами."
+                    "why": "Перший аргумент із прикладами.",
+                    "q": "Перший аргумент. Як правильно?",
+                    "options": [
+                      "<i>… machines are already use in factories …</i>",
+                      "<i>… machines is already used in factories …</i>",
+                      "<i>… machines are already using in factories …</i>",
+                      "<i>… machines are already used in factories …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Пасив: <i>are</i> + V3 <i>used</i>.",
+                      "<i>machines</i> — множина: <i>are</i>.",
+                      "Машини не використовують — їх використовують: <i>are used</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "However, new jobs will be created too. For example, we will need people who design, build and repair robots. Doctors, teachers and artists will also be needed, because machines can't understand people's feelings.",
-                    "why": "Протилежний аргумент (<i>However</i>) і приклад (<i>For example</i>)."
+                    "why": "Протилежний аргумент (<i>However</i>) і приклад (<i>For example</i>).",
+                    "q": "Протилежний аргумент. Як правильно?",
+                    "options": [
+                      "<i>In conclusion, new jobs will be created too.</i>",
+                      "<i>However, new jobs will be created too.</i>",
+                      "<i>However, new jobs will be create too.</i>",
+                      "<i>For example, new jobs will be created too.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Висновок — у кінці есе.",
+                      null,
+                      "Після <i>be</i> — V3: <i>created</i>.",
+                      "Це протилежна думка, а не приклад — <i>However</i>."
+                    ]
                   },
                   {
                     "do": "In conclusion, I think work will change a lot, but people won't stop working.",
-                    "why": "Висновок — власна думка."
+                    "why": "Висновок — власна думка.",
+                    "q": "Який висновок правильний?",
+                    "options": [
+                      "<i>For example, I think work will change a lot …</i>",
+                      "<i>In conclusion, I think work will changes a lot …</i>",
+                      "<i>Firstly, I think work will change a lot …</i>",
+                      "<i>In conclusion, I think work will change a lot …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Висновок починаємо з <i>In conclusion</i>.",
+                      "Після <i>will</i> — <i>change</i> без <i>-s</i>.",
+                      "<i>Firstly</i> відкриває перший аргумент; висновок — <i>In conclusion</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Есе має вступ, два абзаци з аргументами й прикладами та висновок."
@@ -730,11 +1290,39 @@
                 "steps": [
                   {
                     "do": "/tʃ/: teacher, coach, butcher",
-                    "why": "<i>ch</i> читаємо як «ч»: «тічер», «коуч», «бучер»."
+                    "why": "<i>ch</i> читаємо як «ч»: «тічер», «коуч», «бучер».",
+                    "q": "Які професії зі звуком /tʃ/ («ч»)?",
+                    "options": [
+                      "<i>journalist, coach, butcher</i>",
+                      "<i>teacher, engineer, butcher</i>",
+                      "<i>teacher, coach, manager</i>",
+                      "<i>teacher, coach, butcher</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>j</i> читаємо як «дж»: /dʒ/.",
+                      "<i>g</i> перед <i>e</i> — «дж»: /dʒ/.",
+                      "<i>manager</i> — «менеджер», там /dʒ/.",
+                      null
+                    ]
                   },
                   {
                     "do": "/dʒ/: journalist, engineer, manager",
-                    "why": "<i>j</i> і <i>g</i> перед <i>e</i> — «дж»: «джьорналіст», «менеджер»."
+                    "why": "<i>j</i> і <i>g</i> перед <i>e</i> — «дж»: «джьорналіст», «менеджер».",
+                    "q": "Які професії зі звуком /dʒ/ («дж»)?",
+                    "options": [
+                      "<i>journalist, engineer, butcher</i>",
+                      "<i>journalist, engineer, manager</i>",
+                      "<i>journalist, coach, manager</i>",
+                      "<i>teacher, engineer, manager</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>butcher</i> — «бучер», там /tʃ/.",
+                      null,
+                      "<i>ch</i> у <i>coach</i> — «ч» /tʃ/.",
+                      "<i>teacher</i> — «тічер», там /tʃ/."
+                    ]
                   }
                 ],
                 "answer": "/tʃ/ — <i>teacher, coach, butcher</i>; /dʒ/ — <i>journalist, engineer, manager</i>"
@@ -744,15 +1332,57 @@
                 "steps": [
                   {
                     "do": "cheap /tʃiːp/ – jeep /dʒiːp/",
-                    "why": "Пальці на горлі: на <i>jeep</i> є дрижання голосу."
+                    "why": "Пальці на горлі: на <i>jeep</i> є дрижання голосу.",
+                    "q": "У якому слові пари <i>cheap – jeep</i> звук /dʒ/?",
+                    "options": [
+                      "<i>cheap</i>",
+                      "в обох словах",
+                      "<i>jeep</i>",
+                      "в жодному"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>cheap</i> починається з «ч» /tʃ/, без голосу.",
+                      "<i>cheap</i> — «ч» /tʃ/; /dʒ/ лише в <i>jeep</i>.",
+                      null,
+                      "У <i>jeep</i> — «дж» /dʒ/: пальці на горлі відчують дрижання."
+                    ]
                   },
                   {
                     "do": "choke /tʃəʊk/ – joke /dʒəʊk/",
-                    "why": "Те саме на початку слова."
+                    "why": "Те саме на початку слова.",
+                    "q": "У якому слові пари <i>choke – joke</i> звук /dʒ/?",
+                    "options": [
+                      "<i>choke</i>",
+                      "<i>joke</i>",
+                      "в жодному",
+                      "в обох словах"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>choke</i> починається з «ч» /tʃ/.",
+                      null,
+                      "У <i>joke</i> — «дж» /dʒ/.",
+                      "<i>choke</i> — «ч» /tʃ/; /dʒ/ лише в <i>joke</i>."
+                    ]
                   },
                   {
                     "do": "rich /rɪtʃ/ – ridge /rɪdʒ/",
-                    "why": "У кінці слова /dʒ/ не можна оглушувати, інакше <i>ridge</i> звучить як <i>rich</i>."
+                    "why": "У кінці слова /dʒ/ не можна оглушувати, інакше <i>ridge</i> звучить як <i>rich</i>.",
+                    "q": "У якому слові пари <i>rich – ridge</i> /dʒ/ у кінці?",
+                    "options": [
+                      "<i>rich</i>",
+                      "в жодному",
+                      "в обох словах",
+                      "<i>ridge</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>rich</i> закінчується на «ч» /tʃ/.",
+                      "У кінці <i>ridge</i> — «дж» /dʒ/, його не оглушуємо.",
+                      "<i>rich</i> — «ч»; якщо оглушити /dʒ/, <i>ridge</i> звучатиме як <i>rich</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Перше слово кожної пари — з /tʃ/, друге — з /dʒ/."

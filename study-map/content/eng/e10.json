@@ -48,11 +48,39 @@
                 "steps": [
                   {
                     "do": "Яка дія сталася раніше? Фільм почався до того, як ми прийшли.",
-                    "why": "Раніша з двох минулих дій — у Past Perfect."
+                    "why": "Раніша з двох минулих дій — у Past Perfect.",
+                    "q": "Яка дія сталася раніше?",
+                    "options": [
+                      "ми прийшли в кіно",
+                      "обидві одночасно",
+                      "сказати не можна",
+                      "фільм почався"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Ми прийшли, коли фільм уже йшов, — це пізніша дія.",
+                      "<i>already</i> показує: фільм почався раніше.",
+                      "Слово <i>already</i> підказує: фільм почався до нашого приходу.",
+                      null
+                    ]
                   },
                   {
                     "do": "had + already + started",
-                    "why": "<i>already</i> стоїть між <i>had</i> і V3; <i>start → started</i>."
+                    "why": "<i>already</i> стоїть між <i>had</i> і V3; <i>start → started</i>.",
+                    "q": "Яка форма?",
+                    "options": [
+                      "<i>have already started</i>",
+                      "<i>had already started</i>",
+                      "<i>had already start</i>",
+                      "<i>has already started</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Фільм один, і це минуле: <i>had</i>.",
+                      null,
+                      "Після <i>had</i> — V3: <i>started</i>.",
+                      "Розповідь про минуле — <i>had</i>, не <i>has</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>had already started</i>"
@@ -62,15 +90,57 @@
                 "steps": [
                   {
                     "do": "Спершу — домашнє завдання, потім — прогулянка.",
-                    "why": "Визначаємо, яка дія раніша."
+                    "why": "Визначаємо, яка дія раніша.",
+                    "q": "Яка дія раніша?",
+                    "options": [
+                      "обидві одночасно",
+                      "сказати не можна",
+                      "прогулянка з друзями",
+                      "домашнє завдання"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>Then</i> показує: спершу домашнє, потім прогулянка.",
+                      "Слово <i>Then</i> підказує порядок: спершу домашнє завдання.",
+                      "<i>Then</i> показує: прогулянка — пізніше.",
+                      null
+                    ]
                   },
                   {
                     "do": "After I had done my homework, …",
-                    "why": "Раніша дія — <i>had done</i> (<i>do → did → done</i>)."
+                    "why": "Раніша дія — <i>had done</i> (<i>do → did → done</i>).",
+                    "q": "Раніша дія. Яка форма?",
+                    "options": [
+                      "<i>After I had made my homework, …</i>",
+                      "<i>After I have done my homework, …</i>",
+                      "<i>After I had did my homework, …</i>",
+                      "<i>After I had done my homework, …</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Домашнє завдання — <i>do homework</i>, не <i>make</i>.",
+                      "Розповідь про минуле — <i>had</i>, не <i>have</i>.",
+                      "Після <i>had</i> — V3 <i>done</i>, не V2 <i>did</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "… I went out with my friends.",
-                    "why": "Пізніша дія — Past Simple."
+                    "why": "Пізніша дія — Past Simple.",
+                    "q": "Пізніша дія. Яка форма?",
+                    "options": [
+                      "<i>… I have gone out with my friends.</i>",
+                      "<i>… I goed out with my friends.</i>",
+                      "<i>… I went out with my friends.</i>",
+                      "<i>… I had gone out with my friends.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Минула подія — Past Simple <i>went</i>.",
+                      "<i>go</i> — неправильне: <i>go → went</i>.",
+                      null,
+                      "<i>had</i> + V3 — для ранішої дії; пізніша — Past Simple <i>went</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>After I had done my homework, I went out with my friends.</i>"
@@ -80,15 +150,57 @@
                 "steps": [
                   {
                     "do": "hadn't seen",
-                    "why": "Заперечення: <i>hadn't + V3</i>; <i>see → saw → seen</i>. До поїздки снігу вона не бачила."
+                    "why": "Заперечення: <i>hadn't + V3</i>; <i>see → saw → seen</i>. До поїздки снігу вона не бачила.",
+                    "q": "Мила не бачила снігу до поїздки. Яка форма?",
+                    "options": [
+                      "<i>hadn't seen</i>",
+                      "<i>hadn't saw</i>",
+                      "<i>wasn't seen</i>",
+                      "<i>haven't seen</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>hadn't</i> — V3 <i>seen</i>, не V2 <i>saw</i>.",
+                      "Це пасив («її не бачили»); Мила сама не бачила — <i>hadn't seen</i>.",
+                      "Розповідь про минуле — <i>hadn't</i>, не <i>haven't</i>."
+                    ]
                   },
                   {
                     "do": "Had you ever tried …?",
-                    "why": "Питання: <i>Had</i> на початку, далі <i>you</i>, <i>ever</i> і V3."
+                    "why": "Питання: <i>Had</i> на початку, далі <i>you</i>, <i>ever</i> і V3.",
+                    "q": "Яке питання правильне?",
+                    "options": [
+                      "<i>Had you ever tried …?</i>",
+                      "<i>Did you ever tried …?</i>",
+                      "<i>Have you ever tried …?</i>",
+                      "<i>You had ever tried …?</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>Did</i> не буває V3; Past Perfect — <i>Had you ever tried</i>.",
+                      "До моменту в минулому (<i>before last weekend</i>) — <i>Had</i>.",
+                      "У питанні <i>Had</i> — на початку, перед <i>you</i>."
+                    ]
                   },
                   {
-                    "do": "Твоє речення: <i>Before I was ten, I had never … .</i>",
-                    "why": "Спробуй сказати про себе, наприклад <i>I had never flown on a plane.</i>"
+                    "do": "Твоє речення, наприклад: <i>Before I was ten, I had never flown on a plane.</i>",
+                    "why": "Спробуй сказати про себе, наприклад <i>I had never flown on a plane.</i>",
+                    "q": "<i>Before I was ten, …</i> Яке продовження правильне?",
+                    "options": [
+                      "<i>I have never flown on a plane.</i>",
+                      "<i>I had never flied on a plane.</i>",
+                      "<i>I had never flew on a plane.</i>",
+                      "<i>I had never flown on a plane.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "До моменту в минулому (<i>Before I was ten</i>) — <i>had</i>.",
+                      "<i>fly</i> — неправильне: <i>fly – flew – flown</i>.",
+                      "Після <i>had</i> — V3: <i>fly – flew – flown</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>hadn't seen</i>; <i>Had you ever tried sushi before last weekend?</i>"
@@ -170,11 +282,39 @@
                 "steps": [
                   {
                     "do": "Момент у минулому — <i>the bus came</i>. До нього ми годину чекали.",
-                    "why": "Тривала дія до моменту в минулому — Past Perfect Continuous."
+                    "why": "Тривала дія до моменту в минулому — Past Perfect Continuous.",
+                    "q": "Що тут — момент у минулому?",
+                    "options": [
+                      "<i>finally</i>",
+                      "<i>the bus came</i>",
+                      "<i>we waited</i>",
+                      "<i>for an hour</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>finally</i> — лише «нарешті»; момент — <i>the bus came</i>.",
+                      null,
+                      "Чекання — тривала дія до моменту; момент — <i>the bus came</i>.",
+                      "<i>for an hour</i> — тривалість, а не момент."
+                    ]
                   },
                   {
                     "do": "had been + waiting",
-                    "why": "<i>had been</i> не змінюється, до дієслова додаємо <i>-ing</i>."
+                    "why": "<i>had been</i> не змінюється, до дієслова додаємо <i>-ing</i>.",
+                    "q": "Яка форма?",
+                    "options": [
+                      "<i>has been waiting</i>",
+                      "<i>had been waited</i>",
+                      "<i>had being waiting</i>",
+                      "<i>had been waiting</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Мова про минуле — <i>had</i>, не <i>has</i>.",
+                      "У Continuous дієслово з <i>-ing</i>: <i>waiting</i>.",
+                      "<i>had been</i> не змінюється: <i>been</i>, не <i>being</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>had been waiting</i>"
@@ -184,11 +324,39 @@
                 "steps": [
                   {
                     "do": "Ми бачимо слід — брудні черевики.",
-                    "why": "Past Perfect Continuous пояснює, звідки взявся цей слід."
+                    "why": "Past Perfect Continuous пояснює, звідки взявся цей слід.",
+                    "q": "Що тут — слід дії, який ми бачимо?",
+                    "options": [
+                      "дощ",
+                      "брудні черевики",
+                      "Данило",
+                      "гра у футбол"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Дощ — обставина гри; слід, який бачимо, — брудні черевики.",
+                      null,
+                      "Данило — той, хто діяв; слід — брудні черевики.",
+                      "Гра — сама тривала дія; слід від неї — брудні черевики."
+                    ]
                   },
                   {
                     "do": "had been playing",
-                    "why": "<i>play + -ing = playing</i>."
+                    "why": "<i>play + -ing = playing</i>.",
+                    "q": "Яка форма?",
+                    "options": [
+                      "<i>had been played</i>",
+                      "<i>had been playing</i>",
+                      "<i>had been plaing</i>",
+                      "<i>has been playing</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Він сам грав — потрібна форма з <i>-ing</i>: <i>playing</i>.",
+                      null,
+                      "<i>play</i> + <i>-ing</i> = <i>playing</i>: <i>y</i> зберігається.",
+                      "Черевики були брудні тоді, у минулому, — <i>had</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>He had been playing football in the rain.</i>"
@@ -198,15 +366,57 @@
                 "steps": [
                   {
                     "do": "How long had …",
-                    "why": "Питальне слово, потім <i>had</i>."
+                    "why": "Питальне слово, потім <i>had</i>.",
+                    "q": "Що стоїть після <i>How long</i>?",
+                    "options": [
+                      "<i>How long had …</i>",
+                      "<i>How long have …</i>",
+                      "<i>How long you had …</i>",
+                      "<i>How long has …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Ти втомився вчора ввечері — минуле: <i>had</i>.",
+                      "У питанні <i>had</i> стоїть перед підметом.",
+                      "З <i>you</i> не буває <i>has</i>; і це минуле: <i>had</i>."
+                    ]
                   },
                   {
                     "do": "… you been studying?",
-                    "why": "Після підмета — <i>been</i> і дієслово з <i>-ing</i>."
+                    "why": "Після підмета — <i>been</i> і дієслово з <i>-ing</i>.",
+                    "q": "Як закінчити питання?",
+                    "options": [
+                      "<i>… you studying?</i>",
+                      "<i>… you been studying?</i>",
+                      "<i>… you being studying?</i>",
+                      "<i>… you been studied?</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Бракує <i>been</i>: <i>had you been studying</i>.",
+                      null,
+                      "Після <i>had</i> — <i>been</i>, не <i>being</i>.",
+                      "Continuous — дієслово з <i>-ing</i>: <i>studying</i>."
+                    ]
                   },
                   {
                     "do": "I had been studying since four o'clock.",
-                    "why": "Відповідь — повне речення з <i>since</i> або <i>for</i>. Склади своє!"
+                    "why": "Відповідь — повне речення з <i>since</i> або <i>for</i>. Склади своє!",
+                    "q": "Яка відповідь правильна?",
+                    "options": [
+                      "<i>I had been studying for four o'clock.</i>",
+                      "<i>I had been studying since four o'clock.</i>",
+                      "<i>I have been studying since four o'clock.</i>",
+                      "<i>I had been study since four o'clock.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>for</i> — з тривалістю (<i>for two hours</i>); з моментом — <i>since</i>.",
+                      null,
+                      "Мова про вчорашній вечір — <i>had</i>, не <i>have</i>.",
+                      "Після <i>been</i> — дієслово з <i>-ing</i>: <i>studying</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>How long had you been studying?</i> — наприклад, <i>I had been studying since four o'clock.</i>"
@@ -284,11 +494,39 @@
                 "steps": [
                   {
                     "do": "10 km → had run",
-                    "why": "Є кількість, тобто результат — Simple: <i>run → ran → run</i>."
+                    "why": "Є кількість, тобто результат — Simple: <i>run → ran → run</i>.",
+                    "q": "Є кількість — 10 км. Яка форма?",
+                    "options": [
+                      "<i>had been run</i>",
+                      "<i>had runned</i>",
+                      "<i>had run</i>",
+                      "<i>had ran</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>been</i> + V3 — це пасив; Іра бігла сама: <i>had run</i>.",
+                      "<i>run</i> — неправильне: <i>run – ran – run</i>.",
+                      null,
+                      "<i>ran</i> — V2; після <i>had</i> — V3: <i>run</i>."
+                    ]
                   },
                   {
                     "do": "for an hour, out of breath → had been running",
-                    "why": "Важлива тривалість і слід (їй жарко, вона задихається) — Continuous."
+                    "why": "Важлива тривалість і слід (їй жарко, вона задихається) — Continuous.",
+                    "q": "Тривалість і слід (їй жарко). Яка форма?",
+                    "options": [
+                      "<i>has been running</i>",
+                      "<i>had been running</i>",
+                      "<i>had been run</i>",
+                      "<i>had been runing</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Іра була втомлена тоді, у минулому, — <i>had</i>.",
+                      null,
+                      "Continuous — дієслово з <i>-ing</i>: <i>running</i>.",
+                      "<i>run</i> + <i>-ing</i> = <i>running</i>: <i>n</i> подвоюємо."
+                    ]
                   }
                 ],
                 "answer": "<i>had run</i>; <i>had been running</i>"
@@ -298,11 +536,39 @@
                 "steps": [
                   {
                     "do": "three pages",
-                    "why": "Число — це результат."
+                    "why": "Число — це результат.",
+                    "q": "Яке слово показує результат?",
+                    "options": [
+                      "<i>By nine o'clock</i>",
+                      "<i>three pages</i>",
+                      "<i>my essay</i>",
+                      "<i>write</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Це момент у минулому, а не результат.",
+                      null,
+                      "Це те, що писали; результат — кількість: <i>three pages</i>.",
+                      "Це саме дієслово; результат — кількість: <i>three pages</i>."
+                    ]
                   },
                   {
                     "do": "had written",
-                    "why": "Past Perfect Simple: <i>write → wrote → written</i>."
+                    "why": "Past Perfect Simple: <i>write → wrote → written</i>.",
+                    "q": "Яка форма?",
+                    "options": [
+                      "<i>had been writing</i>",
+                      "<i>had wrote</i>",
+                      "<i>had writed</i>",
+                      "<i>had written</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Є кількість (три сторінки) — результат: Simple <i>had written</i>.",
+                      "Після <i>had</i> — V3: <i>written</i>, не V2.",
+                      "<i>write</i> — неправильне: <i>write – wrote – written</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>had written</i>"
@@ -312,11 +578,39 @@
                 "steps": [
                   {
                     "do": "all morning, smelled → had been baking",
-                    "why": "Процес, що тривав, і його слід (запах) — Continuous."
+                    "why": "Процес, що тривав, і його слід (запах) — Continuous.",
+                    "q": "Пекла весь ранок, і кухня пахла. Яка форма?",
+                    "options": [
+                      "<i>has been baking</i>",
+                      "<i>had been baking</i>",
+                      "<i>had been baked</i>",
+                      "<i>had been bakeing</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Кухня пахла тоді, у минулому, — <i>had</i>.",
+                      null,
+                      "Мама пекла сама — форма з <i>-ing</i>: <i>baking</i>.",
+                      "<i>bake</i> + <i>-ing</i>: <i>e</i> відкидаємо — <i>baking</i>."
+                    ]
                   },
                   {
                     "do": "a cake, we had it → had baked",
-                    "why": "Готовий результат — торт уже спечений — Simple."
+                    "why": "Готовий результат — торт уже спечений — Simple.",
+                    "q": "Торт готовий, ми його з'їли. Яка форма?",
+                    "options": [
+                      "<i>has baked</i>",
+                      "<i>had baked</i>",
+                      "<i>had bake</i>",
+                      "<i>had baken</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Це минуле (<i>we had it</i>) — <i>had</i>, не <i>has</i>.",
+                      null,
+                      "Після <i>had</i> — V3: <i>baked</i>.",
+                      "<i>bake</i> — правильне дієслово: <i>baked</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>had been baking</i>; <i>had baked</i>"
@@ -406,11 +700,39 @@
                 "steps": [
                   {
                     "do": "the film → during",
-                    "why": "Після пропуску — лише іменник."
+                    "why": "Після пропуску — лише іменник.",
+                    "q": "Після пропуску — лише іменник. <i>while</i> чи <i>during</i>?",
+                    "options": [
+                      "<i>during of the film</i>",
+                      "<i>while the film</i>",
+                      "<i>during the film</i>",
+                      "<i>for the film</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>during</i> — одразу іменник, без <i>of</i>.",
+                      "Після <i>while</i> — ціле речення; перед іменником — <i>during</i>.",
+                      null,
+                      "<i>for</i> — про тривалість (<i>for an hour</i>); «під час» — <i>during</i>."
+                    ]
                   },
                   {
                     "do": "I was watching → while",
-                    "why": "Після пропуску — ціле речення з підметом і дієсловом."
+                    "why": "Після пропуску — ціле речення з підметом і дієсловом.",
+                    "q": "Після пропуску — речення. <i>while</i> чи <i>during</i>?",
+                    "options": [
+                      "<i>during I was watching</i>",
+                      "<i>while I was watching</i>",
+                      "<i>while I were watching</i>",
+                      "<i>while I watching</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>during</i> — лише іменник; перед реченням — <i>while</i>.",
+                      null,
+                      "З <i>I</i> — <i>was</i>, не <i>were</i>.",
+                      "Бракує <i>was</i>: <i>while I was watching</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>during</i>; <i>while</i>"
@@ -420,11 +742,39 @@
                 "steps": [
                   {
                     "do": "As soon as I got home, …",
-                    "why": "<i>As soon as</i> ставимо перед першою дією."
+                    "why": "<i>As soon as</i> ставимо перед першою дією.",
+                    "q": "Як почати речення?",
+                    "options": [
+                      "<i>As soon as I got home, …</i>",
+                      "<i>As soon as I will get home, …</i>",
+                      "<i>So soon as I got home, …</i>",
+                      "<i>As soon I got home, …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це минуле: <i>got</i>; <i>will</i> тут не можна.",
+                      "Правильний вираз — <i>As soon as</i>.",
+                      "Повний вираз — <i>as soon as</i>."
+                    ]
                   },
                   {
                     "do": "… I called my friend.",
-                    "why": "Слово <i>immediately</i> вже не потрібне — <i>as soon as</i> і так означає «одразу»."
+                    "why": "Слово <i>immediately</i> вже не потрібне — <i>as soon as</i> і так означає «одразу».",
+                    "q": "Як закінчити речення?",
+                    "options": [
+                      "<i>… I called my friend.</i>",
+                      "<i>… I call my friend.</i>",
+                      "<i>… I have called my friend.</i>",
+                      "<i>… I was call my friend.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це минуле — <i>called</i>.",
+                      "Минула подія — Past Simple <i>called</i>.",
+                      "Коротка подія — Past Simple <i>called</i>, без <i>was</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>As soon as I got home, I called my friend.</i>"
@@ -434,15 +784,57 @@
                 "steps": [
                   {
                     "do": "At first I didn't like volleyball.",
-                    "why": "Початок історії, «спочатку»."
+                    "why": "Початок історії, «спочатку».",
+                    "q": "Початок історії. Яке речення правильне?",
+                    "options": [
+                      "<i>In the end I didn't like volleyball.</i>",
+                      "<i>At first I don't like volleyball.</i>",
+                      "<i>Then I didn't like volleyball.</i>",
+                      "<i>At first I didn't like volleyball.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>In the end</i> — фінал історії; початок — <i>At first</i>.",
+                      "Історія в минулому — <i>didn't like</i>.",
+                      "<i>Then</i> — наступна подія; початок — <i>At first</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "Then my cousin taught me to serve.",
-                    "why": "Наступна подія."
+                    "why": "Наступна подія.",
+                    "q": "Наступна подія. Яке речення правильне?",
+                    "options": [
+                      "<i>Then my cousin taught me to serve.</i>",
+                      "<i>At first my cousin taught me to serve.</i>",
+                      "<i>Then my cousin taught me serve.</i>",
+                      "<i>Then my cousin teached me to serve.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>At first</i> уже було; наступна подія — <i>Then</i>.",
+                      "Після <i>teach somebody</i> — <i>to</i> + дієслово.",
+                      "<i>teach</i> — неправильне: <i>teach – taught – taught</i>."
+                    ]
                   },
                   {
                     "do": "In the end I joined the school team.",
-                    "why": "Результат історії, «зрештою»."
+                    "why": "Результат історії, «зрештою».",
+                    "q": "Результат історії. Яке речення правильне?",
+                    "options": [
+                      "<i>In the end I joined to the school team.</i>",
+                      "<i>In the end I joined the school team.</i>",
+                      "<i>In the ends I joined the school team.</i>",
+                      "<i>In the end I join the school team.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>join</i> — без <i>to</i>: <i>joined the team</i>.",
+                      null,
+                      "Сталий вираз — <i>In the end</i>, в однині.",
+                      "Історія в минулому — <i>joined</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>At first … Then … In the end …</i>"
@@ -520,7 +912,21 @@
                 "steps": [
                   {
                     "do": "catch a cold → caught",
-                    "why": "Захворіти на застуду — <i>catch a cold</i>; у минулому <i>catch → caught</i>."
+                    "why": "Захворіти на застуду — <i>catch a cold</i>; у минулому <i>catch → caught</i>.",
+                    "q": "Захворіти на застуду минулого тижня. Як правильно?",
+                    "options": [
+                      "<i>took a cold</i>",
+                      "<i>caught a cold</i>",
+                      "<i>made a cold</i>",
+                      "<i>catched a cold</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Застуду «ловлять»: <i>catch a cold</i>.",
+                      null,
+                      "Стала пара слів — <i>catch a cold</i>.",
+                      "<i>catch</i> — неправильне: <i>catch – caught – caught</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>caught</i>"
@@ -530,15 +936,57 @@
                 "steps": [
                   {
                     "do": "Hi! I'm sorry, but I can't come to training today.",
-                    "why": "Починаємо з головного."
+                    "why": "Починаємо з головного.",
+                    "q": "Почни з головного. Яке речення правильне?",
+                    "options": [
+                      "<i>I'm sorry, but I don't can come to training.</i>",
+                      "<i>I'm sorry, but I can't to come to training.</i>",
+                      "<i>I'm sorry, but I can't come to training.</i>",
+                      "<i>I'm sorry, but I can't come on training.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Заперечення <i>can</i> — <i>can't</i>, без <i>don't</i>.",
+                      "Після <i>can't</i> — без <i>to</i>.",
+                      null,
+                      "Прийти на тренування — <i>come to training</i>."
+                    ]
                   },
                   {
                     "do": "I've got a sore throat and a high temperature.",
-                    "why": "Симптоми з <i>have got a…</i>."
+                    "why": "Симптоми з <i>have got a…</i>.",
+                    "q": "Симптоми. Як правильно?",
+                    "options": [
+                      "<i>I've got sore throat …</i>",
+                      "<i>I've got a throat sore …</i>",
+                      "<i>I've got a sore throat …</i>",
+                      "<i>I've got an ill throat …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Злічуваний іменник в однині — з <i>a</i>: <i>a sore throat</i>.",
+                      "Прикметник — перед іменником: <i>sore throat</i>.",
+                      null,
+                      "Біль у горлі — <i>a sore throat</i>."
+                    ]
                   },
                   {
                     "do": "Mum says I need to see a doctor. I hope I'll get better soon!",
-                    "why": "Що робитимеш і коли повернешся."
+                    "why": "Що робитимеш і коли повернешся.",
+                    "q": "Що робитимеш? Яке речення правильне?",
+                    "options": [
+                      "<i>Mum says I need to look a doctor.</i>",
+                      "<i>Mum say I need to see a doctor.</i>",
+                      "<i>Mum says I need to see a doctor.</i>",
+                      "<i>Mum says I need see a doctor.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Звернутися до лікаря — <i>see a doctor</i>.",
+                      "<i>Mum</i> = she: <i>says</i> з <i>-s</i>.",
+                      null,
+                      "Після <i>need</i> — <i>to</i>: <i>need to see</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Hi! I'm sorry, but I can't come to training today. I've got a sore throat and a high temperature. Mum says I need to see a doctor. I hope I'll get better soon!</i>"
@@ -548,15 +996,57 @@
                 "steps": [
                   {
                     "do": "You should get enough sleep.",
-                    "why": "<i>get enough sleep</i> — висипатися."
+                    "why": "<i>get enough sleep</i> — висипатися.",
+                    "q": "Порада про сон. Яке речення правильне?",
+                    "options": [
+                      "<i>You should to get enough sleep.</i>",
+                      "<i>You should gets enough sleep.</i>",
+                      "<i>You should get sleep enough.</i>",
+                      "<i>You should get enough sleep.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>should</i> — без <i>to</i>.",
+                      "Після <i>should</i> — початкова форма: <i>get</i>.",
+                      "<i>enough</i> — перед іменником: <i>enough sleep</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "And try to eat less junk food and do more exercise.",
-                    "why": "<i>junk food</i> — шкідлива їжа; <i>do exercise</i> — робити вправи, рухатися."
+                    "why": "<i>junk food</i> — шкідлива їжа; <i>do exercise</i> — робити вправи, рухатися.",
+                    "q": "Друга порада. Як правильно?",
+                    "options": [
+                      "<i>… eat less junk food and make more exercise.</i>",
+                      "<i>… eat less trash food and do more exercise.</i>",
+                      "<i>… eat fewer junk food and do more exercise.</i>",
+                      "<i>… eat less junk food and do more exercise.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Робити вправи — <i>do exercise</i>.",
+                      "Шкідлива їжа — <i>junk food</i>.",
+                      "<i>junk food</i> незлічуване — <i>less</i>, не <i>fewer</i>.",
+                      null
+                    ]
                   },
                   {
-                    "do": "А тепер про себе: <i>To keep fit, I…</i>",
-                    "why": "Склади своє речення: <i>To keep fit, I ride my bike every day.</i>"
+                    "do": "А тепер про себе, наприклад: <i>To keep fit, I ride my bike every day.</i>",
+                    "why": "Склади своє речення: <i>To keep fit, I ride my bike every day.</i>",
+                    "q": "Про себе. Яке речення правильне?",
+                    "options": [
+                      "<i>To keep fit, I ride my bike every days.</i>",
+                      "<i>To keep fit, I rides my bike every day.</i>",
+                      "<i>To keep fit, I ride my bike every day.</i>",
+                      "<i>For keep fit, I ride my bike every day.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>every</i> — з одниною: <i>every day</i>.",
+                      "З <i>I</i> — <i>ride</i> без <i>-s</i>.",
+                      null,
+                      "Мета — <i>to</i> + дієслово: <i>To keep fit</i>."
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>You should get enough sleep. And try to eat less junk food and do more exercise.</i>"
@@ -642,15 +1132,57 @@
                 "steps": [
                   {
                     "do": "Oh no! Why don't you go and lie down for a bit?",
-                    "why": "Спершу співчуття, потім порада з <i>Why don't you…?</i>"
+                    "why": "Спершу співчуття, потім порада з <i>Why don't you…?</i>",
+                    "q": "Співчуття й порада. Яка відповідь правильна?",
+                    "options": [
+                      "<i>Oh no! Why don't you go and lie down?</i>",
+                      "<i>Oh no! Why you don't go and lie down?</i>",
+                      "<i>Great! Why don't you go and lie down?</i>",
+                      "<i>Oh no! Why don't you to go and lie down?</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "У питанні <i>don't</i> стоїть перед <i>you</i>.",
+                      "Друг почувається погано — спершу співчуття: <i>Oh no!</i>",
+                      "Після <i>Why don't you</i> — без <i>to</i>."
+                    ]
                   },
                   {
                     "do": "B: Good idea. I think I've been looking at my screen for too long.",
-                    "why": "Співрозмовник погоджується й називає причину."
+                    "why": "Співрозмовник погоджується й називає причину.",
+                    "q": "Причина. Яке речення правильне?",
+                    "options": [
+                      "<i>I've been looking at my screen since too long.</i>",
+                      "<i>I've been looking at my screen for too long.</i>",
+                      "<i>I've been look at my screen for too long.</i>",
+                      "<i>I've been looking on my screen for too long.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Тривалість — з <i>for</i>: <i>for too long</i>.",
+                      null,
+                      "Після <i>been</i> — дієслово з <i>-ing</i>: <i>looking</i>.",
+                      "Дивитися на щось — <i>look at</i>."
+                    ]
                   },
                   {
                     "do": "A: Have a glass of water too. I hope you feel better soon!",
-                    "why": "Ще одна порада й побажання."
+                    "why": "Ще одна порада й побажання.",
+                    "q": "Побажання. Яке речення правильне?",
+                    "options": [
+                      "<i>I hope you feels better soon!</i>",
+                      "<i>I hope you feel better soon!</i>",
+                      "<i>I hope you feel more better soon!</i>",
+                      "<i>I hope you feel gooder soon!</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "З <i>you</i> — <i>feel</i> без <i>-s</i>.",
+                      null,
+                      "<i>better</i> — уже вищий ступінь; <i>more</i> не треба.",
+                      "Вищий ступінь від <i>good</i> — <i>better</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Oh no! Why don't you go and lie down for a bit?</i>"
@@ -660,11 +1192,39 @@
                 "steps": [
                   {
                     "do": "You should go to bed earlier.",
-                    "why": "<i>should</i> + дієслово без <i>to</i>."
+                    "why": "<i>should</i> + дієслово без <i>to</i>.",
+                    "q": "Перша порада. Яке речення правильне?",
+                    "options": [
+                      "<i>You should go to the bed earlier.</i>",
+                      "<i>You should going to bed earlier.</i>",
+                      "<i>You should go to bed earlier.</i>",
+                      "<i>You should to go to bed earlier.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Лягати спати — <i>go to bed</i>, без артикля.",
+                      "Після <i>should</i> — початкова форма: <i>go</i>.",
+                      null,
+                      "Після <i>should</i> — без <i>to</i>."
+                    ]
                   },
                   {
                     "do": "And why don't you leave your phone in another room at night?",
-                    "why": "<i>Why don't you…?</i> — м'яка порада."
+                    "why": "<i>Why don't you…?</i> — м'яка порада.",
+                    "q": "Друга порада. Яке речення правильне?",
+                    "options": [
+                      "<i>Why doesn't you leave your phone …?</i>",
+                      "<i>Why you don't leave your phone …?</i>",
+                      "<i>Why don't you leave your phone …?</i>",
+                      "<i>Why don't you to leave your phone …?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "З <i>you</i> — <i>don't</i>, не <i>doesn't</i>.",
+                      "У питанні <i>don't</i> стоїть перед <i>you</i>.",
+                      null,
+                      "Після <i>Why don't you</i> — без <i>to</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>You should go to bed earlier. And why don't you leave your phone in another room at night?</i>"
@@ -674,15 +1234,57 @@
                 "steps": [
                   {
                     "do": "I think my lifestyle is quite healthy.",
-                    "why": "Загальна думка."
+                    "why": "Загальна думка.",
+                    "q": "Загальна думка. Яке речення правильне?",
+                    "options": [
+                      "<i>I think my lifestyle is quite health.</i>",
+                      "<i>I am think my lifestyle is quite healthy.</i>",
+                      "<i>I think my lifestyle is quite healthy.</i>",
+                      "<i>I think my lifestyle quite healthy.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Потрібен прикметник: <i>healthy</i>; <i>health</i> — іменник.",
+                      "«Вважати» — просто <i>I think</i>, без <i>am</i>.",
+                      null,
+                      "Бракує дієслова <i>is</i>."
+                    ]
                   },
                   {
                     "do": "I ride my bike to school and I play basketball twice a week.",
-                    "why": "Конкретні приклади з <i>twice a week</i>, <i>every day</i>."
+                    "why": "Конкретні приклади з <i>twice a week</i>, <i>every day</i>.",
+                    "q": "Приклад. Яке речення правильне?",
+                    "options": [
+                      "<i>I play basketball two times in week.</i>",
+                      "<i>I play the basketball twice a week.</i>",
+                      "<i>I play basketball twice a week.</i>",
+                      "<i>I play in basketball twice a week.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Двічі на тиждень — <i>twice a week</i>.",
+                      "Назви спортивних ігор — без артикля.",
+                      null,
+                      "Грати в гру — <i>play basketball</i>, без <i>in</i>."
+                    ]
                   },
                   {
                     "do": "But I don't get enough sleep, so I'm trying to go to bed earlier.",
-                    "why": "Що хочеш змінити — <i>I'm trying to…</i>"
+                    "why": "Що хочеш змінити — <i>I'm trying to…</i>",
+                    "q": "Що хочеш змінити? Як правильно?",
+                    "options": [
+                      "<i>… so I'm trying to go to the bed earlier.</i>",
+                      "<i>… so I trying to go to bed earlier.</i>",
+                      "<i>… so I'm trying go to bed earlier.</i>",
+                      "<i>… so I'm trying to go to bed earlier.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>go to bed</i> — без артикля.",
+                      "Бракує <i>am</i>: <i>I'm trying</i>.",
+                      "Після <i>trying</i> — <i>to</i>: <i>trying to go</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Наприклад: <i>I think my lifestyle is quite healthy. I ride my bike to school and I play basketball twice a week. But I don't get enough sleep, so I'm trying to go to bed earlier.</i>"
@@ -763,15 +1365,57 @@
                 "steps": [
                   {
                     "do": "A huge black dog …",
-                    "why": "Цікаві прикметники замість <i>big</i>."
+                    "why": "Цікаві прикметники замість <i>big</i>.",
+                    "q": "Цікавіші прикметники замість <i>big</i>. Як правильно?",
+                    "options": [
+                      "<i>A very huge black dog …</i>",
+                      "<i>A huge black dog …</i>",
+                      "<i>An huge black dog …</i>",
+                      "<i>A black huge dog …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>huge</i> уже означає «дуже великий»; <i>very</i> з ним не вживаємо.",
+                      null,
+                      "<i>huge</i> починається з приголосного /h/ — <i>a</i>.",
+                      "Розмір — перед кольором: <i>huge black</i>."
+                    ]
                   },
                   {
                     "do": "… suddenly ran towards us.",
-                    "why": "Прислівник <i>suddenly</i> додає напруги; <i>towards us</i> — у наш бік."
+                    "why": "Прислівник <i>suddenly</i> додає напруги; <i>towards us</i> — у наш бік.",
+                    "q": "Додаємо напруги. Як правильно?",
+                    "options": [
+                      "<i>… suddenly run towards us.</i>",
+                      "<i>… suddenly ran towards we.</i>",
+                      "<i>… sudden ran towards us.</i>",
+                      "<i>… suddenly ran towards us.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Історія в минулому — <i>ran</i>.",
+                      "Після прийменника — <i>us</i>, не <i>we</i>.",
+                      "Дію описує прислівник: <i>suddenly</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "A huge black dog suddenly ran towards us, barking loudly.",
-                    "why": "Ще одна деталь — <i>barking loudly</i> (гучно гавкаючи)."
+                    "why": "Ще одна деталь — <i>barking loudly</i> (гучно гавкаючи).",
+                    "q": "Ще одна деталь. Як правильно?",
+                    "options": [
+                      "<i>…, barking loudy.</i>",
+                      "<i>…, bark loudly.</i>",
+                      "<i>…, barked loudly.</i>",
+                      "<i>…, barking loudly.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Прислівник від <i>loud</i> — <i>loudly</i>.",
+                      "Додаткова одночасна дія — форма на <i>-ing</i>: <i>barking</i>.",
+                      "Додаткова одночасна дія — форма на <i>-ing</i>: <i>barking</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>A huge black dog suddenly ran towards us, barking loudly.</i>"
@@ -781,15 +1425,57 @@
                 "steps": [
                   {
                     "do": "(b) One evening, our cat Murchyk disappeared.",
-                    "why": "Початок: коли й що сталося."
+                    "why": "Початок: коли й що сталося.",
+                    "q": "Що на початку історії?",
+                    "options": [
+                      "(c) <i>At first, we looked…</i>",
+                      "(a) <i>In the end, we found…</i>",
+                      "(b) <i>One evening, our cat … disappeared.</i>",
+                      "Будь-яка — порядок не важливий"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>At first</i> — розвиток: спершу має щось статися.",
+                      "<i>In the end</i> — кінець історії.",
+                      null,
+                      "Історія має сталий порядок: спершу коли й що сталося."
+                    ]
                   },
                   {
                     "do": "(c) At first, we looked for him in the garden.",
-                    "why": "Розвиток: <i>at first</i> — спочатку."
+                    "why": "Розвиток: <i>at first</i> — спочатку.",
+                    "q": "Що далі — розвиток?",
+                    "options": [
+                      "(a) <i>In the end, we found…</i>",
+                      "(c) <i>At first, we looked…</i>",
+                      "(b) <i>One evening…</i>",
+                      "Нічого — одразу кінець"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>In the end</i> — останнім; спершу розвиток.",
+                      null,
+                      "(b) уже стоїть на початку.",
+                      "Історія має початок, розвиток і кінець: розвиток — (c)."
+                    ]
                   },
                   {
                     "do": "(a) In the end, we found the cat under the bed.",
-                    "why": "Кінець: <i>in the end</i> — зрештою."
+                    "why": "Кінець: <i>in the end</i> — зрештою.",
+                    "q": "Чим закінчується історія?",
+                    "options": [
+                      "(b) <i>One evening…</i>",
+                      "Нічим — кінець не потрібен",
+                      "(c) <i>At first, we looked…</i>",
+                      "(a) <i>In the end, we found…</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "(b) — початок історії.",
+                      "Без кінцівки історія не завершена: <i>In the end…</i> — (a).",
+                      "(c) — розвиток, <i>at first</i> — «спочатку».",
+                      null
+                    ]
                   }
                 ],
                 "answer": "b – c – a"
@@ -799,19 +1485,75 @@
                 "steps": [
                   {
                     "do": "Beginning: <i>It was a cold Saturday morning… hiking in the Carpathians.</i>",
-                    "why": "Коли, де, хто — читач одразу бачить картинку."
+                    "why": "Коли, де, хто — читач одразу бачить картинку.",
+                    "q": "Який початок історії (коли, де, хто)?",
+                    "options": [
+                      "<i>In the end, they got home before dark.</i>",
+                      "<i>“Where's the map?” he asked.</i>",
+                      "<i>It was a cold Saturday morning, …</i>",
+                      "<i>Then his sister remembered the red marks.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Це кінцівка.",
+                      "Це вже проблема, а не початок.",
+                      null,
+                      "Це розвиток подій."
+                    ]
                   },
                   {
                     "do": "Problem: <i>“Where's the map?” … He had left it at their picnic spot!</i>",
-                    "why": "Несподіванка; Past Perfect показує, що мапу залишили раніше."
+                    "why": "Несподіванка; Past Perfect показує, що мапу залишили раніше.",
+                    "q": "Мапу залишили раніше. Яка форма?",
+                    "options": [
+                      "<i>He had leaved it at their picnic spot!</i>",
+                      "<i>He was leaving it at their picnic spot!</i>",
+                      "<i>He has left it at their picnic spot!</i>",
+                      "<i>He had left it at their picnic spot!</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>leave</i> — неправильне: <i>leave – left – left</i>.",
+                      "Раніша завершена дія — Past Perfect <i>had left</i>.",
+                      "Історія в минулому — <i>had left</i>, не <i>has</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "Ending: <i>In the end, they got home before dark. Dan never forgot the map again.</i>",
-                    "why": "Проблему розв'язано, є висновок."
+                    "why": "Проблему розв'язано, є висновок.",
+                    "q": "Яка кінцівка (проблему розв'язано)?",
+                    "options": [
+                      "<i>Dan suddenly stopped.</i>",
+                      "<i>At first, they panicked.</i>",
+                      "<i>In the end, they got home before dark.</i>",
+                      "<i>They had been walking for three hours…</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Це несподіванка — початок проблеми.",
+                      "Це розвиток — <i>at first</i>, «спочатку».",
+                      null,
+                      "Це ще початок пригоди."
+                    ]
                   },
                   {
                     "do": "Checklist: зв'язки <i>suddenly, at first, then, as soon as, in the end</i>; пряма мова; різні минулі часи.",
-                    "why": "За цим списком перевіряй і свою історію."
+                    "why": "За цим списком перевіряй і свою історію.",
+                    "q": "Які зв'язки часу є в цій історії?",
+                    "options": [
+                      "<i>suddenly, at first, then, as soon as, in the end</i>",
+                      "<i>firstly, however, in conclusion</i>",
+                      "<i>for example, what's more</i>",
+                      "<i>during, while, after</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це зв'язки для есе; у цій історії їх немає.",
+                      "Цих слів у тексті немає — це зв'язки для есе й блогу.",
+                      "Цих слів у тексті історії немає."
+                    ]
                   }
                 ],
                 "answer": "Початок — перше речення; проблема — загублена мапа; кінець — <i>In the end, they got home before dark…</i>"
@@ -891,11 +1633,39 @@
                 "steps": [
                   {
                     "do": "/tʃ/: chest, kitchen, picture",
-                    "why": "<i>ch</i>, <i>tch</i> і <i>-ture</i> дають «ч»."
+                    "why": "<i>ch</i>, <i>tch</i> і <i>-ture</i> дають «ч».",
+                    "q": "Які слова зі звуком /tʃ/ («ч»)?",
+                    "options": [
+                      "<i>chest, kitchen, station</i>",
+                      "<i>chest, shower, picture</i>",
+                      "<i>chest, kitchen, picture</i>",
+                      "<i>shoulder, kitchen, picture</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>-tion</i> дає «ш»: /ʃ/.",
+                      "<i>sh</i> у <i>shower</i> — «ш» /ʃ/.",
+                      null,
+                      "<i>sh</i> — «ш» /ʃ/."
+                    ]
                   },
                   {
                     "do": "/ʃ/: shoulder, shower, station",
-                    "why": "<i>sh</i> і <i>-tion</i> дають «ш»."
+                    "why": "<i>sh</i> і <i>-tion</i> дають «ш».",
+                    "q": "Які слова зі звуком /ʃ/ («ш»)?",
+                    "options": [
+                      "<i>shoulder, shower, station</i>",
+                      "<i>shoulder, shower, picture</i>",
+                      "<i>chest, shower, station</i>",
+                      "<i>shoulder, kitchen, station</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>-ture</i> дає «ч»: /tʃ/.",
+                      "<i>ch</i> у <i>chest</i> — «ч» /tʃ/.",
+                      "<i>tch</i> у <i>kitchen</i> — «ч» /tʃ/."
+                    ]
                   }
                 ],
                 "answer": "/tʃ/ — <i>chest, kitchen, picture</i>; /ʃ/ — <i>shoulder, shower, station</i>"
@@ -905,11 +1675,39 @@
                 "steps": [
                   {
                     "do": "watch /wɒtʃ/ — дивитися, годинник; wash /wɒʃ/ — мити",
-                    "why": "Відрізняє лише останній звук: «ч» чи «ш»."
+                    "why": "Відрізняє лише останній звук: «ч» чи «ш».",
+                    "q": "Що означають <i>watch</i> і <i>wash</i>?",
+                    "options": [
+                      "<i>watch</i> — дивитися; <i>wash</i> — мити",
+                      "обидва — «дивитися»",
+                      "обидва — «мити»",
+                      "<i>watch</i> — мити; <i>wash</i> — дивитися"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>wash</i> — мити; «дивитися» — лише <i>watch</i>.",
+                      "<i>watch</i> — дивитися, годинник; «мити» — лише <i>wash</i>.",
+                      "Навпаки: <i>watch</i> (з «ч») — дивитися, <i>wash</i> (з «ш») — мити."
+                    ]
                   },
                   {
                     "do": "cheap /tʃiːp/ — дешевий; sheep /ʃiːp/ — вівця",
-                    "why": "Почни зі «т»-поштовху для /tʃ/; для /ʃ/ — просто довгий шум."
+                    "why": "Почни зі «т»-поштовху для /tʃ/; для /ʃ/ — просто довгий шум.",
+                    "q": "Що означають <i>cheap</i> і <i>sheep</i>?",
+                    "options": [
+                      "<i>cheap</i> — дешевий; <i>sheep</i> — вівця",
+                      "<i>cheap</i> — вівця; <i>sheep</i> — дешевий",
+                      "<i>cheap</i> — дешевий; <i>sheep</i> — корабель",
+                      "<i>cheap</i> — чіпси; <i>sheep</i> — вівця"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Навпаки: <i>cheap</i> (з «ч») — дешевий, <i>sheep</i> (з «ш») — вівця.",
+                      "Корабель — <i>ship</i>, з коротким звуком; <i>sheep</i> — вівця.",
+                      "Чіпси — <i>chips</i>; <i>cheap</i> — дешевий."
+                    ]
                   }
                 ],
                 "answer": "<i>watch</i> — дивитися / годинник, <i>wash</i> — мити; <i>cheap</i> — дешевий, <i>sheep</i> — вівця"
@@ -919,15 +1717,57 @@
                 "steps": [
                   {
                     "do": "chef /ʃ/ — washed /ʃ/ — sugar /ʃ/",
-                    "why": "<i>chef</i> — французьке слово, тому <i>ch</i> = /ʃ/; у <i>sugar</i> літера <i>s</i> звучить як /ʃ/."
+                    "why": "<i>chef</i> — французьке слово, тому <i>ch</i> = /ʃ/; у <i>sugar</i> літера <i>s</i> звучить як /ʃ/.",
+                    "q": "Які слова з речення звучать з /ʃ/?",
+                    "options": [
+                      "<i>chef, cherries, sugar</i>",
+                      "<i>chef, washed, sugar</i>",
+                      "лише <i>washed, sugar</i>",
+                      "<i>washed, sugar, cheesecake</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "У <i>cherries</i> звичайне <i>ch</i> — «ч» /tʃ/.",
+                      null,
+                      "<i>chef</i> — французьке слово: <i>ch</i> = /ʃ/.",
+                      "<i>cheesecake</i> — «ч» /tʃ/; а <i>chef</i> — /ʃ/."
+                    ]
                   },
                   {
                     "do": "cherries /tʃ/ — cheesecake /tʃ/",
-                    "why": "Звичайне <i>ch</i> = «ч»."
+                    "why": "Звичайне <i>ch</i> = «ч».",
+                    "q": "Які слова з речення звучать з /tʃ/?",
+                    "options": [
+                      "<i>cherries, cheesecake</i>",
+                      "<i>chef, cherries, cheesecake</i>",
+                      "лише <i>cheesecake</i>",
+                      "<i>cherries, sugar</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>chef</i> — французьке слово: <i>ch</i> = /ʃ/.",
+                      "У <i>cherries</i> теж звичайне <i>ch</i> = «ч».",
+                      "У <i>sugar</i> літера <i>s</i> звучить як /ʃ/."
+                    ]
                   },
                   {
-                    "do": "Повтори 3 рази, стежачи за губами.",
-                    "why": "Для /ʃ/ губи округлені й трохи витягнуті, для /tʃ/ спершу легкий поштовх язиком."
+                    "do": "Повтори 3 рази, стежачи за губами; /tʃ/ починається з легкого поштовху язиком («т»).",
+                    "why": "Для /ʃ/ губи округлені й трохи витягнуті, для /tʃ/ спершу легкий поштовх язиком.",
+                    "q": "З чого починається /tʃ/ (на відміну від /ʃ/)?",
+                    "options": [
+                      "з легкого поштовху язиком («т»)",
+                      "з дрижання голосу",
+                      "з носового звука",
+                      "з довгого шуму без зупинки"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Голос дрижить у /dʒ/; /tʃ/ — глухий, починається з поштовху «т».",
+                      "Носові звуки — /m/, /n/; /tʃ/ починається з поштовху «т».",
+                      "Довгий шум без зупинки — це /ʃ/; /tʃ/ починається з «т»."
+                    ]
                   }
                 ],
                 "answer": "/ʃ/ — <i>chef, washed, sugar</i>; /tʃ/ — <i>cherries, cheesecake</i>"

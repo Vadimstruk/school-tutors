@@ -47,11 +47,39 @@
                 "steps": [
                   {
                     "do": "a) My grandparents <b>let</b> me bake cakes with them.",
-                    "why": "Після пропуску стоїть <i>me</i> і дієслово без <i>to</i> — це схема <i>let + кому + V</i>."
+                    "why": "Після пропуску стоїть <i>me</i> і дієслово без <i>to</i> — це схема <i>let + кому + V</i>.",
+                    "q": "a) <i>My grandparents … me bake cakes with them.</i>",
+                    "options": [
+                      "<i>allow</i>",
+                      "<i>allowed</i>",
+                      "<i>lets</i>",
+                      "<i>let</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>allow me</i> потрібне <i>to</i>; без <i>to</i> — <i>let</i>.",
+                      "З <i>allowed me</i> потрібне було б <i>to bake</i>; без <i>to</i> — лише <i>let</i>.",
+                      "<i>grandparents</i> — множина: <i>let</i>, без <i>-s</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "b) We aren't <b>allowed</b> to eat in the classroom.",
-                    "why": "Перед пропуском <i>aren't</i>, після нього — <i>to</i>: це <i>be allowed to</i>."
+                    "why": "Перед пропуском <i>aren't</i>, після нього — <i>to</i>: це <i>be allowed to</i>.",
+                    "q": "b) <i>We aren't … to eat in the classroom.</i>",
+                    "options": [
+                      "<i>allowed</i>",
+                      "<i>let</i>",
+                      "<i>allow</i>",
+                      "<i>letting</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>aren't</i> і перед <i>to</i> — <i>allowed</i>: <i>be allowed to</i>.",
+                      "Після <i>be</i> — форма <i>allowed</i>.",
+                      "<i>be allowed to</i> — дозволено; <i>letting</i> сюди не пасує."
+                    ]
                   }
                 ],
                 "answer": "a) let; b) allowed"
@@ -61,15 +89,57 @@
                 "steps": [
                   {
                     "do": "Who gets permission? → <i>us</i> → <i>we</i>",
-                    "why": "У реченні з <i>be allowed to</i> підмет — той, кому дозволяють: <i>us</i> стає <i>we</i>."
+                    "why": "У реченні з <i>be allowed to</i> підмет — той, кому дозволяють: <i>us</i> стає <i>we</i>.",
+                    "q": "Хто стане підметом?",
+                    "options": [
+                      "<i>our teacher</i>",
+                      "<i>us</i>",
+                      "<i>we</i>",
+                      "<i>they</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Учитель дозволяє, а підмет — той, кому дозволяють: <i>we</i>.",
+                      "Підмет — форма <i>we</i>, не <i>us</i>.",
+                      null,
+                      "Дозвіл отримуємо ми: <i>we</i>."
+                    ]
                   },
                   {
                     "do": "<i>lets</i> → Present Simple → <i>we are</i>",
-                    "why": "<i>Lets</i> — теперішній час, тож і <i>be</i> ставимо в теперішньому."
+                    "why": "<i>Lets</i> — теперішній час, тож і <i>be</i> ставимо в теперішньому.",
+                    "q": "Яка форма <i>be</i>?",
+                    "options": [
+                      "<i>we were</i>",
+                      "<i>we is</i>",
+                      "<i>we are</i>",
+                      "<i>we have</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>lets</i> — теперішній час: <i>we are</i>.",
+                      "З <i>we</i> — <i>are</i>.",
+                      null,
+                      "Потрібне <i>be allowed</i>: <i>are</i>, не <i>have</i>."
+                    ]
                   },
                   {
                     "do": "We are allowed to use dictionaries in tests.",
-                    "why": "Після <i>allowed to</i> — дієслово в першій формі. Хто дозволяє (учитель), можна не згадувати."
+                    "why": "Після <i>allowed to</i> — дієслово в першій формі. Хто дозволяє (учитель), можна не згадувати.",
+                    "q": "<i>We are allowed … dictionaries in tests.</i>",
+                    "options": [
+                      "<i>to use</i>",
+                      "<i>use</i>",
+                      "<i>to using</i>",
+                      "<i>using</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>allowed</i> потрібне <i>to</i>.",
+                      "Після <i>to</i> — перша форма: <i>to use</i>.",
+                      "<i>be allowed to</i> + V1, не <i>-ing</i>."
+                    ]
                   }
                 ],
                 "answer": "We are allowed to use dictionaries in tests. (Або коротко: <i>We're allowed to…</i>)"
@@ -79,15 +149,57 @@
                 "steps": [
                   {
                     "do": "When I was seven, I wasn't allowed to go to the park alone.",
-                    "why": "Минуле й заборона → <i>wasn't allowed to</i> + V."
+                    "why": "Минуле й заборона → <i>wasn't allowed to</i> + V.",
+                    "q": "<i>When I was seven, I … go to the park alone.</i>",
+                    "options": [
+                      "<i>didn't allowed to</i>",
+                      "<i>wasn't let to</i>",
+                      "<i>am not allowed to</i>",
+                      "<i>wasn't allowed to</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Заперечення з <i>be allowed</i>: <i>wasn't allowed to</i>.",
+                      "<i>let</i> так не вживаємо: <i>wasn't allowed to</i>.",
+                      "Це минуле (<i>was seven</i>): <i>wasn't</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "But my parents let me ride my bike in our street.",
-                    "why": "<i>Let</i> у минулому має ту саму форму; після <i>me</i> — дієслово без <i>to</i>."
+                    "why": "<i>Let</i> у минулому має ту саму форму; після <i>me</i> — дієслово без <i>to</i>.",
+                    "q": "<i>But my parents … my bike in our street.</i>",
+                    "options": [
+                      "<i>let me to ride</i>",
+                      "<i>let me ride</i>",
+                      "<i>letted me ride</i>",
+                      "<i>allowed me ride</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>let me</i> — без <i>to</i>.",
+                      null,
+                      "<i>let</i> — неправильне: <i>let – let – let</i>.",
+                      "Після <i>allowed me</i> потрібне <i>to</i>."
+                    ]
                   },
                   {
                     "do": "They also let me have a hamster!",
-                    "why": "Додай свою деталь — так нові слова краще запам'ятовуються."
+                    "why": "Додай свою деталь — так нові слова краще запам'ятовуються.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>They also let me to have a hamster!</i>",
+                      "<i>They also let me having a hamster!</i>",
+                      "<i>They also were let me have a hamster!</i>",
+                      "<i>They also let me have a hamster!</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>let me</i> — без <i>to</i>.",
+                      "Після <i>let me</i> — V1, не <i>-ing</i>.",
+                      "<i>let</i> вживаємо без <i>be</i>: <i>They let me…</i>",
+                      null
+                    ]
                   }
                 ],
                 "answer": "When I was seven, I wasn't allowed to go to the park alone, but my parents let me ride my bike in our street. (Твоя відповідь буде іншою — головне, щоб форми були правильні.)"
@@ -167,11 +279,39 @@
                 "steps": [
                   {
                     "do": "If I <b>had left</b> home earlier, …",
-                    "why": "Частина з <i>if</i> → <i>had + V3</i>; <i>leave – left – left</i>."
+                    "why": "Частина з <i>if</i> → <i>had + V3</i>; <i>leave – left – left</i>.",
+                    "q": "<i>If I … (leave) home earlier, …</i>",
+                    "options": [
+                      "<i>would have left</i>",
+                      "<i>had left</i>",
+                      "<i>had leaved</i>",
+                      "<i>left</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "У частині з <i>if</i> не ставимо <i>would</i>: <i>had left</i>.",
+                      null,
+                      "<i>leave</i> — неправильне: <i>leave – left – left</i>.",
+                      "Третій тип (минуле, якого не було): <i>had left</i>."
+                    ]
                   },
                   {
                     "do": "… I <b>wouldn't have missed</b> the bus.",
-                    "why": "Друга частина → <i>would have + V3</i>; заперечення — <i>wouldn't</i>."
+                    "why": "Друга частина → <i>would have + V3</i>; заперечення — <i>wouldn't</i>.",
+                    "q": "<i>… I … (not miss) the bus.</i>",
+                    "options": [
+                      "<i>hadn't missed</i>",
+                      "<i>wouldn't miss</i>",
+                      "<i>wouldn't have missed</i>",
+                      "<i>wouldn't have miss</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Друга частина — <i>would have</i> + V3.",
+                      "Третій тип: <i>would have</i> + V3 — <i>wouldn't have missed</i>.",
+                      null,
+                      "Після <i>have</i> — V3: <i>missed</i>."
+                    ]
                   }
                 ],
                 "answer": "had left; wouldn't have missed"
@@ -180,16 +320,76 @@
                 "task": "Make one sentence: <i>Max didn't revise for the test. He got a bad mark.</i>",
                 "steps": [
                   {
-                    "do": "Real past: no revision → a bad mark",
-                    "why": "Спершу зрозумій, що сталося насправді."
+                    "do": "Real past: no revision → a bad mark (не повторив → погана оцінка)",
+                    "why": "Спершу зрозумій, що сталося насправді.",
+                    "q": "Що сталося насправді?",
+                    "options": [
+                      "не повторив → погана оцінка",
+                      "повторив → погана оцінка",
+                      "не повторив → добра оцінка",
+                      "повторив → добра оцінка"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>didn't revise</i> — не повторював.",
+                      "<i>got a bad mark</i> — оцінка погана.",
+                      "Це уявна ситуація, а насправді все навпаки."
+                    ]
                   },
                   {
-                    "do": "<i>didn't revise</i> → <i>had revised</i>; <i>got a bad mark</i> → <i>wouldn't have got a bad mark</i>",
-                    "why": "Третій тип показує протилежне до реальних подій: «не повторив» стає «повторив»."
+                    "do": "<i>didn't revise</i> → <i>If Max had revised for the test, …</i>",
+                    "why": "Третій тип показує протилежне до реальних подій: «не повторив» стає «повторив»; <i>had</i> + V3.",
+                    "q": "Частина з <i>if</i>:",
+                    "options": [
+                      "<i>If Max had revised for the test, …</i>",
+                      "<i>If Max hadn't revised for the test, …</i>",
+                      "<i>If Max would have revised for the test, …</i>",
+                      "<i>If Max revised for the test, …</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Третій тип показує протилежне: «не повторив» → <i>had revised</i>.",
+                      "Після <i>if</i> — без <i>would</i>: <i>had revised</i>.",
+                      "Минуле, якого не було: <i>had</i> + V3."
+                    ]
                   },
                   {
-                    "do": "If Max had revised for the test, he wouldn't have got a bad mark.",
-                    "why": "Можна сказати й так: <i>…he would have got a better mark.</i>"
+                    "do": "<i>got a bad mark</i> → <i>…he wouldn't have got a bad mark.</i>",
+                    "why": "Друга частина — <i>would have</i> + V3; реальне «отримав» стає «не отримав би».",
+                    "q": "Друга частина:",
+                    "options": [
+                      "<i>… he wouldn't got a bad mark.</i>",
+                      "<i>… he hadn't got a bad mark.</i>",
+                      "<i>… he wouldn't have got a bad mark.</i>",
+                      "<i>… he would have got a bad mark.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>wouldn't</i> потрібне <i>have</i> + V3.",
+                      "Друга частина — <i>would have</i> + V3.",
+                      null,
+                      "Уявляємо протилежне до реальності: поганої оцінки не було б — <i>wouldn't</i>."
+                    ]
+                  },
+                  {
+                    "do": "If Max had revised for the test, he wouldn't have got a bad mark. (Або: <i>…he would have got a better mark.</i>)",
+                    "why": "Обидва варіанти правильні: «не отримав би погану» = «отримав би кращу».",
+                    "q": "Як ще можна сказати другу частину?",
+                    "options": [
+                      "<i>… he would get a better mark.</i>",
+                      "<i>… he would have got a better mark.</i>",
+                      "<i>… he would have got a worse mark.</i>",
+                      "<i>… he will have got a better mark.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Тест уже минув — третій тип: <i>would have got</i>.",
+                      null,
+                      "Якби повторив — оцінка була б краща, не гірша.",
+                      "У третьому типі — <i>would have</i>, не <i>will have</i>."
+                    ]
                   }
                 ],
                 "answer": "If Max had revised for the test, he wouldn't have got a bad mark."
@@ -199,15 +399,57 @@
                 "steps": [
                   {
                     "do": "<i>you'd told</i> → <i>you had told</i>",
-                    "why": "Після <i>'d</i> стоїть V3 (<i>told</i>), отже це <i>had</i>."
+                    "why": "Після <i>'d</i> стоїть V3 (<i>told</i>), отже це <i>had</i>.",
+                    "q": "Що означає <i>'d</i> у <i>you'd told</i>?",
+                    "options": [
+                      "<i>you would told</i>",
+                      "<i>you did told</i>",
+                      "<i>you have told</i>",
+                      "<i>you had told</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>'d</i> стоїть V3 <i>told</i>, отже <i>'d</i> = <i>had</i>.",
+                      "<i>'d</i> — це <i>had</i> або <i>would</i>, не <i>did</i>.",
+                      "<i>'d</i> не буває <i>have</i>: тут <i>had</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>I'd have bought</i> → <i>I would have bought</i>",
-                    "why": "Після <i>'d</i> стоїть <i>have</i>, отже це <i>would</i>."
+                    "why": "Після <i>'d</i> стоїть <i>have</i>, отже це <i>would</i>.",
+                    "q": "Що означає <i>'d</i> у <i>I'd have bought</i>?",
+                    "options": [
+                      "<i>I had have bought</i>",
+                      "<i>I would have bought</i>",
+                      "<i>I did have bought</i>",
+                      "<i>I have bought</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>'d</i> стоїть <i>have</i> — отже це <i>would</i>.",
+                      null,
+                      "<i>'d</i> — це <i>had</i> або <i>would</i>, не <i>did</i>.",
+                      "<i>'d</i> = <i>would</i>, а <i>have</i> вже стоїть після нього."
+                    ]
                   },
                   {
                     "do": "If I had practised more, I would have won the chess game last Saturday.",
-                    "why": "Власне речення: згадай справжню подію (я мало тренувався й програв) і уяви, як було б інакше."
+                    "why": "Власне речення: згадай справжню подію (я мало тренувався й програв) і уяви, як було б інакше.",
+                    "q": "<i>If I … more, I … the chess game last Saturday.</i>",
+                    "options": [
+                      "<i>practised</i> … <i>would win</i>",
+                      "<i>would have practised</i> … <i>had won</i>",
+                      "<i>had practised</i> … <i>would have winned</i>",
+                      "<i>had practised</i> … <i>would have won</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Третій тип: <i>had</i> + V3, потім <i>would have</i> + V3.",
+                      "Переплутано: <i>had</i> — після <i>if</i>, <i>would have</i> — у другій частині.",
+                      "<i>win</i> — неправильне: <i>win – won – won</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>you'd</i> = <i>you had</i>; <i>I'd have</i> = <i>I would have</i>."
@@ -300,11 +542,39 @@
                 "steps": [
                   {
                     "do": "<i>… the rules</i> → <i>break the rules</i>",
-                    "why": "Колокація (сталий вираз): правила <i>break</i> — порушують."
+                    "why": "Колокація (сталий вираз): правила <i>break</i> — порушують.",
+                    "q": "Як сказати «порушити правила»?",
+                    "options": [
+                      "<i>break the rules</i>",
+                      "<i>do the rules</i>",
+                      "<i>make the rules</i>",
+                      "<i>brake the rules</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Так не кажуть: порушити — <i>break</i>.",
+                      "<i>make the rules</i> — встановлювати правила, а не порушувати.",
+                      "<i>brake</i> — гальмувати; порушити — <i>break</i>."
+                    ]
                   },
                   {
                     "do": "<i>break – broke – broken</i> → Leo <b>broke</b> the rules.",
-                    "why": "Подія в минулому, тому Past Simple."
+                    "why": "Подія в минулому, тому Past Simple.",
+                    "q": "<i>Leo … the rules.</i> Яка форма?",
+                    "options": [
+                      "<i>breaked</i>",
+                      "<i>broken</i>",
+                      "<i>broke</i>",
+                      "<i>breaks</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>break</i> — неправильне: <i>break – broke – broken</i>.",
+                      "<i>broken</i> — V3; у Past Simple — <i>broke</i>.",
+                      null,
+                      "Це сталося в минулому (<i>played</i>): <i>broke</i>."
+                    ]
                   }
                 ],
                 "answer": "broke"
@@ -313,12 +583,40 @@
                 "task": "Choose the right word: <i>Our teacher is very …. She never lets us use phones, and we have to be on time.</i> (strict / lazy / funny)",
                 "steps": [
                   {
-                    "do": "She has a lot of rules and doesn't let us do things.",
-                    "why": "Шукаємо слово про людину, яка вимагає виконувати правила."
+                    "do": "She has a lot of rules and doesn't let us do things. (У неї багато правил і заборон.)",
+                    "why": "Шукаємо слово про людину, яка вимагає виконувати правила.",
+                    "q": "Що ми дізнаємося про вчительку?",
+                    "options": [
+                      "вона нас смішить",
+                      "вона нічого не вимагає",
+                      "у неї багато правил і заборон",
+                      "вона дозволяє телефони"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "У тексті немає жартів — лише правила.",
+                      "Навпаки: <i>we have to be on time</i> — вона вимагає.",
+                      null,
+                      "<i>never lets us use phones</i> — ніколи не дозволяє."
+                    ]
                   },
                   {
                     "do": "Our teacher is very <b>strict</b>.",
-                    "why": "<i>strict</i> — суворий; <i>lazy</i> — лінивий, <i>funny</i> — смішний: вони сюди не пасують."
+                    "why": "<i>strict</i> — суворий; <i>lazy</i> — лінивий, <i>funny</i> — смішний: вони сюди не пасують.",
+                    "q": "<i>Our teacher is very …</i>",
+                    "options": [
+                      "<i>strict</i>",
+                      "<i>lazy</i>",
+                      "<i>funny</i>",
+                      "<i>strictly</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>lazy</i> — лінивий; про правила це не каже.",
+                      "<i>funny</i> — смішний; про правила це не каже.",
+                      "Після <i>is very</i> потрібен прикметник: <i>strict</i>."
+                    ]
                   }
                 ],
                 "answer": "strict"
@@ -328,15 +626,57 @@
                 "steps": [
                   {
                     "do": "Yesterday Sasha broke a rule: he ate crisps in the library.",
-                    "why": "<i>break a rule</i> — порушити правило."
+                    "why": "<i>break a rule</i> — порушити правило.",
+                    "q": "<i>Yesterday Sasha … a rule.</i>",
+                    "options": [
+                      "<i>broken</i>",
+                      "<i>did</i>",
+                      "<i>break</i>",
+                      "<i>broke</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Без <i>has/had</i> V3 не вживаємо: <i>broke</i>.",
+                      "Порушити правило — <i>break a rule</i>.",
+                      "<i>Yesterday</i> — минуле: <i>broke</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "The librarian told him off.",
-                    "why": "<i>tell somebody off</i> — насварити; <i>tell – told</i>."
+                    "why": "<i>tell somebody off</i> — насварити; <i>tell – told</i>.",
+                    "q": "<i>The librarian … .</i> (насварила його)",
+                    "options": [
+                      "<i>told off him</i>",
+                      "<i>told him off</i>",
+                      "<i>telled him off</i>",
+                      "<i>said him off</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Займенник стоїть між <i>told</i> і <i>off</i>: <i>told him off</i>.",
+                      null,
+                      "<i>tell</i> — неправильне: <i>tell – told – told</i>.",
+                      "Вираз — <i>tell somebody off</i>."
+                    ]
                   },
                   {
                     "do": "He got into trouble and had to tidy the bookshelves after school.",
-                    "why": "<i>get into trouble</i> + який був наслідок."
+                    "why": "<i>get into trouble</i> + який був наслідок.",
+                    "q": "<i>He … and had to tidy the bookshelves.</i>",
+                    "options": [
+                      "<i>got into a trouble</i>",
+                      "<i>get into trouble</i>",
+                      "<i>got into troubles</i>",
+                      "<i>got into trouble</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>trouble</i> тут без артикля: <i>get into trouble</i>.",
+                      "Це минуле: <i>got</i>.",
+                      "У цьому виразі <i>trouble</i> — без <i>-s</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Yesterday Sasha broke a rule: he ate crisps in the library. The librarian told him off, and he got into trouble — he had to tidy the bookshelves after school."
@@ -417,11 +757,39 @@
                 "steps": [
                   {
                     "do": "a) … <b>because of</b> the storm",
-                    "why": "Після пропуску лише іменник (<i>the storm</i>) → <i>because of</i>."
+                    "why": "Після пропуску лише іменник (<i>the storm</i>) → <i>because of</i>.",
+                    "q": "a) <i>We stayed inside … the storm.</i>",
+                    "options": [
+                      "<i>because</i>",
+                      "<i>because of</i>",
+                      "<i>so</i>",
+                      "<i>because for</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після пропуску лише іменник — потрібне <i>because of</i>.",
+                      null,
+                      "<i>so</i> вводить наслідок, а буря — причина.",
+                      "Правильно — <i>because of</i>, не <i>for</i>."
+                    ]
                   },
                   {
                     "do": "b) … <b>because</b> it was stormy",
-                    "why": "Після пропуску ціле речення з підметом і дієсловом (<i>it was</i>) → <i>because</i>."
+                    "why": "Після пропуску ціле речення з підметом і дієсловом (<i>it was</i>) → <i>because</i>.",
+                    "q": "b) <i>We stayed inside … it was stormy.</i>",
+                    "options": [
+                      "<i>because of</i>",
+                      "<i>so</i>",
+                      "<i>because</i>",
+                      "<i>as a result</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Далі ціле речення (<i>it was</i>): лише <i>because</i>.",
+                      "Погода — причина, а не наслідок: <i>because</i>.",
+                      null,
+                      "<i>as a result</i> вводить наслідок, а не причину."
+                    ]
                   }
                 ],
                 "answer": "a) because of; b) because"
@@ -431,15 +799,57 @@
                 "steps": [
                   {
                     "do": "Cause: I forgot my PE kit. Result: I couldn't play.",
-                    "why": "Спершу визнач, що причина, а що наслідок."
+                    "why": "Спершу визнач, що причина, а що наслідок.",
+                    "q": "Що тут причина?",
+                    "options": [
+                      "<i>I forgot my PE kit.</i>",
+                      "<i>I couldn't play.</i>",
+                      "обидві частини",
+                      "жодна"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Не грав, бо забув форму: забув раніше — це причина.",
+                      "<i>I couldn't play</i> — наслідок, а не причина.",
+                      "Причина є: <i>I forgot my PE kit</i>."
+                    ]
                   },
                   {
                     "do": "I forgot my PE kit, so I couldn't play.",
-                    "why": "Після <i>so</i> — наслідок; перед <i>so</i> — кома."
+                    "why": "Після <i>so</i> — наслідок; перед <i>so</i> — кома.",
+                    "q": "Як з'єднати за допомогою <i>so</i>?",
+                    "options": [
+                      "<i>I forgot my PE kit, so I couldn't play.</i>",
+                      "<i>I couldn't play, so I forgot my PE kit.</i>",
+                      "<i>I forgot my PE kit so, I couldn't play.</i>",
+                      "<i>I forgot my PE kit, because I couldn't play.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>so</i> — наслідок, а не причина.",
+                      "Кома ставиться перед <i>so</i>, не після.",
+                      "<i>because</i> вводить причину; тут потрібне <i>so</i>."
+                    ]
                   },
                   {
                     "do": "I couldn't play because I forgot my PE kit.",
-                    "why": "Після <i>because</i> — причина, тому частини міняються місцями."
+                    "why": "Після <i>because</i> — причина, тому частини міняються місцями.",
+                    "q": "А як з <i>because</i>?",
+                    "options": [
+                      "<i>I forgot my PE kit because I couldn't play.</i>",
+                      "<i>I couldn't play because of I forgot my kit.</i>",
+                      "<i>I couldn't play because I forgot my PE kit.</i>",
+                      "<i>I couldn't play so I forgot my PE kit.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>because</i> — причина: <i>because I forgot…</i>",
+                      "Перед реченням — <i>because</i>, без <i>of</i>.",
+                      null,
+                      "Після <i>so</i> — наслідок; тут потрібне <i>because</i>."
+                    ]
                   }
                 ],
                 "answer": "I forgot my PE kit, so I couldn't play. / I couldn't play because I forgot my PE kit."
@@ -449,15 +859,57 @@
                 "steps": [
                   {
                     "do": "Phones aren't allowed in class because they distract students.",
-                    "why": "Причина правила → <i>because</i> + речення."
+                    "why": "Причина правила → <i>because</i> + речення.",
+                    "q": "<i>Phones aren't allowed in class … they distract students.</i>",
+                    "options": [
+                      "<i>because of</i>",
+                      "<i>because</i>",
+                      "<i>so</i>",
+                      "<i>as a result</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Далі ціле речення (<i>they distract</i>): <i>because</i>.",
+                      null,
+                      "Після <i>so</i> — наслідок, а тут причина.",
+                      "<i>as a result</i> вводить наслідок, а тут причина."
+                    ]
                   },
                   {
                     "do": "The reason for this rule is simple: lessons are for learning.",
-                    "why": "<i>the reason for</i> + іменник."
+                    "why": "<i>the reason for</i> + іменник.",
+                    "q": "<i>The reason … this rule is simple.</i>",
+                    "options": [
+                      "<i>of</i>",
+                      "<i>because</i>",
+                      "<i>to</i>",
+                      "<i>for</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Прийменник — <i>the reason for</i>.",
+                      "Після <i>reason</i> + іменник — <i>for</i>.",
+                      "Правильно — <i>reason for</i>, не <i>to</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "If you use your phone, the teacher takes it away. As a result, you can't use it for the rest of the day.",
-                    "why": "<i>As a result</i> — наслідок, новим реченням."
+                    "why": "<i>As a result</i> — наслідок, новим реченням.",
+                    "q": "<i>The teacher takes it away. …, you can't use it for the rest of the day.</i>",
+                    "options": [
+                      "<i>Because</i>",
+                      "<i>As a result</i>",
+                      "<i>Because of</i>",
+                      "<i>The reason for</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>Because</i> вводить причину, а тут наслідок.",
+                      null,
+                      "Після <i>because of</i> — іменник; а тут наслідок.",
+                      "Тут наслідок, а не причина."
+                    ]
                   }
                 ],
                 "answer": "Phones aren't allowed in class because they distract students. If you use your phone, the teacher takes it away. As a result, you can't use it for the rest of the day."
@@ -542,16 +994,58 @@
                 "task": "Ask your teacher for permission to open the window. Which is best? a) <i>Open the window.</i> b) <i>Could I open the window, please?</i> c) <i>I open the window, OK?</i>",
                 "steps": [
                   {
-                    "do": "a) <i>Open the window.</i>",
-                    "why": "Це наказ, а не прохання — так з учителем не говорять."
+                    "do": "a) <i>Open the window.</i> — як наказ, неввічливо",
+                    "why": "Це наказ, а не прохання — так з учителем не говорять.",
+                    "q": "a) <i>Open the window.</i> Як це звучить?",
+                    "options": [
+                      "як ввічливе прохання",
+                      "як питання про дозвіл",
+                      "ідеально для вчителя",
+                      "як наказ — неввічливо"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Немає <i>Could I…</i> і <i>please</i> — це наказ.",
+                      "Це не питання, а наказовий спосіб.",
+                      "З учителем так не говорять — це наказ.",
+                      null
+                    ]
                   },
                   {
-                    "do": "c) <i>I open the window, OK?</i>",
-                    "why": "Немає питального порядку слів, звучить неввічливо."
+                    "do": "c) <i>I open the window, OK?</i> — немає питального порядку слів",
+                    "why": "Немає питального порядку слів, звучить неввічливо.",
+                    "q": "c) <i>I open the window, OK?</i> Що не так?",
+                    "options": [
+                      "немає питального порядку слів",
+                      "усе правильно й ввічливо",
+                      "треба <i>I opens</i>",
+                      "треба поставити <i>OK</i> на початок"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це не питання за формою, і звучить неввічливо.",
+                      "З <i>I</i> закінчення <i>-s</i> немає.",
+                      "Справа не в <i>OK</i>: потрібне <i>Could I…?</i>"
+                    ]
                   },
                   {
                     "do": "b) <i>Could I open the window, please?</i>",
-                    "why": "<i>Could I…</i> + <i>please</i> — ввічливе прохання."
+                    "why": "<i>Could I…</i> + <i>please</i> — ввічливе прохання.",
+                    "q": "Яке прохання найкраще?",
+                    "options": [
+                      "<i>Open the window.</i>",
+                      "<i>I open the window, OK?</i>",
+                      "<i>Could I open the window, please?</i>",
+                      "<i>Could I opened the window, please?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Це наказ, а не прохання.",
+                      "Немає питального порядку слів, звучить неввічливо.",
+                      null,
+                      "Після <i>could</i> — перша форма: <i>open</i>."
+                    ]
                   }
                 ],
                 "answer": "b) <i>Could I open the window, please?</i>"
@@ -561,19 +1055,75 @@
                 "steps": [
                   {
                     "do": "A: Is it OK if I use your computer for a minute? I need to check my homework.",
-                    "why": "Прохання + коротка причина — так звучить ввічливо."
+                    "why": "Прохання + коротка причина — так звучить ввічливо.",
+                    "q": "Як попросити дозволу?",
+                    "options": [
+                      "<i>Is it OK if I will use your computer?</i>",
+                      "<i>It is OK if I use your computer?</i>",
+                      "<i>Is it OK if I use your computer?</i>",
+                      "<i>Give me your computer.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>if</i> — Present Simple, не <i>will</i>.",
+                      "Питання: <i>Is it…</i>, а не <i>It is…</i>.",
+                      null,
+                      "Це наказ, а не прохання дозволу."
+                    ]
                   },
                   {
                     "do": "B: Sure, go ahead.",
-                    "why": "Дозвіл."
+                    "why": "Дозвіл.",
+                    "q": "Як <b>B</b> дозволить?",
+                    "options": [
+                      "<i>Sure, go ahead.</i>",
+                      "<i>Sure, go forward.</i>",
+                      "<i>No, you can't.</i>",
+                      "<i>Sure, go to ahead.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Дозвіл — сталий вираз <i>go ahead</i>.",
+                      "Це відмова, а B дозволяє.",
+                      "Вираз — <i>go ahead</i>, без <i>to</i>."
+                    ]
                   },
                   {
                     "do": "A: Thanks! Do you mind if I print one page too?",
-                    "why": "Ще одне прохання — ввічливіша форма."
+                    "why": "Ще одне прохання — ввічливіша форма.",
+                    "q": "Ще одне прохання:",
+                    "options": [
+                      "<i>Do you mind if I will print one page too?</i>",
+                      "<i>Are you mind if I print one page too?</i>",
+                      "<i>Do you mind if I printing one page too?</i>",
+                      "<i>Do you mind if I print one page too?</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>if</i> — без <i>will</i>.",
+                      "<i>mind</i> — дієслово: <i>Do you mind…</i>",
+                      "Після <i>if I</i> — перша форма: <i>print</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "B: No, not at all.",
-                    "why": "<i>No</i> = «я не проти», тобто можна друкувати."
+                    "why": "<i>No</i> = «я не проти», тобто можна друкувати.",
+                    "q": "<b>B</b> дозволяє друкувати. Що скаже?",
+                    "options": [
+                      "<i>Yes, I do.</i>",
+                      "<i>No, not at all.</i>",
+                      "<i>Yes, I mind.</i>",
+                      "<i>No, I do.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>Yes, I do</i> = «так, я проти», тобто не можна.",
+                      null,
+                      "Це означає «я проти» — тобто не можна.",
+                      "Плутанина: «не проти» — <i>No, not at all</i> або <i>No, I don't</i>."
+                    ]
                   }
                 ],
                 "answer": "A: Is it OK if I use your computer for a minute? — B: Sure, go ahead. A: Do you mind if I print one page too? — B: No, not at all."
@@ -583,19 +1133,75 @@
                 "steps": [
                   {
                     "do": "First, wash the cat's bowl.",
-                    "why": "Перший крок — <i>First</i> + дієслово в наказовому способі."
+                    "why": "Перший крок — <i>First</i> + дієслово в наказовому способі.",
+                    "q": "Перший крок:",
+                    "options": [
+                      "<i>First, you washing the cat's bowl.</i>",
+                      "<i>First, wash the cats bowl.</i>",
+                      "<i>First, washes the cat's bowl.</i>",
+                      "<i>First, wash the cat's bowl.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Інструкція — наказовий спосіб: <i>wash</i>.",
+                      "Присвійна форма — з апострофом: <i>the cat's</i>.",
+                      "Наказовий спосіб — без <i>-s</i>: <i>wash</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "Then, put two spoonfuls of food in it. Don't give her more!",
-                    "why": "<i>Then</i> — наступний крок; <i>Don't</i> + V — заборона."
+                    "why": "<i>Then</i> — наступний крок; <i>Don't</i> + V — заборона.",
+                    "q": "<i>Then, put two spoonfuls of food in it. … her more!</i>",
+                    "options": [
+                      "<i>Not give</i>",
+                      "<i>Don't give</i>",
+                      "<i>Don't to give</i>",
+                      "<i>Don't gives</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Заборона — <i>Don't</i> + V.",
+                      null,
+                      "Після <i>Don't</i> — без <i>to</i>.",
+                      "Після <i>Don't</i> — перша форма без <i>-s</i>."
+                    ]
                   },
                   {
                     "do": "After that, fill the other bowl with fresh water.",
-                    "why": "<i>After that</i> — ще один крок."
+                    "why": "<i>After that</i> — ще один крок.",
+                    "q": "<i>…, fill the other bowl with fresh water.</i> Яке слово-зв'язка?",
+                    "options": [
+                      "<i>Finally</i>",
+                      "<i>Before</i>",
+                      "<i>After that</i>",
+                      "<i>First</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>Finally</i> — для останнього кроку, а цей не останній.",
+                      "<i>Before</i> — «перед»; для наступного кроку — <i>After that</i>.",
+                      null,
+                      "<i>First</i> — для першого кроку, а він уже був."
+                    ]
                   },
                   {
                     "do": "Finally, make sure you close the cupboard — the cat likes to steal food!",
-                    "why": "<i>Finally</i> — останній крок; <i>make sure you…</i> — обов'язково зроби."
+                    "why": "<i>Finally</i> — останній крок; <i>make sure you…</i> — обов'язково зроби.",
+                    "q": "<i>Finally, … you close the cupboard.</i>",
+                    "options": [
+                      "<i>make sure</i>",
+                      "<i>do sure</i>",
+                      "<i>make sense</i>",
+                      "<i>make surely</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Вираз — <i>make sure</i>, не <i>do</i>.",
+                      "<i>make sense</i> — мати сенс; обов'язково зроби — <i>make sure</i>.",
+                      "Вираз — <i>make sure</i>, без <i>-ly</i>."
+                    ]
                   }
                 ],
                 "answer": "First, wash the cat's bowl. Then, put two spoonfuls of food in it. After that, fill the other bowl with fresh water. Finally, make sure you close the cupboard."
@@ -680,19 +1286,75 @@
                 "steps": [
                   {
                     "do": "Title: <i>Rules for the School Film Club</i>",
-                    "why": "Назва одразу каже, про що текст."
+                    "why": "Назва одразу каже, про що текст.",
+                    "q": "Яка частина — назва?",
+                    "options": [
+                      "<i>Rules for the School Film Club</i>",
+                      "<i>Welcome to our club!</i>",
+                      "<i>Thank you, and enjoy the show!</i>",
+                      "<i>Be on time</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Це вступ, а не назва.",
+                      "Це завершення.",
+                      "Це перше правило."
+                    ]
                   },
                   {
-                    "do": "Introduction: <i>Welcome to our club! We watch a film every Friday at 3.30. To make it fun for everyone, please follow these rules.</i>",
-                    "why": "Вступ: для кого правила, коли збираються й навіщо правила."
+                    "do": "Introduction (для кого й навіщо правила, коли збираються): <i>Welcome to our club! We watch a film every Friday at 3.30. To make it fun for everyone, please follow these rules.</i>",
+                    "why": "Вступ: для кого правила, коли збираються й навіщо правила.",
+                    "q": "Що є у вступі?",
+                    "options": [
+                      "п'ять правил",
+                      "подяка й побажання",
+                      "для кого й навіщо правила",
+                      "лише назва клубу"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Правила йдуть після вступу.",
+                      "Це завершення.",
+                      null,
+                      "Назва — окремо, над текстом."
+                    ]
                   },
                   {
-                    "do": "Rules 1–5",
-                    "why": "Різні форми: наказ (<i>Be on time</i>), <i>so that</i>, <i>allowed to</i>, <i>mustn't</i>, <i>Don't</i>, <i>don't have to</i>."
+                    "do": "Rules 1–5 — різні форми; <i>You don't have to stay…</i> = не обов'язково",
+                    "why": "Різні форми: наказ (<i>Be on time</i>), <i>so that</i>, <i>allowed to</i>, <i>mustn't</i>, <i>Don't</i>, <i>don't have to</i>.",
+                    "q": "Яке правило означає «не обов'язково»?",
+                    "options": [
+                      "<i>You mustn't leave rubbish…</i>",
+                      "<i>You don't have to stay…</i>",
+                      "<i>Don't talk during the film.</i>",
+                      "<i>You are allowed to bring snacks…</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>mustn't</i> — заборона, а не «не обов'язково».",
+                      null,
+                      "Це заборона.",
+                      "Це дозвіл."
+                    ]
                   },
                   {
                     "do": "Closing: <i>Thank you, and enjoy the show!</i>",
-                    "why": "Дружнє завершення."
+                    "why": "Дружнє завершення.",
+                    "q": "Яка частина — завершення?",
+                    "options": [
+                      "<i>Welcome to our club!</i>",
+                      "<i>Don't talk during the film.</i>",
+                      "<i>Rules for the School Film Club</i>",
+                      "<i>Thank you, and enjoy the show!</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Це вступ.",
+                      "Це правило 4.",
+                      "Це назва.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Назва — <i>Rules for the School Film Club</i>; вступ — три речення; правила — п'ять пунктів; завершення — <i>Thank you, and enjoy the show!</i>"
@@ -702,15 +1364,57 @@
                 "steps": [
                   {
                     "do": "1. Don't feed the hamster chocolate — it can make him ill.",
-                    "why": "Прибрали помилку <i>must not to</i> і додали причину."
+                    "why": "Прибрали помилку <i>must not to</i> і додали причину.",
+                    "q": "Як виправити правило 1?",
+                    "options": [
+                      "<i>You must not to feed the hamster chocolate.</i>",
+                      "<i>Don't feed the hamster chocolate.</i>",
+                      "<i>Don't to feed the hamster chocolate.</i>",
+                      "<i>You don't have to feed the hamster chocolate.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>must not</i> — без <i>to</i>.",
+                      null,
+                      "Після <i>Don't</i> — без <i>to</i>.",
+                      "<i>don't have to</i> — «не обов'язково», а тут заборона."
+                    ]
                   },
                   {
                     "do": "2. Clean the cage every Friday. You don't have to do it every day.",
-                    "why": "Наказовий спосіб замість <i>You must</i>; <i>don't have to</i> — не обов'язково."
+                    "why": "Наказовий спосіб замість <i>You must</i>; <i>don't have to</i> — не обов'язково.",
+                    "q": "<i>Clean the cage every Friday. You … do it every day.</i>",
+                    "options": [
+                      "<i>mustn't</i>",
+                      "<i>don't must</i>",
+                      "<i>doesn't have to</i>",
+                      "<i>don't have to</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>mustn't</i> — заборона; а чистити щодня можна, просто не обов'язково.",
+                      "Такої форми немає: <i>don't have to</i>.",
+                      "З <i>you</i> — <i>don't</i>, не <i>doesn't</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "3. Please wash your hands after you play with him.",
-                    "why": "<i>Please</i> робить правило ввічливим."
+                    "why": "<i>Please</i> робить правило ввічливим.",
+                    "q": "<i>… wash your hands after you play with him.</i> Як зробити ввічливо?",
+                    "options": [
+                      "<i>Please</i>",
+                      "<i>You must</i>",
+                      "<i>Please to</i>",
+                      "<i>Must you</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>You must</i> звучить суворо; ввічливо — <i>Please</i>.",
+                      "Після <i>Please</i> — дієслово без <i>to</i>.",
+                      "Це питання, а не правило."
+                    ]
                   }
                 ],
                 "answer": "1. Don't feed the hamster chocolate — it can make him ill. 2. Clean the cage every Friday. You don't have to do it every day. 3. Please wash your hands after you play with him."
@@ -720,19 +1424,75 @@
                 "steps": [
                   {
                     "do": "Rules for My Room",
-                    "why": "Назва."
+                    "why": "Назва.",
+                    "q": "Яка назва?",
+                    "options": [
+                      "<i>Knock before you come in.</i>",
+                      "<i>Rule for My Rooms</i>",
+                      "<i>Rules for My Room</i>",
+                      "<i>Rules for Me Room</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Це правило, а не назва.",
+                      "Правил кілька — <i>Rules</i>; кімната одна — <i>Room</i>.",
+                      null,
+                      "Присвійний займенник — <i>My</i>, не <i>Me</i>."
+                    ]
                   },
                   {
                     "do": "These rules help my little sister and me share our room happily.",
-                    "why": "Вступ: для кого й навіщо."
+                    "why": "Вступ: для кого й навіщо.",
+                    "q": "Яке речення — вступ?",
+                    "options": [
+                      "<i>Knock before you come in.</i>",
+                      "<i>These rules helps my little sister and me…</i>",
+                      "<i>These rules help my little sister and me…</i>",
+                      "<i>These rule help my little sister and me…</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Це правило, а не вступ.",
+                      "<i>rules</i> — множина: <i>help</i>.",
+                      null,
+                      "Правил кілька: <i>These rules</i>."
+                    ]
                   },
                   {
                     "do": "1. Knock before you come in.",
-                    "why": "Наказовий спосіб."
+                    "why": "Наказовий спосіб.",
+                    "q": "<i>1. … before you come in.</i>",
+                    "options": [
+                      "<i>Knock</i>",
+                      "<i>You knocking</i>",
+                      "<i>To knock</i>",
+                      "<i>Knocks</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Правило — наказовий спосіб: <i>Knock</i>.",
+                      "Правило починаємо з дієслова без <i>to</i>.",
+                      "Наказовий спосіб — без <i>-s</i>."
+                    ]
                   },
                   {
                     "do": "2. You are allowed to borrow my books, but please put them back.",
-                    "why": "<i>allowed to</i> + <i>please</i>."
+                    "why": "<i>allowed to</i> + <i>please</i>.",
+                    "q": "<i>2. You are allowed … my books, but please put them back.</i>",
+                    "options": [
+                      "<i>borrow</i>",
+                      "<i>to borrowing</i>",
+                      "<i>to lend</i>",
+                      "<i>to borrow</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>allowed</i> — <i>to</i>.",
+                      "Після <i>to</i> — перша форма: <i>to borrow</i>.",
+                      "<i>lend</i> — давати; брати — <i>borrow</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Rules for My Room. These rules help my little sister and me share our room happily. 1. Knock before you come in. 2. You are allowed to borrow my books, but please put them back. (Твої правила можуть бути іншими.)"
@@ -819,19 +1579,75 @@
                 "steps": [
                   {
                     "do": "knee /niː/ → <b>k</b>",
-                    "why": "<i>kn-</i> на початку = /n/."
+                    "why": "<i>kn-</i> на початку = /n/.",
+                    "q": "<i>knee</i>: яка літера німа?",
+                    "options": [
+                      "<b>n</b>",
+                      "<b>k</b>",
+                      "<b>k</b> і <b>n</b>",
+                      "німої немає"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "/n/ чуємо: /niː/; німа — <i>k</i>.",
+                      null,
+                      "Звук /n/ чуємо; німа лише <i>k</i>.",
+                      "<i>kn-</i> на початку = /n/: <i>k</i> не читається."
+                    ]
                   },
                   {
                     "do": "wrong /rɒŋ/ → <b>w</b>",
-                    "why": "<i>wr-</i> = /r/."
+                    "why": "<i>wr-</i> = /r/.",
+                    "q": "<i>wrong</i>: яка літера німа?",
+                    "options": [
+                      "<b>r</b>",
+                      "<b>w</b> і <b>r</b>",
+                      "німої немає",
+                      "<b>w</b>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "/r/ чуємо: /rɒŋ/; німа — <i>w</i>.",
+                      "Звук /r/ чуємо; німа лише <i>w</i>.",
+                      "<i>wr-</i> = /r/: <i>w</i> не читається.",
+                      null
+                    ]
                   },
                   {
                     "do": "thumb /θʌm/ → <b>b</b>",
-                    "why": "<i>-mb</i> у кінці = /m/."
+                    "why": "<i>-mb</i> у кінці = /m/.",
+                    "q": "<i>thumb</i>: яка літера німа?",
+                    "options": [
+                      "<b>m</b>",
+                      "<b>b</b>",
+                      "<b>th</b>",
+                      "німої немає"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "/m/ чуємо: /θʌm/; німа — <i>b</i>.",
+                      null,
+                      "<i>th</i> дає звук /θ/.",
+                      "<i>-mb</i> у кінці = /m/: <i>b</i> не читається."
+                    ]
                   },
                   {
                     "do": "listen /ˈlɪsn/ → <b>t</b>",
-                    "why": "Кажемо «лісн», наголос на першому складі: LISten."
+                    "why": "Кажемо «лісн», наголос на першому складі: LISten.",
+                    "q": "<i>listen</i>: яка літера німа?",
+                    "options": [
+                      "<b>s</b>",
+                      "<b>l</b>",
+                      "<b>t</b>",
+                      "німої немає"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "/s/ чуємо: «лісн».",
+                      "/l/ чуємо на початку.",
+                      null,
+                      "Кажемо «лісн» — <i>t</i> не читається."
+                    ]
                   }
                 ],
                 "answer": "k, w, b, t"
@@ -840,16 +1656,58 @@
                 "task": "Do these words sound the same? <i>know / no</i>, <i>write / right</i>, <i>hour / our</i>.",
                 "steps": [
                   {
-                    "do": "know /nəʊ/ = no /nəʊ/",
-                    "why": "<i>k</i> німе — залишається лише /n/."
+                    "do": "know /nəʊ/ = no /nəʊ/ — однаково",
+                    "why": "<i>k</i> німе — залишається лише /n/.",
+                    "q": "<i>know</i> і <i>no</i> звучать…",
+                    "options": [
+                      "однаково: /nəʊ/",
+                      "по-різному: /knəʊ/ і /nəʊ/",
+                      "по-різному: /naʊ/ і /nəʊ/",
+                      "однаково: /naʊ/"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>k</i> перед <i>n</i> німа: обидва — /nəʊ/.",
+                      "<i>know</i> римується з <i>no</i>, а не з <i>now</i>.",
+                      "/naʊ/ — це <i>now</i>; тут /nəʊ/."
+                    ]
                   },
                   {
-                    "do": "write /raɪt/ = right /raɪt/",
-                    "why": "<i>w</i> німе; <i>gh</i> у <i>right</i> теж не читається."
+                    "do": "write /raɪt/ = right /raɪt/ — однаково",
+                    "why": "<i>w</i> німе; <i>gh</i> у <i>right</i> теж не читається.",
+                    "q": "<i>write</i> і <i>right</i> звучать…",
+                    "options": [
+                      "однаково: /raɪt/",
+                      "по-різному: /wraɪt/ і /raɪt/",
+                      "по-різному: /raɪt/ і /rɪt/",
+                      "однаково: /wraɪt/"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>w</i> перед <i>r</i> німа.",
+                      "<i>igh</i> у <i>right</i> читається як /aɪ/.",
+                      "<i>w</i> німа: /raɪt/."
+                    ]
                   },
                   {
-                    "do": "hour /ˈaʊə/ = our /ˈaʊə/",
-                    "why": "<i>h</i> у <i>hour</i> німе. (Деякі люди вимовляють <i>our</i> трохи інакше, але зазвичай звучать однаково.)"
+                    "do": "hour /ˈaʊə/ = our /ˈaʊə/ — однаково",
+                    "why": "<i>h</i> у <i>hour</i> німе. (Деякі люди вимовляють <i>our</i> трохи інакше, але зазвичай звучать однаково.)",
+                    "q": "<i>hour</i> і <i>our</i> звучать…",
+                    "options": [
+                      "по-різному: /ˈhaʊə/ і /ˈaʊə/",
+                      "однаково: /ˈhaʊə/",
+                      "однаково: /ˈaʊə/",
+                      "по-різному: /ˈhʊə/ і /ˈaʊə/"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>h</i> у <i>hour</i> німа.",
+                      "<i>h</i> не читається, а в <i>our</i> її й немає: /ˈaʊə/.",
+                      null,
+                      "<i>h</i> німа, а <i>ou</i> = /aʊ/: <i>hour</i> = /ˈaʊə/."
+                    ]
                   }
                 ],
                 "answer": "Так, у кожній парі слова звучать однаково — розрізняємо їх лише за змістом і написанням."
@@ -859,19 +1717,75 @@
                 "steps": [
                   {
                     "do": "couldn't /ˈkʊdnt/ → <b>l</b>",
-                    "why": "Як і в <i>could</i>."
+                    "why": "Як і в <i>could</i>.",
+                    "q": "<i>couldn't</i>: яка літера німа?",
+                    "options": [
+                      "<b>d</b>",
+                      "<b>l</b>",
+                      "<b>t</b>",
+                      "<b>c</b>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "/d/ чуємо: /ˈkʊdnt/.",
+                      null,
+                      "/t/ чуємо в кінці: /ˈkʊdnt/.",
+                      "<i>c</i> читається як /k/."
+                    ]
                   },
                   {
                     "do": "climb /klaɪm/ → <b>b</b>; castle /ˈkɑːsl/ → <b>t</b>",
-                    "why": "<i>-mb</i> = /m/; у <i>castle</i> — «ка:сл»."
+                    "why": "<i>-mb</i> = /m/; у <i>castle</i> — «ка:сл».",
+                    "q": "Німі приголосні в <i>climb</i> і <i>castle</i>:",
+                    "options": [
+                      "<b>m</b>; <b>s</b>",
+                      "<b>b</b>; немає",
+                      "немає; <b>t</b>",
+                      "<b>b</b>; <b>t</b>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "/m/ і /s/ чуємо: німі — <i>b</i> і <i>t</i>.",
+                      "У <i>castle</i> <i>t</i> не читається: «ка:сл».",
+                      "У <i>climb</i> <i>-mb</i> = /m/: <i>b</i> німа.",
+                      null
+                    ]
                   },
                   {
                     "do": "walked /wɔːkt/ → <b>l</b>; half /hɑːf/ → <b>l</b>",
-                    "why": "<i>-alk</i>, <i>-alf</i> — без «л»."
+                    "why": "<i>-alk</i>, <i>-alf</i> — без «л».",
+                    "q": "Німі приголосні в <i>walked</i> і <i>half</i>:",
+                    "options": [
+                      "немає; <b>l</b>",
+                      "<b>l</b>; <b>l</b>",
+                      "<b>l</b>; <b>f</b>",
+                      "<b>k</b>; <b>l</b>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "У <i>walked</i> <i>l</i> не читається: /wɔːkt/.",
+                      null,
+                      "/f/ чуємо: /hɑːf/.",
+                      "/k/ чуємо: /wɔːkt/; німа — <i>l</i>."
+                    ]
                   },
                   {
-                    "do": "an hour /ən ˈaʊə/ → <b>h</b>",
-                    "why": "Слово починається з голосного звука, тому <i>an</i>."
+                    "do": "an hour /ən ˈaʊə/ → <b>h</b>, тому <i>an</i>",
+                    "why": "Слово починається з голосного звука, тому <i>an</i>.",
+                    "q": "<i>an hour</i>: яка німа літера й чому <i>an</i>?",
+                    "options": [
+                      "<b>h</b>, тому треба <i>a</i>",
+                      "німої немає, тому <i>an</i>",
+                      "німої немає, тому <i>a</i>",
+                      "<b>h</b>, тому <i>an</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Слово починається з голосного звука — отже <i>an</i>.",
+                      "<i>h</i> у <i>hour</i> не читається.",
+                      "<i>h</i> німа, а перед голосним звуком — <i>an</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "Німі: l (couldn't), b (climb), t (castle), l (walked), l (half), h (hour)."

@@ -43,15 +43,57 @@
                 "steps": [
                   {
                     "do": "<i>Your best friend lives …</i>",
-                    "why": "Підмет — <i>your best friend</i> (він, третя особа), дієслово — <i>live</i>."
+                    "why": "Підмет — <i>your best friend</i> (він, третя особа), дієслово — <i>live</i>.",
+                    "q": "Яка форма дієслова з підметом <i>your best friend</i>?",
+                    "options": [
+                      "<i>your best friend lives</i>",
+                      "<i>your best friend live</i>",
+                      "<i>your best friend is live</i>",
+                      "<i>your best friend living</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>Your best friend</i> — «він/вона»: у Present Simple додаємо <i>-s</i>.",
+                      "<i>is</i> тут зайве: <i>live</i> — звичайне дієслово, не <i>be</i>.",
+                      "Без допоміжного дієслова <i>-ing</i> не вживаємо; тут Present Simple: <i>lives</i>."
+                    ]
                   },
                   {
                     "do": "<i>Where does your best friend …</i>",
-                    "why": "Це не <i>be</i>, тож потрібен помічник. Для «він/вона» — <i>does</i>, питальне слово на початку."
+                    "why": "Це не <i>be</i>, тож потрібен помічник. Для «він/вона» — <i>does</i>, питальне слово на початку.",
+                    "q": "Яке допоміжне дієслово і де воно стоїть?",
+                    "options": [
+                      "<i>Where do your best friend …</i>",
+                      "<i>Where is your best friend …</i>",
+                      "<i>Where does your best friend …</i>",
+                      "<i>Where your best friend does …</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>do</i> — для I/you/we/they; для «він/вона» — <i>does</i>.",
+                      "<i>is</i> — лише з <i>be</i>; <i>live</i> — звичайне дієслово, тож <i>does</i>.",
+                      null,
+                      "У запитанні помічник <i>does</i> стоїть перед підметом."
+                    ]
                   },
                   {
                     "do": "<i>Where does your best friend live?</i>",
-                    "why": "Після <i>does</i> дієслово без <i>-s</i>: <i>live</i>, а не <i>lives</i>."
+                    "why": "Після <i>does</i> дієслово без <i>-s</i>: <i>live</i>, а не <i>lives</i>.",
+                    "q": "Яка форма дієслова після <i>does</i>?",
+                    "options": [
+                      "<i>Where does your best friend lives?</i>",
+                      "<i>Where does your best friend live?</i>",
+                      "<i>Where does your best friend living?</i>",
+                      "<i>Where does your best friend to live?</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>does</i> дієслово без <i>-s</i>: <i>-s</i> уже «забрало» <i>does</i>.",
+                      null,
+                      "Після <i>does</i> — початкова форма без <i>-ing</i>: <i>live</i>.",
+                      "Після <i>does</i> — дієслово без <i>to</i>: <i>live</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Where does your best friend live?</i>"
@@ -61,11 +103,39 @@
                 "steps": [
                   {
                     "do": "<i>you are</i> → <i>are you</i>",
-                    "why": "У запитанні дієслово <i>be</i> стоїть перед підметом."
+                    "why": "У запитанні дієслово <i>be</i> стоїть перед підметом.",
+                    "q": "Що змінити в порядку слів?",
+                    "options": [
+                      "<i>you are</i> → <i>do you are</i>",
+                      "<i>you are</i> → <i>you is</i>",
+                      "нічого, усе правильно",
+                      "<i>you are</i> → <i>are you</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "З <i>be</i> помічник <i>do</i> не потрібен — просто міняємо місцями: <i>are you</i>.",
+                      "З <i>you</i> завжди <i>are</i>; помилка — у порядку слів, а не у формі.",
+                      "У запитанні <i>be</i> стоїть перед підметом: <i>are you</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>How old are you?</i>",
-                    "why": "Питальне слово <i>How old</i> залишається на початку."
+                    "why": "Питальне слово <i>How old</i> залишається на початку.",
+                    "q": "Яке запитання правильне?",
+                    "options": [
+                      "<i>Are you how old?</i>",
+                      "<i>How are you old?</i>",
+                      "<i>How old are you?</i>",
+                      "<i>How many years are you?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Питальне слово <i>How old</i> — на початку.",
+                      "<i>How old</i> — одне ціле, не розриваємо: <i>How old are you?</i>",
+                      null,
+                      "Калька з «скільки тобі років»; вік питають <i>How old are you?</i>"
+                    ]
                   }
                 ],
                 "answer": "<i>How old are you?</i> — <i>I'm twelve.</i>"
@@ -75,15 +145,57 @@
                 "steps": [
                   {
                     "do": "<i>Hi, I'm Marko. I'm twelve and I'm from Dnipro.</i>",
-                    "why": "Ім'я, вік і місто — через <i>I'm</i> (<i>I am</i>)."
+                    "why": "Ім'я, вік і місто — через <i>I'm</i> (<i>I am</i>).",
+                    "q": "Як сказати про вік і місто?",
+                    "options": [
+                      "<i>I'm twelve and I'm from Dnipro.</i>",
+                      "<i>I have twelve and I'm from Dnipro.</i>",
+                      "<i>I twelve and I from Dnipro.</i>",
+                      "<i>I'm twelve and I'm of Dnipro.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Вік кажемо через <i>be</i>: <i>I'm twelve</i>; <i>have</i> тут не вживають.",
+                      "В англійському реченні потрібне дієслово: <i>I'm</i> = <i>I am</i>.",
+                      "«Я з (міста)» — <i>I'm from</i>, не <i>of</i>."
+                    ]
                   },
                   {
                     "do": "<i>I love football and I play the guitar.</i>",
-                    "why": "Що любиш — Present Simple: <i>I love, I play</i>."
+                    "why": "Що любиш — Present Simple: <i>I love, I play</i>.",
+                    "q": "Як сказати, що любиш і чим займаєшся?",
+                    "options": [
+                      "<i>I love football and I play on the guitar.</i>",
+                      "<i>I am love football and I play the guitar.</i>",
+                      "<i>I loves football and I plays the guitar.</i>",
+                      "<i>I love football and I play the guitar.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Калька з «граю на гітарі»: <i>play the guitar</i>, без <i>on</i>.",
+                      "<i>love</i> — дієслово, <i>am</i> зайве: <i>I love</i>.",
+                      "<i>-s</i> лише для he/she/it; з <i>I</i> — <i>love, play</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>What do you do in your free time?</i>",
-                    "why": "Запитання: питальне слово + <i>do</i> + <i>you</i> + дієслово."
+                    "why": "Запитання: питальне слово + <i>do</i> + <i>you</i> + дієслово.",
+                    "q": "Яке запитання правильне?",
+                    "options": [
+                      "<i>What you do in your free time?</i>",
+                      "<i>What do you do in your free time?</i>",
+                      "<i>What do you in your free time?</i>",
+                      "<i>What does you do in your free time?</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Потрібен помічник <i>do</i> перед <i>you</i>: <i>What do you do…?</i>",
+                      null,
+                      "Перше <i>do</i> — помічник; потрібне ще дієслово «робити»: <i>do you do</i>.",
+                      "<i>does</i> — лише для he/she/it; з <i>you</i> — <i>do</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Hi, I'm Marko. I'm twelve and I'm from Dnipro. I love football and I play the guitar. What do you do in your free time?</i> (Твої речення — про тебе.)"
@@ -160,15 +272,57 @@
                 "steps": [
                   {
                     "do": "<i>It's cloudy</i>",
-                    "why": "Багато хмар — <i>cloud + y</i>."
+                    "why": "Багато хмар — <i>cloud + y</i>.",
+                    "q": "Багато хмар — як сказати?",
+                    "options": [
+                      "<i>It's cloudy</i>",
+                      "<i>It's cloud</i>",
+                      "<i>Is cloudy</i>",
+                      "<i>It's sunny</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>cloud</i> — іменник «хмара»; погоду описує прикметник <i>cloudy</i>.",
+                      "В англійському реченні потрібен підмет: <i>It's cloudy</i>.",
+                      "<i>sunny</i> — сонячно; багато хмар — <i>cloudy</i>."
+                    ]
                   },
                   {
                     "do": "<i>and windy</i>",
-                    "why": "Сильний вітер — <i>windy</i>."
+                    "why": "Сильний вітер — <i>windy</i>.",
+                    "q": "Сильний вітер — як продовжити?",
+                    "options": [
+                      "<i>and wind</i>",
+                      "<i>and foggy</i>",
+                      "<i>and snowy</i>",
+                      "<i>and windy</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>wind</i> — іменник «вітер»; погоду описує прикметник <i>windy</i>.",
+                      "<i>foggy</i> — туманно; сильний вітер — <i>windy</i>.",
+                      "<i>snowy</i> — сніжно; сильний вітер — <i>windy</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>It's really cold.</i>",
-                    "why": "+6 °C — холодно, але ще не мороз. Мороз, дуже холодно — <i>freezing</i>."
+                    "why": "+6 °C — холодно, але ще не мороз. Мороз, дуже холодно — <i>freezing</i>.",
+                    "q": "+6 °C — яке слово?",
+                    "options": [
+                      "<i>It's really hot.</i>",
+                      "<i>It's really cold.</i>",
+                      "<i>It's really warm.</i>",
+                      "<i>It's really coldly.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>hot</i> — спекотно; +6 °C — холодно: <i>cold</i>.",
+                      null,
+                      "<i>warm</i> — тепло (як +20 °C); +6 °C — <i>cold</i>.",
+                      "Після <i>It's</i> — прикметник <i>cold</i>, а не прислівник <i>coldly</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>It's cloudy and windy. It's really cold.</i>"
@@ -178,11 +332,39 @@
                 "steps": [
                   {
                     "do": "<i>my mum's sister</i> = <i>my aunt</i>",
-                    "why": "Сестра мами — тітка."
+                    "why": "Сестра мами — тітка.",
+                    "q": "Хто такий <i>my mum's sister</i>?",
+                    "options": [
+                      "<i>my uncle</i>",
+                      "<i>my grandmother</i>",
+                      "<i>my aunt</i>",
+                      "<i>my niece</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>uncle</i> — дядько; сестра мами — тітка, <i>aunt</i>.",
+                      "<i>grandmother</i> — мама мами; сестра мами — <i>aunt</i>.",
+                      null,
+                      "<i>niece</i> — племінниця (донька брата чи сестри); сестра мами — <i>aunt</i>."
+                    ]
                   },
                   {
                     "do": "<i>my aunt's son</i> = <i>my cousin</i>",
-                    "why": "Син тітки — двоюрідний брат. Англійською <i>cousin</i> — і про хлопця, і про дівчину."
+                    "why": "Син тітки — двоюрідний брат. Англійською <i>cousin</i> — і про хлопця, і про дівчину.",
+                    "q": "Хто такий <i>my aunt's son</i>?",
+                    "options": [
+                      "<i>my nephew</i>",
+                      "<i>my cousin</i>",
+                      "<i>my brother</i>",
+                      "<i>my uncle</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>nephew</i> — племінник (син брата чи сестри); син тітки — <i>cousin</i>.",
+                      null,
+                      "Рідний брат — син твоїх батьків; син тітки — <i>cousin</i>.",
+                      "<i>uncle</i> — брат мами чи тата; син тітки — <i>cousin</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>He's my cousin.</i>"
@@ -192,15 +374,57 @@
                 "steps": [
                   {
                     "do": "<i>There are four people in my family: my parents, my little brother and me.</i>",
-                    "why": "<i>parents</i> — це лише мама й тато."
+                    "why": "<i>parents</i> — це лише мама й тато.",
+                    "q": "Як назвати маму й тата разом?",
+                    "options": [
+                      "<i>my parents, my little brother and me</i>",
+                      "<i>my relatives, my little brother and me</i>",
+                      "<i>my parent, my little brother and me</i>",
+                      "<i>my fathers, my little brother and me</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>relatives</i> — усі родичі; мама й тато — <i>parents</i>.",
+                      "Мама й тато — двоє, тож множина: <i>parents</i>.",
+                      "<i>fathers</i> — «тата»; мама й тато разом — <i>parents</i>."
+                    ]
                   },
                   {
                     "do": "<i>My grandparents live in a village near Poltava.</i>",
-                    "why": "Бабуся й дідусь разом — <i>grandparents</i>."
+                    "why": "Бабуся й дідусь разом — <i>grandparents</i>.",
+                    "q": "Як сказати про бабусю й дідуся?",
+                    "options": [
+                      "<i>My grandparents lives in a village</i>",
+                      "<i>My grandfathers live in a village</i>",
+                      "<i>My grandparents live in a village</i>",
+                      "<i>My grandparents live on a village</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>grandparents</i> — множина («вони»), тож <i>live</i> без <i>-s</i>.",
+                      "<i>grandfathers</i> — два дідусі; бабуся й дідусь разом — <i>grandparents</i>.",
+                      null,
+                      "У селі — <i>in a village</i>, не <i>on</i>."
+                    ]
                   },
                   {
                     "do": "<i>It's raining here today, so we're staying at home.</i>",
-                    "why": "Дощ іде зараз — <i>It's raining</i>."
+                    "why": "Дощ іде зараз — <i>It's raining</i>.",
+                    "q": "Дощ іде саме зараз — яка форма?",
+                    "options": [
+                      "<i>It rains here today</i>",
+                      "<i>It's rain here today</i>",
+                      "<i>Is raining here today</i>",
+                      "<i>It's raining here today</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Present Simple — для звичного; дощ іде зараз — <i>It's raining</i>.",
+                      "Дія відбувається зараз: <i>It's raining</i> — <i>be</i> + <i>-ing</i>.",
+                      "Потрібен підмет <i>It</i>: <i>It's raining</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>There are four people in my family: my parents, my little brother and me. My grandparents live in a village near Poltava. It's raining here today, so we're staying at home.</i>"
@@ -273,11 +497,39 @@
                 "steps": [
                   {
                     "do": "<i>eat – ate – eaten</i>",
-                    "why": "Після <i>have</i> потрібна третя форма."
+                    "why": "Після <i>have</i> потрібна третя форма.",
+                    "q": "Які три форми дієслова <i>eat</i>?",
+                    "options": [
+                      "<i>eat – eated – eated</i>",
+                      "<i>eat – ate – eaten</i>",
+                      "<i>eat – ate – ate</i>",
+                      "<i>eat – eaten – ate</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>eat</i> — неправильне дієслово, <i>-ed</i> не додаємо: <i>ate – eaten</i>.",
+                      null,
+                      "<i>ate</i> — лише друга форма; третя — <i>eaten</i>.",
+                      "Переплутано порядок: друга форма <i>ate</i>, третя <i>eaten</i>."
+                    ]
                   },
                   {
                     "do": "<i>I have eaten all the pancakes!</i>",
-                    "why": "<i>ate</i> — друга форма, вона для Past Simple."
+                    "why": "<i>ate</i> — друга форма, вона для Past Simple.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>I have ate all the pancakes!</i>",
+                      "<i>I have eat all the pancakes!</i>",
+                      "<i>I have eating all the pancakes!</i>",
+                      "<i>I have eaten all the pancakes!</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>ate</i> — друга форма для Past Simple; після <i>have</i> — V3 <i>eaten</i>.",
+                      "Після <i>have</i> у Present Perfect — третя форма <i>eaten</i>.",
+                      "<i>-ing</i> тут не підходить: <i>have</i> + V3 = <i>have eaten</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>eaten</i>"
@@ -287,11 +539,39 @@
                 "steps": [
                   {
                     "do": "<i>write – wrote – written</i>",
-                    "why": "Після <i>has</i> — третя форма."
+                    "why": "Після <i>has</i> — третя форма.",
+                    "q": "Які три форми дієслова <i>write</i>?",
+                    "options": [
+                      "<i>write – wrote – wrote</i>",
+                      "<i>write – writed – writed</i>",
+                      "<i>write – wrote – written</i>",
+                      "<i>write – written – wrote</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>wrote</i> — друга форма; третя — <i>written</i>.",
+                      "<i>write</i> — неправильне, без <i>-ed</i>: <i>wrote – written</i>.",
+                      null,
+                      "Переплутано: друга <i>wrote</i>, третя <i>written</i>."
+                    ]
                   },
                   {
                     "do": "<i>My sister has written a song.</i>",
-                    "why": "У <i>written</i> — дві <i>t</i>."
+                    "why": "У <i>written</i> — дві <i>t</i>.",
+                    "q": "Як виправити речення?",
+                    "options": [
+                      "<i>My sister has written a song.</i>",
+                      "<i>My sister has writen a song.</i>",
+                      "<i>My sister have written a song.</i>",
+                      "<i>My sister has wrote a song.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "У <i>written</i> — дві <i>t</i>.",
+                      "<i>My sister</i> — «вона», тож <i>has</i>.",
+                      "<i>wrote</i> — друга форма; після <i>has</i> — V3 <i>written</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>My sister has written a song.</i>"
@@ -300,12 +580,40 @@
                 "task": "Choose <i>been</i> or <i>gone</i>: <i>Dad isn't at home. He's … to the shop.</i>",
                 "steps": [
                   {
-                    "do": "Тата немає вдома",
-                    "why": "Він пішов і ще не повернувся."
+                    "do": "Тата немає вдома: він пішов і ще не повернувся",
+                    "why": "Він пішов і ще не повернувся.",
+                    "q": "Що ми знаємо про тата?",
+                    "options": [
+                      "Він сходив і вже повернувся",
+                      "Він ніколи не був у магазині",
+                      "Він пішов і ще не повернувся",
+                      "Він піде в магазин завтра"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Тоді він був би вдома, а в умові: <i>Dad isn't at home</i>.",
+                      "Про досвід «ніколи» тут не йдеться — тата просто зараз немає вдома.",
+                      null,
+                      "<i>He's … to the shop</i> — Present Perfect, не майбутнє; тата немає вже зараз."
+                    ]
                   },
                   {
                     "do": "<i>He's gone to the shop.</i>",
-                    "why": "<i>gone</i> — пішов і зараз там. <i>He's been to the shop</i> означало б, що вже сходив і повернувся."
+                    "why": "<i>gone</i> — пішов і зараз там. <i>He's been to the shop</i> означало б, що вже сходив і повернувся.",
+                    "q": "<i>been</i> чи <i>gone</i>?",
+                    "options": [
+                      "<i>He's gone to the shop.</i>",
+                      "<i>He's been to the shop.</i>",
+                      "<i>He's went to the shop.</i>",
+                      "<i>He's go to the shop.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>been</i> — сходив і повернувся; а тата немає вдома, тож <i>gone</i>.",
+                      "<i>went</i> — друга форма; після <i>has</i> — V3 <i>gone</i>.",
+                      "Після <i>has</i> — третя форма: <i>go – went – gone</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>gone</i>"
@@ -382,15 +690,57 @@
                 "steps": [
                   {
                     "do": "<i>The cat is</i>",
-                    "why": "Підмет і <i>be</i>."
+                    "why": "Підмет і <i>be</i>.",
+                    "q": "Як почати речення?",
+                    "options": [
+                      "<i>The cat are</i>",
+                      "<i>The cat is</i>",
+                      "<i>The cat</i> (без дієслова)",
+                      "<i>Is the cat</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>cat</i> — однина («воно»): <i>is</i>.",
+                      null,
+                      "В англійському реченні потрібне дієслово: <i>The cat is…</i>",
+                      "Це порядок запитання; у відповіді-твердженні — <i>The cat is</i>."
+                    ]
                   },
                   {
                     "do": "<i>behind the curtains</i>",
-                    "why": "<i>behind</i> — «за»."
+                    "why": "<i>behind</i> — «за».",
+                    "q": "Як сказати «за шторами»?",
+                    "options": [
+                      "<i>in front of the curtains</i>",
+                      "<i>under the curtains</i>",
+                      "<i>between the curtains</i>",
+                      "<i>behind the curtains</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>in front of</i> — перед; «за» — <i>behind</i>.",
+                      "<i>under</i> — під; «за» — <i>behind</i>.",
+                      "<i>between</i> — між; «за» — <i>behind</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>The cat is behind the curtains.</i>",
-                    "why": "Готове речення."
+                    "why": "Готове речення.",
+                    "q": "Яке речення правильне?",
+                    "options": [
+                      "<i>The cat behind is the curtains.</i>",
+                      "<i>The cat is behind the curtains.</i>",
+                      "<i>The cat is behind of the curtains.</i>",
+                      "<i>Behind the curtains the cat.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Порядок: підмет + <i>is</i> + місце: <i>The cat is behind…</i>",
+                      null,
+                      "<i>behind</i> — без <i>of</i> (на відміну від <i>in front of</i>).",
+                      "Немає дієслова <i>is</i>: <i>The cat is behind…</i>"
+                    ]
                   }
                 ],
                 "answer": "<i>The cat is behind the curtains.</i>"
@@ -399,12 +749,40 @@
                 "task": "Complete the dialogue: <i>A: I can't find my headphones. B: … A: Yes, I looked there. Oh wait — here they are, under the sofa!</i>",
                 "steps": [
                   {
-                    "do": "Б має щось запропонувати",
-                    "why": "Друга репліка — порада, де пошукати, бо А відповідає «Так, дивився там»."
+                    "do": "Б має щось запропонувати: спитати, чи А шукав у певному місці",
+                    "why": "Друга репліка — порада, де пошукати, бо А відповідає «Так, дивився там».",
+                    "q": "Що має сказати Б?",
+                    "options": [
+                      "Сказати, що навушники під диваном",
+                      "Попросити в А навушники",
+                      "Розповісти, що Б теж щось загубив",
+                      "Спитати, чи А шукав у певному місці"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Під диваном А потім знаходить їх сам; Б ще не знає, де вони.",
+                      "А відповідає <i>Yes, I looked there</i> — отже, Б назвав місце.",
+                      "Відповідь <i>I looked there</i> показує: Б підказав, де шукати.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>Did you look in your bag?</i>",
-                    "why": "Минулий час: <i>Did you look…?</i> — «Ти дивився…?»"
+                    "why": "Минулий час: <i>Did you look…?</i> — «Ти дивився…?»",
+                    "q": "Яке запитання правильне?",
+                    "options": [
+                      "<i>Did you look in your bag?</i>",
+                      "<i>Did you looked in your bag?</i>",
+                      "<i>Do you looked in your bag?</i>",
+                      "<i>Did you looking in your bag?</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>did</i> — дієслово без <i>-ed</i>: <i>look</i>.",
+                      "Минулий час: помічник <i>did</i>, а дієслово без <i>-ed</i>.",
+                      "Після <i>did</i> — початкова форма без <i>-ing</i>: <i>look</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Did you look in your bag?</i>"
@@ -414,11 +792,39 @@
                 "steps": [
                   {
                     "do": "<i>My bed is next to the window and my desk is between the bed and the wardrobe.</i>",
-                    "why": "Прийменники <i>next to</i>, <i>between</i>."
+                    "why": "Прийменники <i>next to</i>, <i>between</i>.",
+                    "q": "Які прийменники місця?",
+                    "options": [
+                      "<i>next the window … between the bed and the wardrobe</i>",
+                      "<i>next to the window … among the bed and the wardrobe</i>",
+                      "<i>next to the window … between the bed and the wardrobe</i>",
+                      "<i>next to the window … between the bed or the wardrobe</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>next to</i> — завжди з <i>to</i>: <i>next to the window</i>.",
+                      "Між двома речами — <i>between</i>; <i>among</i> — серед багатьох.",
+                      null,
+                      "Сталий вираз: <i>between … and …</i>."
+                    ]
                   },
                   {
                     "do": "<i>There are two shelves above my desk with books and games on them.</i>",
-                    "why": "<i>shelf → shelves</i>: <i>f</i> змінюється на <i>ves</i>."
+                    "why": "<i>shelf → shelves</i>: <i>f</i> змінюється на <i>ves</i>.",
+                    "q": "Яка множина від <i>shelf</i>?",
+                    "options": [
+                      "<i>two shelfs</i>",
+                      "<i>two shelf</i>",
+                      "<i>two shelfes</i>",
+                      "<i>two shelves</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>shelf → shelves</i>: <i>f</i> змінюється на <i>v</i> + <i>-es</i>.",
+                      "Після <i>two</i> — множина: <i>shelves</i>.",
+                      "Не просто <i>-es</i>: <i>f</i> переходить у <i>v</i> — <i>shelves</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>My bed is next to the window and my desk is between the bed and the wardrobe. There are two shelves above my desk with books and games on them.</i>"
@@ -502,11 +908,39 @@
                 "steps": [
                   {
                     "do": "<i>How many apples</i>",
-                    "why": "<i>apples</i> можна порахувати."
+                    "why": "<i>apples</i> можна порахувати.",
+                    "q": "<i>apples</i> — <i>many</i> чи <i>much</i>?",
+                    "options": [
+                      "<i>How much apples</i>",
+                      "<i>How many apple</i>",
+                      "<i>How many apples</i>",
+                      "<i>How lot of apples</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>apples</i> можна порахувати (злічуване): <i>How many</i>.",
+                      "Після <i>How many</i> — множина: <i>apples</i>.",
+                      null,
+                      "Такого виразу немає; про кількість злічуваного — <i>How many</i>."
+                    ]
                   },
                   {
                     "do": "<i>How much flour</i>",
-                    "why": "<i>flour</i> (борошно) — незлічуване."
+                    "why": "<i>flour</i> (борошно) — незлічуване.",
+                    "q": "<i>flour</i> — <i>many</i> чи <i>much</i>?",
+                    "options": [
+                      "<i>How much flour</i>",
+                      "<i>How many flour</i>",
+                      "<i>How much flours</i>",
+                      "<i>How many flours</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>flour</i> (борошно) — незлічуване, тож <i>much</i>.",
+                      "Незлічуване не має множини: <i>flour</i>.",
+                      "<i>flour</i> незлічуване: <i>How much flour</i>, без <i>-s</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>many</i>, <i>much</i>"
@@ -516,15 +950,57 @@
                 "steps": [
                   {
                     "do": "<i>Waiter: Are you ready to order?</i>",
-                    "why": "Офіціант питає, чи готові ви замовити."
+                    "why": "Офіціант питає, чи готові ви замовити.",
+                    "q": "Що спершу питає офіціант?",
+                    "options": [
+                      "<i>Are you ready for order?</i>",
+                      "<i>Are you ready to order?</i>",
+                      "<i>Do you ready to order?</i>",
+                      "<i>Are you ready to ordering?</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>ready</i> — <i>to</i> + дієслово: <i>ready to order</i>.",
+                      null,
+                      "<i>ready</i> — прикметник, потрібне <i>be</i>: <i>Are you ready…?</i>",
+                      "Після <i>to</i> — дієслово без <i>-ing</i>: <i>to order</i>."
+                    ]
                   },
                   {
                     "do": "<i>You: Yes, can I have a cheese sandwich, please?</i>",
-                    "why": "Ввічлива форма + <i>please</i>."
+                    "why": "Ввічлива форма + <i>please</i>.",
+                    "q": "Як ввічливо замовити сендвіч?",
+                    "options": [
+                      "<i>Give me a cheese sandwich.</i>",
+                      "<i>Can I have cheese sandwich, please?</i>",
+                      "<i>Can I have a cheese sandwich, please?</i>",
+                      "<i>Can I to have a cheese sandwich, please?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Звучить грубо; замовляємо ввічливо: <i>Can I have…, please?</i>",
+                      "<i>sandwich</i> злічуване, в однині потрібен артикль: <i>a cheese sandwich</i>.",
+                      null,
+                      "Після <i>can</i> — дієслово без <i>to</i>."
+                    ]
                   },
                   {
                     "do": "<i>Waiter: Anything to drink? — You: I'd like an orange juice, please.</i>",
-                    "why": "<i>I'd like</i> = <i>I would like</i>. У кафе можна <i>an orange juice</i> — одна склянка."
+                    "why": "<i>I'd like</i> = <i>I would like</i>. У кафе можна <i>an orange juice</i> — одна склянка.",
+                    "q": "Як замовити напій?",
+                    "options": [
+                      "<i>I like an orange juice, please.</i>",
+                      "<i>I'd like an orange juice, please.</i>",
+                      "<i>I'd like a orange juice, please.</i>",
+                      "<i>I'd like to an orange juice, please.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>I like</i> — «мені подобається»; замовляють <i>I would like</i> (<i>I'd like</i>).",
+                      null,
+                      "<i>orange</i> починається з голосного звуку — <i>an</i>.",
+                      "Після <i>I would like</i> одразу іменник; <i>to</i> — лише перед дієсловом."
+                    ]
                   }
                 ],
                 "answer": "<i>Can I have a cheese sandwich, please? … I'd like an orange juice, please.</i>"
@@ -534,15 +1010,57 @@
                 "steps": [
                   {
                     "do": "<i>fresh bread → the baker's</i>",
-                    "why": "Пекарня."
+                    "why": "Пекарня.",
+                    "q": "Де купити <i>fresh bread</i>?",
+                    "options": [
+                      "<i>the baker's</i>",
+                      "<i>the butcher's</i>",
+                      "<i>the chemist's</i>",
+                      "<i>the greengrocer's</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>the butcher's</i> — м'ясна крамниця; хліб — <i>the baker's</i>.",
+                      "Це аптека; хліб купують у <i>the baker's</i>.",
+                      "Це овочі й фрукти; хліб — <i>the baker's</i>."
+                    ]
                   },
                   {
                     "do": "<i>tomatoes → the greengrocer's</i>",
-                    "why": "Овочі й фрукти."
+                    "why": "Овочі й фрукти.",
+                    "q": "Де купити <i>tomatoes</i>?",
+                    "options": [
+                      "<i>the baker's</i>",
+                      "<i>the newsagent's</i>",
+                      "<i>the chemist's</i>",
+                      "<i>the greengrocer's</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Пекарня — хліб і булки; помідори — <i>the greengrocer's</i>.",
+                      "Газети й журнали; овочі — <i>the greengrocer's</i>.",
+                      "Аптека — ліки; овочі — <i>the greengrocer's</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>cough medicine → the chemist's</i>",
-                    "why": "Аптека. <i>'s</i> означає «магазин когось»: <i>the baker's (shop)</i>."
+                    "why": "Аптека. <i>'s</i> означає «магазин когось»: <i>the baker's (shop)</i>.",
+                    "q": "Де купити <i>cough medicine</i>?",
+                    "options": [
+                      "<i>the chemistry</i>",
+                      "<i>the chemist's</i>",
+                      "<i>the baker's</i>",
+                      "<i>the greengrocer's</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>chemistry</i> — хімія (предмет); аптека — <i>the chemist's</i>.",
+                      null,
+                      "Пекарня — хліб; ліки — <i>the chemist's</i>.",
+                      "Овочі й фрукти; ліки — <i>the chemist's</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>the baker's, the greengrocer's, the chemist's</i>"
@@ -619,11 +1137,39 @@
                 "steps": [
                   {
                     "do": "<i>Does your brother</i>",
-                    "why": "<i>have to</i> утворює питання з помічником; <i>brother</i> — «він», тож <i>Does</i>."
+                    "why": "<i>have to</i> утворює питання з помічником; <i>brother</i> — «він», тож <i>Does</i>.",
+                    "q": "Як почати запитання?",
+                    "options": [
+                      "<i>Do your brother</i>",
+                      "<i>Is your brother</i>",
+                      "<i>Your brother does</i>",
+                      "<i>Does your brother</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>brother</i> — «він», тож <i>Does</i>.",
+                      "<i>is</i> — для <i>be</i>; <i>have to</i> утворює питання з <i>Does</i>.",
+                      "У запитанні помічник <i>Does</i> стоїть перед підметом.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>Does your brother have to take out the rubbish?</i>",
-                    "why": "Після <i>Does</i> — <i>have</i>, а не <i>has</i>."
+                    "why": "Після <i>Does</i> — <i>have</i>, а не <i>has</i>.",
+                    "q": "Що після <i>Does your brother</i>?",
+                    "options": [
+                      "<i>Does … has to take</i>",
+                      "<i>Does … have take</i>",
+                      "<i>Does … have to take</i>",
+                      "<i>Does … have to takes</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>Does</i> — <i>have</i>, а не <i>has</i>.",
+                      "<i>have to</i> — завжди з <i>to</i>: <i>have to take</i>.",
+                      null,
+                      "Після <i>to</i> — дієслово без <i>-s</i>: <i>take</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>Does</i> … <i>have to</i>"
@@ -632,12 +1178,40 @@
                 "task": "<i>don't have to</i> or <i>mustn't</i>? (1) <i>You … feed the animals at the zoo.</i> (2) <i>It's a holiday, so we … go to school.</i>",
                 "steps": [
                   {
-                    "do": "(1) <i>mustn't</i>",
-                    "why": "Годувати тварин у зоопарку заборонено."
+                    "do": "(1) <i>You mustn't feed the animals at the zoo.</i>",
+                    "why": "Годувати тварин у зоопарку заборонено.",
+                    "q": "(1) Зоопарк: годувати тварин заборонено. Як сказати?",
+                    "options": [
+                      "<i>You mustn't feed the animals.</i>",
+                      "<i>You don't have to feed the animals.</i>",
+                      "<i>You must feed the animals.</i>",
+                      "<i>You have to feed the animals.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>don't have to</i> — «не обов'язково»; а тут заборона: <i>mustn't</i>.",
+                      "<i>must</i> — треба; а годувати заборонено.",
+                      "Це обов'язок, а годувати заборонено: <i>mustn't</i>."
+                    ]
                   },
                   {
-                    "do": "(2) <i>don't have to</i>",
-                    "why": "Іти до школи не треба, але ніхто не забороняє."
+                    "do": "(2) <i>It's a holiday, so we don't have to go to school.</i>",
+                    "why": "Іти до школи не треба, але ніхто не забороняє.",
+                    "q": "(2) Свято: до школи йти не треба. Як сказати?",
+                    "options": [
+                      "<i>we mustn't go to school</i>",
+                      "<i>we have to go to school</i>",
+                      "<i>we doesn't have to go to school</i>",
+                      "<i>we don't have to go to school</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>mustn't</i> — заборона; а йти просто не треба: <i>don't have to</i>.",
+                      "Свято — до школи не треба: <i>don't have to</i>.",
+                      "З <i>we</i> — <i>don't</i>; <i>doesn't</i> — для he/she/it.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "(1) <i>mustn't</i>, (2) <i>don't have to</i>"
@@ -647,15 +1221,57 @@
                 "steps": [
                   {
                     "do": "<i>I have to make my bed every morning.</i>",
-                    "why": "Щоденний обов'язок."
+                    "why": "Щоденний обов'язок.",
+                    "q": "Перший обов'язок — яке речення правильне?",
+                    "options": [
+                      "<i>I has to make my bed every morning.</i>",
+                      "<i>I must to make my bed every morning.</i>",
+                      "<i>I have to make my bed every morning.</i>",
+                      "<i>I have to making my bed every morning.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "З <i>I</i> — <i>have to</i>; <i>has</i> — для he/she/it.",
+                      "Після <i>must</i> — без <i>to</i>; або <i>have to make</i>.",
+                      null,
+                      "Після <i>have to</i> — дієслово без <i>-ing</i>."
+                    ]
                   },
                   {
                     "do": "<i>I also have to walk the dog after school.</i>",
-                    "why": "Ще один обов'язок."
+                    "why": "Ще один обов'язок.",
+                    "q": "Другий обов'язок — яке речення правильне?",
+                    "options": [
+                      "<i>I also have walk the dog after school.</i>",
+                      "<i>I also have to walk the dog after school.</i>",
+                      "<i>I also have to walks the dog after school.</i>",
+                      "<i>I also have to walk the dog after the school.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Обов'язок — <i>have to</i> + дієслово; <i>to</i> не пропускаємо.",
+                      null,
+                      "Після <i>to</i> — дієслово без <i>-s</i>: <i>walk</i>.",
+                      "<i>after school</i> (після уроків) — сталий вираз без <i>the</i>."
+                    ]
                   },
                   {
                     "do": "<i>But I don't have to do the washing-up — we've got a dishwasher!</i>",
-                    "why": "Не обов'язково, бо посуд миє машина."
+                    "why": "Не обов'язково, бо посуд миє машина.",
+                    "q": "Чого робити не обов'язково — як сказати?",
+                    "options": [
+                      "<i>I don't have to do the washing-up.</i>",
+                      "<i>I mustn't do the washing-up.</i>",
+                      "<i>I don't have to make the washing-up.</i>",
+                      "<i>I don't have do the washing-up.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>mustn't</i> — заборона; посуд просто не обов'язково мити: <i>don't have to</i>.",
+                      "Мити посуд — <i>do the washing-up</i>, не <i>make</i>.",
+                      "<i>have to</i> — завжди з <i>to</i>: <i>don't have to do</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>I have to make my bed every morning. I also have to walk the dog after school. But I don't have to do the washing-up — we've got a dishwasher!</i>"
@@ -732,11 +1348,39 @@
                 "steps": [
                   {
                     "do": "<i>We are meeting</i>",
-                    "why": "Є точний час і місце — домовленість, тож <i>are + meeting</i>."
+                    "why": "Є точний час і місце — домовленість, тож <i>are + meeting</i>.",
+                    "q": "Домовленість на точний час — яка форма?",
+                    "options": [
+                      "<i>We meet</i>",
+                      "<i>We are meet</i>",
+                      "<i>We meeting</i>",
+                      "<i>We are meeting</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Present Simple — для звичних дій; домовленість — <i>are meeting</i>.",
+                      "Present Continuous: <i>are</i> + дієслово з <i>-ing</i>.",
+                      "Без <i>are</i> не можна: <i>We are meeting</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>We're meeting our cousins at the station at 6 p.m.</i>",
-                    "why": "Спершу що й з ким, потім де, потім коли."
+                    "why": "Спершу що й з ким, потім де, потім коли.",
+                    "q": "Який порядок слів далі?",
+                    "options": [
+                      "<i>at 6 p.m. our cousins at the station</i>",
+                      "<i>our cousins at the station at 6 p.m.</i>",
+                      "<i>at the station our cousins at 6 p.m.</i>",
+                      "<i>our cousins on the station at 6 p.m.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Спершу кого (<i>our cousins</i>), потім де, потім коли.",
+                      null,
+                      "Додаток (<i>our cousins</i>) — одразу після дієслова.",
+                      "На вокзалі — <i>at the station</i>, не <i>on</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>We're meeting our cousins at the station at 6 p.m.</i>"
@@ -746,15 +1390,57 @@
                 "steps": [
                   {
                     "do": "<i>I going to</i> → <i>I'm going to</i>",
-                    "why": "Без <i>am</i> не можна."
+                    "why": "Без <i>am</i> не можна.",
+                    "q": "Як виправити <i>I going to</i>?",
+                    "options": [
+                      "<i>I going to</i> → <i>I'm go to</i>",
+                      "<i>I going to</i> → <i>I will going to</i>",
+                      "<i>I going to</i> → <i>I'm going to</i>",
+                      "залишити без змін"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>be going to</i>: потрібні і <i>am</i>, і <i>going</i>.",
+                      "<i>will</i> і <i>going to</i> разом не вживаємо: <i>I'm going to</i>.",
+                      null,
+                      "Без <i>am</i> не можна: <i>I'm going to</i>."
+                    ]
                   },
                   {
                     "do": "<i>to Carpathians</i> → <i>to the Carpathians</i>",
-                    "why": "Назви гір (гірських хребтів) — з <i>the</i>."
+                    "why": "Назви гір (гірських хребтів) — з <i>the</i>.",
+                    "q": "Як виправити <i>to Carpathians</i>?",
+                    "options": [
+                      "<i>to Carpathians</i> → <i>to the Carpathians</i>",
+                      "<i>to Carpathians</i> → <i>to a Carpathians</i>",
+                      "<i>to Carpathians</i> → <i>to the Carpathian</i>",
+                      "залишити без змін"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>a</i> — лише з одниною; гори — <i>the Carpathians</i>.",
+                      "Карпати — множина: <i>the Carpathians</i>.",
+                      "Назви гірських хребтів — з <i>the</i>: <i>the Carpathians</i>."
+                    ]
                   },
                   {
                     "do": "<i>by foot</i> → <i>on foot</i>",
-                    "why": "Пішки — <i>on foot</i>. А про піші походи в горах природніше сказати <i>go hiking</i>."
+                    "why": "Пішки — <i>on foot</i>. А про піші походи в горах природніше сказати <i>go hiking</i>.",
+                    "q": "Як виправити <i>by foot</i>?",
+                    "options": [
+                      "<i>by foot</i> → <i>with foot</i>",
+                      "<i>by foot</i> → <i>by feet</i>",
+                      "<i>by foot</i> → <i>on feet</i>",
+                      "<i>by foot</i> → <i>on foot</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Пішки — сталий вираз <i>on foot</i>.",
+                      "Сталий вираз: <i>on foot</i> (однина, з <i>on</i>).",
+                      "<i>foot</i> тут в однині: <i>on foot</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>Next summer I'm going to go hiking in the Carpathians.</i> (або <i>…travel to the Carpathians on foot</i>)"
@@ -764,15 +1450,57 @@
                 "steps": [
                   {
                     "do": "<i>We're going to Kyiv on 28 December — Dad has already booked the train tickets.</i>",
-                    "why": "Квитки куплено — домовленість, Present Continuous."
+                    "why": "Квитки куплено — домовленість, Present Continuous.",
+                    "q": "Квитки вже куплено — як сказати про поїздку?",
+                    "options": [
+                      "<i>We're going to Kyiv on 28 December</i>",
+                      "<i>We're going to Kyiv in 28 December</i>",
+                      "<i>We going to Kyiv on 28 December</i>",
+                      "<i>We're go to Kyiv on 28 December</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "З датою — <i>on</i>: <i>on 28 December</i>.",
+                      "Без <i>are</i> не можна: <i>We're going</i>.",
+                      "Present Continuous: <i>are</i> + <i>-ing</i>: <i>We're going</i>."
+                    ]
                   },
                   {
                     "do": "<i>We're staying with my aunt for a week.</i>",
-                    "why": "Теж домовлено з тіткою."
+                    "why": "Теж домовлено з тіткою.",
+                    "q": "Як сказати, що домовилися жити в тітки?",
+                    "options": [
+                      "<i>We're staying with my aunt since a week.</i>",
+                      "<i>We're staying at my aunt for a week.</i>",
+                      "<i>We're staying with my aunt for a week.</i>",
+                      "<i>We staying with my aunt for a week.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Тривалість — <i>for a week</i>; <i>since</i> — з певного моменту.",
+                      "У когось — <i>stay with</i> + людина; з <i>at</i> — <i>at my aunt's</i>.",
+                      null,
+                      "Без <i>are</i> не можна: <i>We're staying</i>."
+                    ]
                   },
                   {
                     "do": "<i>I'm going to visit the Museum of Science there.</i>",
-                    "why": "Твій намір — <i>going to</i>."
+                    "why": "Твій намір — <i>going to</i>.",
+                    "q": "Твій намір — яке речення правильне?",
+                    "options": [
+                      "<i>I'm going visit the Museum of Science</i>",
+                      "<i>I'm going to visit the Museum of Science</i>",
+                      "<i>I going to visit the Museum of Science</i>",
+                      "<i>I'm going to visiting the Museum of Science</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>going to</i> + дієслово: <i>to</i> не пропускаємо.",
+                      null,
+                      "Без <i>am</i> не можна: <i>I'm going to</i>.",
+                      "Після <i>going to</i> — дієслово без <i>-ing</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>We're going to Kyiv on 28 December — Dad has already booked the train tickets. We're staying with my aunt for a week. I'm going to visit the Museum of Science there.</i>"
@@ -846,15 +1574,57 @@
                 "steps": [
                   {
                     "do": "<i>play volleyball</i>",
-                    "why": "Гра з м'ячем."
+                    "why": "Гра з м'ячем.",
+                    "q": "<i>volleyball</i> — яке дієслово?",
+                    "options": [
+                      "<i>do volleyball</i>",
+                      "<i>go volleyball</i>",
+                      "<i>play in volleyball</i>",
+                      "<i>play volleyball</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Ігри з м'ячем — <i>play</i>.",
+                      "<i>go</i> — із заняттями на <i>-ing</i> (<i>go cycling</i>); з м'ячем — <i>play</i>.",
+                      "Калька з «грати у волейбол»: <i>play volleyball</i>, без <i>in</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "<i>do karate</i>",
-                    "why": "Бойове мистецтво."
+                    "why": "Бойове мистецтво.",
+                    "q": "<i>karate</i> — яке дієслово?",
+                    "options": [
+                      "<i>do karate</i>",
+                      "<i>play karate</i>",
+                      "<i>go karate</i>",
+                      "<i>make karate</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>play</i> — для ігор з м'ячем; бойові мистецтва — <i>do</i>.",
+                      "<i>go</i> — для занять на <i>-ing</i>; карате — <i>do</i>.",
+                      "Зі спортом <i>make</i> не вживають; бойові мистецтва — <i>do</i>."
+                    ]
                   },
                   {
                     "do": "<i>go cycling</i>",
-                    "why": "Заняття на <i>-ing</i>."
+                    "why": "Заняття на <i>-ing</i>.",
+                    "q": "<i>cycling</i> — яке дієслово?",
+                    "options": [
+                      "<i>play cycling</i>",
+                      "<i>go to cycling</i>",
+                      "<i>go cycling</i>",
+                      "<i>go cycle</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>play</i> — ігри з м'ячем; заняття на <i>-ing</i> — <i>go</i>.",
+                      "Після <i>go</i> заняття на <i>-ing</i> — без <i>to</i>: <i>go cycling</i>.",
+                      null,
+                      "Після <i>go</i> — форма на <i>-ing</i>: <i>go cycling</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>play volleyball, do karate, go cycling</i>"
@@ -863,12 +1633,40 @@
                 "task": "<i>won</i> or <i>beat</i>? <i>Our team … the match. We … the 7-B team 3–1.</i>",
                 "steps": [
                   {
-                    "do": "<i>won the match</i>",
-                    "why": "Виграли матч — <i>win</i>."
+                    "do": "<i>Our team won the match.</i>",
+                    "why": "Виграли матч — <i>win</i>.",
+                    "q": "Виграли матч — яке речення правильне?",
+                    "options": [
+                      "<i>Our team beat the match.</i>",
+                      "<i>Our team won the match.</i>",
+                      "<i>Our team winned the match.</i>",
+                      "<i>Our team won at the match.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>beat</i> — перемогти суперника; виграти матч — <i>win</i>.",
+                      null,
+                      "<i>win</i> — неправильне: <i>win – won – won</i>.",
+                      "Виграти щось — <i>win</i> + що, без <i>at</i>: <i>won the match</i>."
+                    ]
                   },
                   {
-                    "do": "<i>beat the 7-B team</i>",
-                    "why": "Перемогли суперника — <i>beat</i>."
+                    "do": "<i>We beat the 7-B team 3–1.</i>",
+                    "why": "Перемогли суперника — <i>beat</i>.",
+                    "q": "Перемогли суперника — яке речення правильне?",
+                    "options": [
+                      "<i>We won the 7-B team 3–1.</i>",
+                      "<i>We beated the 7-B team 3–1.</i>",
+                      "<i>We beat to the 7-B team 3–1.</i>",
+                      "<i>We beat the 7-B team 3–1.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>win</i> — виграти матч чи приз; перемогти суперника — <i>beat</i>.",
+                      "<i>beat</i> — неправильне: <i>beat – beat – beaten</i>.",
+                      "Після <i>beat</i> одразу суперник, без <i>to</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "<i>won</i>, <i>beat</i>"
@@ -878,15 +1676,57 @@
                 "steps": [
                   {
                     "do": "<i>I do gymnastics three times a week.</i>",
-                    "why": "<i>do</i> + gymnastics."
+                    "why": "<i>do</i> + gymnastics.",
+                    "q": "Що ти робиш — яке речення правильне?",
+                    "options": [
+                      "<i>I do gymnastics three times a week.</i>",
+                      "<i>I play gymnastics three times a week.</i>",
+                      "<i>I go gymnastics three times a week.</i>",
+                      "<i>I do gymnastic three times a week.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>play</i> — для ігор з м'ячем; гімнастика — <i>do</i>.",
+                      "<i>go</i> — із заняттями на <i>-ing</i>; гімнастика — <i>do</i>.",
+                      "Назва спорту — <i>gymnastics</i>, з <i>-s</i>."
+                    ]
                   },
                   {
                     "do": "<i>On Saturdays I also go swimming with my dad.</i>",
-                    "why": "<i>go</i> + <i>-ing</i>."
+                    "why": "<i>go</i> + <i>-ing</i>.",
+                    "q": "Ще одне заняття — яке речення правильне?",
+                    "options": [
+                      "<i>On Saturdays I also go to swimming</i>",
+                      "<i>In Saturdays I also go swimming</i>",
+                      "<i>On Saturdays I also go swimming</i>",
+                      "<i>On Saturdays I also play swimming</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>go</i> + <i>-ing</i> — без <i>to</i>: <i>go swimming</i>.",
+                      "З днями тижня — <i>on</i>: <i>on Saturdays</i>.",
+                      null,
+                      "<i>play</i> — для ігор з м'ячем; заняття на <i>-ing</i> — <i>go</i>."
+                    ]
                   },
                   {
                     "do": "<i>Last month I took part in a competition and won a bronze medal!</i>",
-                    "why": "<i>take part in</i> — брати участь; <i>won a medal</i> — виграла медаль."
+                    "why": "<i>take part in</i> — брати участь; <i>won a medal</i> — виграла медаль.",
+                    "q": "Недавній результат — як сказати?",
+                    "options": [
+                      "<i>took a part in a competition and won a bronze medal</i>",
+                      "<i>took part in a competition and won a bronze medal</i>",
+                      "<i>took part in a competition and beat a bronze medal</i>",
+                      "<i>taked part in a competition and won a bronze medal</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Сталий вираз без артикля: <i>take part in</i>.",
+                      null,
+                      "Медаль виграють — <i>win</i>; <i>beat</i> — перемогти суперника.",
+                      "<i>take – took – taken</i>: минулий час — <i>took</i>."
+                    ]
                   }
                 ],
                 "answer": "<i>I do gymnastics three times a week. On Saturdays I also go swimming with my dad. Last month I took part in a competition and won a bronze medal!</i>"

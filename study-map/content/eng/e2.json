@@ -47,19 +47,75 @@
                 "steps": [
                   {
                     "do": "a) since 2021",
-                    "why": "2021 — це момент (рік), з якого щось почалося."
+                    "why": "2021 — це момент (рік), з якого щось почалося.",
+                    "q": "a) <i>for</i> чи <i>since</i>: … 2021?",
+                    "options": [
+                      "<i>for</i> 2021",
+                      "<i>since</i> in 2021",
+                      "<i>since</i> the 2021",
+                      "<i>since</i> 2021"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "2021 — момент початку, а не тривалість: <i>since</i>.",
+                      "Після <i>since</i> — одразу момент, без <i>in</i>: <i>since 2021</i>.",
+                      "Перед роком артикль не ставимо: <i>since 2021</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "b) for three weeks",
-                    "why": "«Три тижні» — це проміжок, відповідає на «скільки часу?»."
+                    "why": "«Три тижні» — це проміжок, відповідає на «скільки часу?».",
+                    "q": "b) <i>for</i> чи <i>since</i>: … three weeks?",
+                    "options": [
+                      "<i>since</i> three weeks",
+                      "<i>for</i> three week",
+                      "<i>for</i> three weeks",
+                      "<i>ago</i> three weeks"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "«Три тижні» — тривалість («скільки часу?»): <i>for</i>.",
+                      "Після <i>three</i> — множина: <i>weeks</i>.",
+                      null,
+                      "<i>ago</i> — «тому», ставлять після (<i>three weeks ago</i>); тривалість — <i>for</i>."
+                    ]
                   },
                   {
                     "do": "c) since last summer",
-                    "why": "«Минуле літо» — момент початку."
+                    "why": "«Минуле літо» — момент початку.",
+                    "q": "c) <i>for</i> чи <i>since</i>: … last summer?",
+                    "options": [
+                      "<i>for</i> last summer",
+                      "<i>since</i> last summer",
+                      "<i>since</i> the last summer",
+                      "last summer <i>ago</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "«Минуле літо» — момент початку: <i>since</i>.",
+                      null,
+                      "Перед <i>last</i> артикль не ставимо: <i>since last summer</i>.",
+                      "<i>ago</i> ставлять після тривалості (<i>two years ago</i>), не після <i>last summer</i>."
+                    ]
                   },
                   {
                     "do": "d) for ten minutes",
-                    "why": "«Десять хвилин» — тривалість."
+                    "why": "«Десять хвилин» — тривалість.",
+                    "q": "d) <i>for</i> чи <i>since</i>: … ten minutes?",
+                    "options": [
+                      "<i>for</i> ten minutes",
+                      "<i>since</i> ten minutes",
+                      "<i>for</i> ten minute",
+                      "<i>on</i> ten minutes"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "«Десять хвилин» — тривалість: <i>for</i>.",
+                      "Після <i>ten</i> — множина: <i>minutes</i>.",
+                      "Тривалість — <i>for</i>; <i>on</i> тут не підходить."
+                    ]
                   }
                 ],
                 "answer": "a) since, b) for, c) since, d) for"
@@ -68,16 +124,58 @@
                 "task": "Complete: Olena … (have) her cat … she was nine.",
                 "steps": [
                   {
-                    "do": "Olena → has",
-                    "why": "Підмет — вона (3-тя особа однини), тому <i>has</i>, а не <i>have</i>."
+                    "do": "Olena <i>has</i>",
+                    "why": "Підмет — вона (3-тя особа однини), тому <i>has</i>, а не <i>have</i>.",
+                    "q": "<i>have</i> чи <i>has</i>?",
+                    "options": [
+                      "Olena <i>have</i>",
+                      "Olena <i>is</i>",
+                      "Olena <i>has</i>",
+                      "Olena <i>had</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Olena — «вона», 3-тя особа однини: <i>has</i>.",
+                      "Present Perfect будуємо з <i>have/has</i>, не з <i>is</i>.",
+                      null,
+                      "<i>had</i> + V3 — це Past Perfect; дія триває досі — <i>has</i>."
+                    ]
                   },
                   {
-                    "do": "have → had (V3)",
-                    "why": "Третя форма дієслова <i>have</i> — <i>had</i>: <i>has had</i>."
+                    "do": "<i>has had</i> (V3 від <i>have</i> — <i>had</i>)",
+                    "why": "Третя форма дієслова <i>have</i> — <i>had</i>: <i>has had</i>.",
+                    "q": "Яка третя форма (V3) від <i>have</i>?",
+                    "options": [
+                      "<i>has had</i>",
+                      "<i>has have</i>",
+                      "<i>has has</i>",
+                      "<i>has having</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>has</i> — V3: <i>have – had – had</i>.",
+                      "Після <i>has</i> — третя форма <i>had</i>.",
+                      "Не <i>-ing</i>: <i>has</i> + V3 <i>had</i>."
+                    ]
                   },
                   {
                     "do": "since she was nine",
-                    "why": "«Коли їй було дев'ять» — момент початку, тому <i>since</i>; після нього Past Simple <i>was</i>."
+                    "why": "«Коли їй було дев'ять» — момент початку, тому <i>since</i>; після нього Past Simple <i>was</i>.",
+                    "q": "<i>for</i> чи <i>since</i>?",
+                    "options": [
+                      "<i>for she was nine</i>",
+                      "<i>since she was nine</i>",
+                      "<i>since she has been nine</i>",
+                      "<i>since she is nine</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Після <i>for</i> — тривалість; «коли їй було 9» — момент: <i>since</i>.",
+                      null,
+                      "Після <i>since</i> момент у минулому — Past Simple: <i>was</i>.",
+                      "Дев'ять їй було в минулому: <i>was</i>."
+                    ]
                   }
                 ],
                 "answer": "Olena <i>has had</i> her cat <i>since</i> she was nine."
@@ -87,15 +185,57 @@
                 "steps": [
                   {
                     "do": "I have known…",
-                    "why": "Знайомство почалося в минулому й триває зараз — Present Perfect, а не <i>I know</i>."
+                    "why": "Знайомство почалося в минулому й триває зараз — Present Perfect, а не <i>I know</i>.",
+                    "q": "Яка форма дієслова?",
+                    "options": [
+                      "<i>I know</i>…",
+                      "<i>I have knew</i>…",
+                      "<i>I am knowing</i>…",
+                      "<i>I have known</i>…"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Калька з «я знаю … з»: дія триває з минулого — <i>have known</i>.",
+                      "<i>knew</i> — V2; після <i>have</i> — V3: <i>known</i>.",
+                      "<i>know</i> не вживають у Continuous; тут — <i>have known</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "…my best friend…",
-                    "why": "Хто? Мій найкращий друг."
+                    "why": "Хто? Мій найкращий друг.",
+                    "q": "Як сказати «мого найкращого друга»?",
+                    "options": [
+                      "…<i>mine best friend</i>…",
+                      "…<i>the my best friend</i>…",
+                      "…<i>my best friend</i>…",
+                      "…<i>my the best friend</i>…"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Перед іменником — <i>my</i>; <i>mine</i> вживають без іменника.",
+                      "Перед <i>my</i> артикль не ставимо.",
+                      null,
+                      "Після <i>my</i> артикль не ставимо: <i>my best friend</i>."
+                    ]
                   },
                   {
                     "do": "…since we were six.",
-                    "why": "«З шести років» — момент початку, тому <i>since</i> + Past Simple <i>were</i>."
+                    "why": "«З шести років» — момент початку, тому <i>since</i> + Past Simple <i>were</i>.",
+                    "q": "Як сказати «з шести років»?",
+                    "options": [
+                      "…<i>since we were six</i>.",
+                      "…<i>for six years</i>.",
+                      "…<i>since we are six</i>.",
+                      "…<i>from six years</i>."
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>for six years</i> — «шість років», а треба «з шести років»: <i>since we were six</i>.",
+                      "Шість нам було в минулому: <i>were</i>.",
+                      "Калька з «з шести років»; правильно: <i>since we were six</i>."
+                    ]
                   }
                 ],
                 "answer": "I have known (I've known) my best friend since we were six."
@@ -176,19 +316,75 @@
                 "steps": [
                   {
                     "do": "an umbrella",
-                    "why": "Слово починається з голосного звуку /ʌ/ (схоже на «а»)."
+                    "why": "Слово починається з голосного звуку /ʌ/ (схоже на «а»).",
+                    "q": "<i>a</i> чи <i>an</i> — <i>umbrella</i>?",
+                    "options": [
+                      "<i>a</i> umbrella",
+                      "<i>an</i> umbrella",
+                      "<i>an</i> umbrellas",
+                      "– umbrella"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>umbrella</i> починається з голосного звуку /ʌ/: <i>an</i>.",
+                      null,
+                      "<i>a/an</i> — лише з одниною: <i>an umbrella</i>.",
+                      "Злічуваний іменник в однині без артикля не вживають."
+                    ]
                   },
                   {
                     "do": "a uniform",
-                    "why": "Буква u, але звук /juː/ — «ю», тобто спершу приголосний [й]."
+                    "why": "Буква u, але звук /juː/ — «ю», тобто спершу приголосний [й].",
+                    "q": "<i>a</i> чи <i>an</i> — <i>uniform</i>?",
+                    "options": [
+                      "<i>an</i> uniform",
+                      "<i>a</i> uniforms",
+                      "– uniform",
+                      "<i>a</i> uniform"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Буква <i>u</i>, але звук /juː/ («ю») — спершу приголосний [й]: <i>a</i>.",
+                      "<i>a/an</i> — лише з одниною: <i>a uniform</i>.",
+                      "Злічуваний іменник в однині без артикля не вживають.",
+                      null
+                    ]
                   },
                   {
                     "do": "an hour",
-                    "why": "h не читається, перший звук — голосний /aʊ/."
+                    "why": "h не читається, перший звук — голосний /aʊ/.",
+                    "q": "<i>a</i> чи <i>an</i> — <i>hour</i>?",
+                    "options": [
+                      "<i>an</i> hour",
+                      "<i>a</i> hour",
+                      "<i>an</i> hours",
+                      "– hour"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>h</i> не читається, перший звук голосний: <i>an hour</i>.",
+                      "<i>a/an</i> — лише з одниною: <i>an hour</i>.",
+                      "Злічуваний іменник в однині без артикля не вживають."
+                    ]
                   },
                   {
                     "do": "an exam",
-                    "why": "Починається з голосного звуку /ɪ/."
+                    "why": "Починається з голосного звуку /ɪ/.",
+                    "q": "<i>a</i> чи <i>an</i> — <i>exam</i>?",
+                    "options": [
+                      "<i>a</i> exam",
+                      "<i>an</i> exams",
+                      "– exam",
+                      "<i>an</i> exam"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>exam</i> починається з голосного звуку /ɪ/: <i>an</i>.",
+                      "<i>a/an</i> — лише з одниною: <i>an exam</i>.",
+                      "Злічуваний іменник в однині без артикля не вживають.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "an umbrella, a uniform, an hour, an exam"
@@ -198,23 +394,93 @@
                 "steps": [
                   {
                     "do": "a new teacher",
-                    "why": "Згадуємо вперше, одна людина з багатьох."
+                    "why": "Згадуємо вперше, одна людина з багатьох.",
+                    "q": "… new teacher?",
+                    "options": [
+                      "<i>the</i> new teacher",
+                      "<i>a</i> new teacher",
+                      "<i>an</i> new teacher",
+                      "– new teacher"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Згадуємо вперше, одного з багатьох — <i>a</i>.",
+                      null,
+                      "<i>new</i> починається з приголосного: <i>a</i>.",
+                      "Злічуваний іменник в однині без артикля не вживають."
+                    ]
                   },
                   {
                     "do": "The teacher",
-                    "why": "Тепер уже відомо, про якого саме вчителя мова."
+                    "why": "Тепер уже відомо, про якого саме вчителя мова.",
+                    "q": "… teacher (вдруге)?",
+                    "options": [
+                      "<i>A</i> teacher",
+                      "<i>An</i> teacher",
+                      "<i>The</i> teacher",
+                      "– Teacher"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Вчителя вже згадали — тепер відомо, про кого мова: <i>The</i>.",
+                      "Вчителя вже згадали: <i>The</i> (та й перед приголосним не <i>an</i>).",
+                      null,
+                      "Злічуваний іменник в однині без артикля не вживають."
+                    ]
                   },
                   {
                     "do": "– Odesa",
-                    "why": "Назви міст — без артикля."
+                    "why": "Назви міст — без артикля.",
+                    "q": "… Odesa?",
+                    "options": [
+                      "– Odesa",
+                      "<i>the</i> Odesa",
+                      "<i>an</i> Odesa",
+                      "<i>a</i> Odesa"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Назви міст — без артикля.",
+                      "Назви міст — без артикля; <i>a/an</i> тут неможливі.",
+                      "Назви міст — без артикля; <i>a/an</i> тут неможливі."
+                    ]
                   },
                   {
                     "do": "– history",
-                    "why": "Шкільні предмети — без артикля."
+                    "why": "Шкільні предмети — без артикля.",
+                    "q": "… history?",
+                    "options": [
+                      "<i>the</i> history",
+                      "– history",
+                      "<i>a</i> history",
+                      "<i>an</i> history"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Шкільні предмети — без артикля.",
+                      null,
+                      "Шкільний предмет — без артикля: <i>teaches history</i>.",
+                      "Шкільні предмети — без артикля (і <i>h</i> у <i>history</i> читається)."
+                    ]
                   },
                   {
                     "do": "– old maps",
-                    "why": "Карти загалом, у множині — без артикля."
+                    "why": "Карти загалом, у множині — без артикля.",
+                    "q": "… old maps?",
+                    "options": [
+                      "<i>the</i> old maps",
+                      "<i>an</i> old maps",
+                      "– old maps",
+                      "<i>a</i> old maps"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Карти загалом, не якісь конкретні — без артикля.",
+                      "<i>a/an</i> не ставимо перед множиною.",
+                      null,
+                      "<i>a/an</i> не ставимо перед множиною."
+                    ]
                   }
                 ],
                 "answer": "a, The, –, –, –"
@@ -224,15 +490,57 @@
                 "steps": [
                   {
                     "do": "goes to school",
-                    "why": "<i>go to school</i> — ходити до школи навчатися, сталий вираз без артикля."
+                    "why": "<i>go to school</i> — ходити до школи навчатися, сталий вираз без артикля.",
+                    "q": "Як виправити <i>goes to the school</i>?",
+                    "options": [
+                      "<i>goes in school</i>",
+                      "<i>goes at school</i>",
+                      "залишити <i>goes to the school</i>",
+                      "<i>goes to school</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "До школи — <i>to school</i>: рух куди — <i>to</i>.",
+                      "Рух куди — <i>to</i>: <i>go to school</i>.",
+                      "Ходити навчатися — сталий вираз без артикля: <i>go to school</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "by bus",
-                    "why": "Транспорт після <i>by</i> — без артикля: <i>by bus, by train</i>."
+                    "why": "Транспорт після <i>by</i> — без артикля: <i>by bus, by train</i>.",
+                    "q": "Як виправити <i>by the bus</i>?",
+                    "options": [
+                      "залишити <i>by the bus</i>",
+                      "<i>with bus</i>",
+                      "<i>by bus</i>",
+                      "<i>on bus</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>by</i> транспорт без артикля: <i>by bus</i>.",
+                      "Калька з «автобусом»: <i>by bus</i>.",
+                      null,
+                      "<i>on</i> — лише з артиклем (<i>on the bus</i>); тут — <i>by bus</i>."
+                    ]
                   },
                   {
-                    "do": "an engineer",
-                    "why": "Перед професією потрібен <i>a/an</i>; <i>engineer</i> починається з голосного звуку — <i>an</i>."
+                    "do": "be <i>an</i> engineer",
+                    "why": "Перед професією потрібен <i>a/an</i>; <i>engineer</i> починається з голосного звуку — <i>an</i>.",
+                    "q": "Як виправити <i>to be engineer</i>?",
+                    "options": [
+                      "<i>be engineer</i>",
+                      "<i>be a engineer</i>",
+                      "<i>be the engineer</i>",
+                      "<i>be an engineer</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Перед професією в однині потрібен <i>a/an</i>.",
+                      "<i>engineer</i> починається з голосного звуку: <i>an</i>.",
+                      "Професія загалом — <i>a/an</i>, не <i>the</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "My sister goes to school by bus. She wants to be an engineer."
@@ -321,19 +629,75 @@
                 "steps": [
                   {
                     "do": "a) biology",
-                    "why": "Рослини й тварини — біологія."
+                    "why": "Рослини й тварини — біологія.",
+                    "q": "a) Рослини й тварини?",
+                    "options": [
+                      "<i>biology</i>",
+                      "<i>chemistry</i>",
+                      "<i>geography</i>",
+                      "<i>physics</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Хімія — речовини й досліди; рослини й тварини — <i>biology</i>.",
+                      "Географія — країни, гори, річки; живе — <i>biology</i>.",
+                      "Фізика — сили, рух, світло; рослини й тварини — <i>biology</i>."
+                    ]
                   },
                   {
                     "do": "b) chemistry",
-                    "why": "Досліди з рідинами в лабораторії — хімія."
+                    "why": "Досліди з рідинами в лабораторії — хімія.",
+                    "q": "b) Змішують рідини в лабораторії?",
+                    "options": [
+                      "<i>biology</i>",
+                      "<i>chemistry</i>",
+                      "<i>chemist</i>",
+                      "<i>geography</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Біологія — рослини й тварини; досліди з рідинами — <i>chemistry</i>.",
+                      null,
+                      "<i>chemist</i> — хімік або аптекар; предмет — <i>chemistry</i>.",
+                      "Географія — країни й річки; досліди з рідинами — <i>chemistry</i>."
+                    ]
                   },
                   {
                     "do": "c) PE",
-                    "why": "Бігати, стрибати, командні ігри — фізкультура."
+                    "why": "Бігати, стрибати, командні ігри — фізкультура.",
+                    "q": "c) Бігати, стрибати, командні ігри?",
+                    "options": [
+                      "<i>IT</i>",
+                      "<i>music</i>",
+                      "<i>drama</i>",
+                      "<i>PE</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>IT</i> — інформатика; бігати й грати — <i>PE</i> (Physical Education).",
+                      "<i>music</i> — музика; бігати й грати — <i>PE</i>.",
+                      "<i>drama</i> — театр; бігати й грати — <i>PE</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "d) geography",
-                    "why": "Країни, гори, річки — географія."
+                    "why": "Країни, гори, річки — географія.",
+                    "q": "d) Країни, гори, річки?",
+                    "options": [
+                      "<i>history</i>",
+                      "<i>geography</i>",
+                      "<i>geometry</i>",
+                      "<i>biology</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Історія — минуле; країни, гори й річки — <i>geography</i>.",
+                      null,
+                      "<i>geometry</i> — геометрія (фігури); країни й річки — <i>geography</i>.",
+                      "Біологія — рослини й тварини; країни й річки — <i>geography</i>."
+                    ]
                   }
                 ],
                 "answer": "a) biology, b) chemistry, c) PE, d) geography"
@@ -343,15 +707,57 @@
                 "steps": [
                   {
                     "do": "good at maths",
-                    "why": "<i>good at</i> — сталий вираз (не <i>good in</i>)."
+                    "why": "<i>good at</i> — сталий вираз (не <i>good in</i>).",
+                    "q": "<i>good … maths</i>?",
+                    "options": [
+                      "good <i>at</i> maths",
+                      "good <i>in</i> maths",
+                      "good <i>on</i> maths",
+                      "good <i>for</i> maths"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Сталий вираз: <i>good at</i>.",
+                      "Сталий вираз: <i>good at</i>.",
+                      "<i>good for</i> — «корисний для»; вміти — <i>good at</i>."
+                    ]
                   },
                   {
                     "do": "interested in history",
-                    "why": "<i>interested in</i> — цікавитися чимось."
+                    "why": "<i>interested in</i> — цікавитися чимось.",
+                    "q": "<i>interested … history</i>?",
+                    "options": [
+                      "interested <i>at</i> history",
+                      "interested <i>about</i> history",
+                      "interested <i>in</i> history",
+                      "interested <i>of</i> history"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Цікавитися — <i>interested in</i>.",
+                      "Калька з «цікавитися про»: <i>interested in</i>.",
+                      null,
+                      "Цікавитися — <i>interested in</i>."
+                    ]
                   },
                   {
                     "do": "on Thursdays",
-                    "why": "З днями тижня — <i>on</i>."
+                    "why": "З днями тижня — <i>on</i>.",
+                    "q": "<i>history … Thursdays</i>?",
+                    "options": [
+                      "<i>in</i> Thursdays",
+                      "<i>at</i> Thursdays",
+                      "<i>on</i> Thursday's",
+                      "<i>on</i> Thursdays"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "З днями тижня — <i>on</i>.",
+                      "<i>at</i> — з годинами (<i>at 8:30</i>); з днями тижня — <i>on</i>.",
+                      "Множина — без апострофа: <i>Thursdays</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "at, in, on"
@@ -361,15 +767,57 @@
                 "steps": [
                   {
                     "do": "My favourite subject is IT…",
-                    "why": "Почни з назви предмета (без артикля)."
+                    "why": "Почни з назви предмета (без артикля).",
+                    "q": "Як назвати улюблений предмет?",
+                    "options": [
+                      "<i>My favourite subject is IT</i>",
+                      "<i>My favourite subject is the IT</i>",
+                      "<i>My favourite subject are IT</i>",
+                      "<i>Mine favourite subject is IT</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Шкільні предмети — без артикля.",
+                      "<i>subject</i> — однина: <i>is</i>.",
+                      "Перед іменником — <i>my</i>; <i>mine</i> — без іменника."
+                    ]
                   },
                   {
                     "do": "…because I love computers.",
-                    "why": "Додай причину з <i>because</i>."
+                    "why": "Додай причину з <i>because</i>.",
+                    "q": "Як додати причину?",
+                    "options": [
+                      "<i>…because I loves computers.</i>",
+                      "<i>…so I love computers.</i>",
+                      "<i>…because I love computers.</i>",
+                      "<i>…because I love computer.</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "З <i>I</i> — <i>love</i> без <i>-s</i>.",
+                      "Причина — <i>because</i>; <i>so</i> — наслідок.",
+                      null,
+                      "Комп'ютери загалом — множина: <i>computers</i>."
+                    ]
                   },
                   {
                     "do": "We've got IT on Wednesdays and Fridays.",
-                    "why": "Розклад: <i>have got + subject + on + days</i>."
+                    "why": "Розклад: <i>have got + subject + on + days</i>.",
+                    "q": "Як сказати про розклад?",
+                    "options": [
+                      "<i>We've got IT in Wednesdays and Fridays.</i>",
+                      "<i>We've got IT on Wednesdays and Fridays.</i>",
+                      "<i>We've IT on Wednesdays and Fridays.</i>",
+                      "<i>We've got IT at Wednesdays and Fridays.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "З днями тижня — <i>on</i>.",
+                      null,
+                      "Скорочене <i>we've</i> тут — лише з <i>got</i>: <i>We have got</i>.",
+                      "<i>at</i> — з годинами; з днями тижня — <i>on</i>."
+                    ]
                   }
                 ],
                 "answer": "My favourite subject is IT because I love computers. We've got IT on Wednesdays and Fridays."
@@ -453,15 +901,57 @@
                 "steps": [
                   {
                     "do": "1) recognise",
-                    "why": "Не впізнав брата, бо той виріс."
+                    "why": "Не впізнав брата, бо той виріс.",
+                    "q": "1) <i>I didn't … my cousin — he's so tall now!</i>",
+                    "options": [
+                      "<i>imagine</i>",
+                      "<i>wonder</i>",
+                      "<i>realise</i>",
+                      "<i>recognise</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>imagine</i> — уявити; не впізнав людину — <i>recognise</i>.",
+                      "<i>wonder</i> — цікавитися, ставити собі питання; впізнати — <i>recognise</i>.",
+                      "<i>realise</i> — усвідомити факт; впізнати людину — <i>recognise</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "2) imagine",
-                    "why": "Уявити світ без телефонів."
+                    "why": "Уявити світ без телефонів.",
+                    "q": "2) <i>Can you … a world without phones?</i>",
+                    "options": [
+                      "<i>imagine</i>",
+                      "<i>recognise</i>",
+                      "<i>wonder</i>",
+                      "<i>realise</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>recognise</i> — впізнати; уявити світ — <i>imagine</i>.",
+                      "<i>wonder</i> — цікавитися; уявити світ — <i>imagine</i>.",
+                      "<i>realise</i> — усвідомити факт; уявити — <i>imagine</i>."
+                    ]
                   },
                   {
                     "do": "3) wonder",
-                    "why": "«Цікаво, чому…» — <i>I wonder why…</i>"
+                    "why": "«Цікаво, чому…» — <i>I wonder why…</i>",
+                    "q": "3) <i>I … why the cat is hiding under the bed.</i>",
+                    "options": [
+                      "<i>wander</i>",
+                      "<i>wonder</i>",
+                      "<i>wondering</i>",
+                      "<i>recognise</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>wander</i> — блукати; «цікаво, чому» — <i>wonder</i> (через <i>o</i>).",
+                      null,
+                      "Після <i>I</i> у Present Simple — <i>wonder</i>, без <i>-ing</i>.",
+                      "<i>recognise</i> — впізнати людину чи річ; «цікаво, чому» — <i>wonder</i>."
+                    ]
                   }
                 ],
                 "answer": "1) recognise, 2) imagine, 3) wonder"
@@ -470,12 +960,40 @@
                 "task": "Choose: When I opened my bag, I (realised / recognised) that my homework wasn't there.",
                 "steps": [
                   {
-                    "do": "…that my homework wasn't there",
-                    "why": "Після дієслова йде факт (<i>that…</i>), а не людина чи річ, яку треба впізнати."
+                    "do": "факт: <i>that my homework wasn't there</i>",
+                    "why": "Після дієслова йде факт (<i>that…</i>), а не людина чи річ, яку треба впізнати.",
+                    "q": "Що йде після дієслова?",
+                    "options": [
+                      "людина, яку треба впізнати",
+                      "річ, яку треба впізнати на вигляд",
+                      "факт: <i>that my homework wasn't there</i>",
+                      "запитання з <i>why</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після дієслова — ціла думка з <i>that</i>, а не людина.",
+                      "Ніхто нічого не впізнає: після дієслова — факт з <i>that</i>.",
+                      null,
+                      "Після дієслова — <i>that…</i> (факт), а не <i>why</i>."
+                    ]
                   },
                   {
                     "do": "realised",
-                    "why": "<i>realise</i> = раптом зрозуміти, усвідомити."
+                    "why": "<i>realise</i> = раптом зрозуміти, усвідомити.",
+                    "q": "Яке дієслово?",
+                    "options": [
+                      "<i>recognised</i>",
+                      "<i>realise</i>",
+                      "<i>realising</i>",
+                      "<i>realised</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>recognise</i> — впізнати людину чи річ; усвідомити факт — <i>realise</i>.",
+                      "Розповідь у минулому (<i>When I opened</i>): <i>realised</i>.",
+                      "Потрібен минулий час, як у <i>When I opened</i>: <i>realised</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "realised"
@@ -485,11 +1003,39 @@
                 "steps": [
                   {
                     "do": "I sometimes wonder what my life will be like in ten years.",
-                    "why": "Після <i>wonder what</i> — прямий порядок: <i>my life will be</i>."
+                    "why": "Після <i>wonder what</i> — прямий порядок: <i>my life will be</i>.",
+                    "q": "Який порядок слів після <i>wonder what</i>?",
+                    "options": [
+                      "<i>I sometimes wonder what will my life be like</i>",
+                      "<i>I sometimes wonder that my life will be like</i>",
+                      "<i>I sometimes wonder what my life will be like</i>",
+                      "<i>I sometimes wonder what my life will like</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Після <i>wonder what</i> — прямий порядок: <i>my life will be</i>.",
+                      "Після <i>wonder</i> — питальне слово (<i>what, why</i>), не <i>that</i>.",
+                      null,
+                      "«Яким буде» — <i>what … will be like</i>: <i>be</i> не пропускаємо."
+                    ]
                   },
                   {
                     "do": "I can't imagine a day without music.",
-                    "why": "Після <i>imagine</i> — іменник (або <i>V-ing</i>)."
+                    "why": "Після <i>imagine</i> — іменник (або <i>V-ing</i>).",
+                    "q": "Що після <i>imagine</i>?",
+                    "options": [
+                      "<i>I can't imagine a day without music.</i>",
+                      "<i>I can't imagine to have a day without music.</i>",
+                      "<i>I can't imagine a day without a music.</i>",
+                      "<i>I don't can imagine a day without music.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Після <i>imagine</i> — іменник або <i>V-ing</i>, не <i>to</i>.",
+                      "<i>music</i> — незлічуване, без <i>a</i>.",
+                      "Заперечення з <i>can</i> — <i>can't</i>, без <i>don't</i>."
+                    ]
                   }
                 ],
                 "answer": "I sometimes wonder what my life will be like in ten years. I can't imagine a day without music."
@@ -577,15 +1123,57 @@
                 "steps": [
                   {
                     "do": "Excuse me, …",
-                    "why": "Привертаємо увагу ввічливо."
+                    "why": "Привертаємо увагу ввічливо.",
+                    "q": "Як привернути увагу вчителя?",
+                    "options": [
+                      "<i>Sorry me, …</i>",
+                      "<i>Excuse me, …</i>",
+                      "<i>Hey, teacher, …</i>",
+                      "<i>Excuse, …</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Такого виразу немає; ввічливо — <i>Excuse me</i>.",
+                      null,
+                      "Так до вчителя не звертаються; ввічливо — <i>Excuse me</i>.",
+                      "Сталий вираз — <i>Excuse me</i>."
+                    ]
                   },
                   {
                     "do": "…could I leave the room for a minute…",
-                    "why": "<i>Could I</i> — ввічлива форма для вчителя; далі дієслово без <i>to</i>."
+                    "why": "<i>Could I</i> — ввічлива форма для вчителя; далі дієслово без <i>to</i>.",
+                    "q": "Як попросити дозволу?",
+                    "options": [
+                      "<i>could I to leave the room</i>",
+                      "<i>I could leave the room</i>",
+                      "<i>could I left the room</i>",
+                      "<i>could I leave the room</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Після <i>could</i> — дієслово без <i>to</i>.",
+                      "У запитанні <i>could</i> стоїть перед <i>I</i>.",
+                      "Після <i>could</i> — початкова форма: <i>leave</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "…please?",
-                    "why": "<i>please</i> наприкінці робить прохання ще ввічливішим."
+                    "why": "<i>please</i> наприкінці робить прохання ще ввічливішим.",
+                    "q": "Як закінчити прохання?",
+                    "options": [
+                      "<i>…, please?</i>",
+                      "<i>…, thank you?</i>",
+                      "<i>…, sorry?</i>",
+                      "<i>…, okay?</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Дякуємо після дозволу; прохання завершуємо <i>please</i>.",
+                      "<i>Sorry?</i> у кінці звучить як «перепрошую, не почув»; прохання — <i>please</i>.",
+                      "<i>okay?</i> звучить вимогливо; ввічливо — <i>please</i>."
+                    ]
                   }
                 ],
                 "answer": "Excuse me, could I leave the room for a minute, please?"
@@ -594,16 +1182,58 @@
                 "task": "A new classmate asks: «Do you mind if I sit here?» You want to say that he CAN sit there. What do you say?",
                 "steps": [
                   {
-                    "do": "Do you mind…? = Ти заперечуєш…?",
-                    "why": "Питають, чи ти проти."
+                    "do": "<i>Do you mind…?</i> = Ти заперечуєш…?",
+                    "why": "Питають, чи ти проти.",
+                    "q": "Що означає <i>Do you mind…?</i>",
+                    "options": [
+                      "Ти пам'ятаєш…?",
+                      "Ти хочеш…?",
+                      "Ти заперечуєш…?",
+                      "Ти думаєш…?"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>mind</i> тут не «пам'ять»: <i>Do you mind…?</i> — «Ти не проти…?»",
+                      "Питають не про бажання, а чи ти проти: «Ти заперечуєш…?»",
+                      null,
+                      "<i>mind</i> тут не «думати»: <i>Do you mind…?</i> — «Ти не проти…?»"
+                    ]
                   },
                   {
                     "do": "No, not at all.",
-                    "why": "Ти не проти — отже відповідаєш «ні»."
+                    "why": "Ти не проти — отже відповідаєш «ні».",
+                    "q": "Як сказати, що ти не проти?",
+                    "options": [
+                      "<i>Yes, I do.</i>",
+                      "<i>No, not at all.</i>",
+                      "<i>Yes, I mind.</i>",
+                      "<i>No, I'm not.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "<i>Yes, I do</i> = «так, я проти» — тобто сідати не можна.",
+                      null,
+                      "Це «так, я заперечую»; дозвіл — <i>No, not at all</i>.",
+                      "Питання з <i>Do</i> — <i>I'm not</i> не підходить; дозвіл — <i>No, not at all</i>."
+                    ]
                   },
                   {
                     "do": "Go ahead.",
-                    "why": "Додаємо дозвіл: «будь ласка, сідай»."
+                    "why": "Додаємо дозвіл: «будь ласка, сідай».",
+                    "q": "Як додати дозвіл?",
+                    "options": [
+                      "<i>Go ahead.</i>",
+                      "<i>Go away.</i>",
+                      "<i>Go out.</i>",
+                      "<i>Go forward.</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>Go away</i> — «іди геть»! Дозвіл — <i>Go ahead</i>.",
+                      "<i>Go out</i> — «вийди»; дозвіл — <i>Go ahead</i>.",
+                      "Калька з «вперед»; дозвіл — <i>Go ahead</i>."
+                    ]
                   }
                 ],
                 "answer": "No, not at all. Go ahead."
@@ -613,15 +1243,57 @@
                 "steps": [
                   {
                     "do": "I'm afraid not.",
-                    "why": "М'яка відмова замість різкого <i>No.</i>"
+                    "why": "М'яка відмова замість різкого <i>No.</i>",
+                    "q": "Як м'яко відмовити?",
+                    "options": [
+                      "<i>I'm afraid no.</i>",
+                      "<i>I'm afraid not.</i>",
+                      "<i>I afraid not.</i>",
+                      "<i>No. Never.</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Сталий вираз — <i>I'm afraid not</i>.",
+                      null,
+                      "Потрібне <i>am</i>: <i>I am afraid</i>.",
+                      "Різко; м'яка відмова — <i>I'm afraid not</i>."
+                    ]
                   },
                   {
                     "do": "I need it for my homework.",
-                    "why": "Причина пояснює відмову."
+                    "why": "Причина пояснює відмову.",
+                    "q": "Як пояснити причину?",
+                    "options": [
+                      "<i>I need it to my homework.</i>",
+                      "<i>I need it for my homeworks.</i>",
+                      "<i>I needs it for my homework.</i>",
+                      "<i>I need it for my homework.</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Для чогось — <i>for</i>: <i>for my homework</i>.",
+                      "<i>homework</i> — незлічуване, без <i>-s</i>.",
+                      "З <i>I</i> — <i>need</i> без <i>-s</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "Maybe later?",
-                    "why": "Пропонуємо інший час — звучить дружньо."
+                    "why": "Пропонуємо інший час — звучить дружньо.",
+                    "q": "Як запропонувати інший час?",
+                    "options": [
+                      "<i>Maybe lately?</i>",
+                      "<i>May be later?</i>",
+                      "<i>Maybe later?</i>",
+                      "<i>Maybe latter?</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>lately</i> — «останнім часом»; «пізніше» — <i>later</i>.",
+                      "«Можливо» — одним словом: <i>maybe</i>.",
+                      null,
+                      "<i>latter</i> — «останній з двох»; «пізніше» — <i>later</i>."
+                    ]
                   }
                 ],
                 "answer": "I'm afraid not. I need it for my homework. Maybe later?"
@@ -706,23 +1378,93 @@
                 "steps": [
                   {
                     "do": "B) Hi Emma,",
-                    "why": "Лист починається з привітання."
+                    "why": "Лист починається з привітання.",
+                    "q": "Що на самому початку?",
+                    "options": [
+                      "D) Thanks for your email.",
+                      "E) I get up at 7…",
+                      "A) Best wishes, Olia",
+                      "B) Hi Emma,"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Подяка йде після привітання.",
+                      "Розповідь — основна частина, не початок.",
+                      "Прощання — у самому кінці.",
+                      null
+                    ]
                   },
                   {
                     "do": "D) Thanks for your email.",
-                    "why": "Вступ — дякуємо за лист."
+                    "why": "Вступ — дякуємо за лист.",
+                    "q": "Що після привітання?",
+                    "options": [
+                      "E) I get up at 7…",
+                      "C) What time do your lessons start?…",
+                      "D) Thanks for your email.",
+                      "A) Best wishes, Olia"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Спершу вступ — дякуємо за лист, потім про себе.",
+                      "Питання другові — наприкінці.",
+                      null,
+                      "Прощання — у самому кінці."
+                    ]
                   },
                   {
                     "do": "E) I get up at 7…",
-                    "why": "Основна частина — про свій день."
+                    "why": "Основна частина — про свій день.",
+                    "q": "Що в основній частині?",
+                    "options": [
+                      "C) What time do your lessons start?…",
+                      "E) I get up at 7…",
+                      "A) Best wishes, Olia",
+                      "B) Hi Emma,"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Спершу розповідаємо про себе, потім питаємо друга.",
+                      null,
+                      "Прощання — у самому кінці.",
+                      "Привітання вже було — на початку."
+                    ]
                   },
                   {
-                    "do": "C) What time do your lessons start? Write soon!",
-                    "why": "Питання другові й заклик відповісти."
+                    "do": "C) What time do your lessons start?… Write soon!",
+                    "why": "Питання другові й заклик відповісти.",
+                    "q": "Що перед прощанням?",
+                    "options": [
+                      "C) What time do your lessons start?…",
+                      "D) Thanks for your email.",
+                      "B) Hi Emma,",
+                      "E) I get up at 7…"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Подяка — у вступі, одразу після привітання.",
+                      "Привітання — на початку.",
+                      "Розповідь уже була; перед прощанням — питання й заклик відповісти."
+                    ]
                   },
                   {
                     "do": "A) Best wishes, Olia",
-                    "why": "Прощання й ім'я — в самому кінці."
+                    "why": "Прощання й ім'я — в самому кінці.",
+                    "q": "Що в самому кінці?",
+                    "options": [
+                      "C) What time do your lessons start?…",
+                      "D) Thanks for your email.",
+                      "A) Best wishes, Olia",
+                      "B) Hi Emma,"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Питання стоїть перед прощанням, а не після.",
+                      "Подяка — у вступі.",
+                      null,
+                      "Привітання — на початку."
+                    ]
                   }
                 ],
                 "answer": "B, D, E, C, A"
@@ -732,15 +1474,57 @@
                 "steps": [
                   {
                     "do": "a) …, but I'm not very good at drawing.",
-                    "why": "Протиставлення — <i>but</i>."
+                    "why": "Протиставлення — <i>but</i>.",
+                    "q": "a) <i>I love art. I'm not very good at drawing.</i>",
+                    "options": [
+                      "…, <i>so</i> I'm not very good at drawing",
+                      "…, <i>but</i> I'm not very good at drawing",
+                      "… <i>because</i> I'm not very good at drawing",
+                      "…, <i>but</i> I'm not very good in drawing"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Не наслідок, а протиставлення: <i>but</i>.",
+                      null,
+                      "Не причина: люблю, але не вмію — <i>but</i>.",
+                      "Вміти щось — <i>good at</i>, не <i>good in</i>."
+                    ]
                   },
                   {
                     "do": "b) …, so I take the bus.",
-                    "why": "Наслідок — <i>so</i>."
+                    "why": "Наслідок — <i>so</i>.",
+                    "q": "b) <i>School is far from my house. I take the bus.</i>",
+                    "options": [
+                      "… <i>because</i> I take the bus",
+                      "…, <i>but</i> I take the bus",
+                      "…, <i>so</i> I takes the bus",
+                      "…, <i>so</i> I take the bus"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Автобус — наслідок, а не причина: <i>so</i>.",
+                      "Немає протиставлення: далеко — тому автобус, <i>so</i>.",
+                      "З <i>I</i> — <i>take</i> без <i>-s</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "c) … because we have two PE lessons.",
-                    "why": "Причина — <i>because</i>."
+                    "why": "Причина — <i>because</i>.",
+                    "q": "c) <i>I like Fridays. We have two PE lessons.</i>",
+                    "options": [
+                      "… <i>because</i> we have two PE lessons",
+                      "…, <i>so</i> we have two PE lessons",
+                      "…, <i>but</i> we have two PE lessons",
+                      "… <i>because</i> we has two PE lessons"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Два уроки фізкультури — причина, а не наслідок: <i>because</i>.",
+                      "Немає протиставлення; це причина — <i>because</i>.",
+                      "З <i>we</i> — <i>have</i>."
+                    ]
                   }
                 ],
                 "answer": "a) I love art, but I'm not very good at drawing. b) School is far from my house, so I take the bus. c) I like Fridays because we have two PE lessons."
@@ -750,19 +1534,93 @@
                 "steps": [
                   {
                     "do": "Hi Jack, Thanks for your email! You asked about my school day, so here it is.",
-                    "why": "Привітання й вступ."
+                    "why": "Привітання й вступ.",
+                    "q": "Як почати лист другові?",
+                    "options": [
+                      "<i>Dear Sir, Thanks for your email!</i>",
+                      "<i>Hi Jack, Thanks for your email!</i>",
+                      "<i>Hi Jack, Thanks for you email!</i>",
+                      "<i>Hi Jack, Thank for your email!</i>"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Другові пишемо неофіційно: <i>Hi Jack</i>.",
+                      null,
+                      "Потрібен присвійний <i>your</i>, не <i>you</i>.",
+                      "<i>Thanks</i> або <i>Thank you</i>; <i>Thank for</i> не кажуть."
+                    ]
                   },
                   {
                     "do": "I usually get up at seven and walk to school with my friend Taras. Lessons start at 8:30. We have six or seven lessons a day, and each one lasts 45 minutes.",
-                    "why": "Абзац 1: ранок і розклад, Present Simple."
+                    "why": "Абзац 1: ранок і розклад, Present Simple.",
+                    "q": "Розпорядок дня — яка форма?",
+                    "options": [
+                      "<i>I usually get up at seven</i>",
+                      "<i>I usually getting up at seven</i>",
+                      "<i>I am usually get up at seven</i>",
+                      "<i>I get usually up at seven</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Звичні дії — Present Simple: <i>I usually get up</i>.",
+                      "Present Simple без <i>am</i>: <i>I usually get up</i>.",
+                      "<i>usually</i> стоїть перед основним дієсловом: <i>I usually get up</i>."
+                    ]
                   },
                   {
                     "do": "My favourite subject is biology because our teacher shows us cool experiments. On Tuesdays and Thursdays I go to football training after school.",
-                    "why": "Абзац 2: улюблений предмет з причиною й гурток."
+                    "why": "Абзац 2: улюблений предмет з причиною й гурток.",
+                    "q": "Як пояснити, чому предмет улюблений?",
+                    "options": [
+                      "<i>because our teacher show us cool experiments</i>",
+                      "<i>so our teacher shows us cool experiments</i>",
+                      "<i>because our teacher shows us cool experiments</i>",
+                      "<i>because our teacher shows to us cool experiments</i>"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>teacher</i> — «він/вона»: <i>shows</i>.",
+                      "Це причина, а не наслідок: <i>because</i>.",
+                      null,
+                      "<i>show us</i> — без <i>to</i> (або <i>show them to us</i>)."
+                    ]
                   },
                   {
-                    "do": "What's your school day like? Write soon! Best wishes, Andrii",
-                    "why": "Питання другові й прощання."
+                    "do": "<i>What's your school day like?</i>",
+                    "why": "Питання другові — щоб він відповів.",
+                    "q": "Яке запитання другові правильне?",
+                    "options": [
+                      "<i>How is your school day like?</i>",
+                      "<i>What's like your school day?</i>",
+                      "<i>What's your school day likes?</i>",
+                      "<i>What's your school day like?</i>"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "<i>like</i> — з <i>What</i>: <i>What's … like?</i>",
+                      "Порядок: <i>What's your school day like?</i>",
+                      "<i>like</i> тут — прийменник, без <i>-s</i>.",
+                      null
+                    ]
+                  },
+                  {
+                    "do": "<i>Write soon! Best wishes, Andrii</i>",
+                    "why": "Заклик відповісти й неофіційне прощання з ім'ям.",
+                    "q": "Як попрощатися з другом?",
+                    "options": [
+                      "<i>Write soon! Best wishes, Andrii</i>",
+                      "<i>Write soon! Yours faithfully, Andrii</i>",
+                      "<i>Write soon! Best wish, Andrii</i>",
+                      "<i>Write soonly! Best wishes, Andrii</i>"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "<i>Yours faithfully</i> — для офіційного листа незнайомцю; другові — <i>Best wishes</i>.",
+                      "Сталий вираз у множині: <i>Best wishes</i>.",
+                      "<i>soon</i> — уже прислівник, без <i>-ly</i>."
+                    ]
                   }
                 ],
                 "answer": "Hi Jack, Thanks for your email! You asked about my school day, so here it is. I usually get up at seven and walk to school with my friend Taras. Lessons start at 8:30. We have six or seven lessons a day, and each one lasts 45 minutes. My favourite subject is biology because our teacher shows us cool experiments. On Tuesdays and Thursdays I go to football training after school. What's your school day like? Write soon! Best wishes, Andrii"
@@ -847,15 +1705,57 @@
                 "steps": [
                   {
                     "do": "HIS-to-ry → HIStory",
-                    "why": "Наголос на першому складі /ˈhɪstri/."
+                    "why": "Наголос на першому складі /ˈhɪstri/.",
+                    "q": "Де наголос у <i>history</i>?",
+                    "options": [
+                      "his-TO-ry",
+                      "HIS-to-ry",
+                      "his-to-RY",
+                      "HIS-TO-ry"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Не як в українському «істОрія»: наголос на першому складі — <i>HIStory</i>.",
+                      null,
+                      "Останній склад не наголошений: <i>HIStory</i>.",
+                      "У слові один головний наголос — на першому складі: <i>HIStory</i>."
+                    ]
                   },
                   {
                     "do": "ge-OG-ra-phy → geOGraphy",
-                    "why": "/dʒiˈɒɡrəfi/ — на другому складі, не як українське «геограФІя»."
+                    "why": "/dʒiˈɒɡrəfi/ — на другому складі, не як українське «геогрАфія».",
+                    "q": "Де наголос у <i>geography</i>?",
+                    "options": [
+                      "GE-og-ra-phy",
+                      "ge-og-RA-phy",
+                      "ge-og-ra-PHY",
+                      "ge-OG-ra-phy"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Наголос на другому складі: <i>geOGraphy</i>.",
+                      "Не як в українському «геогрАфія»: наголос на <i>-OG-</i>.",
+                      "Останній склад не наголошений: <i>geOGraphy</i>.",
+                      null
+                    ]
                   },
                   {
                     "do": "bi-OL-o-gy → biOLogy",
-                    "why": "/baɪˈɒlədʒi/ — на другому складі (третій з кінця), не як «біоЛОгія»."
+                    "why": "/baɪˈɒlədʒi/ — на другому складі (третій з кінця), не як «біоЛОгія».",
+                    "q": "Де наголос у <i>biology</i>?",
+                    "options": [
+                      "bi-o-LO-gy",
+                      "BI-ol-o-gy",
+                      "bi-OL-o-gy",
+                      "bi-ol-o-GY"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "Не як в українському «біолОгія»: наголос на <i>-OL-</i>.",
+                      "Наголос не на першому, а на другому складі: <i>biOLogy</i>.",
+                      null,
+                      "Останній склад не наголошений: <i>biOLogy</i>."
+                    ]
                   }
                 ],
                 "answer": "HIStory, geOGraphy, biOLogy"
@@ -864,12 +1764,40 @@
                 "task": "Which word has a different stress pattern: <i>TEACHer, PENcil, forGET, LESson</i>?",
                 "steps": [
                   {
-                    "do": "TEACHer, PENcil, LESson",
-                    "why": "Іменники з двох складів — наголос на першому."
+                    "do": "TEACHer, PENcil, LESson — наголос на першому складі",
+                    "why": "Іменники з двох складів — наголос на першому.",
+                    "q": "Де наголос у <i>teacher, pencil, lesson</i>?",
+                    "options": [
+                      "на першому складі",
+                      "на другому складі",
+                      "у кожного слова по-різному",
+                      "наголосу немає"
+                    ],
+                    "correct": 0,
+                    "hints": [
+                      null,
+                      "Двоскладові іменники зазвичай мають наголос на першому складі: <i>TEACHer</i>.",
+                      "Усі три — двоскладові іменники з наголосом на першому складі.",
+                      "У кожному слові є наголошений склад — перший."
+                    ]
                   },
                   {
                     "do": "forGET",
-                    "why": "Дієслово — наголос на другому складі."
+                    "why": "Дієслово — наголос на другому складі.",
+                    "q": "Яке слово «випадає»?",
+                    "options": [
+                      "TEACHer",
+                      "PENcil",
+                      "forGET",
+                      "LESson"
+                    ],
+                    "correct": 2,
+                    "hints": [
+                      "<i>TEACHer</i> — іменник, наголос на першому складі, як в інших.",
+                      "<i>PENcil</i> — іменник, наголос на першому складі, як в інших.",
+                      null,
+                      "<i>LESson</i> — іменник, наголос на першому складі, як в інших."
+                    ]
                   }
                 ],
                 "answer": "forGET"
@@ -878,16 +1806,58 @@
                 "task": "Say with the correct stress: «I think chemistry is more interesting than geography.»",
                 "steps": [
                   {
-                    "do": "CHEMistry",
-                    "why": "Наголос на першому складі; ch читається як /k/."
+                    "do": "CHEMistry, <i>ch</i> = /k/",
+                    "why": "Наголос на першому складі; <i>ch</i> читається як /k/.",
+                    "q": "Як вимовити <i>chemistry</i>?",
+                    "options": [
+                      "CHEMistry, <i>ch</i> = /tʃ/",
+                      "cheMIStry, <i>ch</i> = /k/",
+                      "cheMIStry, <i>ch</i> = /tʃ/",
+                      "CHEMistry, <i>ch</i> = /k/"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "У <i>chemistry</i> <i>ch</i> читається як /k/.",
+                      "Наголос на першому складі: <i>CHEMistry</i>.",
+                      "І наголос (<i>CHEM-</i>), і звук (/k/) не ті.",
+                      null
+                    ]
                   },
                   {
                     "do": "INteresting",
-                    "why": "/ˈɪntrəstɪŋ/ — наголос на першому складі, часто вимовляють лише три склади: IN-tres-ting."
+                    "why": "/ˈɪntrəstɪŋ/ — наголос на першому складі, часто вимовляють лише три склади: IN-tres-ting.",
+                    "q": "Де наголос у <i>interesting</i>?",
+                    "options": [
+                      "inTEResting",
+                      "INteresting",
+                      "interESTing",
+                      "interestING"
+                    ],
+                    "correct": 1,
+                    "hints": [
+                      "Наголос на першому складі: <i>IN-tres-ting</i>.",
+                      null,
+                      "Наголос на першому складі: <i>INteresting</i>.",
+                      "Закінчення <i>-ing</i> не наголошується: <i>INteresting</i>."
+                    ]
                   },
                   {
                     "do": "geOGraphy",
-                    "why": "Наголос на другому складі."
+                    "why": "Наголос на другому складі.",
+                    "q": "Де наголос у <i>geography</i>?",
+                    "options": [
+                      "GEography",
+                      "geoGRAphy",
+                      "geograPHY",
+                      "geOGraphy"
+                    ],
+                    "correct": 3,
+                    "hints": [
+                      "Наголос на другому складі: <i>geOGraphy</i>.",
+                      "Не як в українському «геогрАфія»: наголос на <i>-OG-</i>.",
+                      "Останній склад не наголошений: <i>geOGraphy</i>.",
+                      null
+                    ]
                   }
                 ],
                 "answer": "I think CHEMistry is more INteresting than geOGraphy."
