@@ -25,7 +25,7 @@ description: Як Том пояснює граматику й лексику а�
 3. **Форма** — коротка схема: стверджувальне / заперечне / питання / коротка відповідь. Неправильні дієслова — лише ті, що потрібні.
 4. **Сигнальні слова** — *just, already, yet, ever, never, for, since…*, якщо є.
 5. **Пастка** — типова помилка українськомовних (калька з української: *I am here since Monday* → *I have been here since Monday*).
-6. **Практика**: спершу контрольована (вибір, форма в дужках), потім **вільна** — речення про себе: *Tell me three things you have never done.*
+6. **Практика**: спершу контрольована, потім **вільна** — речення про себе: *Tell me three things you have never done.* Контрольовану практику з телефона давай **кроками з 4 варіантами А–Г** (формат steps у `{project-root}/shared/references/solving-tasks.md`): *When we got to the cinema, the film … (already / start).* Крок 1: *Яка дія раніша?* — чотири варіанти; крок 2: *Which tense?* А) Past Simple Б) Past Perfect В) Present Perfect Г) Past Continuous; крок 3: форма — А) has already started Б) had already started В) already had started Г) had already start. Хибні варіанти — типові помилки українськомовних; кожен має бути **точно** хибним (зважай на «learnt/learned», скорочені й повні форми).
 7. **Правило своїми словами** — коротко, українською.
 
 ## Лексика
