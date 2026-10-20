@@ -284,6 +284,7 @@ table.acc .bar { width: 100%; min-width: 50px; }
 .fig .f-grid { fill: none; stroke: var(--track); stroke-width: 1; }
 .fig .f-axis { fill: none; stroke: var(--ink-soft); stroke-width: 1.4; }
 .fig .f-arrow { fill: var(--ink-soft); }
+.fig .ahd { fill: currentColor; stroke: none; }
 .fig .f-axl { fill: var(--ink-soft); font: italic 700 15px var(--font-body); }
 .fig .f-num { fill: var(--ink-soft); font: 600 12px var(--font-body); }
 /* Підсвітка на кроці прикладу: товстіше; без власного кольору — основний колір. */
@@ -330,7 +331,7 @@ footer.foot { max-width: 880px; margin: 0 auto; padding: 0 16px 32px; font-size:
 /* ---------- Зміст: вставляє study-map/build-map.py з study-map/content/ ---------- */
 /*@@CONTENT@@*/
 // Змінюй, коли змінюється сторінка або уроки, щоб репетитор знав, що опубліковану копію учня треба оновити.
-const MAP_VERSION = "2026-10-15b";
+const MAP_VERSION = "2026-10-20a";
 const DATA = (typeof CONTENT !== "undefined" && CONTENT && Array.isArray(CONTENT.subjects)) ? CONTENT : { subjects: [] };
 
 /* ---------- Покажчики ---------- */
@@ -595,7 +596,7 @@ function subRowHtml(st) {
 /* ---------- Малюнки (fig): опис фігури → SVG. Формат — study-map/FIGURES.md ----------
    Математичні координати (y вгору) переводимо в пікселі самі, тож товщина ліній не залежить від `view`.
    Зламаний малюнок не малюємо (console.warn), сторінка працює далі. */
-const FIG = { maxW: 300, maxH: 300, pad: 26, dot: 3.5, tick: 12, tickGap: 5, right: 12, arcGap: 5 };
+const FIG = { maxW: 300, maxH: 300, pad: 26, dot: 3.5, tick: 12, tickGap: 5, right: 12, arcGap: 5, head: 13 };
 let figSeq = 0;
 const SUBS = "₀₁₂₃₄₅₆₇₈₉";
 function figName(n) { const m = String(n).match(/^(.*?\D)(\d+)$/); return m ? m[1] + m[2].replace(/\d/g, d => SUBS[+d]) : String(n); }
@@ -691,6 +692,9 @@ function buildFig(fig, hl) {
 
   if (isObj(fig.axes)) {
     const st = +fig.axes.step > 0 ? +fig.axes.step : 1, ev = Math.max(1, Math.round(+fig.axes.every || 1));
+    // Фізичні графіки: назви осей (xl, yl, напр. "t, с") і множники чисел на осях (xk, yk) — малюнок у «клітинках», числа в одиницях задачі.
+    const xl = fig.axes.xl != null ? String(fig.axes.xl) : "x", yl = fig.axes.yl != null ? String(fig.axes.yl) : "y";
+    const xk = fin(fig.axes.xk) && fig.axes.xk > 0 ? +fig.axes.xk : 1, yk = fin(fig.axes.yk) && fig.axes.yk > 0 ? +fig.axes.yk : 1;
     const g = [];
     for (let i = Math.ceil(v[0] / st); i * st <= v[2] + 1e-9; i++) g.push(`M${f(X(i * st))} ${f(Y(v[1]))}V${f(Y(v[3]))}`);
     for (let i = Math.ceil(v[1] / st); i * st <= v[3] + 1e-9; i++) g.push(`M${f(X(v[0]))} ${f(Y(i * st))}H${f(X(v[2]))}`);
@@ -702,26 +706,26 @@ function buildFig(fig, hl) {
       const x1 = X(v[2]) + 14;
       addSeg(X(v[0]), oy, x1, oy);
       ax.push(`<path class="f-axis" d="M${f(X(v[0]))} ${f(oy)}H${f(x1)}"/><path class="f-arrow" d="M${f(x1)} ${f(oy)}l-9 -4v8z"/>`);
-      top.push(`<text class="f-axl" x="${f(x1 - 2)}" y="${f(oy + 18)}" text-anchor="end">x</text>`); boxes.push([x1 - 12, oy + 4, x1, oy + 20]);
+      { const w = textW(xl, 14); top.push(`<text class="f-axl" x="${f(x1 - 2)}" y="${f(oy + 18)}" text-anchor="end">${esc(xl)}</text>`); boxes.push([x1 - 2 - w, oy + 4, x1, oy + 20]); }
     }
     if (yAx) {
       const y1 = Y(v[3]) - 14;
       addSeg(ox, Y(v[1]), ox, y1);
       ax.push(`<path class="f-axis" d="M${f(ox)} ${f(Y(v[1]))}V${f(y1)}"/><path class="f-arrow" d="M${f(ox)} ${f(y1)}l-4 9h8z"/>`);
-      top.push(`<text class="f-axl" x="${f(ox - 9)}" y="${f(y1 + 6)}" text-anchor="end">y</text>`); boxes.push([ox - 20, y1 - 8, ox - 8, y1 + 8]);
+      { const w = textW(yl, 14); top.push(`<text class="f-axl" x="${f(ox - 9)}" y="${f(y1 + 6)}" text-anchor="end">${esc(yl)}</text>`); boxes.push([ox - 9 - w, y1 - 8, ox - 8, y1 + 8]); }
     }
     if (xAx && yAx) { top.push(`<text class="f-num" x="${f(ox - 5)}" y="${f(oy + 5)}" text-anchor="end" dominant-baseline="hanging">O</text>`); boxes.push([ox - 15, oy + 5, ox - 5, oy + 17]); }
     const S = st * ev;
     for (let i = Math.ceil(v[0] / S); i * S <= v[2] + 1e-9; i++) {
       const x = i * S; if (Math.abs(x) < 1e-9 || X(x) > X(v[2]) - 10) continue;
-      top.push(`<text class="f-num" x="${f(X(x))}" y="${f(oy + 5)}" text-anchor="middle" dominant-baseline="hanging">${figNum(x)}</text>`);
-      { const w = textW(figNum(x), 12); boxes.push([X(x) - w / 2, oy + 5, X(x) + w / 2, oy + 17]); }
+      top.push(`<text class="f-num" x="${f(X(x))}" y="${f(oy + 5)}" text-anchor="middle" dominant-baseline="hanging">${figNum(x * xk)}</text>`);
+      { const w = textW(figNum(x * xk), 12); boxes.push([X(x) - w / 2, oy + 5, X(x) + w / 2, oy + 17]); }
       nums.push(`<path class="f-axis" d="M${f(X(x))} ${f(oy - 3)}v6"/>`);
     }
     for (let i = Math.ceil(v[1] / S); i * S <= v[3] + 1e-9; i++) {
       const y = i * S; if (Math.abs(y) < 1e-9 || Y(y) < Y(v[3]) + 10) continue;
-      top.push(`<text class="f-num" x="${f(ox - 6)}" y="${f(Y(y))}" text-anchor="end" dominant-baseline="central">${figNum(y)}</text>`);
-      { const w = textW(figNum(y), 12); boxes.push([ox - 6 - w, Y(y) - 6, ox - 6, Y(y) + 6]); }
+      top.push(`<text class="f-num" x="${f(ox - 6)}" y="${f(Y(y))}" text-anchor="end" dominant-baseline="central">${figNum(y * yk)}</text>`);
+      { const w = textW(figNum(y * yk), 12); boxes.push([ox - 6 - w, Y(y) - 6, ox - 6, Y(y) + 6]); }
       nums.push(`<path class="f-axis" d="M${f(ox - 3)} ${f(Y(y))}h6"/>`);
     }
     back.push(ax.join(""), nums.join(""));
@@ -747,6 +751,24 @@ function buildFig(fig, hl) {
           let d = "";
           for (let i = 0; i < n; i++) { const o = (i - (n - 1) / 2) * FIG.tickGap, cx = mx + ux * o, cy = my + uy * o; d += `M${f(cx - nx * h)} ${f(cy - ny * h)}L${f(cx + nx * h)} ${f(cy + ny * h)}`; }
           out.push(`<path class="tick" d="${d}"/>`);
+        }
+        break;
+      }
+      case "vec": {
+        // Вектор (сила, швидкість): відрізок P→Q зі стрілкою на кінці Q; label — біля середини, збоку.
+        if (p.length !== 2) throw new Error("vec: потрібні 2 точки");
+        const ax = X(p[0][0]), ay = Y(p[0][1]), bx = X(p[1][0]), by = Y(p[1][1]), L = Math.hypot(bx - ax, by - ay);
+        if (!(L > 0)) throw new Error("vec: точки збігаються");
+        const ux = (bx - ax) / L, uy = (by - ay) / L, nx = -uy, ny = ux, hd = Math.min(FIG.head, L * 0.6), hw = hd * 0.42;
+        const ex = bx - ux * hd * 0.8, ey = by - uy * hd * 0.8;
+        addSeg(ax, ay, bx, by);
+        out.push(`<path class="stk" d="M${f(ax)} ${f(ay)}L${f(ex)} ${f(ey)}"/>`);
+        out.push(`<path class="ahd" d="M${f(bx)} ${f(by)}L${f(bx - ux * hd + nx * hw)} ${f(by - uy * hd + ny * hw)}L${f(bx - ux * hd - nx * hw)} ${f(by - uy * hd - ny * hw)}Z"/>`);
+        if (it.label) {
+          const cands = [];
+          [10, 17].forEach(off => [0.55, 0.75, 0.35, 0.9].forEach(t => [[nx, ny], [-nx, -ny]].forEach(([qx, qy]) => cands.push({ x: ax + (bx - ax) * t + qx * off, y: ay + (by - ay) * t + qy * off, ux: qx, uy: qy }))));
+          cands.push({ x: bx + ux * 8, y: by + uy * 8, ux, uy });
+          later.push({ g: idx, html: () => place(cands, it.label, "flb", 15) });
         }
         break;
       }

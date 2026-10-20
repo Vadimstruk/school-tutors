@@ -68,6 +68,19 @@
         "eng/e11.json",
         "eng/e12.json"
       ]
+    },
+    {
+      "id": "phys",
+      "name": "Фізика",
+      "grade": 7,
+      "tutor": "Марта",
+      "tutorCall": "Марто",
+      "icon": "🔭",
+      "files": [
+        "phys/p1.json",
+        "phys/p2.json",
+        "phys/p3.json"
+      ]
     }
   ]
 }

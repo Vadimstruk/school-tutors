@@ -104,6 +104,7 @@ FIG_STYLES = {"hl", "hl2", "dash", "faint"}
 FIG_LP = {"n", "ne", "e", "se", "s", "sw", "w", "nw"}
 ITEM_FIELDS = {
     "seg": ({"p"}, {"ticks"}),
+    "vec": ({"p"}, {"label"}),
     "ray": ({"p"}, set()),
     "line": ({"p"}, set()),
     "poly": ({"p"}, {"fill"}),
@@ -115,7 +116,7 @@ ITEM_FIELDS = {
     "vline": ({"x"}, {"label"}),
     "plot": ({"pts"}, set()),
 }
-POINT_COUNT = {"seg": 2, "ray": 2, "line": 2, "angle": 3, "right": 3}
+POINT_COUNT = {"seg": 2, "vec": 2, "ray": 2, "line": 2, "angle": 3, "right": 3}
 CHECK_FORMS = {"col", "mid", "eq", "len", "ang", "perp", "par", "onc", "on"}
 ANGLE_LABEL = re.compile(r"^\s*(\d+(?:[.,]\d+)?)\s*°\s*$")
 REL = 1e-2
@@ -200,11 +201,17 @@ def validate_fig(rep, where, fig):
                 rep.err(where, f"lp.{n} = {d!r}: можна {', '.join(sorted(FIG_LP))}")
     if "axes" in fig:
         ax = fig["axes"]
-        if not isinstance(ax, dict) or set(ax) - {"step", "every"}:
-            rep.err(where, "«axes» має бути {\"step\": число, \"every\": ціле}")
+        if not isinstance(ax, dict) or set(ax) - {"step", "every", "xl", "yl", "xk", "yk"}:
+            rep.err(where, "«axes» має бути {\"step\": число, \"every\": ціле, \"xl\"/\"yl\": назви осей, \"xk\"/\"yk\": множники чисел}")
         else:
             if not (is_num(ax.get("step", 1)) and ax.get("step", 1) > 0):
                 rep.err(where, f"axes.step має бути додатним числом, а не {ax.get('step')!r}")
+            for k in ("xl", "yl"):
+                if k in ax and not (isinstance(ax[k], str) and ax[k].strip()):
+                    rep.err(where, f"axes.{k} має бути непорожнім рядком (напр. \"t, с\")")
+            for k in ("xk", "yk"):
+                if k in ax and not (is_num(ax[k]) and ax[k] > 0):
+                    rep.err(where, f"axes.{k} має бути додатним числом")
             e = ax.get("every", 1)
             if not (isinstance(e, int) and not isinstance(e, bool) and e >= 1):
                 rep.err(where, f"axes.every має бути цілим ≥ 1, а не {e!r}")
@@ -252,7 +259,7 @@ def validate_fig(rep, where, fig):
                 pp = [ref(x, f"items[{i}]") for x in p]
                 if any(q is None for q in pp):
                     pp = None
-        if t in ("ray", "line", "seg") and pp and pp[0] == pp[1]:
+        if t in ("ray", "line", "seg", "vec") and pp and pp[0] == pp[1]:
             rep.err(wi, "дві точки збігаються")
         if t == "seg" and "ticks" in it:
             k = it["ticks"]
@@ -310,6 +317,8 @@ def validate_fig(rep, where, fig):
                     rep.err(wi, f"«{key}» має бути числом")
             if "label" in it:
                 fig_text(rep, wi, it["label"], "label")
+        if t == "vec" and "label" in it:
+            fig_text(rep, wi, it["label"], "label")
         if t == "vline":
             if "x" in it and not is_num(it["x"]):
                 rep.err(wi, "«x» має бути числом")
