@@ -81,6 +81,26 @@
         "phys/p2.json",
         "phys/p3.json"
       ]
+    },
+    {
+      "id": "bio",
+      "name": "Біологія",
+      "grade": 7,
+      "tutor": "Соломія",
+      "tutorCall": "Соломіє",
+      "icon": "🌿",
+      "files": [
+        "bio/b0.json",
+        "bio/b1.json",
+        "bio/b2.json",
+        "bio/b3.json",
+        "bio/b4.json",
+        "bio/b5.json",
+        "bio/b6.json",
+        "bio/b7.json",
+        "bio/b8.json",
+        "bio/b9.json"
+      ]
     }
   ]
 }
