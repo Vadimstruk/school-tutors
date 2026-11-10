@@ -101,6 +101,26 @@
         "bio/b8.json",
         "bio/b9.json"
       ]
+    },
+    {
+      "id": "hist",
+      "name": "Історія",
+      "grade": 7,
+      "tutor": "Тарас",
+      "tutorCall": "Тарасе",
+      "icon": "🏛️",
+      "files": [
+        "hist/h0.json",
+        "hist/h1.json",
+        "hist/h2.json",
+        "hist/h3.json",
+        "hist/h4.json",
+        "hist/h5.json",
+        "hist/h6.json",
+        "hist/h7.json",
+        "hist/h8.json",
+        "hist/h9.json"
+      ]
     }
   ]
 }
