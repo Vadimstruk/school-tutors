@@ -132,7 +132,10 @@
       "files": [
         "geo/ge0.json",
         "geo/ge1.json",
-        "geo/ge2.json"
+        "geo/ge2.json",
+        "geo/ge3.json",
+        "geo/ge4.json",
+        "geo/ge5.json"
       ]
     }
   ]
