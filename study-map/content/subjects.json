@@ -121,6 +121,19 @@
         "hist/h8.json",
         "hist/h9.json"
       ]
+    },
+    {
+      "id": "geo",
+      "name": "Географія",
+      "grade": 7,
+      "tutor": "Ярина",
+      "tutorCall": "Ярино",
+      "icon": "🌍",
+      "files": [
+        "geo/ge0.json",
+        "geo/ge1.json",
+        "geo/ge2.json"
+      ]
     }
   ]
 }
