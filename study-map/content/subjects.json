@@ -137,6 +137,20 @@
         "geo/ge4.json",
         "geo/ge5.json"
       ]
+    },
+    {
+      "id": "chem",
+      "name": "Хімія",
+      "grade": 7,
+      "tutor": "Злата",
+      "tutorCall": "Злато",
+      "icon": "⚗️",
+      "files": [
+        "chem/ch1.json",
+        "chem/ch2.json",
+        "chem/ch3.json",
+        "chem/ch4.json"
+      ]
     }
   ]
 }
